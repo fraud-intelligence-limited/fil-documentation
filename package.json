@@ -1,0 +1,24 @@
+{
+  "name": "orillion-docs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "format": "prettier-eslint --include-dot-files \"**/*.{js,ts,mts,vue,json}\"",
+    "format:check": "pnpm format --list-different",
+    "format:fix": "pnpm format --write",
+    "docs:dev": "vitepress dev",
+    "docs:build": "vitepress build",
+    "docs:preview": "vitepress preview"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "prettier": "^2.8.7",
+    "prettier-eslint": "^15.0.1",
+    "prettier-eslint-cli": "^7.1.0",
+    "vitepress": "^1.0.0-alpha.64"
+  }
+}
