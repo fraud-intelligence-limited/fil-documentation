@@ -13,21 +13,21 @@ A peer that has contributed at least a single fraud event is considered a ***con
 
 Once a contribution has been submitted, the peer’s list of contributions is updated, and their credit balance is increased by an amount equal to the number of contributions submitted based on the current reward rate active in the network.
 
-For complete instructions on how to submit a contribution, see *[Submitting a contribution](Tutorials/Submitting_a_contribution.md)*.
+For complete instructions on how to submit a contribution, see *[Submitting a contribution](../Tutorials/Submitting_a_contribution.md)*.
 
-For information on the credit balance and rewards, see *[Tokenomics](Overview/Tokenomics.md)*.
+For information on the credit balance and rewards, see *[Tokenomics](./Tokenomics.md)*.
 
 ### Retrieving contributions
 
-In order for peers to keep their own records updated with the latest fraud event data, they can *[retrieve top contributions in a number of ways](Tutorials/Retrieving_top_contributions.md)*.
+In order for peers to keep their own records updated with the latest fraud event data, they can *[retrieve top contributions in a number of ways](../Tutorials/Retrieving_top_contributions.md)*.
 
 ### Flagging contributions
 
-If a peer deems a certain contribution to no longer be relevant (e.g., *it is a false positive*), they can *[flag that contribution](Tutorials/Flagging_a_contribution.md)*.
+If a peer deems a certain contribution to no longer be relevant (e.g., *it is a false positive*), they can *[flag that contribution](../Tutorials/Flagging_a_contribution.md)*.
 
 ## API requests data structure
 
-When *[retrieving top contributions](API_Specification/contribution-controller/Retrieving_top_contributions.md)*, the following data is returned in the body of the response:
+When *[retrieving top contributions](../API_Specification/contribution-controller/Retrieving_top_contributions.md)*, the following data is returned in the body of the response:
 
 ::: details Show
 
@@ -45,7 +45,7 @@ When *[retrieving top contributions](API_Specification/contribution-controller/R
 
 :::
 
-When *[assembling a contribution](API_Specification/contribution-controller/Assembling_a_contribution.md)* to then *[submit it](API_Specification/contribution-controller/Submitting_a_contribution.md)*, the following data must be specified in the body of the request:
+When *[assembling a contribution](../API_Specification/contribution-controller/Assembling_a_contribution.md)* to then *[submit it](../API_Specification/contribution-controller/Submitting_a_contribution.md)*, the following data must be specified in the body of the request:
 
 ::: details Show
 
