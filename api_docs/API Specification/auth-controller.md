@@ -1,7 +1,7 @@
 # auth-controller
 
-[Authorizing a user in the system](auth-controller/Authorizing%20a%20user%20in%20the%20system)
+[Authorizing a user in the system](../API_Specification/auth-controller/Authorizing a user in the system)
 
-[Refreshing authentication tokens](auth-controller/Refreshing%20authentication%20tokens)
+[Refreshing authentication tokens](../API_Specification/auth-controller/Refreshing authentication tokens)
 
-[Retrieving salt values](auth-controller/Retrieving%20salt%20values)
+[Retrieving salt values](../API_Specification/auth-controller/Retrieving salt values)

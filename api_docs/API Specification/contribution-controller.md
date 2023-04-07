@@ -1,13 +1,11 @@
 # contribution-controller
 
-[Assembling a contribution](contribution-controller/Assembling%20a%20contribution)
+[Assembling a contribution](../API_Specification/contribution-controller/Assembling_a_contribution.md)
 
-[Submitting a contribution](contribution-controller/Submitting%20a%20contribution)
+[Assembling a contribution flag](../API_Specification/contribution-controller/Assembling_a_contribution_flag)
 
-[Assembling a contribution flag](contribution-controller/Assembling%20a%20contribution%20flag)
+[Flagging a contribution](../API_Specification/contribution-controller/Flagging_a_contribution)
 
-[Flagging a contribution](contribution-controller/Flagging%20a%20contribution)
+[Requesting a contribution by ID](../API_Specification/contribution-controller/Requesting_a_contribution_by_ID)
 
-[Requesting a contribution by ID](contribution-controller/Requesting%20a%20contribution%20by%20ID)
-
-[Retrieving top contributions](contribution-controller/Retrieving%20top%20contributions)
+[Retrieving top contributions](../API_Specification/contribution-controller/Retrieving_top_contributions)

@@ -134,4 +134,4 @@ An assembled and signed contribution is submitted to the ledger, the peer’s li
 
 ---
 
-[Verifying a contrubution has been submitted](Submitting%20a%20contribution/Verifying%20a%20contrubution%20has%20been%20submitted)
+[Verifying a contrubution has been submitted](../Tutorials/Submitting_a_contribution/Verifying_a_contrubution_has_been_submitted.md)

@@ -8,7 +8,7 @@ If the JSON token is retrieved successfully, then the FIB API is available and y
 
 Otherwise, a response with an error code is displayed indicating the issue that needs to be resolved before proceeding.
 
-For a list of possible responses, see [*Authorizing a user in the system > Responses*](../API%20Specification/auth-controller/Authorizing%20a%20user%20in%20the%20system.md).
+For a list of possible responses, see [*Authorizing a user in the system > Responses*](../../API_Specification/auth-controller/Authorizing a user in the system.md).
 
 <aside>
 ⚠️ There are a variety of external issues that may be preventing you from successfully retrieving a JSON token. Examples include blocked outgoing HTTP requests and no Internet connection.

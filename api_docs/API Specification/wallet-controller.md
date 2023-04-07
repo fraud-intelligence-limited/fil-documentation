@@ -1,3 +1,3 @@
 # wallet-controller
 
-[Retrieving credit balance](wallet-controller/Retrieving%20credit%20balance)
+[Retrieving credit balance](../API Specification/wallet-controller/Retrieving%20credit%20balance)
