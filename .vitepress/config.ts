@@ -11,7 +11,7 @@ export default defineConfig({
     sidebar: [
           {
             text: 'Overview',
-            link: '/api_docs/overview.md',
+            link: '/api_docs/Overview.md',
             items: [
                   {
                     text: 'How FIB works',
@@ -94,15 +94,15 @@ export default defineConfig({
                                 items: [
                                   {
                                     text: 'Authorizing a user in the system',
-                                    link: '/api_docs/API Specification/auth-controller/Authorizing_a_user_in_the_system.md',
+                                    link: '/api_docs/API_Specification/auth-controller/Authorizing_a_user_in_the_system.md',
                                   },
                                   {
                                     text: 'Refreshing authentication tokens',
-                                    link: '/api_docs/API Specification/auth-controller/Refreshing_authentication_tokens.md',
+                                    link: '/api_docs/API_Specification/auth-controller/Refreshing_authentication_tokens.md',
                                   },
                                   {
                                     text: 'Retrieving salt values',
-                                    link: '/api_docs/API Specification/auth-controller/Retrieving_salt_values.md',
+                                    link: '/api_docs/API_Specification/auth-controller/Retrieving_salt_values.md',
                                   },
                                       ],
                               },
@@ -111,7 +111,7 @@ export default defineConfig({
                                 items: [
                                     {
                                       text: 'Retrieving credit balance',
-                                      link: '/api_docs/API Specification/wallet-controller/Retrieving_credit_balance.md',
+                                      link: '/api_docs/API_Specification/wallet-controller/Retrieving_credit_balance.md',
                                     },
 
                                       ],
@@ -121,11 +121,11 @@ export default defineConfig({
                                 items: [
                                     {
                                       text: 'Requesting peer details',
-                                      link: '/api_docs/API Specification/peer-controller/Requesting_peer_details.md',
+                                      link: '/api_docs/API_Specification/peer-controller/Requesting_peer_details.md',
                                     },
                                     {
                                       text: 'Retrieving all premium peers',
-                                      link: '/api_docs/API Specification/peer-controller/Retrieving_all_premium_peers.md',
+                                      link: '/api_docs/API_Specification/peer-controller/Retrieving_all_premium_peers.md',
                                     },
                                       ],
                               },
@@ -134,27 +134,27 @@ export default defineConfig({
                                 items: [
                                   {
                                     text: 'Assembling a contribution',
-                                    link: '/api_docs/API Specification/contribution-controller/Assembling_a_contribution.md',
+                                    link: '/api_docs/API_Specification/contribution-controller/Assembling_a_contribution.md',
                                   },
                                   {
                                     text: 'Submitting a contribution',
-                                    link: '/api_docs/API Specification/contribution-controller/Submitting_a_contribution.md',
+                                    link: '/api_docs/API_Specification/contribution-controller/Submitting_a_contribution.md',
                                   },
                                   {
                                     text: 'Assembling a contribution flag',
-                                    link: '/api_docs/API Specification/contribution-controller/Assembling_a_contribution_flag.md',
+                                    link: '/api_docs/API_Specification/contribution-controller/Assembling_a_contribution_flag.md',
                                   },
                                   {
                                     text: 'Flagging a contribution',
-                                    link: '/api_docs/API Specification/contribution-controller/Flagging_a_contribution.md',
+                                    link: '/api_docs/API_Specification/contribution-controller/Flagging_a_contribution.md',
                                   },
                                   {
                                     text: 'Requesting a contribution by ID',
-                                    link: '/api_docs/API Specification/contribution-controller/Requesting_a_contribution_by_ID.md',
+                                    link: '/api_docs/API_Specification/contribution-controller/Requesting_a_contribution_by_ID.md',
                                   },
                                   {
                                     text: 'Retrieving top contributions',
-                                    link: '/api_docs/API Specification/contribution-controller/Retrieving_top_contributions.md',
+                                    link: '/api_docs/API_Specification/contribution-controller/Retrieving_top_contributions.md',
                                   },
                                 ],
                               },
@@ -163,15 +163,15 @@ export default defineConfig({
                                 items: [
                                   {
                                     text: 'Requesting access to premium contributions by a certain peer',
-                                    link: '/api_docs/API Specification/premium-provider-controller/Requesting_access_to_premium_contributions_by_a_certain_peer.md',
+                                    link: '/api_docs/API_Specification/premium-provider-controller/Requesting_access_to_premium_contributions_by_a_certain_peer.md',
                                   },
                                   {
                                     text: 'Retrieving incoming premium contribution requests',
-                                    link: '/api_docs/API Specification/premium-provider-controller/Retrieving_incoming_premium_contribution_requests.md',
+                                    link: '/api_docs/API_Specification/premium-provider-controller/Retrieving_incoming_premium_contribution_requests.md',
                                   },
                                   {
                                     text: 'Retrieving outgoing premium contribution requests',
-                                    link: '/api_docs/API Specification/premium-provider-controller/Retrieving_outgoing_premium_contribution_requests.md',
+                                    link: '/api_docs/API_Specification/premium-provider-controller/Retrieving_outgoing_premium_contribution_requests.md',
                                   },
                                 ],
                               }
