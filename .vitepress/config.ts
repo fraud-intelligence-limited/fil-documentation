@@ -37,7 +37,7 @@ export default defineConfig({
             items: [
               {
                 text: 'Registering an account',
-                link: '/api_docs/Getting_Started/Registering_an_account.md',
+                link: '/api_docs/Getting_started/Registering_an_account.md',
               },
               {
                 text: 'Checking API availability',
