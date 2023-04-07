@@ -73,8 +73,8 @@ To submit a contribution, perform the following steps:
 
             {
             	"status": {
-            		"code": 0,
-            		"name": "Ok"
+            	   "code": 0,
+            	   "name": "Ok"
             	},
             	"data": "someData"
             }

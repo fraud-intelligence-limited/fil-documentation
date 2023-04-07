@@ -11,7 +11,7 @@ Request parameters can be used in any combination to tailor response results to 
 
 Since request parameters are optional, specifying no parameters when sending a request will result in a response containing the top contributions from the entire ledger.
 
-For more information, see [*API Specification > contribution-controller > Retrieving top contributions > Parameters](/api_docs/API_Specification/contribution-controller/Retrieving_top_contributions.md).*
+For more information, see [*API Specification > contribution-controller > Retrieving top contributions > Parameters*](/api_docs/API_Specification/contribution-controller/Retrieving_top_contributions.md).
 
 To retrieve top contributions, perform the following:
 
@@ -85,35 +85,35 @@ The response to the `GET` request contains a list of the top contributions, filt
 ```jsx
     {
     "status": {
-    "code": 0,
-    "name": "Ok"
+      "code": 0,
+      "name": "Ok"
     },
     "data": [
+      {
+        "id": "+14155552671-+14155552981",
+        "fraudType": "StolenDevice",
+        "origination": "US",
+        "destination": "FI",
+        "expiryDate": 1666195955,
+        "fraudStatus": "Expired",
+        "confidenceIndex": null
+        "isPremium": true,
+        "peerId": "string",
+        "premium": false
+      },
     {
-    "id": "+14155552671-+14155552981",
-    "fraudType": "StolenDevice",
-    "origination": "US",
-    "destination": "FI",
-    "expiryDate": 1666195955,
-    "fraudStatus": "Expired",
-    "confidenceIndex": null
-    "isPremium": true,
-    "peerId": "string",
-    "premium": false
-    },
-    {
-    "id": "127.0.0.1-127.0.0.2",
-    "fraudType": "StolenDevice",
-    "origination": "US",
-    "destination": "SE",
-    "expiryDate": 1694775553,
-    "fraudStatus": "Flagged",
-    "confidenceIndex": null
-    "isPremium": true,
-    "peerId": "string",
-    "premium": false
-    }
+        "id": "127.0.0.1-127.0.0.2",
+        "fraudType": "StolenDevice",
+        "origination": "US",
+        "destination": "SE",
+        "expiryDate": 1694775553,
+        "fraudStatus": "Flagged",
+        "confidenceIndex": null
+        "isPremium": true,
+        "peerId": "string",
+        "premium": false
+      }
     ]
-    }
+  }
 ```
 :::

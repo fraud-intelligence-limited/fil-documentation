@@ -40,23 +40,23 @@ To flag a contribution, perform the following steps:
 
         {
         "status": {
-        "code": 0,
-        "name": "Ok"
+          "code": 0,
+          "name": "Ok"
         },
         "data": [
         {
-        "assetDefinitionId": "127.0.0.1-127.0.0.2_1666194511450#contribution",
-        "contribution": {
-        "id": "127.0.0.1-127.0.0.2",
-        "fraudType": "IPFraud",
-        "origination": "SE",
-        "destination": "SE",
-        "expiryDate": 1694775553,
-        "fraudStatus": "Active",
-        "confidenceIndex": null
-        }
-        }
-        ]
+            "assetDefinitionId": "127.0.0.1-127.0.0.2_1666194511450#contribution",
+            "contribution": {
+              "id": "127.0.0.1-127.0.0.2",
+              "fraudType": "IPFraud",
+              "origination": "SE",
+              "destination": "SE",
+              "expiryDate": 1694775553,
+              "fraudStatus": "Active",
+              "confidenceIndex": null
+              }
+            }   
+          ]
         }
     ```
     :::
@@ -86,12 +86,12 @@ To flag a contribution, perform the following steps:
 
     ```jsx
         {
-        "assetIds": [
-        {
-        "definitionId": "127.0.0.1-127.0.0.2_1666194511450#contribution",
-        "accountId": "qa@qa"
-        }
-        ]
+          "assetIds": [
+            {
+              "definitionId": "127.0.0.1-127.0.0.2_1666194511450#contribution",
+              "accountId": "qa@qa"
+            }
+          ]
         }
     ```
     :::
@@ -116,11 +116,11 @@ To flag a contribution, perform the following steps:
         200 "OK"
 
         {
-        "status": {
-        "code": 0,
-        "name": "Ok"
-        },
-        "data": "someData"
+          "status": {
+            "code": 0,
+            "name": "Ok"
+          },
+          "data": "someData"
         }
     ```
     :::
@@ -162,11 +162,11 @@ To flag a contribution, perform the following steps:
         200 "OK"
 
         {
-        "status": {
-        "code": 0,
-        "name": "Ok"
-        },
-        "data": {}
+          "status": {
+            "code": 0,
+            "name": "Ok"
+          },
+          "data": {}
         }
     ```
     :::

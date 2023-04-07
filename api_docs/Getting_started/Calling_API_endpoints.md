@@ -1,6 +1,8 @@
 # Calling API endpoints
 
-You can implement calls to the FIB API endpoints into the code of your own application or system.
+Once your registration application has been approved, the connection credentials are sent to the email address you provided during registration.
+
+Using these credentials, you can implement calls to the FIB API endpoints into the code of your own application or system.
 
 Following the basic API architecture, your application or system—the *API client* in this relationship—connects to the FIB *API server*.
 
@@ -10,5 +12,4 @@ Some of the tutorials in this documentation provide code snippets in Kotlin/Java
 
 The provided FIB *[API endpoints](../API_Specification.md)* allow users to access the network's blockchain data, enabling users to perform operations such as [*submitting*](../Tutorials/Submitting_a_contribution.md), [*retrieving*](../Tutorials/Retrieving_top_contributions.md) and [*flagging contributions*](../Tutorials/Flagging_a_contribution.md), etc.
 
----
 For examples of scenarios where FIB API endpoints are being called, check out [*Tutorials*](../Tutorials.md).

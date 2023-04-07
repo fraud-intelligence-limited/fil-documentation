@@ -33,4 +33,4 @@ Check out the [Iroha 2 Documentation](https://hyperledger.github.io/iroha-2-doc
 
 If, at any point, you’re experiencing any issues, please submit them at [**RAG Fraud Blockchain Freshdesk**](https://ragfraudblockchain.freshdesk.com/a/dashboard/default). Upon review, someone will get back to you to resolve the issue.
 
-Additionally, you may contact FIL via email at *[support@fraudintelligencelimited.com](support@fraudintelligencelimited.com)*
+Additionally, you may contact FIL via email at *[support@fraudintelligencelimited.com](mailto:support@fraudintelligencelimited.com)*

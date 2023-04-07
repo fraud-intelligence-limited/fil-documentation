@@ -4,7 +4,7 @@
 
 The FIB uses a pay-per-use model that allows users to earn and spend internal digital credits.
 
-Credits can be spent on downloading fraud event data from other users and on purchasing a *[premium subscription](#premium-subscription)*.
+Credits can be spent on downloading fraud event data from other users.
 
 ## Uploading fraud events
 
@@ -26,7 +26,7 @@ See also *[Retrieving credit balance](/api_docs/API_Specification/wallet-control
 
 ## Current conversion rate
 
-- **Uploading fraud events**: `10` credits per contribution.
+- **Uploading fraud events**: `10` credits per `id` fraud identifier.
 - **Downloading fraud events**: `1` credit per `id` fraud identifier.
 
 ## Welcome bonus
@@ -36,7 +36,7 @@ Every new peer that has succesfully registered with FIB, automatically receives 
 ## Premium subscription
 
 Our premium subscription offers custom paid conditions for users seeking to gain access to exclusive features and benefits, tailored to their individual needs.
-To apply for premium subscription and discuss the conditions, contact us at [able@to.com](mailto:able@to.com).
+To apply for premium subscription and discuss the conditions, contact us at [support@fraudintelligencelimited.com](mailto:support@fraudintelligencelimited.com).
 
 ## Monthly reward limit
 

@@ -12,7 +12,7 @@ This section provides an introduction to the key components and concepts of the 
         - [Submitting contributions](Overview/Contributions.md#submitting-contributions)
         - [Retrieving contributions](Overview/Contributions.md#retrieving-contributions)
         - [Flagging contributions](Overview/Contributions.md#flagging-contributions)
-    - [Contribution data structure](Overview/Contributions.md#contribution-data-structure)
+    - [API requests data structure](Overview/Contributions.md#api-requests-data-structure)
 - [Tokenomics](Overview/Tokenomics.md)
     - [Payment model](Overview/Tokenomics.md#payment-model)
     - [Uploading fraud events](Overview/Tokenomics.md#uploading-fraud-events)

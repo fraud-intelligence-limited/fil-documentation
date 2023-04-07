@@ -38,7 +38,7 @@ When *[retrieving top contributions](../API_Specification/contribution-controlle
 | `origination` | `string` | The two-digit code of the country the fraud event originated from (Alpha-2, ISO 3166). |
 | `destination` | `string` | The two-digit code of the country the fraud event was identified as such (Alpha-2, ISO 3166). |
 | `expiryDate` | `integer($int32)` | The exact time and date until which the event is considered relevant (represented as https://www.epochconverter.com/clock in seconds). |
-| `fraudStatus` | `enum string` | The status of the event at the time of observing. |
+| `fraudStatus` | `enum string` | The status of the event at the time of observing. <br> Could be one of the following: <br> 1. **Active** <br> 2. **Expired** <br> 3. **Flagged** |
 | `confidenceIndex` | `number($double)` | The predicted fraud likelihood score in the range from 1 to 100. |
 | `isPremium` | `boolean` | The definition of whether the contributor is a premium user. |
 | `peerId` | `string` | The unique key of the peer that contributed the data. |

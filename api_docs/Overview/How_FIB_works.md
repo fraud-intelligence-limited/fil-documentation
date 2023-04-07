@@ -16,7 +16,7 @@ Contributions uploaded by peers allow for the continuous expansion and updating 
 
 The contributions on the network can also be download by peers to update their own records and stay informed about the latest fraudulent activities. This process helps organizations remain vigilant and prevent fraudulent activities from occurring within their own systems.
 
-For more information, see [Uploading contributions](Tokenomics.md#uploading-fraud-events) and [Downloading contributions](Tokenomics.md#Downloading-fraud-events).
+For more information, see [Uploading contributions](./Tokenomics.md#uploading-fraud-events) and [Downloading contributions](./Tokenomics.md#downloading-fraud-events).
 
 ## Network security
 

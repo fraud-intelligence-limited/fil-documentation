@@ -38,8 +38,8 @@ To verify that a contribution has been successfully submitted and the contributo
             		"expiryDate": 1694775553,
             		"fraudStatus": "Active",
             		"confidenceIndex": null
-            	}
-            ]
+            	  }
+              ]
             }
         ```
         :::
@@ -62,7 +62,7 @@ To verify that a contribution has been successfully submitted and the contributo
                   "definitionId": "<##g0?Fd2Tl@L.;XT<3!T#gf#^nm$g=IpRW,uB/BpdKye^s",
                   "accountId": "8*rV=|xv@PN^J~JO(V9\\K[Ho-4C:,MEpIMb-?~v4s[S._s;8l"
                 },
-                "balance": 0,                            //integer($int32)
+              "balance": 0,                            //integer($int32)
               }
             }
         ```
@@ -80,11 +80,11 @@ To verify that a contribution has been successfully submitted and the contributo
             },
             	"data": {
             		"tokenId": {
-            		"definitionId": "credit#admin",
-            		"accountId": "qa@qa"
-            },
+            		   "definitionId": "credit#admin",
+            		   "accountId": "qa@qa"
+                },
             	"balance": 1001
-            }
+              }
             }
         ```
         :::

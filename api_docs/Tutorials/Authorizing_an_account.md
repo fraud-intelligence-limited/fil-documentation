@@ -24,9 +24,9 @@ Send a `POST` request to the `/api/v1/authentication-management/session` endpoin
 
 ```jsx
     {
-    "email": "qa@email.com",
-    "signature": "2d439e8e7400c11e8c727516df43f45b76d5f18e9241ca9ea7b7c0847d521dcc7008b87f9ec399259d22993146cd0b604935f031020d5a493add9d3bddf4550e",
-    "publicKey": "2c92384e63afd4e806fa62bd8f293c266ee5a06af0a7355b48064d0734530fb4"
+      "email": "qa@email.com",
+      "signature": "2d439e8e7400c11e8c727516df43f45b76d5f18e9241ca9ea7b7c0847d521dcc7008b87f9ec399259d22993146cd0b604935f031020d5a493add9d3bddf4550e",
+      "publicKey": "2c92384e63afd4e806fa62bd8f293c266ee5a06af0a7355b48064d0734530fb4"
     }
 ```
 :::
@@ -65,18 +65,17 @@ If authorization is successful, a response with the following JSON web tokens is
     200 "OK"
 
     {
-    "status": {
-    "code": 0,
-    "name": "Ok"
+      "status": {
+        "code": 0,
+        "name": "Ok"
     },
     "data": {
-    "accessToken": "eyJ0eXAiOiJKV1QiLCJhbGciOiJFZERTQSJ9.eyJhY2MiOiJxYTBAcWEiLCJzdWIiOiJxYTBAbWFpbC5jb20iLCJyb2xlIjoiUk9MRV9QRUVSIiwiZXhwIjoxNjYxMjQ0OTIwLCJqdGkiOiI2YzY4OGY2Ni1iNjYzLTRhMjYtODdlZC00N2YzOGU0MTExZWIifQ.wgAs5xQP5MKIBwd1fCxT8HyJ8zGEZzbO-NTpJ9assU9voZYWskSpJQcoT8pTA7D_WcgOopG7f9_I-2RN6Fi1Aw",
-    "refreshToken": "eyJ0eXAiOiJKV1QiLCJhbGciOiJFZERTQSJ9.eyJhY2p0aSI6IjZjNjg4ZjY2LWI2NjMtNGEyNi04N2VkLTQ3ZjM4ZTQxMTFlYiIsInN1YiI6InFhMEBtYWlsLmNvbSIsImV4cCI6MTY2MTMzMTAyMCwianRpIjoiZWFhN2E3YjMtYWM3MS00Mjg2LThiOGMtMjE4ZDYwNDA1NDYwIn0.i9Xjyh1mpSb9QVPe1JdgsQoukH46vbYoUK-2cbHWEBDCHzuK7-0TcUg-mPgGodlSCwWnCfVet4IxG3wz0zfJAw",
-    "expirationTime": 300
+      "accessToken": "eyJ0eXAiOiJKV1QiLCJhbGciOiJFZERTQSJ9.eyJhY2MiOiJxYTBAcWEiLCJzdWIiOiJxYTBAbWFpbC5jb20iLCJyb2xlIjoiUk9MRV9QRUVSIiwiZXhwIjoxNjYxMjQ0OTIwLCJqdGkiOiI2YzY4OGY2Ni1iNjYzLTRhMjYtODdlZC00N2YzOGU0MTExZWIifQ.wgAs5xQP5MKIBwd1fCxT8HyJ8zGEZzbO-NTpJ9assU9voZYWskSpJQcoT8pTA7D_WcgOopG7f9_I-2RN6Fi1Aw",
+      "refreshToken": "eyJ0eXAiOiJKV1QiLCJhbGciOiJFZERTQSJ9.eyJhY2p0aSI6IjZjNjg4ZjY2LWI2NjMtNGEyNi04N2VkLTQ3ZjM4ZTQxMTFlYiIsInN1YiI6InFhMEBtYWlsLmNvbSIsImV4cCI6MTY2MTMzMTAyMCwianRpIjoiZWFhN2E3YjMtYWM3MS00Mjg2LThiOGMtMjE4ZDYwNDA1NDYwIn0.i9Xjyh1mpSb9QVPe1JdgsQoukH46vbYoUK-2cbHWEBDCHzuK7-0TcUg-mPgGodlSCwWnCfVet4IxG3wz0zfJAw",
+      "expirationTime": 300
     }
     }
 ```
 :::
-
 
 If authorization is unseccessful, refer to *[Responses](/api_docs/API_Specification/auth-controller/Authorizing_a_user_in_the_system.md)* for a list of possible reasons.

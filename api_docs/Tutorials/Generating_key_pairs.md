@@ -12,7 +12,7 @@ To generate an **authentication key pair**, perform the following steps:
 
 To generate an **Iroha 2 key pair**, perform the following steps:
 
-1. [Request a salt value](https://github.com/soramitsu/orillion-docs/blob/develop/manual/manual.rst#request-salt-value), which is a random piece of bytes only known to the network owners.
+1. [Request a salt value](../API_Specification/auth-controller/Retrieving_salt_values.md), which is a random piece of bytes only known to the network owners.
 2. Create a [Blake2b-256 hash](https://en.wikipedia.org/wiki/BLAKE_(hash_function)) from a user email and password.
 3. Generate a **blockchain seed** from the **generated hash** and **salt**.
 4. Generate an Iroha2 key-pair from the **blockchain seed**.
