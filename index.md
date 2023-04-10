@@ -22,8 +22,8 @@ Finally, the [***API Specification***](./api_docs/API_Specification.md) section 
 
 [***Iroha 2***](https://github.com/hyperledger/iroha/tree/iroha2) is a blockchain hyperledger used to manage accounts, assets, and on-chain data storage with efficient smart contracts. The ledger is written in Rust and provides the following SDKs:
 
-- [**Iroha Java/Kotlin**](https://github.com/hyperledger/iroha-java/tree/iroha2-dev)
-- [**Iroha Python**](https://github.com/hyperledger/iroha-python)
+- [**Iroha Java/Kotlin**](https://github.com/hyperledger/iroha-java/tree/iroha2-main)
+- [**Iroha Python**](https://github.com/hyperledger/iroha-python/tree/iroha2)
 - [**Iroha Javascript**](https://github.com/hyperledger/iroha-javascript/tree/iroha2)
 - [**Iroha Rust**](https://github.com/hyperledger/iroha/tree/iroha2-lts/client)
 
