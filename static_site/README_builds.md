@@ -1,8 +1,10 @@
 # Fraud Intelligence Blockchain documentation
 
-This repository contains the source code for the [FIB documentation](https://fraud-intelligence-limited.github.io/).
+This repository contains the static site as pre-built HTML files for the [FIB documentation](https://fraud-intelligence-limited.github.io/).
 
-It uses [Markdown](https://www.markdownguide.org/) format for the documents and [VitePress](https://vitepress.dev/) to render them.
+[VitePress](https://vitepress.dev/) documentation generator is used to render them.
+
+To work with the documentation, visit the [original repository](https://github.com/fraud-intelligence-limited/documentation).
 
 ## Troubleshooting
 
