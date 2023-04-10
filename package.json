@@ -1,5 +1,5 @@
 {
-  "name": "orillion-docs",
+  "name": "fil-docs",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -10,15 +10,24 @@
     "format:fix": "pnpm format --write",
     "docs:dev": "vitepress dev",
     "docs:build": "vitepress build",
-    "docs:preview": "vitepress preview"
+    "docs:preview": "vitepress preview",
+    "lint": "eslint --ext .js,.ts,.mts,.vue . .vitepress"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC",
+  "license": "",
   "dependencies": {
+    "@algolia/client-search": "^4.17.0",
+    "@jridgewell/sourcemap-codec": "^1.4.15",
+    "@typescript-eslint/eslint-plugin": "^5.58.0",
+    "@typescript-eslint/parser": "^5.0.0",
+    "eslint": "^8.38.0",
+    "eslint-plugin-vue": "^9.10.0",
+    "instead": "^1.0.3",
     "prettier": "^2.8.7",
     "prettier-eslint": "^15.0.1",
     "prettier-eslint-cli": "^7.1.0",
+    "typescript": ">=2.8.0",
     "vitepress": "^1.0.0-alpha.64"
   }
 }
