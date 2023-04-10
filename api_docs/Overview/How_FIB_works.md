@@ -8,7 +8,7 @@ By sharing this information and collaborating with other peers in the network, c
 
 ## Data on the network
 
-The FIB network serves as a secure database of various [fraud events](Fraud_events.md) that are stored on the blockchain as [*contributions*](Contributions.md).
+The FIB network serves as a secure database of various [*fraud events*](Fraud_events.md) that are stored on the blockchain as [*contributions*](Contributions.md).
 
 Authorized peers can upload and download these contributions.  
 
@@ -16,7 +16,7 @@ Contributions uploaded by peers allow for the continuous expansion and updating 
 
 The contributions on the network can also be download by peers to update their own records and stay informed about the latest fraudulent activities. This process helps organizations remain vigilant and prevent fraudulent activities from occurring within their own systems.
 
-For more information, see [Uploading contributions](./Tokenomics.md#uploading-fraud-events) and [Downloading contributions](./Tokenomics.md#downloading-fraud-events).
+For more information, see [*Uploading contributions*](./Tokenomics.md#uploading-fraud-events) and [*Downloading contributions*](./Tokenomics.md#downloading-fraud-events).
 
 ## Network security
 
@@ -28,8 +28,8 @@ The security of the FIB network also relies on the use of key pairs and digital 
 
 There are two types of key pairs that are required to interact with the FIB API backend:
 
-1. **Authentication key pair** — a deterministic [Ed25519](https://en.wikipedia.org/wiki/EdDSA) key pair generated from the user’s **email** and **password**.
-2. **Iroha 2 key pair** — a deterministic [Ed25519](https://en.wikipedia.org/wiki/EdDSA) key pair generated from the user’s **email**, **password**, and a random **salt** value.
+1. **Authentication key pair** — a deterministic [*Ed25519*](https://en.wikipedia.org/wiki/EdDSA) key pair generated from the user’s **email** and **password**.
+2. **Iroha 2 key pair** — a deterministic [*Ed25519*](https://en.wikipedia.org/wiki/EdDSA) key pair generated from the user’s **email**, **password**, and a random **salt** value.
 
 When a user creates a transaction on the FIB network, they sign it with their private key, which can then be verified by anyone using their public key. This process ensures that only the intended user is authorized to sign their transactions.
 

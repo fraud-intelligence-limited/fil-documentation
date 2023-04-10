@@ -9,7 +9,7 @@ To flag a contribution, perform the following steps:
 
 1. Request to flag a contribution:
     - Send a `POST` request to the <br>
-    `/api/v1/contribution-management/contribution/{contributionID}` endpoint, where `{contributionID}` is a range of `id` values (Fraud identifiers).
+    `/data/api/v1/contribution-management/contribution/{contributionID}` endpoint, where `{contributionID}` is a range of `id` values (Fraud identifiers).
     ::: details Ouput structure
 
     ```jsx
@@ -67,7 +67,7 @@ To flag a contribution, perform the following steps:
     :::
 
 2. Assemble a contribution flag:
-    - Send a `PATCH` request to the <br> `/api/v1/contribution-manager/contribution/flag/assemble` endpoint with the same values for the `definitionId` field that were used as `{contributionID}` in ***Step 1***.
+    - Send a `PATCH` request to the <br> `/data/api/v1/contribution-manager/contribution/flag/assemble` endpoint with the same values for the `definitionId` field that were used as `{contributionID}` in ***Step 1***.
     ::: details Input structure
 
     ```jsx
@@ -127,7 +127,7 @@ To flag a contribution, perform the following steps:
 
 3. Sign the `someData` string (see *[Signing transactions](Signing_transactions.md)*).
 4. Submit the contribution flag you assembled and signed in ***steps 2 and 3:***
-    - Send a `PATCH` request to the `/api/v1/contribution-management/contribution/flag` endpoint with the signed `someData` string in the body of the request.
+    - Send a `PATCH` request to the `/data/api/v1/contribution-management/contribution/flag` endpoint with the signed `someData` string in the body of the request.
     ::: details Input structure
 
     ```jsx

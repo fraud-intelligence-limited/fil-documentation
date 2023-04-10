@@ -4,7 +4,7 @@
 
 **Encoding**: `JSON`
 
-**Endpoint**: `/api/v1/authentication-management/session`
+**Endpoint**: `/auth/api/v1/authentication-management/session`
 
 **Method**: `PATCH`
 

@@ -4,7 +4,7 @@
 
 **Encoding**: `JSON`
 
-**Endpoint**: `/api/v1/contribution-management/contribution`
+**Endpoint**: `/data/api/v1/contribution-management/contribution`
 
 **Method**: `POST`
 

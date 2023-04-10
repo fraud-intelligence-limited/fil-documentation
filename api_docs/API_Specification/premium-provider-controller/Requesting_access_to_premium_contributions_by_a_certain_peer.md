@@ -4,7 +4,7 @@
 
 **Encoding**: `JSON`
 
-**Endpoint**: `/api/v1/premium-provider-management/application?peer={peerID}`
+**Endpoint**: `/data/api/v1/premium-provider-management/application?peer={peerID}`
 
 **Method**: `POST`
 

@@ -4,7 +4,7 @@
 
 **Encoding**: `JSON`
 
-**Endpoint**: `/api/v1/wallet-management/balance`
+**Endpoint**: `/data/api/v1/wallet-management/balance`
 
 **Method**: `GET`
 

@@ -4,7 +4,7 @@
 
 **Encoding**: `JSON`
 
-**Endpoint**: `/api/v1/peer-management/premium`
+**Endpoint**: `/auth/api/v1/peer-management/premium`
 
 **Method**: `GET`
 

@@ -8,7 +8,7 @@ A peer account must be authorized for this operation to succeed.
 To submit a contribution, perform the following steps:
 
 1. Assemble a contribution:
-    - Send a `POST` request to the `/api/v1/contribution-management/contribution/assemble` endpoint with the following data specified in the body of the request:
+    - Send a `POST` request to the `/data/api/v1/contribution-management/contribution/assemble` endpoint with the following data specified in the body of the request:
 
 
       | Field | Value Type | Description |
@@ -83,7 +83,7 @@ To submit a contribution, perform the following steps:
 
 2. Sign the `someData` string (see *[Signing transactions](Signing_transactions.md)*).
 3. Submit the contribution you assembled and signed in ***steps 1 and 2:***
-    - Send a `POST` request to the `/api/v1/contribution-management/contribution` endpoint with the signed `someData` string in the body of the request.
+    - Send a `POST` request to the `/data/api/v1/contribution-management/contribution` endpoint with the signed `someData` string in the body of the request.
         ::: details Input structure
 
         ```jsx

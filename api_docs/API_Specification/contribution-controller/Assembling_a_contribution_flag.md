@@ -4,7 +4,7 @@
 
 **Encoding**: `JSON`
 
-**Endpoint**: `/api/v1/contribution-manager/contribution/flag/assemble`
+**Endpoint**: `/data/api/v1/contribution-manager/contribution/flag/assemble`
 
 **Method**: `PATCH`
 

@@ -7,7 +7,7 @@ This section provides an introduction to the key components and concepts of the 
     - [Network security](Overview/How_FIB_works.md#network-security)
 - [Fraud events](Overview/Fraud_events.md)
     - [Fraud model](Overview/Fraud_events.md#fraud-model)
-- [Contributions](Overview/Contributions.md):
+- [Contributions](Overview/Contributions.md)
     - [Operations](Overview/Contributions.md#operations)
         - [Submitting contributions](Overview/Contributions.md#submitting-contributions)
         - [Retrieving contributions](Overview/Contributions.md#retrieving-contributions)

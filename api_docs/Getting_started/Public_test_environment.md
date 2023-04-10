@@ -14,12 +14,12 @@ Using the test environment is beneficial for at least the following several reas
 
 To connect to the FIB test environment, use the following credentials:
 
-**Frontend**:
+- **Frontend**:
   - **Host**: [https://sandbox.orillionragconsortium.com/](https://sandbox.orillionragconsortium.com/)
   - **Port**: `443`
   - **Protocol**: `HTTPS`
-  <br>
-**Backend**:
+<br>
+- **Backend**:
   - **Host**: [https://app.stage1.fraudintelligenceltd.com](https://app.stage1.fraudintelligenceltd.com)
   - **Port**: `443`
   - **Protocol**: `HTTPS`

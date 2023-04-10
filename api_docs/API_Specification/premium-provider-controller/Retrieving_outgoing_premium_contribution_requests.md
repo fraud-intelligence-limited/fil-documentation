@@ -4,7 +4,7 @@
 
 **Encoding**: `JSON`
 
-**Endpoint**: `/api/v1/premium-provider-management/outgoing`
+**Endpoint**: `/data/api/v1/premium-provider-management/outgoing`
 
 **Method**: `GET`
 

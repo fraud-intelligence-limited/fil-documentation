@@ -2,7 +2,7 @@
 
 To authorize an account, perform the following:
 
-Send a `POST` request to the `/api/v1/authentication-management/session` endpoint with the following data specified:
+Send a `POST` request to the `/auth/api/v1/authentication-management/session` endpoint with the following data specified:
 
 | Field | Value Type | Description |
 | --- | --- | --- |
@@ -78,4 +78,4 @@ If authorization is successful, a response with the following JSON web tokens is
 ```
 :::
 
-If authorization is unseccessful, refer to *[Responses](/api_docs/API_Specification/auth-controller/Authorizing_a_user_in_the_system.md)* for a list of possible reasons.
+If authorization is unseccessful, refer to *[Authorizing a user in the system/#responses](/api_docs/API_Specification/auth-controller/Authorizing_a_user_in_the_system.md)* for a list of possible reasons.
