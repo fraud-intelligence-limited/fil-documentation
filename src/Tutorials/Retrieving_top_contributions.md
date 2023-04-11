@@ -1,6 +1,10 @@
 # Retrieving top contributions
 
-::: tip Note A peer account must be authorized for this operation to succeed. _See [Authorizing an account](Authorizing_an_account.md)._ :::
+::: tip
+
+Note A peer account must be authorized for this operation to succeed. _See [Authorizing an account](Authorizing_an_account.md)._ 
+
+:::
 
 When downloading fraud events—retrieving contributions—it is possible to filter the results generated in the response in various ways, using the request parameters.
 
@@ -18,32 +22,32 @@ Optionally, you may specify any one or several parameters in the request.
 
 ::: details Input structure
 
-```json5
-    /api/v1/contribution-management/contribution?size=''&from=''&to=''&ft=''&org=''&self-only=''
+```http
+/api/v1/contribution-management/contribution?size=''&from=''&to=''&ft=''&org=''&self-only=''
 ```
 
 :::
 
 ::: details Input example
 
-```json5
-    //size
-    /api/v1/contribution-management/contribution?size=10
+```http
+// size
+/api/v1/contribution-management/contribution?size=10
 
-    //from & to
-    /api/v1/contribution-management/contribution?from=0&to=1680089219
+// from & to
+/api/v1/contribution-management/contribution?from=0&to=1680089219
 
-    //ft
-    /api/v1/contribution-management/contribution?ft=wangiri
+// ft
+/api/v1/contribution-management/contribution?ft=wangiri
 
-    //org
-    /api/v1/contribution-management/contribution?org=US
+// org
+/api/v1/contribution-management/contribution?org=US
 
-    //self-only
-    /api/v1/contribution-management/contribution?self-only=true
+// self-only
+/api/v1/contribution-management/contribution?self-only=true
 
-    //combination
-    /api/v1/contribution-management/contribution?size=2&ft=StolenDevice&org=US&self-only=true
+// combination
+/api/v1/contribution-management/contribution?size=2&ft=StolenDevice&org=US&self-only=true
 ```
 
 :::
@@ -83,38 +87,38 @@ The response to the `GET` request contains a list of the top contributions, filt
 ::: details Output example
 
 ```json5
+{
+  status: {
+    code: 0,
+    name: 'Ok',
+  },
+  data: [
     {
-    "status": {
-      "code": 0,
-      "name": "Ok"
+      id: '+14155552671-+14155552981',
+      fraudType: 'StolenDevice',
+      origination: 'US',
+      destination: 'FI',
+      expiryDate: 1666195955,
+      fraudStatus: 'Expired',
+      confidenceIndex: null,
+      isPremium: true,
+      peerId: 'string',
+      premium: false,
     },
-    "data": [
-      {
-        "id": "+14155552671-+14155552981",
-        "fraudType": "StolenDevice",
-        "origination": "US",
-        "destination": "FI",
-        "expiryDate": 1666195955,
-        "fraudStatus": "Expired",
-        "confidenceIndex": null
-        "isPremium": true,
-        "peerId": "string",
-        "premium": false
-      },
     {
-        "id": "127.0.0.1-127.0.0.2",
-        "fraudType": "StolenDevice",
-        "origination": "US",
-        "destination": "SE",
-        "expiryDate": 1694775553,
-        "fraudStatus": "Flagged",
-        "confidenceIndex": null
-        "isPremium": true,
-        "peerId": "string",
-        "premium": false
-      }
-    ]
-  }
+      id: '127.0.0.1-127.0.0.2',
+      fraudType: 'StolenDevice',
+      origination: 'US',
+      destination: 'SE',
+      expiryDate: 1694775553,
+      fraudStatus: 'Flagged',
+      confidenceIndex: null,
+      isPremium: true,
+      peerId: 'string',
+      premium: false,
+    },
+  ],
+}
 ```
 
 :::
