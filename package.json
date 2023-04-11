@@ -21,7 +21,7 @@
     "prettier": "^2.8.7",
     "prettier-eslint": "^15.0.1",
     "prettier-eslint-cli": "^7.1.0",
-    "typescript": ">=2.8.0",
+    "typescript": "^5.0",
     "vitepress": "^1.0.0-alpha.64"
   }
 }
