@@ -124,7 +124,7 @@ To flag a contribution, perform the following steps:
 
    :::
 
-3. Sign the `someData` string (see _[Signing transactions](Signing_transactions.md)_).
+3. Sign the `someData` string (see [Signing transactions](Signing_transactions.md)).
 4. Submit the contribution flag you assembled and signed in **_steps 2 and 3:_**
 
    - Send a `PATCH` request to the `/data/api/v1/contribution-management/contribution/flag` endpoint with the signed `someData` string in the body of the request. ::: details Input structure

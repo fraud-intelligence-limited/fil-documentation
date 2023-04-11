@@ -2,7 +2,7 @@
 
 > **Fraud event** — an occurrence that is suspected or confirmed to be fraudulent.
 
-FIB peers can submit data related to these fraud events—_[contributions](Contributions.md)_—to help identify and prevent future fraudulent activities. By sharing information and collaborating with other participants in the network, contributors can help create a more secure and trustworthy ecosystem that is resistant to fraud and other types of malicious activities.
+FIB peers can submit data related to these fraud events—[contributions](Contributions.md)—to help identify and prevent future fraudulent activities. By sharing information and collaborating with other participants in the network, contributors can help create a more secure and trustworthy ecosystem that is resistant to fraud and other types of malicious activities.
 
 ## Fraud model
 

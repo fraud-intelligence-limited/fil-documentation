@@ -81,7 +81,7 @@ To submit a contribution, perform the following steps:
 
      :::
 
-2. Sign the `someData` string (see _[Signing transactions](Signing_transactions.md)_).
+2. Sign the `someData` string (see [Signing transactions](Signing_transactions.md)).
 3. Submit the contribution you assembled and signed in **_steps 1 and 2:_**
 
    - Send a `POST` request to the `/data/api/v1/contribution-management/contribution` endpoint with the signed `someData` string in the body of the request. ::: details Input structure

@@ -10,19 +10,19 @@ Credits can be spent on downloading fraud event data from other users.
 
 In order to incentivize the registered peers to submit the fraud events that they have encountered, credits are rewarded for every submitted contribution.
 
-For instructions on how to upload a fraud event—submit a contribution—see _[Submitting a contribution](/Tutorials/Submitting_a_contribution.md)_.
+For instructions on how to upload a fraud event—submit a contribution—see [Submitting a contribution](/Tutorials/Submitting_a_contribution.md).
 
 ## Downloading fraud events
 
 The earned credits can be used to pay for downloading the fraud event data stored on the blockchain, which enables peers to update their own records and stay informed about the latest fraudulent activities. This process helps organizations to remain vigilant and prevent fraudulent activities from occurring within their own system.
 
-For instructions on how to download a fraud event—retrieve a contribution—see _[Retrieving top contributions](/Tutorials/Retrieving_top_contributions.md)_.
+For instructions on how to download a fraud event—retrieve a contribution—see [Retrieving top contributions](/Tutorials/Retrieving_top_contributions.md).
 
 ## Credit balance
 
 The number of digital credits that a peer has on their account, and that can be used to pay for downloading of fraud event data.
 
-See also _[Retrieving credit balance](/API_Specification/wallet-controller/Retrieving_credit_balance.md)_.
+See also [Retrieving credit balance](/API_Specification/wallet-controller/Retrieving_credit_balance.md).
 
 ## Current conversion rate
 
@@ -41,4 +41,4 @@ Our premium subscription offers custom paid conditions for users seeking to gain
 
 The monthly reward limit is currently 1,000,000,000 rewards per peer.
 
-::: tip Info _Fraud Intelligence Limited_ may from time to time, by an in-advance written email notice to you, adjust the reward limit, in accordance with the _[RAG Fraud blockchain Terms & Conditions document](https://github.com/fraud-intelligence-limited/fil-legal/blob/main/RAG%20Fraud%20Blockchain%20Terms%20of%20Use%20v2.0.docx)_. :::
+::: tip Info _Fraud Intelligence Limited_ may from time to time, by an in-advance written email notice to you, adjust the reward limit, in accordance with the [RAG Fraud blockchain Terms & Conditions document](https://github.com/fraud-intelligence-limited/fil-legal/blob/main/RAG%20Fraud%20Blockchain%20Terms%20of%20Use%20v2.0.docx). :::
