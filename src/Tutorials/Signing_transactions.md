@@ -17,4 +17,8 @@ The following example shows how to sign a transaction using the Kotlin/Java Iroh
 5. Encode the signed transaction using the `VersionedSignedTransaction.encode(<transaction object>)`
 6. Use the resulting encoded transaction object as the body for certain requests <br> (e.g., see _[Submitting a contribution](Submitting_a_contribution.md), steps 2 and 3_).
 
-::: tip Note The exact implementation may vary depending on the specific SDK or programming language being used.<br> However, the overall sequence of events should be the same: recover the `keyPair` object from the provided hex strings, get the transaction hex, decode it, sign it, and then encode it. :::
+::: tip Note
+
+The exact implementation may vary depending on the specific SDK or programming language being used.<br> However, the overall sequence of events should be the same: recover the `keyPair` object from the provided hex strings, get the transaction hex, decode it, sign it, and then encode it.
+
+:::

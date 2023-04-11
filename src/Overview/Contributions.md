@@ -28,32 +28,24 @@ If a peer deems a certain contribution to no longer be relevant (e.g., _it is a 
 
 When [retrieving top contributions](../API_Specification/contribution-controller/Retrieving_top_contributions.md), the following data is returned in the body of the response:
 
-::: details Show
-
 | Field | Value Type | Description |
 | --- | --- | --- |
 | `id` | `string` | Fraud event identifier. |
-| `fraudType` | `enum string` | The type of the fraud event. <br> Could be one of the following: <br> 1. `Wangiri` <br> 2. `IRSF` <br> 3. `StolenDevice` <br> 4. `IPFraud` <br> 5. `SMSA2P` |
+| `fraudType` | `enum string` | The type of the fraud event. <br> Could be one of the following: <ol><li>`Wangiri`</li><li>`IRSF`</li><li>`StolenDevice`</li><li>`IPFraud`</li><li>`SMSA2P`</li></ol> |
 | `origination` | `string` | The two-digit code of the country the fraud event originated from (Alpha-2, ISO 3166). |
 | `destination` | `string` | The two-digit code of the country the fraud event was identified as such (Alpha-2, ISO 3166). |
 | `expiryDate` | `integer($int32)` | The exact time and date until which the event is considered relevant (represented as https://www.epochconverter.com/clock in seconds). |
-| `fraudStatus` | `enum string` | The status of the event at the time of observing. <br> Could be one of the following: <br> 1. **Active** <br> 2. **Expired** <br> 3. **Flagged** |
+| `fraudStatus` | `enum string` | The status of the event at the time of observing. <br> Could be one of the following: <ol><li>**Active**</li><li>**Expired**</li><li>**Flagged**</li></ol> |
 | `confidenceIndex` | `number($double)` | The predicted fraud likelihood score in the range from 1 to 100. |
 | `isPremium` | `boolean` | The definition of whether the contributor is a premium user. |
 | `peerId` | `string` | The unique key of the peer that contributed the data. |
 
-:::
-
 When [assembling a contribution](../API_Specification/contribution-controller/Assembling_a_contribution.md) to then [submit it](../API_Specification/contribution-controller/Submitting_a_contribution.md), the following data must be specified in the body of the request:
-
-::: details Show
 
 | Field | Value Type | Description |
 | --- | --- | --- |
 | `id` | `string` | Fraud event identifier. |
-| `fraudType` | `enum string` | The type of the fraud event. <br> Could be one of the following: <br> 1. `Wangiri` <br> 2. `IRSF` <br> 3. `StolenDevice` <br> 4. `IPFraud` <br> 5. `SMSA2P` |
+| `fraudType` | `enum string` | The type of the fraud event. <br> Could be one of the following: <ol><li>`Wangiri`</li><li>`IRSF`</li><li>`StolenDevice`</li><li>`IPFraud`</li><li>`SMSA2P`</li></ol> |
 | `origination` | `string` | The two-digit code of the country the fraud event originated from (Alpha-2, ISO 3166). |
 | `destination` | `string` | The two-digit code of the country the fraud event was identified as such (Alpha-2, ISO 3166). |
 | `expiryDate` | `integer($int32)` | The exact time and date until which the event is considered relevant (represented as https://www.epochconverter.com/clock in seconds). |
-
-:::

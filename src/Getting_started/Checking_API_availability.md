@@ -10,4 +10,8 @@ Otherwise, a response with an error code is displayed indicating the issue that 
 
 For a list of possible responses, see [Authorizing a user in the system > Responses](../API_Specification/auth-controller/Authorizing_a_user_in_the_system.md#responses).
 
-::: tip Note There are a variety of external issues that may be preventing you from successfully retrieving a JSON token. Examples include blocked outgoing HTTP requests and no Internet connection. :::
+::: tip Note
+
+There are a variety of external issues that may be preventing you from successfully retrieving a JSON token. Examples include blocked outgoing HTTP requests and no Internet connection.
+
+:::

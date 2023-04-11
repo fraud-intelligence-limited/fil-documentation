@@ -19,3 +19,5 @@ Every fraud event that is submitted and stored on the blockchain adheres to the 
 | Event Timestamp | The exact time and date of when the event was submitted. |
 | Confidence Index | The predicted fraud likelihood score in the range from 1 to 100. |
 | Consortium Identity Key | The unique key of the peer that contributed the data. |
+
+[//]: # 'FIXME use `ol` for lists inside of tables'

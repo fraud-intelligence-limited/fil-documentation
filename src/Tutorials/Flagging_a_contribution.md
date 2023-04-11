@@ -1,12 +1,18 @@
 # Flagging a contribution
 
-::: tip Note A peer account must be authorized for this operation to succeed. _See [Authorizing an account](Authorizing_an_account.md)._ :::
+::: tip Note
+
+A peer account must be authorized for this operation to succeed. See [Authorizing an account](Authorizing_an_account.md).
+
+:::
 
 To flag a contribution, perform the following steps:
 
 1. Request to flag a contribution:
 
-   - Send a `POST` request to the <br> `/data/api/v1/contribution-management/contribution/{contributionID}` endpoint, where `{contributionID}` is a range of `id` values (Fraud identifiers). ::: details Ouput structure
+   - Send a `POST` request to the <br> `/data/api/v1/contribution-management/contribution/{contributionID}` endpoint, where `{contributionID}` is a range of `id` values (Fraud identifiers).
+
+   ::: details Ouput structure
 
    ```json5
    {
@@ -30,7 +36,7 @@ To flag a contribution, perform the following steps:
 
    :::
 
-   ::: details Ouput example
+   ::: details Output example
 
    ```json5
    // 200 "OK"
@@ -59,11 +65,17 @@ To flag a contribution, perform the following steps:
 
    :::
 
-   ::: tip Note If the `{contributionID}` corresponds to a phone number or an IP address, it can be represented as a single value. :::
+   ::: tip Note
+
+   If the `{contributionID}` corresponds to a phone number or an IP address, it can be represented as a single value.
+
+   :::
 
 2. Assemble a contribution flag:
 
-   - Send a `PATCH` request to the <br> `/data/api/v1/contribution-manager/contribution/flag/assemble` endpoint with the same values for the `definitionId` field that were used as `{contributionID}` in **_Step 1_**. ::: details Input structure
+   - Send a `PATCH` request to the `/data/api/v1/contribution-manager/contribution/flag/assemble` endpoint with the same values for the `definitionId` field that were used as `{contributionID}` in **_Step 1_**.
+
+   ::: details Input structure
 
    ```json5
    {
@@ -127,7 +139,9 @@ To flag a contribution, perform the following steps:
 3. Sign the `someData` string (see [Signing transactions](Signing_transactions.md)).
 4. Submit the contribution flag you assembled and signed in **_steps 2 and 3:_**
 
-   - Send a `PATCH` request to the `/data/api/v1/contribution-management/contribution/flag` endpoint with the signed `someData` string in the body of the request. ::: details Input structure
+   - Send a `PATCH` request to the `/data/api/v1/contribution-management/contribution/flag` endpoint with the signed `someData` string in the body of the request.
+
+   ::: details Input structure
 
    ```json5
    'string'
@@ -137,9 +151,11 @@ To flag a contribution, perform the following steps:
 
    ::: details Input example
 
-   ```json5
-       someData
    ```
+   someData
+   ```
+
+   [//]: # 'FIXME specify stricter?'
 
    :::
 
