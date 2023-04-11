@@ -27,15 +27,15 @@ A `POST` request to the endpoint, where `peer` is a unique peer identifier.
   status: {
     code: 0, //integer($int32)
     name: 'string',
-    message: 'string',
+    message: 'string'
   },
   data: [
     {
       domainId: 'string',
       requestedByPeer: 'string',
-      status: 'PENDING', //Could be one of the following: PENDING, DECLINED, APPROVED, NONE
-    },
-  ],
+      status: 'PENDING' //Could be one of the following: PENDING, DECLINED, APPROVED, NONE
+    }
+  ]
 }
 ```
 

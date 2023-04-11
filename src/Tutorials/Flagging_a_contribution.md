@@ -19,18 +19,18 @@ To flag a contribution, perform the following steps:
      status: {
        code: 0, //integer($int32)
        name: 'string',
-       message: 'string',
+       message: 'string'
      },
      data: [
        {
          assetIds: [
            {
              definitionId: 'MPtVi@4`V}YI~WtYc~BK(2!E_Z^pvG6ch{ycg^usDlMu>UAhwI_:C/>B:D#$=*]3{;-,\\,%t"vB5EK:3hGa+Y7p&mBS6xx2O>@?V_Pg\\B,{B!PC;`&N+>Z3{edxQkY!##*RDF!%/w-Z2]_:tO',
-             accountId: 'V)60Rw";qse6jLG|T+ij`0D.sy91[eWW=vO6mYF@jI<741{%FDj(<s"[gh_`XWz?jOu;(+kJ/(\'\\`b_him2G5N:@{T|db~)X@TJ6rYj>Q_?>,-9l\'M\\{;Pi',
-           },
-         ],
-       },
-     ],
+             accountId: 'V)60Rw";qse6jLG|T+ij`0D.sy91[eWW=vO6mYF@jI<741{%FDj(<s"[gh_`XWz?jOu;(+kJ/(\'\\`b_him2G5N:@{T|db~)X@TJ6rYj>Q_?>,-9l\'M\\{;Pi'
+           }
+         ]
+       }
+     ]
    }
    ```
 
@@ -44,7 +44,7 @@ To flag a contribution, perform the following steps:
    {
      status: {
        code: 0,
-       name: 'Ok',
+       name: 'Ok'
      },
      data: [
        {
@@ -56,10 +56,10 @@ To flag a contribution, perform the following steps:
            destination: 'SE',
            expiryDate: 1694775553,
            fraudStatus: 'Active',
-           confidenceIndex: null,
-         },
-       },
-     ],
+           confidenceIndex: null
+         }
+       }
+     ]
    }
    ```
 
@@ -82,9 +82,9 @@ To flag a contribution, perform the following steps:
      assetIds: [
        {
          definitionId: 'CTgO1z^skW@4eO}rujd|p#a~xL05I\\IQlj/1.DMmRm#+CBw*t*s-krya74z@sDB',
-         accountId: "RJ03f{&m'wUhZmJ,AA~ccwomw(Ger^cV^^Zw(0i2I:^yx@#AKb$Flp/U<p1)X8kPOkQRtq4!2)VrbFM1}(=]f~=E7U_!\"kn-/hCxGaL(!bfF)1#'OSuV(D@xL'ijOE[\")a*TjU51%4",
-       },
-     ],
+         accountId: "RJ03f{&m'wUhZmJ,AA~ccwomw(Ger^cV^^Zw(0i2I:^yx@#AKb$Flp/U<p1)X8kPOkQRtq4!2)VrbFM1}(=]f~=E7U_!\"kn-/hCxGaL(!bfF)1#'OSuV(D@xL'ijOE[\")a*TjU51%4"
+       }
+     ]
    }
    ```
 
@@ -97,9 +97,9 @@ To flag a contribution, perform the following steps:
      assetIds: [
        {
          definitionId: '127.0.0.1-127.0.0.2_1666194511450#contribution',
-         accountId: 'qa@qa',
-       },
-     ],
+         accountId: 'qa@qa'
+       }
+     ]
    }
    ```
 
@@ -112,9 +112,9 @@ To flag a contribution, perform the following steps:
      status: {
        code: 0, //integer($int32)
        name: 'string',
-       message: 'string',
+       message: 'string'
      },
-     data: 'string',
+     data: 'string'
    }
    ```
 
@@ -128,9 +128,9 @@ To flag a contribution, perform the following steps:
    {
      status: {
        code: 0,
-       name: 'Ok',
+       name: 'Ok'
      },
-     data: 'someData',
+     data: 'someData'
    }
    ```
 
@@ -166,9 +166,9 @@ To flag a contribution, perform the following steps:
      status: {
        code: 0, //integer($int32)
        name: 'string',
-       message: 'string',
+       message: 'string'
      },
-     data: {},
+     data: {}
    }
    ```
 
@@ -182,9 +182,9 @@ To flag a contribution, perform the following steps:
    {
      status: {
        code: 0,
-       name: 'Ok',
+       name: 'Ok'
      },
-     data: {},
+     data: {}
    }
    ```
 

@@ -63,7 +63,7 @@ The response to the `GET` request contains a list of the top contributions, filt
   status: {
     code: 0, //integer($int32)
     name: 'string',
-    message: 'string',
+    message: 'string'
   },
   data: [
     {
@@ -76,9 +76,9 @@ The response to the `GET` request contains a list of the top contributions, filt
       confidenceIndex: 0, //number($double)
       isPremium: true, //boolean
       peerId: 'string',
-      premium: true, //boolean
-    },
-  ],
+      premium: true //boolean
+    }
+  ]
 }
 ```
 
@@ -90,7 +90,7 @@ The response to the `GET` request contains a list of the top contributions, filt
 {
   status: {
     code: 0,
-    name: 'Ok',
+    name: 'Ok'
   },
   data: [
     {
@@ -103,7 +103,7 @@ The response to the `GET` request contains a list of the top contributions, filt
       confidenceIndex: null,
       isPremium: true,
       peerId: 'string',
-      premium: false,
+      premium: false
     },
     {
       id: '127.0.0.1-127.0.0.2',
@@ -115,9 +115,9 @@ The response to the `GET` request contains a list of the top contributions, filt
       confidenceIndex: null,
       isPremium: true,
       peerId: 'string',
-      premium: false,
-    },
-  ],
+      premium: false
+    }
+  ]
 }
 ```
 

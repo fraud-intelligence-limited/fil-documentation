@@ -14,9 +14,9 @@ To verify that a contribution has been successfully submitted and the contributo
        status: {
          code: 0, //integer($int32)
          name: 'string',
-         message: 'string',
+         message: 'string'
        },
-       data: [],
+       data: []
      }
      ```
 
@@ -30,7 +30,7 @@ To verify that a contribution has been successfully submitted and the contributo
      {
        status: {
          code: 0,
-         name: 'Ok',
+         name: 'Ok'
        },
        data: [
          {
@@ -40,9 +40,9 @@ To verify that a contribution has been successfully submitted and the contributo
            destination: 'SE',
            expiryDate: 1694775553,
            fraudStatus: 'Active',
-           confidenceIndex: null,
-         },
-       ],
+           confidenceIndex: null
+         }
+       ]
      }
      ```
 
@@ -60,15 +60,15 @@ To verify that a contribution has been successfully submitted and the contributo
        status: {
          code: 0, //integer($int32)
          name: 'string',
-         message: 'string',
+         message: 'string'
        },
        data: {
          tokenId: {
            definitionId: '<##g0?Fd2Tl@L.;XT<3!T#gf#^nm$g=IpRW,uB/BpdKye^s',
-           accountId: '8*rV=|xv@PN^J~JO(V9\\K[Ho-4C:,MEpIMb-?~v4s[S._s;8l',
+           accountId: '8*rV=|xv@PN^J~JO(V9\\K[Ho-4C:,MEpIMb-?~v4s[S._s;8l'
          },
-         balance: 0, //integer($int32)
-       },
+         balance: 0 //integer($int32)
+       }
      }
      ```
 
@@ -82,15 +82,15 @@ To verify that a contribution has been successfully submitted and the contributo
      {
        status: {
          code: 0,
-         name: 'Ok',
+         name: 'Ok'
        },
        data: {
          tokenId: {
            definitionId: 'credit#admin',
-           accountId: 'qa@qa',
+           accountId: 'qa@qa'
          },
-         balance: 1001,
-       },
+         balance: 1001
+       }
      }
      ```
 

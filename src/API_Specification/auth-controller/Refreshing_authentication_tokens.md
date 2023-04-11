@@ -25,13 +25,13 @@ A `PATCH` request to the endpoint, where the `Authorization` header is required.
   status: {
     code: 0, //integer($int32)
     name: 'string',
-    message: 'string',
+    message: 'string'
   },
   data: {
     accessToken: 'string',
     refreshToken: 'string',
-    expirationTime: 0, //integer($int64)
-  },
+    expirationTime: 0 //integer($int64)
+  }
 }
 ```
 

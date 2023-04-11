@@ -23,15 +23,15 @@ A `GET` request to the endpoint.
   status: {
     code: 0, //integer($int32)
     name: 'string',
-    message: 'string',
+    message: 'string'
   },
   data: {
     tokenId: {
       definitionId: 'credit#admin',
-      accountId: 'user@peerId',
+      accountId: 'user@peerId'
     },
-    balance: 0, //integer($int32)
-  },
+    balance: 0 //integer($int32)
+  }
 }
 ```
 

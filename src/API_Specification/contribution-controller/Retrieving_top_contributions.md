@@ -31,7 +31,7 @@ A `GET` request to the endpoint.
   status: {
     code: 0, //integer($int32)
     name: 'string',
-    message: 'string',
+    message: 'string'
   },
   data: [
     {
@@ -44,9 +44,9 @@ A `GET` request to the endpoint.
       confidenceIndex: 0, //number($double)
       isPremium: true, //boolean
       peerId: 'string',
-      premium: true, //boolean
-    },
-  ],
+      premium: true //boolean
+    }
+  ]
 }
 ```
 

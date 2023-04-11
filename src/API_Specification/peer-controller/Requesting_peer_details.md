@@ -23,7 +23,7 @@ A `GET` request to the endpoint.
   status: {
     code: 0, //integer($int32)
     name: 'string',
-    message: 'string',
+    message: 'string'
   },
   data: {
     accountId: 'string',
@@ -31,14 +31,14 @@ A `GET` request to the endpoint.
     accountMetadata: {
       additionalProp1: {},
       additionalProp2: {},
-      additionalProp3: {},
+      additionalProp3: {}
     },
     domainMetadata: {
       additionalProp1: {},
       additionalProp2: {},
-      additionalProp3: {},
-    },
-  },
+      additionalProp3: {}
+    }
+  }
 }
 ```
 

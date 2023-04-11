@@ -26,6 +26,7 @@ module.exports = {
       options: {
         printWidth: 75,
         proseWrap: 'never',
+        trailingComma: 'none',
       },
     },
   ],

@@ -20,7 +20,7 @@
   fraudType: 'string(enum)', //Could be one of the following: Wangiri, IRSF, StolenDevice, IPFraud, SMSA2P
   origination: 'string', //two-digit country code (Alpha-2, ISO 3166)
   destination: 'string', //two-digit country code (Alpha-2, ISO 3166)
-  expiryDate: 0, //integer($int32), Unix Epoch Time in seconds
+  expiryDate: 0 //integer($int32), Unix Epoch Time in seconds
 }
 ```
 
@@ -35,9 +35,9 @@
   status: {
     code: 0, //integer($int32)
     name: 'string',
-    message: 'string',
+    message: 'string'
   },
-  data: 'string',
+  data: 'string'
 }
 ```
 

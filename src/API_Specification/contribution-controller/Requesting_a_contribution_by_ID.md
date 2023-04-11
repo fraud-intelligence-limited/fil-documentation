@@ -27,18 +27,18 @@ A `GET` request to the endpoint, where `{contributionID}` is a required paramete
   status: {
     code: 0, //integer($int32)
     name: 'string',
-    message: 'string',
+    message: 'string'
   },
   data: [
     {
       assetIds: [
         {
           definitionId: 'Id_range#domain', //IP/telephone number/IMEI
-          accountId: 'user@peerId',
-        },
-      ],
-    },
-  ],
+          accountId: 'user@peerId'
+        }
+      ]
+    }
+  ]
 }
 ```
 

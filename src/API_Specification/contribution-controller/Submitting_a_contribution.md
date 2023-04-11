@@ -29,12 +29,12 @@
   status: {
     code: 0, //integer($int32)
     name: 'string',
-    message: 'string',
+    message: 'string'
   },
   data: {
     definitionId: 'Id_range#domain', //IP/telephone number/IMEI
-    accountId: 'user@peerId',
-  },
+    accountId: 'user@peerId'
+  }
 }
 ```
 

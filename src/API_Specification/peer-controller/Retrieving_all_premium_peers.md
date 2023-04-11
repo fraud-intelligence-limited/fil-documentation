@@ -23,13 +23,13 @@ A `GET` request to the endpoint.
   status: {
     code: 0, //integer($int32)
     name: 'string',
-    message: 'string',
+    message: 'string'
   },
   data: [
     {
-      peerId: 'string', //A unique identifier of a peer
-    },
-  ],
+      peerId: 'string' //A unique identifier of a peer
+    }
+  ]
 }
 ```
 

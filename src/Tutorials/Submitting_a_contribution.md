@@ -35,7 +35,7 @@ To submit a contribution, perform the following steps:
      confidenceIndex: 0, //number($double)
      isPremium: true, //boolean
      peerId: 'string',
-     premium: true, //boolean
+     premium: true //boolean
    }
    ```
 
@@ -50,7 +50,7 @@ To submit a contribution, perform the following steps:
      origination: 'SE',
      destination: 'SE',
      expiryDate: 1694775553,
-     fraudStatus: 'Active',
+     fraudStatus: 'Active'
    }
    ```
 
@@ -63,9 +63,9 @@ To submit a contribution, perform the following steps:
      status: {
        code: 0, //integer($int32)
        name: 'string',
-       message: 'string',
+       message: 'string'
      },
-     data: 'string',
+     data: 'string'
    }
    ```
 
@@ -79,9 +79,9 @@ To submit a contribution, perform the following steps:
    {
      status: {
        code: 0,
-       name: 'Ok',
+       name: 'Ok'
      },
-     data: 'someData',
+     data: 'someData'
    }
    ```
 
@@ -115,9 +115,9 @@ To submit a contribution, perform the following steps:
      status: {
        code: 0, //integer($int32)
        name: 'string',
-       message: 'string',
+       message: 'string'
      },
-     data: {},
+     data: {}
    }
    ```
 
@@ -131,12 +131,12 @@ To submit a contribution, perform the following steps:
    {
      status: {
        code: 0,
-       name: 'Ok',
+       name: 'Ok'
      },
      data: {
        definitionId: '***#domain',
-       accountId: 'user@domain',
-     },
+       accountId: 'user@domain'
+     }
    }
    ```
 
