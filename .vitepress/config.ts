@@ -196,11 +196,6 @@ export default defineConfig({
       ],
     },
 
-    socialLinks: [
-      {
-        icon: 'github',
-        link: 'https://github.com/fraud-intelligence-limited/documentation',
-      },
-    ],
+    socialLinks: [{ icon: 'github', link: 'https://github.com/fraud-intelligence-limited/documentation' }],
   },
 })

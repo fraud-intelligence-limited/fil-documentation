@@ -6,7 +6,7 @@ It uses [Markdown](https://www.markdownguide.org/) format for the documents and 
 
 ## Troubleshooting
 
-Please use the GitHub issues to discuss documentation contents.
+Please use the [GitHub issues](https://github.com/fraud-intelligence-limited/documentation/issues) to discuss documentation contents.
 
 If you are experiencing any issues with FIB, please submit them at [RAG Fraud Blockchain Freshdesk](https://ragfraudblockchain.freshdesk.com/a/dashboard/default). Upon review, someone will get back to you to resolve the issue.
 
