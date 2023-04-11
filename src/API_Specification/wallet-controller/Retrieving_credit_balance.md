@@ -18,20 +18,21 @@ A `GET` request to the endpoint.
 
 ::: details Show
 
-```jsx
-    {
-      "status": {
-        "code": 0,                               //integer($int32)
-        "name": "string",
-        "message": "string"
-      },
-      "data": {
-        "tokenId": {
-          "definitionId": "credit#admin",
-          "accountId": "user@peerId"
-        },
-        "balance": 0,                            //integer($int32)
-      }
-    }
+```json5
+{
+  status: {
+    code: 0, //integer($int32)
+    name: 'string',
+    message: 'string',
+  },
+  data: {
+    tokenId: {
+      definitionId: 'credit#admin',
+      accountId: 'user@peerId',
+    },
+    balance: 0, //integer($int32)
+  },
+}
 ```
+
 :::

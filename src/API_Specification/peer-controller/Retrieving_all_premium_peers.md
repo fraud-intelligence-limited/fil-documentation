@@ -18,18 +18,19 @@ A `GET` request to the endpoint.
 
 ::: details Show
 
-```jsx
+```json5
+{
+  status: {
+    code: 0, //integer($int32)
+    name: 'string',
+    message: 'string',
+  },
+  data: [
     {
-      "status": {
-        "code": 0,                  //integer($int32)
-        "name": "string",
-        "message": "string"
-      },
-      "data": [
-        {
-          "peerId": "string"        //A unique identifier of a peer
-        }
-      ]
-    }
+      peerId: 'string', //A unique identifier of a peer
+    },
+  ],
+}
 ```
+
 :::

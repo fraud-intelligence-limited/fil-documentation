@@ -14,31 +14,32 @@
 
 ::: details Show
 
-```jsx
+```json5
+{
+  assetIds: [
     {
-      "assetIds": [
-        {
-          "definitionId": "Id_range#domain",    //IP/telephone number/IMEI
-          "accountId": "user@peerId"
-        }
-      ]
-    }
+      definitionId: 'Id_range#domain', //IP/telephone number/IMEI
+      accountId: 'user@peerId',
+    },
+  ],
+}
 ```
-:::
 
+:::
 
 **Output/response structure**:
 
 ::: details Show
 
-```jsx
-    {
-      "status": {
-        "code": 0,                  //integer($int32)
-        "name": "string",
-        "message": "string"
-      },
-      "data": "string"
-    }
+```json5
+{
+  status: {
+    code: 0, //integer($int32)
+    name: 'string',
+    message: 'string',
+  },
+  data: 'string',
+}
 ```
+
 :::

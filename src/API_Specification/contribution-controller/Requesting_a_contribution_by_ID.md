@@ -12,7 +12,7 @@
 
 | Field | Value Type | Description |
 | --- | --- | --- |
-| `contributionID` | `string(path)` | Range of *[`id` values](../../Overview/Fraud_events.md)* (Fraud Identifiers), or a single one. |
+| `contributionID` | `string(path)` | Range of _[`id` values](../../Overview/Fraud_events.md)_ (Fraud Identifiers), or a single one. |
 
 **Input/request structure**:
 
@@ -22,23 +22,24 @@ A `GET` request to the endpoint, where `{contributionID}` is a required paramete
 
 ::: details Show
 
-```jsx
+```json5
+{
+  status: {
+    code: 0, //integer($int32)
+    name: 'string',
+    message: 'string',
+  },
+  data: [
     {
-      "status": {
-        "code": 0,                  //integer($int32)
-        "name": "string",
-        "message": "string"
-      },
-      "data": [
+      assetIds: [
         {
-          "assetIds": [
-            {
-              "definitionId": "Id_range#domain",    //IP/telephone number/IMEI
-              "accountId": "user@peerId"
-            }
-          ]
-        }
-      ]
-    }
+          definitionId: 'Id_range#domain', //IP/telephone number/IMEI
+          accountId: 'user@peerId',
+        },
+      ],
+    },
+  ],
+}
 ```
+
 :::

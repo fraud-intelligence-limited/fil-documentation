@@ -14,27 +14,28 @@
 
 ::: details Show
 
-```jsx
-    "string"
+```json5
+'string'
 ```
-:::
 
+:::
 
 **Output/response structure**:
 
 ::: details Show
 
-```jsx
-    {
-      "status": {
-        "code": 0,                            //integer($int32)
-        "name": "string",
-        "message": "string"
-      },
-      "data": {
-        "definitionId": "Id_range#domain",    //IP/telephone number/IMEI
-        "accountId": "user@peerId"
-      }
-    }
+```json5
+{
+  status: {
+    code: 0, //integer($int32)
+    name: 'string',
+    message: 'string',
+  },
+  data: {
+    definitionId: 'Id_range#domain', //IP/telephone number/IMEI
+    accountId: 'user@peerId',
+  },
+}
 ```
+
 :::

@@ -14,24 +14,25 @@
 
 ::: details Show
 
-```jsx
-    "string"
+```json5
+'string'
 ```
-:::
 
+:::
 
 **Output/response structure**:
 
 ::: details Show
 
-```jsx
-    {
-      "status": {
-        "code": 0,                  //integer($int32)
-        "name": "string",
-        "message": "string"
-      },
-      "data": {}
-    }
+```json5
+{
+  status: {
+    code: 0, //integer($int32)
+    name: 'string',
+    message: 'string',
+  },
+  data: {},
+}
 ```
+
 :::

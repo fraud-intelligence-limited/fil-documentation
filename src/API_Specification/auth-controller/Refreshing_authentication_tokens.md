@@ -20,18 +20,19 @@ A `PATCH` request to the endpoint, where the `Authorization` header is required.
 
 ::: details Show
 
-```jsx
-    {
-      "status": {
-    	  "code": 0,                  //integer($int32)
-        "name": "string",
-        "message": "string"
-      },
-      "data": {
-        "accessToken": "string",
-        "refreshToken": "string",
-        "expirationTime": 0         //integer($int64)
-      }
-    }
+```json5
+{
+  status: {
+    code: 0, //integer($int32)
+    name: 'string',
+    message: 'string',
+  },
+  data: {
+    accessToken: 'string',
+    refreshToken: 'string',
+    expirationTime: 0, //integer($int64)
+  },
+}
 ```
+
 :::

@@ -18,20 +18,21 @@ A `GET` request to the endpoint.
 
 ::: details Show
 
-```jsx
+```json5
+{
+  status: {
+    code: 0, //integer($int32)
+    name: 'string',
+    message: 'string',
+  },
+  data: [
     {
-      "status": {
-        "code": 0,                  //integer($int32)
-        "name": "string",
-        "message": "string"
-      },
-      "data": [
-        {
-          "domainId": "string",
-          "requestedByPeer": "string",
-          "status": "string(enum)"       //Could be one of the following: PENDING, DECLINED, APPROVED, NONE
-        }
-      ]
-    }
+      domainId: 'string',
+      requestedByPeer: 'string',
+      status: 'string(enum)', //Could be one of the following: PENDING, DECLINED, APPROVED, NONE
+    },
+  ],
+}
 ```
+
 :::

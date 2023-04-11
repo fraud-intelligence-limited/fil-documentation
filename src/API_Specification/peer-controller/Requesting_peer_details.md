@@ -18,27 +18,28 @@ A `GET` request to the endpoint.
 
 ::: details Show
 
-```jsx
-    {
-      "status": {
-        "code": 0,                  //integer($int32)
-        "name": "string",
-        "message": "string"
-      },
-      "data": {
-        "accountId": "string",
-        "domainId": "string",
-        "accountMetadata": {
-          "additionalProp1": {},
-          "additionalProp2": {},
-          "additionalProp3": {}
-        },
-        "domainMetadata": {
-          "additionalProp1": {},
-          "additionalProp2": {},
-          "additionalProp3": {}
-        }
-      }
-    }
+```json5
+{
+  status: {
+    code: 0, //integer($int32)
+    name: 'string',
+    message: 'string',
+  },
+  data: {
+    accountId: 'string',
+    domainId: 'string',
+    accountMetadata: {
+      additionalProp1: {},
+      additionalProp2: {},
+      additionalProp3: {},
+    },
+    domainMetadata: {
+      additionalProp1: {},
+      additionalProp2: {},
+      additionalProp3: {},
+    },
+  },
+}
 ```
+
 :::

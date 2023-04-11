@@ -1,9 +1,6 @@
 # Retrieving top contributions
 
-::: tip Note
-A peer account must be authorized for this operation to succeed.
-*See [Authorizing an account](Authorizing_an_account.md).*
-:::
+::: tip Note A peer account must be authorized for this operation to succeed. _See [Authorizing an account](Authorizing_an_account.md)._ :::
 
 When downloading fraud events—retrieving contributions—it is possible to filter the results generated in the response in various ways, using the request parameters.
 
@@ -11,7 +8,7 @@ Request parameters can be used in any combination to tailor response results to 
 
 Since request parameters are optional, specifying no parameters when sending a request will result in a response containing the top contributions from the entire ledger.
 
-For more information, see [*Retrieving top contributions > Parameters*](/API_Specification/contribution-controller/Retrieving_top_contributions.md).
+For more information, see [_Retrieving top contributions > Parameters_](/API_Specification/contribution-controller/Retrieving_top_contributions.md).
 
 To retrieve top contributions, perform the following:
 
@@ -21,14 +18,15 @@ Optionally, you may specify any one or several parameters in the request.
 
 ::: details Input structure
 
-```jsx
+```json5
     /api/v1/contribution-management/contribution?size=''&from=''&to=''&ft=''&org=''&self-only=''
 ```
+
 :::
 
 ::: details Input example
 
-```jsx
+```json5
     //size
     /api/v1/contribution-management/contribution?size=10
 
@@ -47,6 +45,7 @@ Optionally, you may specify any one or several parameters in the request.
     //combination
     /api/v1/contribution-management/contribution?size=2&ft=StolenDevice&org=US&self-only=true
 ```
+
 :::
 
 ### Expected result
@@ -55,34 +54,35 @@ The response to the `GET` request contains a list of the top contributions, filt
 
 ::: details Output structure
 
-```jsx
+```json5
+{
+  status: {
+    code: 0, //integer($int32)
+    name: 'string',
+    message: 'string',
+  },
+  data: [
     {
-      "status": {
-        "code": 0,                               //integer($int32)
-        "name": "string",
-        "message": "string"
-      },
-      "data": [
-        {
-          "id": "string",
-          "fraudType": "Wangiri",                //Could be one of the following: Wangiri, IRSF, StolenDevice, IPFraud, SMSA2P
-          "origination": "string",
-          "destination": "string",
-          "expiryDate": 0,                       //integer($int32)
-          "fraudStatus": "string(enum)",         //Could be one of the following: Active, Expired, Flagged
-          "confidenceIndex": 0,                  //number($double)
-          "isPremium": true,                     //boolean
-          "peerId": "string",
-          "premium": true                        //boolean
-        }
-      ]
-    }
+      id: 'string',
+      fraudType: 'Wangiri', //Could be one of the following: Wangiri, IRSF, StolenDevice, IPFraud, SMSA2P
+      origination: 'string',
+      destination: 'string',
+      expiryDate: 0, //integer($int32)
+      fraudStatus: 'string(enum)', //Could be one of the following: Active, Expired, Flagged
+      confidenceIndex: 0, //number($double)
+      isPremium: true, //boolean
+      peerId: 'string',
+      premium: true, //boolean
+    },
+  ],
+}
 ```
+
 :::
 
 ::: details Output example
 
-```jsx
+```json5
     {
     "status": {
       "code": 0,
@@ -116,4 +116,5 @@ The response to the `GET` request contains a list of the top contributions, filt
     ]
   }
 ```
+
 :::

@@ -26,27 +26,28 @@ A `GET` request to the endpoint.
 
 ::: details Show
 
-```jsx
+```json5
+{
+  status: {
+    code: 0, //integer($int32)
+    name: 'string',
+    message: 'string',
+  },
+  data: [
     {
-      "status": {
-        "code": 0,                               //integer($int32)
-        "name": "string",
-        "message": "string"
-      },
-      "data": [
-        {
-          "id": "string",
-          "fraudType": "Wangiri",                //Could be one of the following: Wangiri, IRSF, StolenDevice, IPFraud, SMSA2P
-          "origination": "string",
-          "destination": "string",
-          "expiryDate": 0,                       //integer($int32)
-          "fraudStatus": "string(enum)",         //Could be one of the following: Active, Expired, Flagged
-          "confidenceIndex": 0,                  //number($double)
-          "isPremium": true,                     //boolean
-          "peerId": "string",
-          "premium": true                        //boolean
-        }
-      ]
-    }
+      id: 'string',
+      fraudType: 'Wangiri', //Could be one of the following: Wangiri, IRSF, StolenDevice, IPFraud, SMSA2P
+      origination: 'string',
+      destination: 'string',
+      expiryDate: 0, //integer($int32)
+      fraudStatus: 'string(enum)', //Could be one of the following: Active, Expired, Flagged
+      confidenceIndex: 0, //number($double)
+      isPremium: true, //boolean
+      peerId: 'string',
+      premium: true, //boolean
+    },
+  ],
+}
 ```
+
 :::
