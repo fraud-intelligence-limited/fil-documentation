@@ -10,13 +10,13 @@ FIB operates on the [***Iroha 2 Hyperledger blockchain***](/#what-is-iroha-2) an
 
 ## Where to start?
 
-If you are new to FIB, start with the [***Overview***](./api_docs/Overview.md) section, which provides a high-level introduction to the technology. This section explains what the FIB is, how it works, and other related concepts and terms.
+If you are new to FIB, start with the [***Overview***](./Overview.md) section, which provides a high-level introduction to the technology. This section explains what the FIB is, how it works, and other related concepts and terms.
 
-For instructions on how to get started with the FIB, check out the [***Getting Started***](./api_docs/Getting_started.md) section. This section covers everything from setting up your FIB account to accessing the API, and integrating it into your existing workflows and systems.
+For instructions on how to get started with the FIB, check out the [***Getting Started***](./Getting_started.md) section. This section covers everything from setting up your FIB account to accessing the API, and integrating it into your existing workflows and systems.
 
-If you're looking for step-by-step guidance on how to interact with the FIB API, check out the [***Tutorials***](./api_docs/Tutorials.md) section where you can find a variety of scenarios to help you get started with the API.
+If you're looking for step-by-step guidance on how to interact with the FIB API, check out the [***Tutorials***](./Tutorials.md) section where you can find a variety of scenarios to help you get started with the API.
 
-Finally, the [***API Specification***](./api_docs/API_Specification.md) section provides technical specification for the available endpoints explaining their internals exhaustively.
+Finally, the [***API Specification***](./API_Specification.md) section provides technical specification for the available endpoints explaining their internals exhaustively.
 
 ## What is Iroha 2? {#what-is-iroha-2}
 

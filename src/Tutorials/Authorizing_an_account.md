@@ -78,4 +78,4 @@ If authorization is successful, a response with the following JSON web tokens is
 ```
 :::
 
-If authorization is unseccessful, refer to *[Authorizing a user in the system/#responses](/api_docs/API_Specification/auth-controller/Authorizing_a_user_in_the_system.md)* for a list of possible reasons.
+If authorization is unseccessful, refer to *[Authorizing a user in the system/#responses](/API_Specification/auth-controller/Authorizing_a_user_in_the_system.md)* for a list of possible reasons.

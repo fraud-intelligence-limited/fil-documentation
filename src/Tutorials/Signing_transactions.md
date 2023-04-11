@@ -4,7 +4,9 @@ Every operation that has an `…/assemble` mirroring endpoint operations, such a
 
 To sign a transaction, you need to provide the following input data: the public key and private key of the [*Iroha 2 key pair*](https://github.com/soramitsu/orillion-docs/blob/develop/manual/manual.rst#iroha2-key-pair), and an unsigned transaction.
 
-When you sign a transaction, the expected output is a transaction content, and the signed result is a string in the Hex format. You can use [*any Iroha SDK available*](../../index.md#what-is-iroha-2) to sign a transaction.
+[//]: # (FIXME dead link to iroha key pair)
+
+When you sign a transaction, the expected output is a transaction content, and the signed result is a string in the Hex format. You can use [*any Iroha SDK available*](/index.md#what-is-iroha-2) to sign a transaction.
 
 The following example shows how to sign a transaction using the Kotlin/Java Iroha SDK:
 

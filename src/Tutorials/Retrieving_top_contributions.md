@@ -11,7 +11,7 @@ Request parameters can be used in any combination to tailor response results to 
 
 Since request parameters are optional, specifying no parameters when sending a request will result in a response containing the top contributions from the entire ledger.
 
-For more information, see [*Retrieving top contributions > Parameters*](/api_docs/API_Specification/contribution-controller/Retrieving_top_contributions.md).
+For more information, see [*Retrieving top contributions > Parameters*](/API_Specification/contribution-controller/Retrieving_top_contributions.md).
 
 To retrieve top contributions, perform the following:
 
