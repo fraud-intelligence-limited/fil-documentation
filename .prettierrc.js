@@ -25,7 +25,8 @@ module.exports = {
       files: ['./src/**/*.md'],
       options: {
         printWidth: 75,
-        proseWrap: 'always',
+        proseWrap: 'never',
+        trailingComma: 'none',
       },
     },
   ],

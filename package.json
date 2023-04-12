@@ -1,11 +1,8 @@
 {
-  "name": "fil-docs",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "private": true,
+  "packageManager": "pnpm@8.2.0",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "format": "prettier-eslint --include-dot-files \"**/*.{js,ts,mts,vue,json}\"",
+    "format": "prettier-eslint --include-dot-files \"**/*.{js,ts,mts,vue,json,md}\"",
     "format:check": "pnpm format --list-different",
     "format:fix": "pnpm format --write",
     "docs:dev": "vitepress dev",
@@ -13,21 +10,18 @@
     "docs:preview": "vitepress preview",
     "lint": "eslint --ext .js,.ts,.mts,.vue . .vitepress"
   },
-  "keywords": [],
-  "author": "",
-  "license": "",
   "dependencies": {
     "@algolia/client-search": "^4.17.0",
     "@jridgewell/sourcemap-codec": "^1.4.15",
-    "@typescript-eslint/eslint-plugin": "^5.58.0",
-    "@typescript-eslint/parser": "^5.0.0",
+    "@typescript-eslint/eslint-plugin": "5.58.0",
+    "@typescript-eslint/parser": "5.58.0",
     "eslint": "^8.38.0",
     "eslint-plugin-vue": "^9.10.0",
     "instead": "^1.0.3",
     "prettier": "^2.8.7",
     "prettier-eslint": "^15.0.1",
     "prettier-eslint-cli": "^7.1.0",
-    "typescript": ">=2.8.0",
+    "typescript": "^5.0",
     "vitepress": "^1.0.0-alpha.64"
   }
 }
