@@ -45,24 +45,6 @@ jobs:
       - name: Check formatting
         run: pnpm format:check
 
-      # - name: PWD
-      #   run: pwd
-
-      # - name: LS
-      #   run: ls -la
-
-      # - name: Collect artifacts
-      #   id: artifact-collector
-      #   run: |
-      #     tar -czvf /tmp/artifacts.tar.gz ".vitepress/config.ts" "./eslintrc.js" "./prettierrc.js"
-
-      # - name: 'Upload Artifact'
-      #   uses: actions/upload-artifact@v3
-      #   with:
-      #     name: artifacts
-      #     path: /tmp/artifacts.tar.gz
-      #     retention-days: 5
-
       - name: Run linter
         run: pnpm lint
 
@@ -80,8 +62,7 @@ jobs:
       - name: Push static content into fraud-intelligence-limited.github.io (main)
         working-directory: .vitepress/dist
         run: |
-          git config --global user.email "${GITHUB_ACTOR}@https://users.noreply.github.com/"
-          git config --global user.name "${ secrets.CI_USER }"
+          git config --global user.name "${{ secrets.CI_USER }}"
           git config --global init.defaultBranch main
           git init
           git add --all
