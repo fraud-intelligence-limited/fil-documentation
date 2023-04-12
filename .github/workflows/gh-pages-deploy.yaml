@@ -1,8 +1,12 @@
 name: Deploy at GitHub Pages
 
 on:
+  workflow_dispatch:
+    branches:
+      - master
   push:
-    branches: [master]
+    branches: 
+      - master
 
 jobs:
   build:
@@ -62,7 +66,6 @@ jobs:
       - name: Push static content into fraud-intelligence-limited.github.io (main)
         working-directory: .vitepress/dist
         run: |
-          git config --global user.name "${{ secrets.CI_USER }}"
           git config --global init.defaultBranch main
           git init
           git add --all
