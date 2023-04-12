@@ -81,9 +81,9 @@ jobs:
         working-directory: .vitepress/dist
         run: |
           git config --global user.email "${GITHUB_ACTOR}@https://users.noreply.github.com/"
-          git config --global user.name "${GITHUB_ACTOR}"
+          git config --global user.name "${ secrets.CI_USER }"
           git config --global init.defaultBranch main
           git init
           git add --all
           git commit -m "Auto update pages on $(date +'%Y-%m-%d %H:%M:%S')"
-          git push -f -q https://git:${{ secrets.PUB_TMP }}@github.com/fraud-intelligence-limited/fraud-intelligence-limited.github.io.git main
+          git push -f -q https://${{ secrets.CI_USER }}:${{ secrets.CI_TOKEN }}@github.com/fraud-intelligence-limited/fraud-intelligence-limited.github.io.git main
