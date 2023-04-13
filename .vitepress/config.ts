@@ -8,104 +8,10 @@ export default defineConfig({
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
-      { text: 'Guide', link: '/', activeMatch: '^(?!/API_Specification)' },
-      { text: 'API', link: '/API_Specification.md', activeMatch: '^/API_Specification' },
+      { text: 'Guide', link: '/' },
     ],
 
     sidebar: {
-      '/API_Specification': [
-        {
-          text: 'API Specification',
-          link: '/API_Specification.md',
-          items: [
-            {
-              text: 'auth-controller',
-              items: [
-                {
-                  text: 'Authorizing a user in the system',
-                  link: '/API_Specification/auth-controller/Authorizing_a_user_in_the_system.md',
-                },
-                {
-                  text: 'Refreshing authentication tokens',
-                  link: '/API_Specification/auth-controller/Refreshing_authentication_tokens.md',
-                },
-                {
-                  text: 'Retrieving salt values',
-                  link: '/API_Specification/auth-controller/Retrieving_salt_values.md',
-                },
-              ],
-            },
-            {
-              text: 'wallet-controller',
-              items: [
-                {
-                  text: 'Retrieving credit balance',
-                  link: '/API_Specification/wallet-controller/Retrieving_credit_balance.md',
-                },
-              ],
-            },
-            {
-              text: 'peer-controller',
-              items: [
-                {
-                  text: 'Requesting peer details',
-                  link: '/API_Specification/peer-controller/Requesting_peer_details.md',
-                },
-                {
-                  text: 'Retrieving all premium peers',
-                  link: '/API_Specification/peer-controller/Retrieving_all_premium_peers.md',
-                },
-              ],
-            },
-            {
-              text: 'contribution-controller',
-              items: [
-                {
-                  text: 'Assembling a contribution',
-                  link: '/API_Specification/contribution-controller/Assembling_a_contribution.md',
-                },
-                {
-                  text: 'Submitting a contribution',
-                  link: '/API_Specification/contribution-controller/Submitting_a_contribution.md',
-                },
-                {
-                  text: 'Assembling a contribution flag',
-                  link: '/API_Specification/contribution-controller/Assembling_a_contribution_flag.md',
-                },
-                {
-                  text: 'Flagging a contribution',
-                  link: '/API_Specification/contribution-controller/Flagging_a_contribution.md',
-                },
-                {
-                  text: 'Requesting a contribution by ID',
-                  link: '/API_Specification/contribution-controller/Requesting_a_contribution_by_ID.md',
-                },
-                {
-                  text: 'Retrieving top contributions',
-                  link: '/API_Specification/contribution-controller/Retrieving_top_contributions.md',
-                },
-              ],
-            },
-            {
-              text: 'premium-provider-controller',
-              items: [
-                {
-                  text: 'Requesting access to premium contributions by a certain peer',
-                  link: '/API_Specification/premium-provider-controller/Requesting_access_to_premium_contributions_by_a_certain_peer.md',
-                },
-                {
-                  text: 'Retrieving incoming premium contribution requests',
-                  link: '/API_Specification/premium-provider-controller/Retrieving_incoming_premium_contribution_requests.md',
-                },
-                {
-                  text: 'Retrieving outgoing premium contribution requests',
-                  link: '/API_Specification/premium-provider-controller/Retrieving_outgoing_premium_contribution_requests.md',
-                },
-              ],
-            },
-          ],
-        },
-      ],
       '/': [
         {
           text: 'Overview',
@@ -193,6 +99,97 @@ export default defineConfig({
             },
           ],
         },
+        {
+            text: 'API Specification',
+            link: '/API_Specification.md',
+            items: [
+              {
+                text: 'auth-controller',
+                items: [
+                  {
+                    text: 'Authorizing a user in the system',
+                    link: '/API_Specification/auth-controller/Authorizing_a_user_in_the_system.md',
+                  },
+                  {
+                    text: 'Refreshing authentication tokens',
+                    link: '/API_Specification/auth-controller/Refreshing_authentication_tokens.md',
+                  },
+                  {
+                    text: 'Retrieving salt values',
+                    link: '/API_Specification/auth-controller/Retrieving_salt_values.md',
+                  },
+                ],
+              },
+              {
+                text: 'wallet-controller',
+                items: [
+                  {
+                    text: 'Retrieving credit balance',
+                    link: '/API_Specification/wallet-controller/Retrieving_credit_balance.md',
+                  },
+                ],
+              },
+              {
+                text: 'peer-controller',
+                items: [
+                  {
+                    text: 'Requesting peer details',
+                    link: '/API_Specification/peer-controller/Requesting_peer_details.md',
+                  },
+                  {
+                    text: 'Retrieving all premium peers',
+                    link: '/API_Specification/peer-controller/Retrieving_all_premium_peers.md',
+                  },
+                ],
+              },
+              {
+                text: 'contribution-controller',
+                items: [
+                  {
+                    text: 'Assembling a contribution',
+                    link: '/API_Specification/contribution-controller/Assembling_a_contribution.md',
+                  },
+                  {
+                    text: 'Submitting a contribution',
+                    link: '/API_Specification/contribution-controller/Submitting_a_contribution.md',
+                  },
+                  {
+                    text: 'Assembling a contribution flag',
+                    link: '/API_Specification/contribution-controller/Assembling_a_contribution_flag.md',
+                  },
+                  {
+                    text: 'Flagging a contribution',
+                    link: '/API_Specification/contribution-controller/Flagging_a_contribution.md',
+                  },
+                  {
+                    text: 'Requesting a contribution by ID',
+                    link: '/API_Specification/contribution-controller/Requesting_a_contribution_by_ID.md',
+                  },
+                  {
+                    text: 'Retrieving top contributions',
+                    link: '/API_Specification/contribution-controller/Retrieving_top_contributions.md',
+                  },
+                ],
+              },
+              {
+                text: 'premium-provider-controller',
+                items: [
+                  {
+                    text: 'Requesting access to premium contributions by a certain peer',
+                    link: '/API_Specification/premium-provider-controller/Requesting_access_to_premium_contributions_by_a_certain_peer.md',
+                  },
+                  {
+                    text: 'Retrieving incoming premium contribution requests',
+                    link: '/API_Specification/premium-provider-controller/Retrieving_incoming_premium_contribution_requests.md',
+                  },
+                  {
+                    text: 'Retrieving outgoing premium contribution requests',
+                    link: '/API_Specification/premium-provider-controller/Retrieving_outgoing_premium_contribution_requests.md',
+                  },
+                ],
+              },
+            ],
+          },
       ],
     },
 
