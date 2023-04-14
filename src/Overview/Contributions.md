@@ -12,21 +12,21 @@ A peer that has contributed at least a single fraud event is considered a **_con
 
 Once a contribution has been submitted, the peer’s list of contributions is updated, and their credit balance is increased by an amount equal to the number of contributions submitted based on the current reward rate active in the network.
 
-For complete instructions on how to submit a contribution, see [Submitting a contribution](../Tutorials/Submitting_a_contribution.md).
+For complete instructions on how to submit a contribution, see [Submitting a contribution](../tutorials/submitting_a_contribution.md).
 
-For information on the credit balance and rewards, see [Tokenomics](./Tokenomics.md).
+For information on the credit balance and rewards, see [Tokenomics](./tokenomics.md).
 
 ### Retrieving contributions
 
-In order for peers to keep their own records updated with the latest fraud event data, they can [retrieve top contributions in a number of ways](../Tutorials/Retrieving_top_contributions.md).
+In order for peers to keep their own records updated with the latest fraud event data, they can [retrieve top contributions in a number of ways](../tutorials/retrieving_top_contributions.md).
 
 ### Flagging contributions
 
-If a peer deems a certain contribution to no longer be relevant (e.g., _it is a false positive_), they can [flag that contribution](../Tutorials/Flagging_a_contribution.md).
+If a peer deems a certain contribution to no longer be relevant (e.g., _it is a false positive_), they can [flag that contribution](../tutorials/flagging_a_contribution.md).
 
 ## API requests data structure
 
-When [retrieving top contributions](../API_Specification/contribution-controller/Retrieving_top_contributions.md), the following data is returned in the body of the response:
+When [retrieving top contributions](../api_specification/contribution-controller/retrieving_top_contributions.md), the following data is returned in the body of the response:
 
 | Field | Value Type | Description |
 | --- | --- | --- |
@@ -35,12 +35,12 @@ When [retrieving top contributions](../API_Specification/contribution-controller
 | `origination` | `string` | The two-digit code of the country the fraud event originated from (Alpha-2, ISO 3166). |
 | `destination` | `string` | The two-digit code of the country the fraud event was identified as such (Alpha-2, ISO 3166). |
 | `expiryDate` | `integer($int32)` | The exact time and date until which the event is considered relevant (represented as https://www.epochconverter.com/clock in seconds). |
-| `fraudStatus` | `enum string` | The status of the event at the time of observing. <br> Could be one of the following: <ol><li>**Active**</li><li>**Expired**</li><li>**Flagged**</li></ol> |
+| `fraudStatus` | `enum string` | The status of the event at the time of observing. <br> Could be one of the following: <ol><li>`Active`</li><li>`Expired`</li><li>`Flagged`</li></ol> |
 | `confidenceIndex` | `number($double)` | The predicted fraud likelihood score in the range from 1 to 100. |
 | `isPremium` | `boolean` | The definition of whether the contributor is a premium user. |
 | `peerId` | `string` | The unique key of the peer that contributed the data. |
 
-When [assembling a contribution](../API_Specification/contribution-controller/Assembling_a_contribution.md) to then [submit it](../API_Specification/contribution-controller/Submitting_a_contribution.md), the following data must be specified in the body of the request:
+When [assembling a contribution](../api_specification/contribution-controller/assembling_a_contribution.md) to then [submit it](../api_specification/contribution-controller/submitting_a_contribution.md), the following data must be specified in the body of the request:
 
 | Field | Value Type | Description |
 | --- | --- | --- |

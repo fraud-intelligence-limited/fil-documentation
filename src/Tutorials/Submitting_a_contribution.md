@@ -2,7 +2,7 @@
 
 ::: tip
 
-Note A peer account must be authorized for this operation to succeed. See [Authorizing an account](Authorizing_an_account.md).
+Note A peer account must be authorized for this operation to succeed. See [Authorizing an account](authorizing_an_account.md).
 
 :::
 
@@ -15,12 +15,10 @@ To submit a contribution, perform the following steps:
    | Field | Value Type | Description |
    | --- | --- | --- |
    | `id` | `string` | Fraud event identifier. |
-   | `fraudType` | `enum string` | The type of the fraud event. <br> Could be one of the following: <br> 1. `Wangiri` <br> 2. `IRSF` <br> 3. `StolenDevice` <br> 4. `IPFraud` <br> 5. `SMSA2P` |
+   | `fraudType` | `enum string` | The type of the fraud event. <br> Could be one of the following:<ol><li>`Wangiri`</li><li>`IRSF`</li><li>`StolenDevice`</li><li>`IPFraud`</li><li>`SMSA2P`</li></ol> |
    | `origination` | `string` | The two-digit code of the country the fraud event originated from (Alpha-2, ISO 3166). |
    | `destination` | `string` | The two-digit code of the country the fraud event was identified as such (Alpha-2, ISO 3166). |
    | `expiryDate` | `integer($int32)` | The exact time and date until which the event is considered relevant (represented as https://www.epochconverter.com/clock in seconds). |
-
-   [//]: # '  FIXME use ol for lists  '
 
    ::: details Input structure
 
@@ -87,7 +85,7 @@ To submit a contribution, perform the following steps:
 
    :::
 
-2. Sign the `someData` string (see [Signing transactions](Signing_transactions.md)).
+2. Sign the `someData` string (see [Signing transactions](signing_transactions.md)).
 3. Submit the contribution you assembled and signed in **_steps 1 and 2:_**
 
    - Send a `POST` request to the `/data/api/v1/contribution-management/contribution` endpoint with the signed `someData` string in the body of the request.

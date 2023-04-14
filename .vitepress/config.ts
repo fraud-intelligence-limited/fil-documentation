@@ -15,85 +15,85 @@ export default defineConfig({
       '/': [
         {
           text: 'Overview',
-          link: '/Overview.md',
+          link: '/overview.md',
           items: [
             {
               text: 'How FIB works',
-              link: '/Overview/How_FIB_works.md',
+              link: '/overview/how_fib_works.md',
             },
             {
               text: 'Fraud events',
-              link: '/Overview/Fraud_events.md',
+              link: '/overview/fraud_events.md',
             },
             {
               text: 'Contributions',
-              link: '/Overview/Contributions.md',
+              link: '/overview/contributions.md',
             },
             {
               text: 'Tokenomics',
-              link: '/Overview/Tokenomics.md',
+              link: '/overview/tokenomics.md',
             },
           ],
         },
         {
           text: 'Getting started',
-          link: '/Getting_started.md',
+          link: '/getting_started.md',
           items: [
             {
               text: 'Registering an account',
-              link: '/Getting_started/Registering_an_account.md',
+              link: '/getting_started/registering_an_account.md',
             },
             {
               text: 'Checking API availability',
-              link: '/Getting_started/Checking_API_availability.md',
+              link: '/getting_started/checking_api_availability.md',
             },
             {
               text: 'Calling API endpoints',
-              link: '/Getting_started/Calling_API_endpoints.md',
+              link: '/getting_started/calling_api_endpoints.md',
             },
             {
               text: 'Public test environment',
-              link: '/Getting_started/Public_test_environment.md',
+              link: '/getting_started/public_test_environment.md',
             },
           ],
         },
         {
           text: 'Tutorials',
-          link: '/Tutorials.md',
+          link: '/tutorials.md',
           items: [
             {
               text: 'Generating key pairs',
-              link: '/Tutorials/Generating_key_pairs.md',
+              link: '/tutorials/generating_key_pairs.md',
             },
             {
               text: 'Signing transactions',
-              link: '/Tutorials/Signing_transactions.md',
+              link: '/tutorials/signing_transactions.md',
             },
             {
               text: 'Authorizing an account',
-              link: '/Tutorials/Authorizing_an_account.md',
+              link: '/tutorials/authorizing_an_account.md',
             },
             {
               text: 'Retrieving top contributions',
-              link: '/Tutorials/Retrieving_top_contributions.md',
+              link: '/tutorials/retrieving_top_contributions.md',
             },
             {
               text: 'Submitting a contribution',
-              link: '/Tutorials/Submitting_a_contribution.md',
+              link: '/tutorials/submitting_a_contribution.md',
               items: [
                 {
                   text: 'Verifying a contribution has been submitted',
-                  link: '/Tutorials/Submitting_a_contribution/Verifying_a_contrubution_has_been_submitted.md',
+                  link: '/tutorials/submitting_a_contribution/verifying_a_contrubution_has_been_submitted.md',
                 },
               ],
             },
             {
               text: 'Flagging a contribution',
-              link: '/Tutorials/Flagging_a_contribution.md',
+              link: '/tutorials/flagging_a_contribution.md',
               items: [
                 {
                   text: 'Verifying a contribution has been flagged',
-                  link: '/Tutorials/Flagging_a_contribution/Verifying_a_contribution_has_been_flagged.md',
+                  link: '/tutorials/flagging_a_contribution/verifying_a_contribution_has_been_flagged.md',
                 },
               ],
             },
@@ -101,22 +101,22 @@ export default defineConfig({
         },
         {
             text: 'API Specification',
-            link: '/API_Specification.md',
+            link: '/api_specification.md',
             items: [
               {
                 text: 'auth-controller',
                 items: [
                   {
                     text: 'Authorizing a user in the system',
-                    link: '/API_Specification/auth-controller/Authorizing_a_user_in_the_system.md',
+                    link: '/api_specification/auth-controller/authorizing_a_user_in_the_system.md',
                   },
                   {
                     text: 'Refreshing authentication tokens',
-                    link: '/API_Specification/auth-controller/Refreshing_authentication_tokens.md',
+                    link: '/api_specification/auth-controller/refreshing_authentication_tokens.md',
                   },
                   {
                     text: 'Retrieving salt values',
-                    link: '/API_Specification/auth-controller/Retrieving_salt_values.md',
+                    link: '/api_specification/auth-controller/retrieving_salt_values.md',
                   },
                 ],
               },
@@ -125,7 +125,7 @@ export default defineConfig({
                 items: [
                   {
                     text: 'Retrieving credit balance',
-                    link: '/API_Specification/wallet-controller/Retrieving_credit_balance.md',
+                    link: '/api_specification/wallet-controller/retrieving_credit_balance.md',
                   },
                 ],
               },
@@ -134,11 +134,11 @@ export default defineConfig({
                 items: [
                   {
                     text: 'Requesting peer details',
-                    link: '/API_Specification/peer-controller/Requesting_peer_details.md',
+                    link: '/api_specification/peer-controller/requesting_peer_details.md',
                   },
                   {
                     text: 'Retrieving all premium peers',
-                    link: '/API_Specification/peer-controller/Retrieving_all_premium_peers.md',
+                    link: '/api_specification/peer-controller/retrieving_all_premium_peers.md',
                   },
                 ],
               },
@@ -147,27 +147,27 @@ export default defineConfig({
                 items: [
                   {
                     text: 'Assembling a contribution',
-                    link: '/API_Specification/contribution-controller/Assembling_a_contribution.md',
+                    link: '/api_specification/contribution-controller/assembling_a_contribution.md',
                   },
                   {
                     text: 'Submitting a contribution',
-                    link: '/API_Specification/contribution-controller/Submitting_a_contribution.md',
+                    link: '/api_specification/contribution-controller/submitting_a_contribution.md',
                   },
                   {
                     text: 'Assembling a contribution flag',
-                    link: '/API_Specification/contribution-controller/Assembling_a_contribution_flag.md',
+                    link: '/api_specification/contribution-controller/assembling_a_contribution_flag.md',
                   },
                   {
                     text: 'Flagging a contribution',
-                    link: '/API_Specification/contribution-controller/Flagging_a_contribution.md',
+                    link: '/api_specification/contribution-controller/flagging_a_contribution.md',
                   },
                   {
                     text: 'Requesting a contribution by ID',
-                    link: '/API_Specification/contribution-controller/Requesting_a_contribution_by_ID.md',
+                    link: '/api_specification/contribution-controller/requesting_a_contribution_by_ID.md',
                   },
                   {
                     text: 'Retrieving top contributions',
-                    link: '/API_Specification/contribution-controller/Retrieving_top_contributions.md',
+                    link: '/api_specification/contribution-controller/retrieving_top_contributions.md',
                   },
                 ],
               },
@@ -176,15 +176,15 @@ export default defineConfig({
                 items: [
                   {
                     text: 'Requesting access to premium contributions by a certain peer',
-                    link: '/API_Specification/premium-provider-controller/Requesting_access_to_premium_contributions_by_a_certain_peer.md',
+                    link: '/api_specification/premium-provider-controller/requesting_access_to_premium_contributions_by_a_certain_peer.md',
                   },
                   {
                     text: 'Retrieving incoming premium contribution requests',
-                    link: '/API_Specification/premium-provider-controller/Retrieving_incoming_premium_contribution_requests.md',
+                    link: '/api_specification/premium-provider-controller/retrieving_incoming_premium_contribution_requests.md',
                   },
                   {
                     text: 'Retrieving outgoing premium contribution requests',
-                    link: '/API_Specification/premium-provider-controller/Retrieving_outgoing_premium_contribution_requests.md',
+                    link: '/api_specification/premium-provider-controller/retrieving_outgoing_premium_contribution_requests.md',
                   },
                 ],
               },

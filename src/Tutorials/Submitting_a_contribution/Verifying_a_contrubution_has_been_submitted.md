@@ -5,7 +5,7 @@ To verify that a contribution has been successfully submitted and the contributo
 1. Retrieve a list of the peer’s top contributions:
 
    - Send a `GET` request to the `/data/api/v1/contribution-management/contribution` endpoint with the `self-only` request parameter set to `true`.
-   - If a contribution has been submitted successfuly, it is added to the top of the list of the peer’s contributions.
+   - If a contribution has been submitted successfully, it is added to the top of the list of the peer’s contributions.
 
      ::: details Output structure
 
@@ -51,7 +51,7 @@ To verify that a contribution has been successfully submitted and the contributo
 2. Retrieve the peer’s credit balance:
 
    - Send a `GET` request to the `/data/api/v1/wallet-management/balance` endpoint.
-   - If a contribution has been submitted successfuly, the peer’s balance is updated in accordance with the declared reward amounts.
+   - If a contribution has been submitted successfully, the peer’s balance is updated in accordance with the declared reward amounts.
 
      ::: details Output structure
 

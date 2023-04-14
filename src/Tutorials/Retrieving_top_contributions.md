@@ -2,7 +2,7 @@
 
 ::: tip
 
-Note A peer account must be authorized for this operation to succeed. _See [Authorizing an account](Authorizing_an_account.md)._
+Note A peer account must be authorized for this operation to succeed. _See [Authorizing an account](authorizing_an_account.md)._
 
 :::
 
@@ -12,7 +12,7 @@ Request parameters can be used in any combination to tailor response results to 
 
 Since request parameters are optional, specifying no parameters when sending a request will result in a response containing the top contributions from the entire ledger.
 
-For more information, see [Retrieving top contributions > Parameters](/API_Specification/contribution-controller/Retrieving_top_contributions.md).
+For more information, see [Retrieving top contributions > Parameters](/api_specification/contribution-controller/retrieving_top_contributions.md).
 
 To retrieve top contributions, perform the following:
 

@@ -4,7 +4,7 @@ This section is designed to help you integrate the FIB API seamlessly into your 
 
 It is advised to read the following topics in the order that they are presented:
 
-1. [Registering an account](Getting_started/Registering_an_account.md)
-2. [Checking API availability](Getting_started/Checking_API_availability.md)
-3. [Calling API endpoints](Getting_started/Calling_API_endpoints.md)
-4. [Public test environment](Getting_started/Public_test_environment.md)
+1. [Registering an account](getting_started/registering_an_account.md)
+2. [Checking API availability](getting_started/checking_api_availability.md)
+3. [Calling API endpoints](getting_started/calling_api_endpoints.md)
+4. [Public test environment](getting_started/public_test_environment.md)
