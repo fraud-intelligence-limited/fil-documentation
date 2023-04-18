@@ -14,6 +14,7 @@ export default defineConfig({
         {
           text: 'Overview',
           link: '/Overview.md',
+          collapsed: true,
           items: [
             {
               text: 'How FIB works',
@@ -36,6 +37,7 @@ export default defineConfig({
         {
           text: 'Getting started',
           link: '/Getting_started.md',
+          collapsed: true,
           items: [
             {
               text: 'Registering an account',
@@ -58,6 +60,7 @@ export default defineConfig({
         {
           text: 'Tutorials',
           link: '/Tutorials.md',
+          collapsed: true,
           items: [
             {
               text: 'Generating key pairs',
@@ -100,6 +103,7 @@ export default defineConfig({
         {
           text: 'API Specification',
           link: '/API_Specification.md',
+          collapsed: true,
           items: [
             {
               text: 'auth-controller',
