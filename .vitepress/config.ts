@@ -101,96 +101,96 @@ export default defineConfig({
           ],
         },
         {
-            text: 'API Specification',
-            link: '/api-specification.md',
-            items: [
-              {
-                text: 'auth-controller',
-                items: [
-                  {
-                    text: 'Authorizing a user in the system',
-                    link: '/api-specification/auth-controller/authorizing-a-user-in-the-system.md',
-                  },
-                  {
-                    text: 'Refreshing authentication tokens',
-                    link: '/api-specification/auth-controller/refreshing-authentication-tokens.md',
-                  },
-                  {
-                    text: 'Retrieving salt values',
-                    link: '/api-specification/auth-controller/retrieving-salt-values.md',
-                  },
-                ],
-              },
-              {
-                text: 'wallet-controller',
-                items: [
-                  {
-                    text: 'Retrieving credit balance',
-                    link: '/api-specification/wallet-controller/retrieving-credit-balance.md',
-                  },
-                ],
-              },
-              {
-                text: 'peer-controller',
-                items: [
-                  {
-                    text: 'Requesting peer details',
-                    link: '/api-specification/peer-controller/requesting-peer-details.md',
-                  },
-                  {
-                    text: 'Retrieving all premium peers',
-                    link: '/api-specification/peer-controller/retrieving-all-premium-peers.md',
-                  },
-                ],
-              },
-              {
-                text: 'contribution-controller',
-                items: [
-                  {
-                    text: 'Assembling a contribution',
-                    link: '/api-specification/contribution-controller/assembling-a-contribution.md',
-                  },
-                  {
-                    text: 'Submitting a contribution',
-                    link: '/api-specification/contribution-controller/submitting-a-contribution.md',
-                  },
-                  {
-                    text: 'Assembling a contribution flag',
-                    link: '/api-specification/contribution-controller/assembling-a-contribution-flag.md',
-                  },
-                  {
-                    text: 'Flagging a contribution',
-                    link: '/api-specification/contribution-controller/flagging-a-contribution.md',
-                  },
-                  {
-                    text: 'Requesting a contribution by ID',
-                    link: '/api-specification/contribution-controller/requesting-a-contribution-by-ID.md',
-                  },
-                  {
-                    text: 'Retrieving top contributions',
-                    link: '/api-specification/contribution-controller/retrieving-top-contributions.md',
-                  },
-                ],
-              },
-              {
-                text: 'premium-provider-controller',
-                items: [
-                  {
-                    text: 'Requesting access to premium contributions by a certain peer',
-                    link: '/api-specification/premium-provider-controller/requesting-access-to-premium-contributions-by-a-certain-peer.md',
-                  },
-                  {
-                    text: 'Retrieving incoming premium contribution requests',
-                    link: '/api-specification/premium-provider-controller/retrieving-incoming-premium-contribution-requests.md',
-                  },
-                  {
-                    text: 'Retrieving outgoing premium contribution requests',
-                    link: '/api-specification/premium-provider-controller/retrieving-outgoing-premium-contribution-requests.md',
-                  },
-                ],
-              },
-            ],
-          },
+          text: 'API Specification',
+          link: '/api-specification.md',
+          items: [
+            {
+              text: 'auth-controller',
+              items: [
+                {
+                  text: 'Authorizing a user in the system',
+                  link: '/api-specification/auth-controller/authorizing-a-user-in-the-system.md',
+                },
+                {
+                  text: 'Refreshing authentication tokens',
+                  link: '/api-specification/auth-controller/refreshing-authentication-tokens.md',
+                },
+                {
+                  text: 'Retrieving salt values',
+                  link: '/api-specification/auth-controller/retrieving-salt-values.md',
+                },
+              ],
+            },
+            {
+              text: 'wallet-controller',
+              items: [
+                {
+                  text: 'Retrieving credit balance',
+                  link: '/api-specification/wallet-controller/retrieving-credit-balance.md',
+                },
+              ],
+            },
+            {
+              text: 'peer-controller',
+              items: [
+                {
+                  text: 'Requesting peer details',
+                  link: '/api-specification/peer-controller/requesting-peer-details.md',
+                },
+                {
+                  text: 'Retrieving all premium peers',
+                  link: '/api-specification/peer-controller/retrieving-all-premium-peers.md',
+                },
+              ],
+            },
+            {
+              text: 'contribution-controller',
+              items: [
+                {
+                  text: 'Assembling a contribution',
+                  link: '/api-specification/contribution-controller/assembling-a-contribution.md',
+                },
+                {
+                  text: 'Submitting a contribution',
+                  link: '/api-specification/contribution-controller/submitting-a-contribution.md',
+                },
+                {
+                  text: 'Assembling a contribution flag',
+                  link: '/api-specification/contribution-controller/assembling-a-contribution-flag.md',
+                },
+                {
+                  text: 'Flagging a contribution',
+                  link: '/api-specification/contribution-controller/flagging-a-contribution.md',
+                },
+                {
+                  text: 'Requesting a contribution by ID',
+                  link: '/api-specification/contribution-controller/requesting-a-contribution-by-ID.md',
+                },
+                {
+                  text: 'Retrieving top contributions',
+                  link: '/api-specification/contribution-controller/retrieving-top-contributions.md',
+                },
+              ],
+            },
+            {
+              text: 'premium-provider-controller',
+              items: [
+                {
+                  text: 'Requesting access to premium contributions by a certain peer',
+                  link: '/api-specification/premium-provider-controller/requesting-access-to-premium-contributions-by-a-certain-peer.md',
+                },
+                {
+                  text: 'Retrieving incoming premium contribution requests',
+                  link: '/api-specification/premium-provider-controller/retrieving-incoming-premium-contribution-requests.md',
+                },
+                {
+                  text: 'Retrieving outgoing premium contribution requests',
+                  link: '/api-specification/premium-provider-controller/retrieving-outgoing-premium-contribution-requests.md',
+                },
+              ],
+            },
+          ],
+        },
       ],
     },
 
