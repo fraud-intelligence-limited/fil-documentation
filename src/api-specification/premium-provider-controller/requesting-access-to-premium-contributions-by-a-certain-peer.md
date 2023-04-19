@@ -12,7 +12,7 @@
 
 | Field | Value Type | Description |
 | --- | --- | --- |
-| `peer` | `string` | A unique peer identifier. <br> `peer` is a required parameter. See [Retrieving all premium peer](../peer-controller/retrieving_all_premium_peers.md). |
+| `peer` | `string` | A unique peer identifier. <br> `peer` is a required parameter. See [Retrieving all premium peer](../peer-controller/retrieving-all-premium-peers.md). |
 
 **Input/request structure**:
 
