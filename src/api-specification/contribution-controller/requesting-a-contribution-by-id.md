@@ -12,7 +12,7 @@
 
 | Field | Value Type | Description |
 | --- | --- | --- |
-| `contributionID` | `string(path)` | Range of [`id` values](../../overview/fraud_events.md) (Fraud Identifiers), or a single one. |
+| `contributionID` | `string(path)` | Range of [`id` values](../../overview/fraud-events.md) (Fraud Identifiers), or a single one. |
 
 **Input/request structure**:
 

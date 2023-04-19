@@ -2,11 +2,11 @@
 
 This section provides an introduction to the key components and concepts of the FIB network, including:
 
-- [How FIB works](overview/how_fib_works.md)
-  - [Data on the network](overview/how_fib_works.md#data-on-the-network)
-  - [Network security](overview/how_fib_works.md#network-security)
-- [Fraud events](overview/fraud_events.md)
-  - [Fraud model](overview/fraud_events.md#fraud-model)
+- [How FIB works](overview/how-fib-works.md)
+  - [Data on the network](overview/how-fib-works.md#data-on-the-network)
+  - [Network security](overview/how-fib-works.md#network-security)
+- [Fraud events](overview/fraud-events.md)
+  - [Fraud model](overview/fraud-events.md#fraud-model)
 - [Contributions](overview/contributions.md)
   - [Operations](overview/contributions.md#operations)
     - [Submitting contributions](overview/contributions.md#submitting-contributions)

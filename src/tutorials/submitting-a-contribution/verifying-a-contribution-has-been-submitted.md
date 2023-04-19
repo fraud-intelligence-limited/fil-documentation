@@ -1,4 +1,4 @@
-# Verifying a contrubution has been submitted
+# Verifying a contribution has been submitted
 
 To verify that a contribution has been successfully submitted and the contributor’s balance has been updated accordingly, perform the following steps:
 
