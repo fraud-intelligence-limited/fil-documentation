@@ -7,15 +7,14 @@ export default defineConfig({
   srcDir: 'src',
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
-    nav: [
-      { text: 'Guide', link: '/' },
-    ],
+    nav: [{ text: 'Guide', link: '/' }],
 
     sidebar: {
       '/': [
         {
           text: 'Overview',
           link: '/overview.md',
+          collapsed: true,
           items: [
             {
               text: 'How FIB works',
@@ -38,6 +37,7 @@ export default defineConfig({
         {
           text: 'Getting started',
           link: '/getting-started.md',
+          collapsed: true,
           items: [
             {
               text: 'Registering an account',
@@ -60,6 +60,7 @@ export default defineConfig({
         {
           text: 'Tutorials',
           link: '/tutorials.md',
+          collapsed: true,
           items: [
             {
               text: 'Generating key pairs',
