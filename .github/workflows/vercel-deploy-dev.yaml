@@ -1,10 +1,10 @@
-name: Deploy at GitHub Pages
+name: Deploy at Vercel
 
 on:
-  pull_request:
-    types:
-      - opened
-      - edited
+  push:
+      branches:
+        - '**'
+        - '!main'
 
 jobs:
   vercel:
