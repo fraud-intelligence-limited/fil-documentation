@@ -10,11 +10,11 @@ FIB operates on the [**_Iroha 2 Hyperledger blockchain_**](/#what-is-iroha-2) an
 
 ## Where to start?
 
-If you are new to FIB, start with the [**_Overview_**](./Overview.md) section, which provides a high-level introduction to the technology. This section explains what the FIB is, how it works, and other related concepts and terms.
+If you are new to FIB, start with the [**_Overview_**](./overview.md) section, which provides a high-level introduction to the technology. This section explains what the FIB is, how it works, and other related concepts and terms.
 
 For instructions on how to get started with the FIB, check out the [**_Getting Started_**](./getting-started.md) section. This section covers everything from setting up your FIB account to accessing the API, and integrating it into your existing workflows and systems.
 
-If you're looking for step-by-step guidance on how to interact with the FIB API, check out the [**_Tutorials_**](./Tutorials.md) section where you can find a variety of scenarios to help you get started with the API.
+If you're looking for step-by-step guidance on how to interact with the FIB API, check out the [**_Tutorials_**](./tutorials.md) section where you can find a variety of scenarios to help you get started with the API.
 
 Finally, the [**_API Specification_**](./api-specification.md) section provides technical specification for the available endpoints explaining their internals exhaustively.
 
