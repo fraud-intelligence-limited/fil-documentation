@@ -1,6 +1,6 @@
 # How FIB works
 
-FIB is a decentralized network that enables the secure sharing and analysis of data related to [fraud events](Fraud_events.md).
+FIB is a decentralized network that enables the secure sharing and analysis of data related to [fraud events](fraud-events.md).
 
 Authorized participants—**_peers_**—can submit information about suspected or confirmed fraudulent activities to the FIB network, where it is recorded on the blockchain. The submitted information can include details such as origin identifiers (e.g., IP addresses), the type of event, the exact time the event occurred, etc.
 
@@ -8,7 +8,7 @@ By sharing this information and collaborating with other peers in the network, c
 
 ## Data on the network
 
-The FIB network serves as a secure database of various [fraud events](Fraud_events.md) that are stored on the blockchain as [contributions](Contributions.md).
+The FIB network serves as a secure database of various [fraud events](fraud-events.md) that are stored on the blockchain as [contributions](contributions.md).
 
 Authorized peers can upload and download these contributions.
 
@@ -16,7 +16,7 @@ Contributions uploaded by peers allow for the continuous expansion and updating 
 
 The contributions on the network can also be download by peers to update their own records and stay informed about the latest fraudulent activities. This process helps organizations remain vigilant and prevent fraudulent activities from occurring within their own systems.
 
-For more information, see [Uploading contributions](./Tokenomics.md#uploading-fraud-events) and [Downloading contributions](./Tokenomics.md#downloading-fraud-events).
+For more information, see [Uploading contributions](./tokenomics.md#uploading-fraud-events) and [Downloading contributions](./tokenomics.md#downloading-fraud-events).
 
 ## Network security
 
@@ -35,4 +35,4 @@ When a user creates a transaction on the FIB network, they sign it with their pr
 
 Additionally, signing transactions with key pairs can enhance the privacy and confidentiality of the user's information on the network. Overall, the use of key pairs and digital signatures is a crucial aspect of the FIB network's security infrastructure.
 
-For more information, see [Generating key pairs](../Tutorials/Generating_key_pairs.md) and [Signing transactions](../Tutorials/Signing_transactions.md).
+For more information, see [Generating key pairs](../tutorials/generating-key-pairs.md) and [Signing transactions](../tutorials/signing-transactions.md).

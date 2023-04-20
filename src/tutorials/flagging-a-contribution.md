@@ -2,7 +2,7 @@
 
 ::: tip Note
 
-A peer account must be authorized for this operation to succeed. See [Authorizing an account](Authorizing_an_account.md).
+A peer account must be authorized for this operation to succeed. See [Authorizing an account](authorizing-an-account.md).
 
 :::
 
@@ -136,7 +136,7 @@ To flag a contribution, perform the following steps:
 
    :::
 
-3. Sign the `someData` string (see [Signing transactions](Signing_transactions.md)).
+3. Sign the `someData` string (see [Signing transactions](signing-transactions.md)).
 4. Submit the contribution flag you assembled and signed in **_steps 2 and 3:_**
 
    - Send a `PATCH` request to the `/data/api/v1/contribution-management/contribution/flag` endpoint with the signed `someData` string in the body of the request.

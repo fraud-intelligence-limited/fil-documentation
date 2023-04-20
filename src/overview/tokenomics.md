@@ -10,19 +10,19 @@ Credits can be spent on downloading fraud event data from other users.
 
 In order to incentivize the registered peers to submit the fraud events that they have encountered, credits are rewarded for every submitted contribution.
 
-For instructions on how to upload a fraud event—submit a contribution—see [Submitting a contribution](/Tutorials/Submitting_a_contribution.md).
+For instructions on how to upload a fraud event—submit a contribution—see [Submitting a contribution](../tutorials/submitting-a-contribution.md).
 
 ## Downloading fraud events
 
 The earned credits can be used to pay for downloading the fraud event data stored on the blockchain, which enables peers to update their own records and stay informed about the latest fraudulent activities. This process helps organizations to remain vigilant and prevent fraudulent activities from occurring within their own system.
 
-For instructions on how to download a fraud event—retrieve a contribution—see [Retrieving top contributions](/Tutorials/Retrieving_top_contributions.md).
+For instructions on how to download a fraud event—retrieve a contribution—see [Retrieving top contributions](../tutorials/retrieving-top-contributions.md).
 
 ## Credit balance
 
 The number of digital credits that a peer has on their account, and that can be used to pay for downloading of fraud event data.
 
-See also [Retrieving credit balance](/API_Specification/wallet-controller/Retrieving_credit_balance.md).
+See also [Retrieving credit balance](../api-specification/wallet-controller/retrieving-credit-balance.md).
 
 ## Current conversion rate
 
@@ -31,7 +31,7 @@ See also [Retrieving credit balance](/API_Specification/wallet-controller/Retrie
 
 ## Welcome bonus
 
-Every new peer that has succesfully registered with FIB, automatically receives a 1000 credits bonus.
+Every new peer that has successfully registered with FIB, automatically receives a 1000 credits bonus.
 
 ## Premium subscription
 
