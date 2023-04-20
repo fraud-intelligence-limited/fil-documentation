@@ -12,4 +12,4 @@ Some tutorials in this documentation provide code snippets in Kotlin/Java that a
 
 The provided FIB [API endpoints](../api-specification.md) allow users to access the network's blockchain data, enabling users to perform operations such as [submitting](../tutorials/submitting-a-contribution.md), [retrieving](../tutorials/retrieving-top-contributions.md) and [flagging contributions](../tutorials/flagging-a-contribution.md), etc.
 
-For examples of scenarios where FIB API endpoints are being called, check out [Tutorials](../Tutorials.md).
+For examples of scenarios where FIB API endpoints are being called, check out [Tutorials](../tutorials.md).

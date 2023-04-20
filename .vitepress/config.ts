@@ -106,6 +106,7 @@ export default defineConfig({
           items: [
             {
               text: 'auth-controller',
+              collapsed: true,
               items: [
                 {
                   text: 'Authorizing a user in the system',
@@ -123,6 +124,7 @@ export default defineConfig({
             },
             {
               text: 'wallet-controller',
+              collapsed: true,
               items: [
                 {
                   text: 'Retrieving credit balance',
@@ -132,6 +134,7 @@ export default defineConfig({
             },
             {
               text: 'peer-controller',
+              collapsed: true,
               items: [
                 {
                   text: 'Requesting peer details',
@@ -145,6 +148,7 @@ export default defineConfig({
             },
             {
               text: 'contribution-controller',
+              collapsed: true,
               items: [
                 {
                   text: 'Assembling a contribution',
@@ -174,6 +178,7 @@ export default defineConfig({
             },
             {
               text: 'premium-provider-controller',
+              collapsed: true,
               items: [
                 {
                   text: 'Requesting access to premium contributions by a certain peer',
