@@ -16,7 +16,7 @@ jobs:
         with:
           node-version: '16'
           registry-url: https://registry.npmjs.org/
-      - uses: amondnet/vercel-action@v20
+      - uses: amondnet/vercel-action@225d234cfe5340ca1f9a6cd158338126b5b6845f
         with:
           vercel-token: ${{ secrets.VERCEL_TOKEN }}
           vercel-org-id: ${{ secrets.ORG_ID}}
