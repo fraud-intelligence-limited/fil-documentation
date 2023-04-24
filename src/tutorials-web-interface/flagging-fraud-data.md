@@ -21,5 +21,6 @@ If the number has been added to the ledger previously, it will appear in a list 
 Upon successful flagging, a confirmation message will be displayed on the screen.
 
 ## Note:
+
 Flagged transactions will not be removed from the ledger, but will appear with a status of "Flag" for 
 auditability purposes.
