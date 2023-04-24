@@ -14,7 +14,7 @@ Enter the fraud identifier in the Search Value field and click on "Find in Ledge
 
 ## Select Transaction to Flag
 
-If the number has been added to the ledger previously, it will appear in a list for the user to select, including an indicator of whether added by you (owner) or another member. Select the transaction you would like to flag and click "Flag Tx".
+If the number has been added to the ledger previously, it will appear in a list for the user to select, including an indicator of whether added by you as the owner or another member. Select the transaction you would like to flag and click "Flag Tx".
 
 ## Confirmation Message
 
