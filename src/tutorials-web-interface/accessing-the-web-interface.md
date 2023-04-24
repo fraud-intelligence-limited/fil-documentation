@@ -4,7 +4,6 @@ After registering, users can log in to the FIB web interface using their registe
 
 ## Navigate to the Threatmap Tab
 
-
 The Threatmap tab displays a fraud threat-map that reflects fraud data uploaded by consortium peers. Recent submissions to the ledger are dynamically presented, including the type of fraud, country of origin, and termination.
 
 ## Navigate to the Fraud Twitter Feed Tab
