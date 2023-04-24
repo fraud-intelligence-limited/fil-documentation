@@ -101,6 +101,18 @@ export default defineConfig({
           ],
         },
         {
+          text: 'Tutorials - Web Interface',
+          collapsed: true,
+          items: [
+            { text: 'Accessing the Web Interface', link: '/tutorials-web-interface/accessing-the-web-interface.md' },
+            { text: 'Contributing Fraud Data', link: '/tutorials-web-interface/contributing-fraud-data.md' },
+            { text: 'Downloading Fraud Data', link: '/tutorials-web-interface/downloading-fraud-data.md' },
+            { text: 'Fraud Analytics', link: '/tutorials-web-interface/fraud-analytics.md' },
+            { text: 'User Profile Management', link: '/tutorials-web-interface/user-profile-management.md' },
+            { text: 'Viewing Fraud Tokens', link: '/tutorials-web-interface/viewing-fraud-tokens.md' },
+          ],
+        }
+        {
           text: 'API Specification',
           link: '/api-specification.md',
           items: [
