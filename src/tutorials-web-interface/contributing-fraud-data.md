@@ -1,4 +1,4 @@
-  # Contributing Fraud Data
+# Contributing Fraud Data
 
 ## Access the Upload Menu
 
