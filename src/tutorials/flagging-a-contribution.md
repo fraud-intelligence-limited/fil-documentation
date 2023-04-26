@@ -130,16 +130,16 @@ To flag a contribution, perform the following steps:
        code: 0,
        name: 'Ok'
      },
-     data: 'someData'
+     data: 'transactionBase64'
    }
    ```
 
    :::
 
-3. Sign the `someData` string (see [Signing transactions](signing-transactions.md)).
+3. Sign the `transactionBase64` string (see [Signing transactions](signing-transactions.md)).
 4. Submit the contribution flag you assembled and signed in **_steps 2 and 3:_**
 
-   - Send a `PATCH` request to the `/data/api/v1/contribution-management/contribution/flag` endpoint with the signed `someData` string in the body of the request.
+   - Send a `PATCH` request to the `/data/api/v1/contribution-management/contribution/flag` endpoint with the signed `transactionBase64` string in the body of the request.
 
    ::: details Input structure
 
@@ -152,7 +152,7 @@ To flag a contribution, perform the following steps:
    ::: details Input example
 
    ```
-   someData
+   transactionBase64
    ```
 
    [//]: # 'FIXME specify stricter?'

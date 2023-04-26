@@ -79,16 +79,16 @@ To submit a contribution, perform the following steps:
        code: 0,
        name: 'Ok'
      },
-     data: 'someData'
+     data: 'transactionBase64'
    }
    ```
 
    :::
 
-2. Sign the `someData` string (see [Signing transactions](signing-transactions.md)).
+2. Sign the `transactionBase64` string (see [Signing transactions](signing-transactions.md)).
 3. Submit the contribution you assembled and signed in **_steps 1 and 2:_**
 
-   - Send a `POST` request to the `/data/api/v1/contribution-management/contribution` endpoint with the signed `someData` string in the body of the request.
+   - Send a `POST` request to the `/data/api/v1/contribution-management/contribution` endpoint with the signed `transactionBase64` string in the body of the request.
 
    ::: details Input structure
 
@@ -101,7 +101,7 @@ To submit a contribution, perform the following steps:
    ::: details Input example
 
    ```
-   someData
+   transactionBase64
    ```
 
    :::
