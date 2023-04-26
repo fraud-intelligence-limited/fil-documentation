@@ -51,3 +51,12 @@ A `GET` request to the endpoint.
 ```
 
 :::
+
+### Responses
+
+| Response Code | Description |
+| --- | --- |
+| `200` | Contributions have been successfully retrieved and filtered by the specified parameters. |
+| `400` | Request parameters are invalid or the fraud type could not be resolved by code. |
+| `404` | Contribution subscription has not been found. |
+| `500` | Internal server error. |

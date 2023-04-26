@@ -43,3 +43,11 @@ A `GET` request to the endpoint.
 ```
 
 :::
+
+### Responses
+
+| Response Code | Description |
+| --- | --- |
+| `200` | Peer details have been retrieved successfully. |
+| `404` | User/domain/account/asset not found. |
+| `500` | Internal server error. |

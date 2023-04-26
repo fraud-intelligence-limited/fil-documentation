@@ -36,3 +36,10 @@ A `GET` request to the endpoint.
 ```
 
 :::
+
+### Responses
+
+| Response Code | Description |
+| --- | --- |
+| `200` | Credit balance has been retrieved successfully. |
+| `500` | Internal server error. |

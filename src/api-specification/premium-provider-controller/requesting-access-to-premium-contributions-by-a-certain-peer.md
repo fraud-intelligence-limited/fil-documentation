@@ -40,3 +40,11 @@ A `POST` request to the endpoint, where `peer` is a unique peer identifier.
 ```
 
 :::
+
+### Responses
+
+| Response Code | Description |
+| --- | --- |
+| `200` | Access to premium contributions by a certain peer has been requested. |
+| `400` | The `Entity` field is not set. |
+| `500` | Internal server error. |
