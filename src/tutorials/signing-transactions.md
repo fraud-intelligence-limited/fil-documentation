@@ -1,19 +1,17 @@
 # Signing transactions
 
-Every operation that contains `…/assemble` in its path and has a mirroring endpoint (e.g., [assembling a contribution](../api-specification/contribution-controller/assembling-a-contribution.md) -> [submitting a contribution](../api-specification/contribution-controller/submitting-a-contribution.md)) requires its `transactionBase64` string retrieved from the first request to be signed as a Hex before it is used for the second one.
+Every operation that contains `…/assemble` in its path and has a mirroring endpoint (e.g., [assembling a contribution](../api-specification/contribution-controller/assembling-a-contribution.md) -> [submitting a contribution](../api-specification/contribution-controller/submitting-a-contribution.md)) requires its transaction to be represented as a `transactionHex` string retrieved from the first request to be signed as a Hex before it is used for the second one.
 
 For reference, see any of the following tutorials:
 - [Submitting a contribution](./submitting-a-contribution.md)
 - [Flagging a contribution](./flagging-a-contribution.md)
 
-To sign a transaction, you need to provide the following input data: the public and private keys of the Iroha 2 key pair, and an unsigned transaction string in Base64.
-
 The exact implementation to your system may vary depending on the specific SDK or programming language being used. However, the overall sequence of events to sign a transaction should be the following:
-1. Obtain (create? retrieve?) the `keyPair` object from the Hex strings.
-2. Retrieve the Base64 string of the required transaction.
-3. Decode the transaction string as Hex (?).
-4. Sign the transaction.
-5. Re-encode the transaction to Hex format.
+1. Create a `keyPair` object from the public and private keys of the Iroha 2 key pair.
+2. Retrieve the Hex string of the required transaction.
+3. Decode the retrieved transaction Hex string.
+4. Sign the decoded transaction.
+5. Re-encode the signed transaction to Hex format.
 
 The resulting encoded transaction Hex string can be used as the body for requests to the following endpoints:
 ```http
@@ -25,13 +23,13 @@ PATCH /api/v1/contribution-management/contribution/flag
 
 You can use [any Iroha SDK available](../index.md#what-is-iroha-2) to sign a transaction. Below are references on how to sign a transaction using the following Iroha SDKs:
 
-::: details Iroha Java/Kotlin SDK
+::: code-group Iroha SDK references
 
-```javascript
+```kotlin [Iroha Java/Kotlin SDK]
 //
 package jp.co.soramitsu.signer
 
-// Import ***
+// Import dependencies
 import jp.co.soramitsu.iroha2.appendSignatures
 import jp.co.soramitsu.iroha2.generated.datamodel.transaction.VersionedSignedTransaction
 import jp.co.soramitsu.iroha2.keyPairFromHex
@@ -40,15 +38,13 @@ import org.bouncycastle.util.encoders.Hex
 import java.io.File
 
 // Example transaction Base64 string:
-transactionBase64 = ""
+transactionHex = ""
 
 // Example ed25519 public key:
 publicKey = ""
 
 // Example ed25519 private key:
 privateKey = "413b285d1819a6166b0daa762bb6bef2d082cffb9a13ce041cb0fda5e2f06dc37fbedb314a9b0c00caef967ac5cabb982ec45da828a0c58a9aafc854f32422ac"
-
-//
 
 // Obtain 'keyPair' from the public and private keys of the Iroha 2 key pair:
 val keyPair = keyPairFromHex(
@@ -58,6 +54,12 @@ val keyPair = keyPairFromHex(
 )
 
 // Decode the transaction:
+val transaction: ByteArray = try {
+    Hex.decode(transactionHex)
+} catch (e: IllegalArgumentException) {
+    println("Could not decode transaction from hex format: $e")
+    return
+}
 val decodedTransaction = transaction.let { VersionedSignedTransaction.decode(it) }
 
 // Sign the transaction:
@@ -71,12 +73,8 @@ println("Signed transaction (Hex): ${Hex.toHexString(encoded)}")
 
 ```
 
-:::
-
-::: details Iroha Python SDK
-
-```python
-# Import ***
+```python [Iroha Python SDK]
+# Import dependencies
 from iroha2.data_model.transaction import SignedTransaction
 from iroha2.crypto import KeyPair
 

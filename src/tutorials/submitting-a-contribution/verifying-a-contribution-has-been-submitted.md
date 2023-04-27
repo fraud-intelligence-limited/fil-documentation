@@ -4,12 +4,15 @@ To verify that a contribution has been successfully submitted and the contributo
 
 1. Retrieve a list of the peer’s top contributions:
 
-   - Send a `GET` request to the `/data/api/v1/contribution-management/contribution` endpoint with the `self-only` request parameter set to `true`.
-   - If a contribution has been submitted successfully, it is added to the top of the list of the peer’s contributions.
+   - Send the following request:
 
-     ::: details Output structure
+     ::: code-group
 
-     ```json5
+     ```http [Request]
+     GET /data/api/v1/contribution-management/contribution?self-only=true
+     ```
+
+     ```json5 [Output structure]
      {
        status: {
          code: 0, //integer($int32)
@@ -20,13 +23,7 @@ To verify that a contribution has been successfully submitted and the contributo
      }
      ```
 
-     :::
-
-     ::: details Output example
-
-     ```json5
-     // 200 "OK"
-
+     ```json5 [Output example]
      {
        status: {
          code: 0,
@@ -48,14 +45,19 @@ To verify that a contribution has been successfully submitted and the contributo
 
      :::
 
+   - If a contribution has been submitted successfully, it is added to the top of the list of the peer’s contributions.
+
 2. Retrieve the peer’s credit balance:
 
-   - Send a `GET` request to the `/data/api/v1/wallet-management/balance` endpoint.
-   - If a contribution has been submitted successfully, the peer’s balance is updated in accordance with the declared reward amounts.
+   - Send the following request:
 
-     ::: details Output structure
+     ::: code-group
 
-     ```json5
+     ```http [Request]
+     GET `/data/api/v1/wallet-management/balance`
+     ```
+
+     ```json5 [Output structure]
      {
        status: {
          code: 0, //integer($int32)
@@ -72,13 +74,7 @@ To verify that a contribution has been successfully submitted and the contributo
      }
      ```
 
-     :::
-
-     ::: details Output example
-
-     ```json5
-     // 200 "OK"
-
+     ```json5 [Output request]
      {
        status: {
          code: 0,
@@ -94,4 +90,4 @@ To verify that a contribution has been successfully submitted and the contributo
      }
      ```
 
-     :::
+   - If a contribution has been submitted successfully, the peer’s balance is updated in accordance with the declared reward amounts.
