@@ -11,6 +11,7 @@ To submit a contribution, perform the following steps:
 1. Assemble a contribution by sending the following request:
 
    ::: code-group Data structure
+
    ```http [Request]
    POST /data/api/v1/contribution-management/contribution/assemble
    ```
@@ -57,6 +58,7 @@ To submit a contribution, perform the following steps:
      data: 'transactionHex'
    }
    ```
+
    :::
 
 2. Sign the `transactionHex` string (see [Signing transactions](signing-transactions.md)) retrieved from the response.

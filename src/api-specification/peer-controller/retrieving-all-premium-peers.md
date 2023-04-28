@@ -37,7 +37,7 @@ A `GET` request to the endpoint.
 
 ### Responses
 
-| Response Code | Description |
-| --- | --- |
-| `200` | All premium peers have been retrieved successfully. |
-| `500` | Internal server error. |
+| Response Code | Description                                         |
+| ------------- | --------------------------------------------------- |
+| `200`         | All premium peers have been retrieved successfully. |
+| `500`         | Internal server error.                              |

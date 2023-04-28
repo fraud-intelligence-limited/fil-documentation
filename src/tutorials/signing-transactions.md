@@ -3,10 +3,12 @@
 Every operation that contains `…/assemble` in its path and has a mirroring endpoint (e.g., [assembling a contribution](../api-specification/contribution-controller/assembling-a-contribution.md) -> [submitting a contribution](../api-specification/contribution-controller/submitting-a-contribution.md)) requires its transaction to be represented as a `transactionHex` string retrieved from the first request to be signed as a Hex before it is used for the second one.
 
 For reference, see any of the following tutorials:
+
 - [Submitting a contribution](./submitting-a-contribution.md)
 - [Flagging a contribution](./flagging-a-contribution.md)
 
 The exact implementation to your system may vary depending on the specific SDK or programming language being used. However, the overall sequence of events to sign a transaction should be the following:
+
 1. Create a `keyPair` object from the public and private keys of the Iroha 2 key pair.
 2. Retrieve the Hex string of the required transaction.
 3. Decode the retrieved transaction Hex string.
@@ -14,6 +16,7 @@ The exact implementation to your system may vary depending on the specific SDK o
 5. Re-encode the signed transaction to Hex format.
 
 The resulting encoded transaction Hex string can be used as the body for requests to the following endpoints:
+
 ```http
 POST /api/v1/contribution-management/contribution
 PATCH /api/v1/contribution-management/contribution/flag
@@ -42,18 +45,18 @@ import java.io.File
 fun decodeSignEncode(transactionHex: String): String {
     // Example ed25519 public key:
    val publicKey = "7fbedb314a9b0c00caef967ac5cabb982ec45da828a0c58a9aafc854f32422ac"
-   
+
     // Example ed25519 private key:
     // Note: In Kotlin/Java SDK the truncated representation is more common, although you can refer to full ones represented as concatenation of private and public ones in other SDKs
     val privateKey = "413b285d1819a6166b0daa762bb6bef2d082cffb9a13ce041cb0fda5e2f06dc3"
-    
+
     // Obtain 'keyPair' from the public and private keys of the Iroha 2 key pair:
     val keyPair = keyPairFromHex(
         publicKey,
         privateKey,
         EdDSANamedCurveTable.getByName(EdDSANamedCurveTable.ED_25519)
     )
-    
+
     // Decode the transaction:
     val transaction: ByteArray = try {
         Hex.decode(transactionHex)
@@ -62,14 +65,14 @@ fun decodeSignEncode(transactionHex: String): String {
         throw e
     }
     val decodedTransaction = transaction.let { VersionedSignedTransaction.decode(it) }
-    
+
     // Sign the transaction:
     val signedTransaction = decodedTransaction.appendSignatures(keyPair)
-    
+
     // Re-encode the transaction:
    val encoded = signedTransaction.let { VersionedSignedTransaction.encode(it) }
    val encodedHex = Hex.toHexString(encoded)
-   
+
     // Use the value wherever needed further
    println("Signed transaction (Hex): $encodedHex")
    return encodedHex

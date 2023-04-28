@@ -11,6 +11,7 @@ To flag a contribution, perform the following steps:
 1. Request to flag a contribution by sending the following request:
 
    ::: code-group Data structure
+
    ```http [Request]
    POST /data/api/v1/contribution-management/contribution/{contributionID} //{contributionID} is a range of 'id' values (Fraud identifiers)
    ```
