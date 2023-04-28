@@ -30,3 +30,11 @@ A `GET` request to the endpoint.
 ```
 
 :::
+
+### Responses
+
+| Response Code | Description |
+| --- | --- |
+| `200` | Deterministic salt persisted on the blockchain has been retrieved successfully. |
+| `404` | User not found. |
+| `500` | Internal server error. |

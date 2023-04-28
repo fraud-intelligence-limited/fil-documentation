@@ -50,3 +50,12 @@ This endpoint accepts requests with up to `500` entries.
 ```
 
 :::
+
+### Responses
+
+| Response Code | Description |
+| --- | --- |
+| `200` | Contribution has been assembled and its transaction `data` has been retrieved successfully. |
+| `400` | Contribution type is invalid. |
+| `404` | Account not found or the rewards table doesn't exist. |
+| `500` | Internal server error. |

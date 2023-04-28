@@ -1,30 +1,22 @@
 # Authorizing an account
 
-To authorize an account, perform the following:
+To authorize an account, send the following request:
 
-Send a `POST` request to the `/auth/api/v1/authentication-management/session` endpoint with the following data specified:
+::: code-group Data structure
 
-| Field | Value Type | Description |
-| --- | --- | --- |
-| `email` | `string` | The user’s email address. |
-| `signature` | `string` | The encoded signature of a user’s email address. |
-| `publicKey` | `string` | The public key of the authentication key pair. |
+```http [Request]
+POST /auth/api/v1/authentication-management/session
+```
 
-::: details Input structure
-
-```json5
+```json5 [Input structure]
 {
-  email: 'string',
-  signature: 'string',
-  publicKey: 'string'
+  email: 'string', //The user’s email address
+  signature: 'string', //The encoded signature of a user’s email address
+  publicKey: 'string' //The public key of the authentication key pair
 }
 ```
 
-:::
-
-::: details Input example
-
-```json5
+```json5 [Input example]
 {
   email: 'qa@email.com',
   signature: '2d439e8e7400c11e8c727516df43f45b76d5f18e9241ca9ea7b7c0847d521dcc7008b87f9ec399259d22993146cd0b604935f031020d5a493add9d3bddf4550e',
@@ -41,12 +33,12 @@ If authorization is successful, a response with the following JSON web tokens is
 | Field | Value Type | Description |
 | --- | --- | --- |
 | `accessToken` | `string` | The access token, which is later used in headers of other requests as a bearer token. |
-| `expirationTime` | `integer($int64)` | The exact time until which the event is considered relevant (represented as https://www.epochconverter.com/clock in seconds). |
 | `refreshToken` | `string` | The refresh token. |
+| `expirationTime` | `integer($int64)` | The exact time until which the event is considered relevant (represented as [Unix Epoch time](https://www.epochconverter.com/clock) in seconds). |
 
-::: details Output structure
+::: code-group Data structure
 
-```json5
+```json5 [Output structure]
 {
   status: {
     code: 0, //integer($int32)
@@ -61,17 +53,12 @@ If authorization is successful, a response with the following JSON web tokens is
 }
 ```
 
-:::
-
-::: details Output example
-
-```json5
-// 200 "OK"
-
+```json5 [Output example]
 {
   status: {
     code: 0,
-    name: 'Ok'
+    name: 'Ok',
+    message: 'User authorization has been successful'
   },
   data: {
     accessToken: 'eyJ0eXAiOiJKV1QiLCJhbGciOiJFZERTQSJ9.eyJhY2MiOiJxYTBAcWEiLCJzdWIiOiJxYTBAbWFpbC5jb20iLCJyb2xlIjoiUk9MRV9QRUVSIiwiZXhwIjoxNjYxMjQ0OTIwLCJqdGkiOiI2YzY4OGY2Ni1iNjYzLTRhMjYtODdlZC00N2YzOGU0MTExZWIifQ.wgAs5xQP5MKIBwd1fCxT8HyJ8zGEZzbO-NTpJ9assU9voZYWskSpJQcoT8pTA7D_WcgOopG7f9_I-2RN6Fi1Aw',

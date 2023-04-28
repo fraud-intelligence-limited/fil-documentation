@@ -10,7 +10,7 @@ Every fraud event that is submitted and stored on the blockchain adheres to the 
 
 | Data | Description |
 | --- | --- |
-| Fraud Identifier | The main identifier of the fraud event. <br> Could be one of the following: <ol><li>A range of **phone numbers** (or a single one) compliant with the E.164 international standard and containing a valid National Destination Code.</li><li>A range of **IP addresses** (or a single one).</li><li> 3. A unique **IMEI identifier** of a device. </li></ol> |
+| Fraud Identifier | The main identifier of the fraud event. <br> Could be one of the following: <ol><li>A range of **phone numbers** (or a single one) compliant with the E.164 international standard and containing a valid National Destination Code.</li><li>A range of **IP addresses** (or a single one).</li><li>A unique **IMEI identifier** of a device. </li></ol> |
 | Fraud Type | The type of the fraud event. <br> Could be one of the following: <ol><li>`Wangiri`</li><li>`IRSF`</li><li>`StolenDevice`</li><li>`IPFraud`</li><li>`SMSA2P`</li></ol> |
 | Event Origination | The two-digit code of the country the fraud event originated from (Alpha-2, ISO 3166). |
 | Event Destination | The two-digit code of the country the fraud event was identified as such (Alpha-2, ISO 3166). |

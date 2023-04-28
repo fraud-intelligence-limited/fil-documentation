@@ -43,3 +43,12 @@
 ```
 
 :::
+
+### Responses
+
+| Response Code | Description |
+| --- | --- |
+| `200` | Contribution flag has been assembled and its transaction `data` has been retrieved successfully. |
+| `400` | The request body of the contribution flag is incorrect or premium contribution can't be changed. |
+| `404` | Asset not found. |
+| `500` | Internal server error. |
