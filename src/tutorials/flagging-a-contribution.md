@@ -80,7 +80,7 @@ To flag a contribution, perform the following steps:
    {
      assetIds: [
        {
-         definitionId: 'Id_range#domain', //Must be the same as {contributionID} value set in Step 1
+         definitionId: 'id_range#contribution', //<id_range> must be the same as `{contributionID}` value set in Step 1
          accountId: 'user@peerId'
        }
      ]

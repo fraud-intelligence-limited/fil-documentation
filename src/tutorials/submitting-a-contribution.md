@@ -21,7 +21,7 @@ To submit a contribution, perform the following steps:
      fraudType: 'Wangiri', //The type of the fraud event. Could be one of the following: Wangiri, IRSF, StolenDevice, IPFraud, SMSA2P
      origination: 'string', //The two-digit code of the country the fraud event originated from (Alpha-2, ISO 3166)
      destination: 'string', //The two-digit code of the country the fraud event was identified as such (Alpha-2, ISO 3166)
-     expiryDate: 0 //integer($int32) //The exact time and date until which the event is considered relevant (represented as https://www.epochconverter.com/clock in seconds)
+     expiryDate: 0 //integer($int32) //The exact time and date until which the event is considered relevant (represented as Unix Epoch time in seconds)
    }
    ```
 
