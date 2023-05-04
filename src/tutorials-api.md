@@ -1,4 +1,4 @@
-# Tutorials
+# Tutorials: API
 
 This section lists the tutorials for the basic operations that could be performed with the FIB API, including:
 

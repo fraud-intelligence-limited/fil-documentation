@@ -2,7 +2,7 @@
 
 Before implementing any API calls, it's important to ensure that the API is available and accessible to your application. To do so, authorize your account and retrieve a JSON token.
 
-To check the API availability, follow the [Authorizing an account](../tutorials/authorizing-an-account.md) tutorial.
+To check the API availability, follow the [Authorizing an account](../tutorials-api/authorizing-an-account.md) tutorial.
 
 If the JSON token is retrieved successfully, then the FIB API is available and you can proceed with [Calling API endpoints](../getting-started/calling-api-endpoints.md).
 
