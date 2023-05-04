@@ -39,3 +39,11 @@
 ```
 
 :::
+
+### Responses
+
+| Response Code | Description |
+| --- | --- |
+| 200 | Contribution has been submitted and its transaction `data` has been retrieved successfully. |
+| 400 | Invalid transaction. |
+| 500 | Internal server error. |

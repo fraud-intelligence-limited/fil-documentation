@@ -43,3 +43,11 @@ A `GET` request to the endpoint, where `{contributionID}` is a required paramete
 ```
 
 :::
+
+### Responses
+
+| Response Code | Description |
+| --- | --- |
+| `200` | Contribution has been successfully retrieved by its ID. |
+| `400` | Contribution ID is incorrect or the fraud type could not be resolved by code. |
+| `500` | Internal server error. |

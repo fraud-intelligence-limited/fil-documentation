@@ -8,13 +8,15 @@ A peer account must be authorized for this operation to succeed. See [Authorizin
 
 To flag a contribution, perform the following steps:
 
-1. Request to flag a contribution:
+1. Request to flag a contribution by sending the following request:
 
-   - Send a `POST` request to the <br> `/data/api/v1/contribution-management/contribution/{contributionID}` endpoint, where `{contributionID}` is a range of `id` values (Fraud identifiers).
+   ::: code-group Data structure
 
-   ::: details Ouput structure
+   ```http [Request]
+   POST /data/api/v1/contribution-management/contribution/{contributionID} //{contributionID} is a range of 'id' values (Fraud identifiers)
+   ```
 
-   ```json5
+   ```json5 [Output structure]
    {
      status: {
        code: 0, //integer($int32)
@@ -34,11 +36,7 @@ To flag a contribution, perform the following steps:
    }
    ```
 
-   :::
-
-   ::: details Output example
-
-   ```json5
+   ```json5 [Output example]
    // 200 "OK"
 
    {
@@ -71,28 +69,26 @@ To flag a contribution, perform the following steps:
 
    :::
 
-2. Assemble a contribution flag:
+2. Assemble a contribution flag by sending the following request:
 
-   - Send a `PATCH` request to the `/data/api/v1/contribution-manager/contribution/flag/assemble` endpoint with the same values for the `definitionId` field that were used as `{contributionID}` in **_Step 1_**.
+   ::: code-group Data structure
 
-   ::: details Input structure
+   ```http [Request]
+   PATCH /data/api/v1/contribution-manager/contribution/flag/assemble
+   ```
 
-   ```json5
+   ```json5 [Input structure]
    {
      assetIds: [
        {
-         definitionId: 'CTgO1z^skW@4eO}rujd|p#a~xL05I\\IQlj/1.DMmRm#+CBw*t*s-krya74z@sDB',
-         accountId: "RJ03f{&m'wUhZmJ,AA~ccwomw(Ger^cV^^Zw(0i2I:^yx@#AKb$Flp/U<p1)X8kPOkQRtq4!2)VrbFM1}(=]f~=E7U_!\"kn-/hCxGaL(!bfF)1#'OSuV(D@xL'ijOE[\")a*TjU51%4"
+         definitionId: 'id_range_something#contribution', //<id_range> must be the same as `{contributionID}` value set in Step 1
+         accountId: 'user@peerId'
        }
      ]
    }
    ```
 
-   :::
-
-   ::: details Input example
-
-   ```json5
+   ```json5 [Input example]
    {
      assetIds: [
        {
@@ -103,11 +99,7 @@ To flag a contribution, perform the following steps:
    }
    ```
 
-   :::
-
-   ::: details Output structure
-
-   ```json5
+   ```json5 [Output structure]
    {
      status: {
        code: 0, //integer($int32)
@@ -118,11 +110,7 @@ To flag a contribution, perform the following steps:
    }
    ```
 
-   :::
-
-   ::: details Output example
-
-   ```json5
+   ```json5 [Output example]
    // 200 "OK"
 
    {
@@ -130,38 +118,30 @@ To flag a contribution, perform the following steps:
        code: 0,
        name: 'Ok'
      },
-     data: 'someData'
+     data: 'transactionHex'
    }
    ```
 
    :::
 
-3. Sign the `someData` string (see [Signing transactions](signing-transactions.md)).
-4. Submit the contribution flag you assembled and signed in **_steps 2 and 3:_**
+3. Sign the `transactionHex` string (see [Signing transactions](signing-transactions.md)) retrieved from the response.
+4. Submit the assembled and signed contribution flag by sending the following request:
 
-   - Send a `PATCH` request to the `/data/api/v1/contribution-management/contribution/flag` endpoint with the signed `someData` string in the body of the request.
+   ::: code-group Data structure
 
-   ::: details Input structure
-
-   ```json5
-   'string'
+   ```http [Request]
+   PATCH /data/api/v1/contribution-management/contribution/flag
    ```
 
-   :::
-
-   ::: details Input example
-
-   ```
-   someData
+   ```json5 [Input structure]
+   'transactionHex'
    ```
 
-   [//]: # 'FIXME specify stricter?'
+   ```json5 [Input example]
+   '0114616c69636528776f6e6465726c616e640004000d09001468656c6c6f00002cde318c87010000a0860100000000000000041c65643235353139807233bfc89dcbd68c19fde6ce6158225298ec1131b6a130d1aeb454c1ab5183c00101bef276fc36ba638abd422e76fd0e6df319df1c3d336ab60d7276333b4010bb7d962d04b273d9caf91cb8509581c0b55e1cdee371c52863a8b4b62c67fbfc870f'
+   ```
 
-   :::
-
-   ::: details Output structure
-
-   ```json5
+   ```json5 [Output structure]
    {
      status: {
        code: 0, //integer($int32)
@@ -172,11 +152,7 @@ To flag a contribution, perform the following steps:
    }
    ```
 
-   :::
-
-   ::: details Output example
-
-   ```json5
+   ```json5 [Output example]
    // 200 "OK"
 
    {

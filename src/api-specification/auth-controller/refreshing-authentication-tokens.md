@@ -36,3 +36,12 @@ A `PATCH` request to the endpoint, where the `Authorization` header is required.
 ```
 
 :::
+
+### Responses
+
+| Response Code | Description |
+| --- | --- |
+| `200` | Authentication tokens have been refreshed successfully. |
+| `401` | Either the signature or refresh token are not valid, or the Bearer token could not be parsed from the `Authorization` header. |
+| `404` | User not found. |
+| `500` | Internal server error. |

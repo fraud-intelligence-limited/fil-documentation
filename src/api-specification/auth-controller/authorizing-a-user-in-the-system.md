@@ -47,11 +47,10 @@
 
 ### Responses
 
-| Code | Name | Status Code | Description |
-| --- | --- | --- | --- |
-| `200 OK` | `Ok` | `0` | Authorization has been successful. |
-| `400 Bad Request` | `ArgumentNotValid` | `11` | Argument is not valid. |
-| `401 Invalid Signature` | `InvalidSignature` | `2` | User’s signature is incorrect. |
-| `401 Invalid Signature` | `SignatureDecodeError` | `19` | User’s signature failed to be decoded. |
-| `422 Unprocessable Entity` | `InvalidPublicKey` | `18` | User’s public key is incorrect. |
-| `422 Unprocessable Entity` | `SignatureDecodeError` | `19` | Failed to decode the user's email signature. |
+| Response Code | Description |
+| --- | --- |
+| `200` | User authorization has been successful. |
+| `401` | User signature is incorrect or failed to be decoded. |
+| `404` | User not found. |
+| `422` | User signature either could not be decoded or verified, or the `publicKey` string is not valid. |
+| `500` | Internal server error. |

@@ -36,7 +36,7 @@ When [retrieving top contributions](../api-specification/contribution-controller
 | `fraudType` | `enum string` | The type of the fraud event. <br> Could be one of the following: <ol><li>`Wangiri`</li><li>`IRSF`</li><li>`StolenDevice`</li><li>`IPFraud`</li><li>`SMSA2P`</li></ol> |
 | `origination` | `string` | The two-digit code of the country the fraud event originated from (Alpha-2, ISO 3166). |
 | `destination` | `string` | The two-digit code of the country the fraud event was identified as such (Alpha-2, ISO 3166). |
-| `expiryDate` | `integer($int32)` | The exact time and date until which the event is considered relevant (represented as https://www.epochconverter.com/clock in seconds). |
+| `expiryDate` | `integer($int32)` | The exact time and date until which the event is considered relevant (represented as [Unix Epoch time](https://www.epochconverter.com/clock) in seconds). |
 | `fraudStatus` | `enum string` | The status of the event at the time of observing. <br> Could be one of the following: <ol><li>`Active`</li><li>`Expired`</li><li>`Flagged`</li></ol> |
 | `confidenceIndex` | `number($double)` | The predicted fraud likelihood score in the range from 1 to 100. |
 | `isPremium` | `boolean` | The definition of whether the contributor is a premium user. |
@@ -54,6 +54,6 @@ When [assembling a contribution](../api-specification/contribution-controller/as
 | `fraudType` | `enum string` | The type of the fraud event. <br> Could be one of the following: <ol><li>`Wangiri`</li><li>`IRSF`</li><li>`StolenDevice`</li><li>`IPFraud`</li><li>`SMSA2P`</li></ol> |
 | `origination` | `string` | The two-digit code of the country the fraud event originated from (Alpha-2, ISO 3166). |
 | `destination` | `string` | The two-digit code of the country the fraud event was identified as such (Alpha-2, ISO 3166). |
-| `expiryDate` | `integer($int32)` | The exact time and date until which the event is considered relevant (represented as https://www.epochconverter.com/clock in seconds). |
+| `expiryDate` | `integer($int32)` | The exact time and date until which the event is considered relevant (represented as [Unix Epoch time](https://www.epochconverter.com/clock) in seconds). |
 
 :::

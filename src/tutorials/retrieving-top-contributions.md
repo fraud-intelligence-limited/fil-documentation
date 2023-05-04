@@ -2,7 +2,7 @@
 
 ::: tip Note
 
-A peer account must be authorized for this operation to succeed. _See [Authorizing an account](authorizing-an-account.md)._
+A peer account must be authorized for this operation to succeed. _See [Authorizing an account](authorizing-an-account.md)_.
 
 :::
 
@@ -10,27 +10,19 @@ When downloading fraud events—retrieving contributions—it is possible to fil
 
 Request parameters can be used in any combination to tailor response results to your specific needs.
 
-Since request parameters are optional, specifying no parameters when sending a request will result in a response containing the top contributions from the entire ledger.
+Since request parameters are optional, specifying no parameters when sending a request will result in a response containing top contributions from the entire ledger.
 
 For more information, see [Retrieving top contributions > Parameters](/api-specification/contribution-controller/retrieving-top-contributions.md).
 
-To retrieve top contributions, perform the following:
+To retrieve top contributions, send the following request:
 
-Send a `GET` request to the `/data/api/v1/contribution-management/contribution` endpoint.
+::: code-group Data structure
 
-Optionally, you may specify any one or several parameters in the request.
-
-::: details Input structure
-
-```http
-/api/v1/contribution-management/contribution?size=''&from=''&to=''&ft=''&org=''&self-only=''
+```http [Input structure]
+GET /api/v1/contribution-management/contribution?size=''&from=''&to=''&ft=''&org=''&self-only=''
 ```
 
-:::
-
-::: details Input example
-
-```http
+```http [Input examples]
 // size
 /api/v1/contribution-management/contribution?size=10
 
@@ -56,9 +48,9 @@ Optionally, you may specify any one or several parameters in the request.
 
 The response to the `GET` request contains a list of the top contributions, filtered according to the parameters set in the request, if any.
 
-::: details Output structure
+::: code-group Data structure
 
-```json5
+```json5 [Output structure]
 {
   status: {
     code: 0, //integer($int32)
@@ -82,11 +74,7 @@ The response to the `GET` request contains a list of the top contributions, filt
 }
 ```
 
-:::
-
-::: details Output example
-
-```json5
+```json5 [Output example]
 {
   status: {
     code: 0,
