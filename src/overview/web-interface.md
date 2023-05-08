@@ -23,6 +23,7 @@ On this page peers can view a range of statistical metrics derived from the coll
 On this page peers can either upload fraud events or flag the existing ones.
 
 See the following related tutorials:
+
 - [Uploading fraud data](../tutorials-web/uploading-fraud-data.md)
 - [Flagging fraud data](../tutorials-web/flagging-fraud-data.md)
 
@@ -31,6 +32,7 @@ See the following related tutorials:
 On this page peers can download fraud events data.
 
 See the following related tutorial:
+
 - [Downloading fraud data](../tutorials-web/downloading-fraud-data.md)
 
 ## Tokens
@@ -40,17 +42,16 @@ On this page peers can view their current balance.
 ## Profile
 
 On this page peers can view the following information about their account:
+
 - **About** tab — displays the peer's contact information.
 - **Subscription** tab — displays the following subscription information:
-    - **Membership type**: *?*
-    - **Subscription type**: the type of the subscription that a peer has.
-    - **Company name**: the name of the company that a peer is registered with.
-    - **Operating country**: the country that a peer is operating from.
+  - **Membership type**: _?_
+  - **Subscription type**: the type of the subscription that a peer has.
+  - **Company name**: the name of the company that a peer is registered with.
+  - **Operating country**: the country that a peer is operating from.
 - **Services** tab — displays whether a peer has access to the following FIB services:
-    - **Uploading**: allows users to upload fraud events data.
-    - **?**: *?*
-    - **Reports**: allows users to access the fraud analytics reports.
+  - **Uploading**: allows users to upload fraud events data.
+  - **?**: _?_
+  - **Reports**: allows users to access the fraud analytics reports.
 
-::: tip Note
-If you are a peer with a **freemium** subscription, you can select **Request** on the **Subscription** tab to make a request to change your subscription type to **premium**.
-:::
+::: tip Note If you are a peer with a **freemium** subscription, you can select **Request** on the **Subscription** tab to make a request to change your subscription type to **premium**. :::

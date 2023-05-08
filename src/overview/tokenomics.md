@@ -13,6 +13,7 @@ Credits can be spent on downloading fraud event data from other users.
 In order to incentivize the registered peers to submit the fraud events that they have encountered, credits are rewarded for every submitted contribution.
 
 See the following related tutorials:
+
 - [Tutorials: Web UI > Uploading fraud data](../tutorials-web/uploading-fraud-data.md)
 - [Tutorials: API > Submitting a contribution](../tutorials-api/submitting-a-contribution.md)
 
@@ -21,6 +22,7 @@ See the following related tutorials:
 The earned credits can be used to pay for downloading the fraud event data stored on the blockchain, which enables peers to update their own records and stay informed about the latest fraudulent activities. This process helps organizations to remain vigilant and prevent fraudulent activities from occurring within their own system.
 
 See the following related tutorials:
+
 - [Tutorials: Web UI > Downloading fraud data](../tutorials-web/downloading-fraud-data.md)
 - [Tutorials: API > Retrieving top contributions](../tutorials-api/retrieving-top-contributions.md)
 
