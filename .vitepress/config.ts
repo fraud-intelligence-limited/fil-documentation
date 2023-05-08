@@ -90,6 +90,10 @@ export default defineConfig({
               link: '/tutorials-api/generating-key-pairs.md',
             },
             {
+              text: 'Signing user email addresses',
+              link: '/tutorials-api/signing-user-email-addresses.md',
+            },
+            {
               text: 'Signing transactions',
               link: '/tutorials-api/signing-transactions.md',
             },
