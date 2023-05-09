@@ -8,7 +8,7 @@ The exact implementation to your system may vary depending on the specific SDK o
 2. Obtain a `signature` of the user's email address.
 3. Encode the `signature` as a Hex string.
 
-The resulting encoded `signature` Hex string can be used as the body for requests to the following endpoint:
+The resulting encoded `signature` Hex string can be used as a part of the body for requests to the following endpoint:
 
 ```http
 POST /auth/api/v1/authentication-management/session
