@@ -6,9 +6,9 @@ Registered FIB peers can log in to the FIB Web Interface using their registered 
 
 On this page peers can view the following tabs:
 
-### Threatmap
+### Consortium Data
 
-This tab provides a dynamic visual representation of the recent fraud data uploaded by peers on the network. The **Threatmap** shows real-time data on the type of fraud, the originating country, and the destination country, which allows users to quickly identify emerging trends and hotspots.
+This tab provides a dynamic visual representation of the recent fraud data uploaded by peers on the network. The threat map shows real-time data on the type of fraud, the origination country, and the destination country, which allows users to quickly identify emerging trends and hotspots.
 
 ### Fraud Twitter Feed
 
@@ -43,15 +43,15 @@ On this page peers can view their current balance.
 
 On this page peers can view the following information about their account:
 
-- **About** tab — displays the peer's contact information.
+- **About** tab — displays peer's contact information.
 - **Subscription** tab — displays the following subscription information:
-  - **Membership type**: _?_
-  - **Subscription type**: the type of the subscription that a peer has.
+  - **Membership type**: the category of the company that a peer is registered with (e.g., telco, fraud vendor, etc.).
+  - **Subscription type**: the type of subscription that a peer has.
   - **Company name**: the name of the company that a peer is registered with.
   - **Operating country**: the country that a peer is operating from.
 - **Services** tab — displays whether a peer has access to the following FIB services:
-  - **Uploading**: allows users to upload fraud events data.
-  - **?**: _?_
-  - **Reports**: allows users to access the fraud analytics reports.
+  - **Uploading**: allows users to upload fraud events data on the **Upload** page.
+  - **Web API**: allows users to access backend API endpoints.
+  - **Reports**: allows users to access the fraud analytics reports on the **Analyse** page.
 
 ::: tip Note If you are a peer with a **freemium** subscription, you can select **Request** on the **Subscription** tab to make a request to change your subscription type to **premium**. :::
