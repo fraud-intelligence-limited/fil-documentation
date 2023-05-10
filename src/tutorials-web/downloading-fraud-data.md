@@ -2,7 +2,7 @@
 
 To download fraud event data via FIB Web UI, perform the following steps:
 
-1. On the **Home** screen, select **Download** from the top right menu.
+1. From the top right menu, select **Download**.
 2. On the **Download Fraud Data** screen that appears, specify the following data:
    - **Select Fraud Type** dropdown menu — select the fraud type of the fraud events you wish to download, then select **Add**; several individual fraud types can be added to the request.
    - **Select Originating Country** dropdown menu — select the country that the fraud events originated from, then select **Add**; several individual countries can be added to the request.

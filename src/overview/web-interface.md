@@ -54,4 +54,8 @@ On this page peers can view the following information about their account:
   - **Web API**: allows users to access backend API endpoints.
   - **Reports**: allows users to access the fraud analytics reports on the **Analyse** page.
 
-::: tip Note If you are a peer with a **freemium** subscription, you can select **Request** on the **Subscription** tab to make a request to change your subscription type to **premium**. :::
+::: tip Note
+
+If you are a peer with a **freemium** subscription, you can select **Request** on the **Subscription** tab to make a request to change your subscription type to **premium**.
+
+:::
