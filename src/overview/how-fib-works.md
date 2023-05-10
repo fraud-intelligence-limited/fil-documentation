@@ -35,4 +35,4 @@ When a user creates a transaction on the FIB network, they sign it with their pr
 
 Additionally, signing transactions with key pairs can enhance the privacy and confidentiality of the user's information on the network. Overall, the use of key pairs and digital signatures is a crucial aspect of the FIB network's security infrastructure.
 
-For more information, see [Generating key pairs](../tutorials/generating-key-pairs.md) and [Signing transactions](../tutorials/signing-transactions.md).
+For more information, see [Generating key pairs](../tutorials-api/generating-key-pairs.md) and [Signing transactions](../tutorials-api/signing-transactions.md).

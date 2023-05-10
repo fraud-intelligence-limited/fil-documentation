@@ -9,7 +9,7 @@ For reference, see any of the following tutorials:
 
 The exact implementation to your system may vary depending on the specific SDK or programming language being used. However, the overall sequence of events to sign a transaction should be the following:
 
-1. Create a `keyPair` object from the public and private keys of the Iroha 2 key pair.
+1. Create a `keyPair` object from the public and private keys of the user's Iroha 2 key pair.
 2. Retrieve the Hex string of the required transaction.
 3. Decode the retrieved transaction Hex string.
 4. Sign the decoded transaction.

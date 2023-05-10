@@ -12,17 +12,17 @@ A peer that has contributed at least a single fraud event is considered a **_con
 
 Once a contribution has been submitted, the peer’s list of contributions is updated, and their credit balance is increased by an amount equal to the number of contributions submitted based on the current reward rate active in the network.
 
-For complete instructions on how to submit a contribution, see [Submitting a contribution](../tutorials/submitting-a-contribution.md).
+For complete instructions on how to submit a contribution, see [Submitting a contribution](../tutorials-api/submitting-a-contribution.md).
 
 For information on the credit balance and rewards, see [Tokenomics](./tokenomics.md).
 
 ### Retrieving contributions
 
-In order for peers to keep their own records updated with the latest fraud event data, they can [retrieve top contributions in a number of ways](../tutorials/retrieving-top-contributions.md).
+In order for peers to keep their own records updated with the latest fraud event data, they can [retrieve top contributions in a number of ways](../tutorials-api/retrieving-top-contributions.md).
 
 ### Flagging contributions
 
-If a peer deems a certain contribution to no longer be relevant (e.g., _it is a false positive_), they can [flag that contribution](../tutorials/flagging-a-contribution.md).
+If a peer deems a certain contribution to no longer be relevant (e.g., _it is a false positive_), they can [flag that contribution](../tutorials-api/flagging-a-contribution.md).
 
 ## API requests data structure
 

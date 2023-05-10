@@ -26,6 +26,12 @@ POST /auth/api/v1/authentication-management/session
 
 :::
 
+::: tip Note
+
+For instructions on how to generate `signature` and `publicKey` strings, see [Generating key pairs](/tutorials-api/generating-key-pairs.md) and [Signing user email addresses](/tutorials-api/signing-user-email-addresses.md).
+
+:::
+
 ### Expected result
 
 If authorization is successful, a response with the following JSON web tokens is generated:

@@ -10,6 +10,6 @@ To integrate your API client with the FIB API server, you can use different prog
 
 Some tutorials in this documentation provide code snippets in Kotlin/Java that are required in order to perform Iroha-related operations.
 
-The provided FIB [API endpoints](../api-specification.md) allow users to access the network's blockchain data, enabling users to perform operations such as [submitting](../tutorials/submitting-a-contribution.md), [retrieving](../tutorials/retrieving-top-contributions.md) and [flagging contributions](../tutorials/flagging-a-contribution.md), etc.
+The provided FIB [API endpoints](../api-specification.md) allow users to access the network's blockchain data, enabling users to perform operations such as [submitting](../tutorials-api/submitting-a-contribution.md), [retrieving](../tutorials-api/retrieving-top-contributions.md) and [flagging contributions](../tutorials-api/flagging-a-contribution.md), etc.
 
-For examples of scenarios where FIB API endpoints are being called, check out [Tutorials](../tutorials.md).
+For examples of scenarios where FIB API endpoints are being called, check out [Tutorials](../tutorials-api.md).

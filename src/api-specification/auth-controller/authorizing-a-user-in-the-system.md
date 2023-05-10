@@ -16,11 +16,15 @@
 
 ```json5
 {
-  email: 'string',
-  signature: 'string',
-  publicKey: 'string'
+  email: 'string', //The user’s email address
+  signature: 'string', //The encoded signature of a user’s email address
+  publicKey: 'string' //The public key of the authentication key pair
 }
 ```
+
+::: tip Note
+
+For instructions on how to generate `signature` and `publicKey` strings, see [Generating key pairs](../../tutorials-api/generating-key-pairs.md) and [Signing user email addresses](../../tutorials-api/signing-user-email-addresses.md).
 
 :::
 

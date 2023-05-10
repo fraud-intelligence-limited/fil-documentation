@@ -32,6 +32,10 @@ export default defineConfig({
               text: 'Tokenomics',
               link: '/overview/tokenomics.md',
             },
+            {
+              text: 'Web UI',
+              link: '/overview/web-interface.md',
+            },
           ],
         },
         {
@@ -58,43 +62,66 @@ export default defineConfig({
           ],
         },
         {
-          text: 'Tutorials',
-          link: '/tutorials.md',
+          text: 'Tutorials: Web UI',
+          link: '/tutorials-web.md',
+          collapsed: true,
+          items: [
+            {
+              text: 'Uploading fraud data',
+              link: '/tutorials-web/uploading-fraud-data.md',
+            },
+            {
+              text: 'Flagging fraud data',
+              link: '/tutorials-web/flagging-fraud-data.md',
+            },
+            {
+              text: 'Downloading fraud data',
+              link: '/tutorials-web/downloading-fraud-data.md',
+            },
+          ],
+        },
+        {
+          text: 'Tutorials: API',
+          link: '/tutorials-api.md',
           collapsed: true,
           items: [
             {
               text: 'Generating key pairs',
-              link: '/tutorials/generating-key-pairs.md',
+              link: '/tutorials-api/generating-key-pairs.md',
+            },
+            {
+              text: 'Signing user email addresses',
+              link: '/tutorials-api/signing-user-email-addresses.md',
             },
             {
               text: 'Signing transactions',
-              link: '/tutorials/signing-transactions.md',
+              link: '/tutorials-api/signing-transactions.md',
             },
             {
               text: 'Authorizing an account',
-              link: '/tutorials/authorizing-an-account.md',
+              link: '/tutorials-api/authorizing-an-account.md',
             },
             {
               text: 'Retrieving top contributions',
-              link: '/tutorials/retrieving-top-contributions.md',
+              link: '/tutorials-api/retrieving-top-contributions.md',
             },
             {
               text: 'Submitting a contribution',
-              link: '/tutorials/submitting-a-contribution.md',
+              link: '/tutorials-api/submitting-a-contribution.md',
               items: [
                 {
                   text: 'Verifying a contribution has been submitted',
-                  link: '/tutorials/submitting-a-contribution/verifying-a-contribution-has-been-submitted.md',
+                  link: '/tutorials-api/submitting-a-contribution/verifying-a-contribution-has-been-submitted.md',
                 },
               ],
             },
             {
               text: 'Flagging a contribution',
-              link: '/tutorials/flagging-a-contribution.md',
+              link: '/tutorials-api/flagging-a-contribution.md',
               items: [
                 {
                   text: 'Verifying a contribution has been flagged',
-                  link: '/tutorials/flagging-a-contribution/verifying-a-contribution-has-been-flagged.md',
+                  link: '/tutorials-api/flagging-a-contribution/verifying-a-contribution-has-been-flagged.md',
                 },
               ],
             },

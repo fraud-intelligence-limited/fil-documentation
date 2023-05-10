@@ -106,4 +106,4 @@ To submit a contribution, perform the following steps:
 
 ### Expected result
 
-An assembled and signed contribution is submitted to the ledger, the peer’s list of contributions is updated and their credit balance is increased by a number equal to the number of contributions submitted, based on the current reward rate active in the network.
+An assembled and signed contribution is submitted to the ledger, the peer’s list of contributions is updated and their credit balance is increased based on the current reward rate active in the network (see [Current conversion rate](../overview/tokenomics.md)).
