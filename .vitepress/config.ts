@@ -67,16 +67,16 @@ export default defineConfig({
           collapsed: true,
           items: [
             {
-              text: 'Downloading fraud data',
-              link: '/tutorials-web/downloading-fraud-data.md',
-            },
-            {
               text: 'Uploading fraud data',
               link: '/tutorials-web/uploading-fraud-data.md',
             },
             {
               text: 'Flagging fraud data',
               link: '/tutorials-web/flagging-fraud-data.md',
+            },
+            {
+              text: 'Downloading fraud data',
+              link: '/tutorials-web/downloading-fraud-data.md',
             },
           ],
         },
