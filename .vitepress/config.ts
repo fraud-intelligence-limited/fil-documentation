@@ -7,7 +7,7 @@ export default defineConfig({
   description: 'Fraud Intelligence Blockchain documentation',
   srcDir: 'src',
   vite: {
-    plugins: [UnoCSS()]
+    plugins: [UnoCSS()],
   },
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config

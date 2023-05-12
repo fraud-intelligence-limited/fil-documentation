@@ -13,11 +13,23 @@ defineProps<{
     }"
     :data-location="location"
   >
-    <img src="/orillion-logo.png" alt="Orillion logo" width="100" />
+    <img
+      src="/orillion-logo.png"
+      alt="Orillion logo"
+      width="100"
+    >
     <div class="middle">
-      <img src="/soramitsu-logo-1.png" alt="Soramitsu logo" width="140" />
+      <img
+        src="/soramitsu-logo-1.png"
+        alt="Soramitsu logo"
+        width="140"
+      >
     </div>
-    <img src="/rag-logo-1.png" alt="Risk & Assurance Group logo" width="210" />
+    <img
+      src="/rag-logo-1.png"
+      alt="Risk & Assurance Group logo"
+      width="210"
+    >
   </div>
 </template>
 
@@ -34,7 +46,7 @@ img {
   min-width: 0;
 }
 
-.logos[data-location=docs] .middle {
+.logos[data-location='docs'] .middle {
   padding: 0 8px;
   margin: 0 8px;
   border-left: 1px solid var(--vp-c-divider);
