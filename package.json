@@ -22,6 +22,8 @@
     "prettier-eslint": "^15.0.1",
     "prettier-eslint-cli": "^7.1.0",
     "typescript": "^5.0",
-    "vitepress": "^1.0.0-alpha.64"
+    "unocss": "^0.51.12",
+    "vitepress": "1.0.0-alpha.75",
+    "vue": "^3.3.1"
   }
 }
