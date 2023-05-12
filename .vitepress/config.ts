@@ -1,10 +1,14 @@
 import { defineConfig } from 'vitepress'
+import UnoCSS from 'unocss/vite'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   title: 'FIB Documentation',
   description: 'Fraud Intelligence Blockchain documentation',
   srcDir: 'src',
+  vite: {
+    plugins: [UnoCSS()],
+  },
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [{ text: 'Guide', link: '/' }],
@@ -227,5 +231,9 @@ export default defineConfig({
     },
 
     socialLinks: [{ icon: 'github', link: 'https://github.com/fraud-intelligence-limited/documentation' }],
+
+    search: {
+      provider: 'local',
+    },
   },
 })
