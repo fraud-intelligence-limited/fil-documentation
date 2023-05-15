@@ -30,7 +30,7 @@ See the following related tutorials:
 
 The number of digital credits that a peer has on their account, and that can be used to pay for downloading of fraud event data.
 
-A peer can check their current credit balance by going to the [**Tokens**](web-interface.md#tokens) page of the FIB Web UI or by calling the following API endpoint: [Retrieving credit balance](../api-specification/wallet-controller/retrieving-credit-balance.md).
+A peer can check their current credit balance by going to the [Tokens](web-interface.md#tokens) page of the FIB Web UI or by calling the following API endpoint: [Retrieving credit balance](../api-specification/wallet-controller/retrieving-credit-balance.md).
 
 ## Current conversion rate
 
@@ -45,7 +45,7 @@ Every new peer that has successfully registered with FIB, automatically receives
 
 Our premium subscription offers custom paid conditions for users seeking to gain access to exclusive features and benefits, tailored to their individual needs.
 
-To apply for a premium subscription and discuss the conditions, go to the [**Profile**](web-interface.md#profile) page of the FIB Web UI and select **Request** on the **Subscription** tab.
+To apply for a premium subscription and discuss the conditions, go to the [Profile](web-interface.md#profile) page of the FIB Web UI and select **Request** on the **Subscription** tab.
 
 Alternatively, you may contact us at [support@fraudintelligencelimited.com](mailto:support@fraudintelligencelimited.com).
 
