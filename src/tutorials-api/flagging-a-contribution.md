@@ -2,7 +2,7 @@
 
 ::: tip Note
 
-A peer account must be authorized for this operation to succeed. See [Authorizing an account](authorizing-an-account.md).
+A peer account must be authorized for this operation to succeed. _See [Authorizing an account](authorizing-an-account.md)_.
 
 :::
 
