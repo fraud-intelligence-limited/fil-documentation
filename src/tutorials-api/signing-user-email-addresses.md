@@ -71,24 +71,26 @@ import { freeScope } from '@iroha2/crypto-core' // version: 1.0.0
  * @returns {string} - email signature hex
  */
 function createEmailSignature(publicKeyHex, privateKeyHex, email) {
-    return freeScope(() => {
-        const keyPair = crypto.KeyPair.fromJSON({
-            public_key: 'ed0120' + publicKeyHex,
-            private_key: {
-                digest_function: 'ed25519',
-                payload: privateKeyHex,
-            },
-        })
-
-        return keyPair.sign('array', new TextEncoder().encode(email)).payload('hex')
+  return freeScope(() => {
+    const keyPair = crypto.KeyPair.fromJSON({
+      public_key: 'ed0120' + publicKeyHex,
+      private_key: {
+        digest_function: 'ed25519',
+        payload: privateKeyHex
+      }
     })
+
+    return keyPair
+      .sign('array', new TextEncoder().encode(email))
+      .payload('hex')
+  })
 }
 
 // example signature
 const signature = createEmailSignature(
-    '7fbedb314a9b0c00caef967ac5cabb982ec45da828a0c58a9aafc854f32422ac',
-    '413b285d1819a6166b0daa762bb6bef2d082cffb9a13ce041cb0fda5e2f06dc37fbedb314a9b0c00caef967ac5cabb982ec45da828a0c58a9aafc854f32422ac',
-    'alice@wonderland.space'
+  '7fbedb314a9b0c00caef967ac5cabb982ec45da828a0c58a9aafc854f32422ac',
+  '413b285d1819a6166b0daa762bb6bef2d082cffb9a13ce041cb0fda5e2f06dc37fbedb314a9b0c00caef967ac5cabb982ec45da828a0c58a9aafc854f32422ac',
+  'alice@wonderland.space'
 )
 
 console.log(signature)
