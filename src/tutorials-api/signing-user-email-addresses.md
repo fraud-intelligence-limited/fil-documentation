@@ -97,4 +97,21 @@ console.log(signature)
 // => 9729e8fbcd425bfe48809cc996c9e6d3cecddf0848a51d8758582b3c84bb2caca8e41a8290018aa7064f0b9ec61d2b1a155d5e4c772bc992d918528cf6cb6308
 ```
 
+```python [Iroha Python SDK]
+# Import dependencies
+from iroha2.crypto import KeyPair
+
+# Example ed25519 private key
+private_key = "413b285d1819a6166b0daa762bb6bef2d082cffb9a13ce041cb0fda5e2f06dc37fbedb314a9b0c00caef967ac5cabb982ec45da828a0c58a9aafc854f32422ac"
+
+# Obtain `key_pair` from a user's private key:
+key_pair = KeyPair.from_private(private_key)
+
+# Sign the user's email address:
+signature = key_pair.sign(b"email@address")
+
+# Retrieve the encoded Hex string of the user's `signature`
+print(f"Encoded signature:\n{bytes(signature).hex()}")
+```
+
 :::
