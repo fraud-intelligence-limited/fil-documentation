@@ -55,6 +55,6 @@ The monthly reward limit is currently 1,000,000,000 rewards per peer.
 
 ::: tip Info
 
-_Fraud Intelligence Limited_ may from time to time, by an in-advance written email notice to you, adjust the reward limit, in accordance with the [RAG Fraud blockchain Terms & Conditions document](https://github.com/fraud-intelligence-limited/fil-legal/blob/main/RAG%20Fraud%20Blockchain%20Terms%20of%20Use%20v2.0.docx).
+_Fraud Intelligence Limited_ may from time to time, by an in-advance written email notice to you, adjust the reward limit, in accordance with the [RAG Fraud blockchain Terms & Conditions document](https://github.com/fraud-intelligence-limited/fil-legal/blob/main/RAG%20Fraud%20Blockchain%20Terms%20of%20Use%20v3.0.pdf).
 
 :::
