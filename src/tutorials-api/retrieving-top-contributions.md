@@ -38,8 +38,11 @@ GET /api/v1/contribution-management/contribution?size=''&from=''&to=''&ft=''&org
 // self-only
 /api/v1/contribution-management/contribution?self-only=true
 
+// fetch-mode
+/api/v1/contribution-management/contribution?fetch-mode=new
+
 // combination
-/api/v1/contribution-management/contribution?size=2&ft=StolenDevice&org=US&self-only=true
+/api/v1/contribution-management/contribution?size=2&ft=StolenDevice&org=US&self-only=true&fetch-mode=new
 ```
 
 :::

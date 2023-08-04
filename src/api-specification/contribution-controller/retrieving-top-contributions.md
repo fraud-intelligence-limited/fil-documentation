@@ -13,10 +13,11 @@
 | Field | Value Type | Description |
 | --- | --- | --- |
 | `size` | `integer($int32)` | The number of entries, starting with the latest, shown in the response. <br> Set to `50` by default. |
-| `from` and `to` | `string` | The timeframe that the response entries are filtered by (set as [Unix Epoch time](https://www.epochconverter.com/clock) in seconds). <br> `from` is set to 0 by default. |
+| `from` and `to` | `string` | The timeframe that the response entries are filtered by (set as [Unix Epoch time](https://www.epochconverter.com/clock) in seconds). <br> The `from` parameter is set to `0` by default. |
 | `ft` | `array[string]` | The type of the fraud event. <br> Could be one of the following: <ol><li>`Wangiri`</li><li>`IRSF`</li><li>`StolenDevice`</li><li>`IPFraud`</li><li>`SMSA2P`</li></ol> |
 | `org` | `array[string]` | The country of origination of the fraud event. Set as a two-digit country code (Alpha-2, ISO 3166; e.g., US, GA) |
-| `self-only` | `boolean` | A boolean that defines whether the response should only contain contributions submitted by the requesting peer. <br> Set to `false` by default. |
+| `self-only` | `boolean` | A boolean that defines whether the response should only contain contributions submitted by the requesting peer. <br> The `self-only` parameter is set to `false` by default. |
+| `fetch-mode` | `string` | The parameter that filters the response entries based on whether the requesting user has already seen them. <br> Could be one of the following: <ol><li>`NEW` — includes only the unseen by the requesting user entries.</li></ol><li>OLD — includes only the already seen by the requesting user entries.</li><li>`DEFAULT` — includes all of the entries.</li> <br> The `fetch-mode` parameter is set to `DEFAULT` by default. |
 
 **Input/request structure**:
 
