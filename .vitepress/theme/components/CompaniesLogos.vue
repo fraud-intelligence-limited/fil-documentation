@@ -18,17 +18,10 @@ defineProps<{
       alt="Orillion logo"
       width="100"
     >
-    <div class="middle">
-      <img
-        src="/soramitsu-logo-1.png"
-        alt="Soramitsu logo"
-        width="140"
-      >
-    </div>
     <img
-      src="/rag-logo-1.png"
-      alt="Risk & Assurance Group logo"
-      width="210"
+      src="/soramitsu-logo-1.png"
+      alt="Soramitsu logo"
+      width="140"
     >
   </div>
 </template>
@@ -46,10 +39,9 @@ img {
   min-width: 0;
 }
 
-.logos[data-location='docs'] .middle {
-  padding: 0 8px;
-  margin: 0 8px;
+.logos[data-location='docs'] img + img {
+  padding-left: 8px;
+  margin-left: 8px;
   border-left: 1px solid var(--vp-c-divider);
-  border-right: 1px solid var(--vp-c-divider);
 }
 </style>
