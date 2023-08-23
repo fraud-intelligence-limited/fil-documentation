@@ -25,11 +25,6 @@ defineProps<{
         width="140"
       >
     </div>
-    <img
-      src="/rag-logo-1.png"
-      alt="Risk & Assurance Group logo"
-      width="210"
-    >
   </div>
 </template>
 

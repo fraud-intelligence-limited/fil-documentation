@@ -6,7 +6,7 @@ To register an account, perform the following steps:
 
 1. Go to the [Fraud Intelligence Blockchain website](https://blockchain.fraudintelligencelimited.com/#/Index) and select **Register** from the top right menu.
 2. On the **User details for Registration** page that appears, fill in your personal and company details.
-3. Agree to the [Terms & Conditions](https://github.com/fraud-intelligence-limited/fil-legal/blob/main/RAG%20Fraud%20Blockchain%20Terms%20of%20Use%20v2.0.docx) by selecting the **I agree to the terms** checkbox.
+3. Agree to the [Terms & Conditions](https://github.com/fraud-intelligence-limited/fil-legal/blob/main/Fraud%20Intelligence%20Blockchain%20Terms%20of%20Use%20v4.0.pdf) by selecting the **I agree to the terms** checkbox.
 4. On the **Subscription details** tab, select **Register Account**.
 
 ### Expected Result
