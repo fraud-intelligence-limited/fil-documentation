@@ -32,14 +32,30 @@ The number of digital credits that a peer has on their account, and that can be 
 
 A peer can check their current credit balance by going to the [Tokens](web-interface.md#tokens) page of the FIB Web UI or by calling the following API endpoint: [Retrieving credit balance](../api-specification/wallet-controller/retrieving-credit-balance.md).
 
-## Current conversion rate
+## Confidence index
+
+All of the contributions submitted to the blockchain are automatically evaluated and assigned a score—**confidence index**—which is a numeric representation of the level of certainty that a contribution is fraudulent.
+
+When assigning a contribution with a confidence index value, FIB considers many crucial factors, such as the presence of CLI manipulation, origination from a known hotspot of fraudulent activity, attack patterns, event confirmation by multiple peers, etc.
+
+[//]: <> (If necessary, a detailed description of how the confidence index is calculated may be added here or to the "Contributions" topic)
+
+The confidence index value inherently affects the price of downloading the fraud event data. By default, peers download fraud event data in accordance with the [default conversion rate](#current-default-conversion-rate). However, when [retrieving contributions](../api-specification/contribution-controller/retrieving-top-contributions.md) (see the `confidence-score` parameter) a peer can specify whether they want the price of the retrieved contributions to be calculated in accordance with the confidence index.
+
+::: tip Info
+
+As new fraud event data is uploaded to the blockchain, the confidence index value for any given contribution is constantly updated.
+
+:::
+
+## Current default conversion rate
 
 - **Uploading fraud events**: `10` credits per `id` fraud identifier.
 - **Downloading fraud events**: `1` credit per `id` fraud identifier.
 
 ## Welcome bonus
 
-Every new peer that has successfully registered with FIB, automatically receives a 1000 credits bonus.
+Every new peer that has successfully registered with FIB, automatically receives a `1,000` credits bonus.
 
 ## Premium subscription
 
@@ -51,7 +67,9 @@ Alternatively, you may contact us at [support@fraudintelligencelimited.com](mail
 
 ## Monthly reward limit
 
-The monthly reward limit is currently 1,000,000,000 rewards per peer.
+The monthly reward limit is currently `1,000,000,000` rewards per peer.
+
+A peer can check their current limit status by calling the following API endpoint: [Retrieving peer limit status](../api-specification/wallet-controller/retrieving-peer-limit-status.md).
 
 ::: tip Info
 

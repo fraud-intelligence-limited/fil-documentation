@@ -18,6 +18,8 @@
 | `org` | `array[string]` | The country of origination of the fraud event. Set as a two-digit country code (Alpha-2, ISO 3166; e.g., US, GA) |
 | `self-only` | `boolean` | A boolean that defines whether the response should only contain contributions submitted by the requesting peer. <br> The `self-only` parameter is set to `false` by default. |
 | `fetch-mode` | `string` | The parameter that filters the response entries based on whether the requesting user has already seen them. <br> Could be one of the following: <ol><li>`NEW` — includes only the unseen by the requesting user entries.</li></ol><li>OLD — includes only the already seen by the requesting user entries.</li><li>`DEFAULT` — includes all of the entries.</li> <br> The `fetch-mode` parameter is set to `DEFAULT` by default. |
+| `fetch-mode` | `string` | The parameter that filters the response entries based on whether the requesting user has already seen them. <br> Could be one of the following: <ol><li>`NEW` — includes only the unseen by the requesting user entries.</li><li>`OLD` — includes only the already seen by the requesting user entries.</li><li>`DEFAULT` — includes all of the entries.</li></ol> <br> The `fetch-mode` parameter is set to `DEFAULT` by default. |
+| `confidence-score` | `boolean` | A boolean that defines whether the price of the retrieved contributions is affected by the [confidence index](../../overview/tokenomics.md#confidence-index). <br> The `confidence-score` parameter is set to `false` by default. |
 
 **Input/request structure**:
 
@@ -34,20 +36,29 @@ A `GET` request to the endpoint.
     name: 'string',
     message: 'string'
   },
-  data: [
-    {
-      id: 'string',
-      fraudType: 'Wangiri', //Could be one of the following: Wangiri, IRSF, StolenDevice, IPFraud, SMSA2P
-      origination: 'string',
-      destination: 'string',
-      expiryDate: 0, //integer($int32)
-      fraudStatus: 'string(enum)', //Could be one of the following: Active, Expired, Flagged
-      confidenceIndex: 0, //number($double)
-      isPremium: true, //boolean
-      peerId: 'string',
-      premium: true //boolean
+  data: {
+    contributions: [
+      {
+        id: 'string',
+        fraudType: 'string(enum)', //Could be one of the following: Wangiri, IRSF, StolenDevice, IPFraud, SMSA2P
+        origination: 'string',
+        destination: 'string',
+        expiryDate: 0, //integer($int32)
+        fraudStatus: 'string(enum)', //Could be one of the following: Active, Expired, Flagged
+        confidenceIndex: 0, //number($double)
+        isPremium: true, //boolean
+        peerId: 'string',
+        flagger: 'string',
+        premium: true //boolean
+      }
+    ],
+    details: {
+      self: 0,
+      old: 0,
+      new: 0,
+      creditsSpent: 0
     }
-  ]
+  }
 }
 ```
 
