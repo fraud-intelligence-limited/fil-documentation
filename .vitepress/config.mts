@@ -1,5 +1,5 @@
 import { defineConfig } from 'vitepress'
-import UnoCSS from 'unocss/vite'
+import uno from 'unocss/vite'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
@@ -7,7 +7,7 @@ export default defineConfig({
   description: 'Fraud Intelligence Blockchain documentation',
   srcDir: 'src',
   vite: {
-    plugins: [UnoCSS()],
+    plugins: [uno()],
   },
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
