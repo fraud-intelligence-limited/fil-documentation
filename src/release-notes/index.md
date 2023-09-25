@@ -1,4 +1,12 @@
-# FIB version 1.2 (YYYY-MM-DD)
+---
+sidebar: false
+prev: false
+next: false
+---
+
+# Release Notes
+
+## FIB version 1.2 (YYYY-MM-DD)
 
 - When submitting a contribution or a flag, the API response now displays the reward for the said submission in tokens.
 
@@ -22,7 +30,7 @@
   - [Tokenomics](../overview/tokenomics.md#confidence-index)<br>**Confidence Index** subtopic added.
   - [Retrieving top contributions](../api-specification/contribution-controller/retrieving-top-contributions.md)<br>`confidence-score` added to **Parameters** and **Output/response structure** updated.
 
-::: note
+::: info NOTE
 
 Other minor documentation changes were made to accommodate for changes introduced in `FIB 1.2`.
 
