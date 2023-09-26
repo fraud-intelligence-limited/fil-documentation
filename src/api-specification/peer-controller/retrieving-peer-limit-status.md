@@ -20,16 +20,16 @@ A `GET` request to the endpoint.
 
 ```json5
 {
-  "status": {
-    "code": 0,
-    "name": "string",
-    "message": "string"
+  status: {
+    code: 0,
+    name: 'string',
+    message: 'string'
   },
-  "data": {
-    "used": 0,
-    "total": 0,
-    "updatePeriod": 0,
-    "nextUpdate": 0
+  data: {
+    used: 0,
+    total: 0,
+    updatePeriod: 0,
+    nextUpdate: 0
   }
 }
 ```
@@ -38,8 +38,8 @@ A `GET` request to the endpoint.
 
 ### Responses
 
-| Response Code | Description                                              |
-| ------------- | -------------------------------------------------------- |
-| `200`         | Peer limit status has been retrieved successfully        |
-| `404`         | Metadata key not found or Trigger's period not specified |
-| `500`         | Internal server error.                                   |
+| Response Code | Description |
+| --- | --- |
+| `200` | Peer limit status has been retrieved successfully |
+| `404` | Metadata key not found or Trigger's period not specified |
+| `500` | Internal server error. |
