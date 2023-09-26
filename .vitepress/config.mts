@@ -11,7 +11,10 @@ export default defineConfig({
   },
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
-    nav: [{ text: 'Guide', link: '/' }],
+    nav: [
+      { text: 'Guide', link: '/' },
+      { text: 'Release Notes', link: '/release-notes/' },
+    ],
 
     sidebar: {
       '/': [
