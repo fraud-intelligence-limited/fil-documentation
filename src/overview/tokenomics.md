@@ -40,7 +40,7 @@ When assigning a contribution with a confidence index value, FIB considers many 
 
 [//]: <> (If necessary, a detailed description of how the confidence index is calculated may be added here or to the "Contributions" topic)
 
-The confidence index value inherently affects the price of downloading the fraud event data. By default, peers download fraud event data in accordance with the [default conversion rate](#current-default-conversion-rate). However, when [retrieving contributions](../api-specification/contribution-controller/retrieving-top-contributions.md) (see the `confidence-score` parameter) a peer can specify whether they want the price of the retrieved contributions to be calculated in accordance with the confidence index.
+The confidence index value inherently affects the price of downloading the fraud event data. By default, peers download fraud event data in accordance with the [default conversion rate](#current-default-conversion-rate). However, when [retrieving contributions](../api-specification/contribution-controller/retrieving-top-contributions.md) (see the `confidence-score` parameter) a peer can specify whether they want the price of the retrieved contributions to be calculated in accordance with the confidence index. If enabled, the price of any given contribution is expected to rise above the [default conversion rate](#current-default-conversion-rate).
 
 ::: tip Info
 
