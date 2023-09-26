@@ -14,14 +14,10 @@ jobs:
 
       - uses: actions/setup-node@v3
         with:
-          node-version: 16
+          node-version: 18
 
-      - uses: pnpm/action-setup@v2.0.1
-        name: Install pnpm
-        id: pnpm-install
-        with:
-          version: 7
-          run_install: false
+      - name: Enable Corepack
+        run: corepack enable
 
       - name: Get pnpm store directory
         id: pnpm-cache
@@ -47,6 +43,4 @@ jobs:
         run: pnpm lint
 
       - name: Build VitePress
-        run: pnpm run docs:build
-        env:
-          PUBLIC_PATH: /fil-docs/
+        run: pnpm docs:build
