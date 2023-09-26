@@ -31,7 +31,9 @@
     name: 'string',
     message: 'string'
   },
-  data: {}
+  data: {
+    rewarded: 0 //integer($int32)
+  }
 }
 ```
 
