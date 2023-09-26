@@ -22,13 +22,13 @@ In order for peers to keep their own records updated with the latest fraud event
 
 ### Flagging contributions
 
-If a peer deems a certain contribution to no longer be relevant (e.g., _it is a false positive_), they can [flag that contribution](../tutorials-api/flagging-a-contribution.md). Once a contribution is flagged, the ID of the peer that flagged it is saved with the contribution as `flagger` value.
+If a peer deems a certain contribution to no longer be relevant (e.g., _it is a false positive_), they can [flag that contribution](../tutorials-api/flagging-a-contribution.md).
 
 ## API requests data structure
 
 When [retrieving top contributions](../api-specification/contribution-controller/retrieving-top-contributions.md), the following data is returned in the body of the response:
 
-::: details Response body
+::: details Request body
 
 | Field | Value Type | Description |
 | --- | --- | --- |
@@ -40,12 +40,7 @@ When [retrieving top contributions](../api-specification/contribution-controller
 | `fraudStatus` | `enum string` | The status of the event at the time of observing. <br> Could be one of the following: <ol><li>`Active`</li><li>`Expired`</li><li>`Flagged`</li></ol> |
 | `confidenceIndex` | `number($double)` | The predicted fraud likelihood score in the range from 1 to 100. |
 | `isPremium` | `boolean` | The definition of whether the contributor is a premium user. |
-| `peerId` | `string` | The unique ID of the peer that contributed the data. |
-| `flagger` | `string` | The unique ID of the peer that flagged the data. If a contribution hasn't been flagged at the time of observing, the field is returned empty. |
-| `self` | `integer($int32)` | Out of all the retrieved contributions, the number of contributions that have been submitted by the requesting user. |
-| `old` | `integer($int32)` | Out of all the retrieved contributions, the number of contributions that have already been seen by the requesting user. |
-| `new` | `integer($int32)` | Out of all the retrieved contributions, the number of contributions that have _not_ yet been seen by the requesting user. |
-| `creditsSpent` | `integer($int32)` | The total amount of credits spent on the retrieved contributions. |
+| `peerId` | `string` | The unique key of the peer that contributed the data. |
 
 :::
 

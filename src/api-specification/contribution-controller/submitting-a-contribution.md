@@ -32,13 +32,8 @@
     message: 'string'
   },
   data: {
-    tokenIds: [
-      {
-        definitionId: 'Id_range#domain', //IP/telephone number/IMEI
-        accountId: 'user@peerId'
-      }
-    ],
-    rewarded: 0 //integer($int32)
+    definitionId: 'Id_range#domain', //IP/telephone number/IMEI
+    accountId: 'user@peerId'
   }
 }
 ```
