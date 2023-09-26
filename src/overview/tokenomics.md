@@ -69,7 +69,7 @@ Alternatively, you may contact us at [support@fraudintelligencelimited.com](mail
 
 The monthly reward limit is currently `1,000,000,000` rewards per peer.
 
-A peer can check their current limit status by calling the following API endpoint: [Retrieving peer limit status](../api-specification/wallet-controller/retrieving-peer-limit-status.md).
+A peer can check their current limit status by calling the following API endpoint: [Retrieving peer limit status](../api-specification/peer-controller/retrieving-peer-limit-status.md).
 
 ::: tip Info
 
