@@ -172,6 +172,10 @@ export default defineConfig({
                   link: '/api-specification/peer-controller/requesting-peer-details.md',
                 },
                 {
+                  text: 'Requesting peer limit status',
+                  link: '/api-specification/peer-controller/retrieving-peer-limit-status.md',
+                },
+                {
                   text: 'Retrieving all premium peers',
                   link: '/api-specification/peer-controller/retrieving-all-premium-peers.md',
                 },

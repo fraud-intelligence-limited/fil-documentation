@@ -10,6 +10,7 @@ The following FIB API endpoints are available for implementation into the code o
    - [Retrieving credit balance](./api-specification/wallet-controller/retrieving-credit-balance.md)
 3. `peer-controller`
    - [Requesting peer details](./api-specification/peer-controller/requesting-peer-details.md)
+   - [Retrieving peer limit status](./api-specification/peer-controller/retrieving-peer-limit-status.md)
    - [Retrieving all premium peers](./api-specification/peer-controller/retrieving-all-premium-peers.md)
 4. `contribution-controller`
    - [Assembling a contribution](./api-specification/contribution-controller/assembling-a-contribution.md)
