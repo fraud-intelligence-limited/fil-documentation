@@ -11,7 +11,10 @@ export default defineConfig({
   },
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
-    nav: [{ text: 'Guide', link: '/' }],
+    nav: [
+      { text: 'Guide', link: '/' },
+      { text: 'Release Notes', link: '/release-notes/' },
+    ],
 
     sidebar: {
       '/': [
@@ -170,6 +173,10 @@ export default defineConfig({
                 {
                   text: 'Requesting peer details',
                   link: '/api-specification/peer-controller/requesting-peer-details.md',
+                },
+                {
+                  text: 'Requesting peer limit status',
+                  link: '/api-specification/peer-controller/retrieving-peer-limit-status.md',
                 },
                 {
                   text: 'Retrieving all premium peers',
