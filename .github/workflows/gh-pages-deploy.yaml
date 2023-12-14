@@ -3,7 +3,7 @@ name: Deploy at GitHub Pages
 on:
   workflow_dispatch:
     branches:
-      - master
+      - main
   pull_request:
     types:
       - closed
@@ -58,7 +58,8 @@ jobs:
       - name: Push static content into fraud-intelligence-limited.github.io (main)
         working-directory: .vitepress/dist
         run: |
-          git config --global user.name "sorabot"
+          git config --global user.email "${GITHUB_ACTOR}@https://users.noreply.github.com/"
+          git config --global user.name "${GITHUB_ACTOR}"
           git config --global init.defaultBranch main
           git init
           git add --all
