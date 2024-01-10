@@ -80,9 +80,12 @@ function createEmailSignature(publicKeyHex, privateKeyHex, email) {
       }
     })
 
-    return keyPair
-      .sign('array', new TextEncoder().encode(email))
-      .payload('hex')
+    const hashedEmail = crypto.Hash.hash(
+      'array',
+      new TextEncoder().encode(email)
+    ).bytes()
+
+    return keyPair.sign('array', hashedEmail).payload('hex')
   })
 }
 
