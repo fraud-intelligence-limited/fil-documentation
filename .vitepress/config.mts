@@ -93,10 +93,6 @@ export default defineConfig({
           collapsed: true,
           items: [
             {
-              text: 'Generating key pairs',
-              link: '/tutorials-api/generating-key-pairs.md',
-            },
-            {
               text: 'Signing user email addresses',
               link: '/tutorials-api/signing-user-email-addresses.md',
             },
@@ -151,8 +147,8 @@ export default defineConfig({
                   link: '/api-specification/auth-controller/refreshing-authentication-tokens.md',
                 },
                 {
-                  text: 'Retrieving salt values',
-                  link: '/api-specification/auth-controller/retrieving-salt-values.md',
+                  text: 'Logging a user out of the system',
+                  link: '/api-specification/auth-controller/logging-a-user-out-of-the-system.md',
                 },
               ],
             },
@@ -161,8 +157,8 @@ export default defineConfig({
               collapsed: true,
               items: [
                 {
-                  text: 'Retrieving credit balance',
-                  link: '/api-specification/wallet-controller/retrieving-credit-balance.md',
+                  text: 'Retrieving token balance',
+                  link: '/api-specification/wallet-controller/retrieving-token-balance.md',
                 },
               ],
             },
@@ -171,16 +167,12 @@ export default defineConfig({
               collapsed: true,
               items: [
                 {
-                  text: 'Requesting peer details',
-                  link: '/api-specification/peer-controller/requesting-peer-details.md',
+                  text: 'Retrieving peer details',
+                  link: '/api-specification/peer-controller/retrieving-peer-details.md',
                 },
                 {
-                  text: 'Requesting peer limit status',
+                  text: 'Retrieving peer limit status',
                   link: '/api-specification/peer-controller/retrieving-peer-limit-status.md',
-                },
-                {
-                  text: 'Retrieving all premium peers',
-                  link: '/api-specification/peer-controller/retrieving-all-premium-peers.md',
                 },
               ],
             },
@@ -201,34 +193,24 @@ export default defineConfig({
                   link: '/api-specification/contribution-controller/assembling-a-contribution-flag.md',
                 },
                 {
-                  text: 'Flagging a contribution',
-                  link: '/api-specification/contribution-controller/flagging-a-contribution.md',
+                  text: 'Submitting a contribution flag',
+                  link: '/api-specification/contribution-controller/submitting-a-contribution-flag.md',
                 },
                 {
-                  text: 'Requesting a contribution by ID',
-                  link: '/api-specification/contribution-controller/requesting-a-contribution-by-ID.md',
+                  text: 'Retrieving a contribution by ID',
+                  link: '/api-specification/contribution-controller/retrieving-a-contribution-by-ID.md',
                 },
                 {
                   text: 'Retrieving top contributions',
                   link: '/api-specification/contribution-controller/retrieving-top-contributions.md',
                 },
-              ],
-            },
-            {
-              text: 'premium-provider-controller',
-              collapsed: true,
-              items: [
                 {
-                  text: 'Requesting access to premium contributions by a certain peer',
-                  link: '/api-specification/premium-provider-controller/requesting-access-to-premium-contributions-by-a-certain-peer.md',
+                  text: 'Retrieving pricing rate',
+                  link: '/api-specification/contribution-controller/retrieving-pricing-rate.md',
                 },
                 {
-                  text: 'Retrieving incoming premium contribution requests',
-                  link: '/api-specification/premium-provider-controller/retrieving-incoming-premium-contribution-requests.md',
-                },
-                {
-                  text: 'Retrieving outgoing premium contribution requests',
-                  link: '/api-specification/premium-provider-controller/retrieving-outgoing-premium-contribution-requests.md',
+                  text: 'Retrieving rewards rate',
+                  link: '/api-specification/contribution-controller/retrieving-rewards-rate.md',
                 },
               ],
             },

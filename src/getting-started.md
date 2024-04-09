@@ -1,10 +1,16 @@
 # Getting started
 
-This section is designed to help you integrate the FIB API seamlessly into your application or system by providing instructions on how to register an account, check the API availability, call API endpoints, and test your implementation in a sandbox environment.
+Since FIB allows its users to interact with the network both via API and the Web App, this section provides instructions for all necessary preliminary steps, be you a regular user or a developer aiming to integrate the FIB API into their application or system.
 
-It is advised to read the following topics in the order that they are presented:
+Regular users should start with the [Registering an account](getting-started/registering-an-account.md) tutorial, and then move on to the [Tutorials: Web App](tutorials-web.md) section that explains how to interact with the FIB network via [FIB Web App](overview/web-interface.md).
+
+For users willing to interact with the FIB network via FIB API, it is advised to read the following topics in the order that they are presented:
 
 1. [Registering an account](getting-started/registering-an-account.md)
 2. [Checking API availability](getting-started/checking-api-availability.md)
 3. [Calling API endpoints](getting-started/calling-api-endpoints.md)
 4. [Public test environment](getting-started/public-test-environment.md)
+
+In turn, to receive step-by-step guidance on how to interact with the FIB API in a variety of scenarios, check out the [Tutorials: API](./tutorials-api.md) section to help you get started with specific API operations.
+
+For information on all available API operations, see [API Specification](api-specification.md).

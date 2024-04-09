@@ -1,6 +1,6 @@
-# Tutorials: Web UI
+# Tutorials: Web App
 
-This section lists the tutorials for the basic operations that could be performed with the FIB Web UI, including:
+This section lists the tutorials for the basic operations that could be performed with the FIB Web App, including:
 
 1. [Uploading fraud data](/tutorials-web/uploading-fraud-data.md)
 2. [Flagging fraud data](/tutorials-web/flagging-fraud-data.md)

@@ -14,7 +14,7 @@ If you are new to FIB, start with the [Overview](./overview.md) section, which p
 
 For instructions on how to get started with the FIB, see the [Getting Started](./getting-started.md) section. This section covers everything from setting up your FIB account to accessing the API, and integrating it into your existing workflows and systems.
 
-For assistance with FIB Web UI, try the [Tutorials: Web UI](./tutorials-web.md) section that walks you through basic operations that you can perform using the web interface.
+For assistance with FIB Web App, try the [Tutorials: Web App](./tutorials-web.md) section that walks you through basic operations that you can perform using the web interface.
 
 If you're looking for step-by-step guidance on how to interact with the FIB API, check out the [Tutorials: API](./tutorials-api.md) section where you can find a variety of scenarios to help you get started with the API.
 
@@ -29,7 +29,7 @@ Finally, the [API Specification](./api-specification.md) section provides techni
 - [Iroha Javascript](https://github.com/hyperledger/iroha-javascript/tree/iroha2)
 - [Iroha Rust](https://github.com/hyperledger/iroha/tree/iroha2-lts/client)
 
-Check out the [Iroha 2 Documentation](https://hyperledger.github.io/iroha-2-docs/) as it provides an introduction to Iroha 2 as well as language-specific guides for Bash, Python, Rust, Kotlin/Java, and Javascript/TypeScript.
+Check out the [Iroha 2 Documentation](https://docs.iroha.tech/) as it provides an introduction to Iroha 2 as well as language-specific guides for [Bash](https://docs.iroha.tech/guide/get-started/bash.html), [Python](https://docs.iroha.tech/guide/get-started/python.html), [Rust](https://docs.iroha.tech/guide/get-started/rust.html), [Kotlin/Java](https://docs.iroha.tech/guide/get-started/kotlin-java.html), and [Javascript/TypeScript](https://docs.iroha.tech/guide/get-started/javascript.html).
 
 ## Getting help
 

@@ -1,61 +1,97 @@
-# Web interface
+# Web App UI
 
-Registered FIB peers can log in to the FIB Web Interface using their registered credentials.
+Registered FIB peers and users can log in to the [FIB Web App](https://app.fraudintelligencelimited.com) using their credentials.
 
-## Home
+## Dashboard
 
-On this page peers can view the following tabs:
+The main screen that appears once an FIB user logs in to their Web App account.
 
-### Consortium Data
+#### Navigation
 
-This tab provides a dynamic visual representation of the recent fraud data uploaded by peers on the network. The threat map shows real-time data on the type of fraud, the origination country, and the destination country, which allows users to quickly identify emerging trends and hotspots.
+- Selecting the **Profile** button with the authorized user's first and last names takes them to the [Profile](#profile) screen.
+- Selecting the **Log out** button indicated by a door icon logs them out of the Web App.
 
-### Fraud Twitter Feed
+On this screen, users can see the following tabs:
 
-This tab provides a real-time view of customer fraud-related tweets for major cities around the globe. Peers can select countries to see what customers from those countries are posting to Twitter in relation to fraudulent activities. This allows users to gain valuable insights into the fraud-related concerns of telco customers globally and to identify emerging trends and patterns.
+### Download
 
-## Analyse
+This tab displays the following elements:
 
-On this page peers can view a range of statistical metrics derived from the collected fraud event data stored on the network. This data can be visualized in a variety of charts and graphs, and can be filtered by fraud type, country of origination, contributing IP addresses or phone numbers, etc.
+- **New data entries** meter — displays the total amount of fraud events that have been contributed to the network and not yet downloaded by the signed in user.
+- **Download fraud data** button — opens the **Download fraud data** screen.
 
-## Upload
+See the following related tutorial:
 
-On this page peers can either upload fraud events or flag the existing ones.
+- [Downloading fraud data](../tutorials-web/downloading-fraud-data.md)
+
+### Upload
+
+This tab displays the following elements:
+
+- **Balance** meter — displays the current amount of tokens that the signed in user owns at the time of observing.
+- **Add fraud data** button — opens the **Add fraud data** screen.
+- **Flag fraud data as 'False positive'** button — opens the **Flag fraud data as False Positive** screen.
 
 See the following related tutorials:
 
 - [Uploading fraud data](../tutorials-web/uploading-fraud-data.md)
 - [Flagging fraud data](../tutorials-web/flagging-fraud-data.md)
 
-## Download
-
-On this page peers can download fraud events data.
-
-See the following related tutorial:
-
-- [Downloading fraud data](../tutorials-web/downloading-fraud-data.md)
-
-## Tokens
-
-On this page peers can view their current balance.
-
 ## Profile
 
-On this page peers can view the following information about their account:
+The screen that displays the detailed information about the authorized account.
 
-- **About** tab — displays peer's contact information.
-- **Subscription** tab — displays the following subscription information:
-  - **Membership type**: the category of the company that a peer is registered with (e.g., telco, fraud vendor, etc.).
-  - **Subscription type**: the type of subscription that a peer has.
-  - **Company name**: the name of the company that a peer is registered with.
-  - **Operating country**: the country that a peer is operating from.
-- **Services** tab — displays whether a peer has access to the following FIB services:
-  - **Uploading**: allows users to upload fraud events data on the **Upload** page.
-  - **Web API**: allows users to access backend API endpoints.
-  - **Reports**: allows users to access the fraud analytics reports on the **Analyse** page.
+#### Navigation
 
-::: tip Note
+- Selecting the **Dashboard** button takes the user to the [Dashboard](#dashboard) screen.
+- Selecting the **Log out** button indicated by a door icon logs them out of the Web App.
 
-If you are a peer with a **freemium** subscription, you can select **Request** on the **Subscription** tab to make a request to change your subscription type to **premium**.
+On this screen, users can see the following information about their account:
 
-:::
+### About
+
+This area displays the following information about the authorized account:
+
+- Account activation status;
+- First and last names;
+- Country of operation;
+- Phone number;
+- Email address.
+
+### Balance
+
+This area displays the current token balance on the authorized account, the current status of the [monthly reward limit](tokenomics.md#monthly-reward-limit), as well as the timer until the next limit reset.
+
+### Your plan
+
+This area displays the current subscription plan on the authorized account.
+
+To change your subscription plan, you may contact us at [support@fraudintelligencelimited.com](mailto:support@fraudintelligencelimited.com).
+
+### 'Authorization' key pair {#akp}
+
+Displays public and private keys of the **Authorization** key pair. These keys are unique for every user on the FIB network and are generated automatically at the time of account registration.
+
+The public key—`authPublicKeyHex`—of this key pair is used for the following API operation:
+
+- [Authorizing a user in the system](../api-specification/auth-controller/authorizing-a-user-in-the-system.md)
+
+Also see the following related tutorials:
+
+- [Authorizing an account](../tutorials-api/authorizing-an-account.md)
+- [Signing user email addresses](../tutorials/signing-user-email-addreses.md)
+
+### 'Blockchain' key pair {#bkp}
+
+Displays public and private keys of the **Blockchain** key pair. These keys are unique for every user on the FIB network and are generated automatically at the time of account registration.
+
+These keys are used for the following API operations:
+
+- [Submitting a contribution](../api-specification/contribution-controller/submitting-a-contribution.md)
+- [Submitting a contribution flag](../api-specification/contribution-controller/submitting-a-contribution-flag.md)
+
+Also see the following related tutorials:
+
+- [Signing transactions](../tutorials-api/signing-transactions.md)
+- [Submitting a contribution](../tutorials-api/submitting-a-contribution.md)
+- [Flagging a contribution](../tutorials-api/flagging-a-contribution.md)
