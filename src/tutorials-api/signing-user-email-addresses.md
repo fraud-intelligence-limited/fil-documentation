@@ -63,8 +63,8 @@ class SimpleSigner {
 ```js [Iroha JavaScript SDK]
 // @ts-check
 
-import { crypto } from '@iroha2/crypto-target-node' // version: 1.0.0
-import { freeScope } from '@iroha2/crypto-core' // version: 1.0.0
+import { crypto } from '@iroha2/crypto-target-node' // version: 1.1.1
+import { freeScope } from '@iroha2/crypto-core' // version: 1.1.1
 
 /**
  * @param {string} publicKeyHex - ed25519 pub key hex
