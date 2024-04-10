@@ -82,10 +82,10 @@ fun decodeSignEncode(transactionHex: String): String {
 ```js [Iroha JavaScript SDK]
 // @ts-check
 
-import { crypto } from '@iroha2/crypto-target-node' // version: 1.0.0
-import * as datamodel from '@iroha2/data-model' // version: 4.1.0
-import { signTransaction, setCrypto, Signer } from '@iroha2/client' // version: 4.1.0
-import { freeScope } from '@iroha2/crypto-core' // version: 1.0.0
+import { crypto } from '@iroha2/crypto-target-node' // version: 1.1.1
+import { datamodel } from '@iroha2/data-model' // version: 7.0.0
+import { signTransaction, setCrypto, Signer } from '@iroha2/client' // version: 7.0.0
+import { freeScope } from '@iroha2/crypto-core' // version: 1.1.1
 
 setCrypto(crypto)
 
@@ -111,16 +111,16 @@ function hexToBytes(hex) {
 }
 
 /**
- * @param {datamodel.SignedTransaction} tx
+ * @param {datamodel.SignedTransactionV1} tx
  * @param {import('@iroha2/crypto-core').KeyPair} keyPair
- * @return {datamodel.SignedTransaction}
+ * @return {datamodel.SignedTransactionV1}
  */
 function appendSignatureWithKeyPair(tx, keyPair) {
-  const signer = new Signer(tx.payload.account_id, keyPair)
+  const signer = new Signer(tx.payload.authority, keyPair)
   const signature = signTransaction(tx.payload, signer)
   return datamodel.SignedTransaction({
     payload: tx.payload,
-    signatures: [...tx.signatures, signature]
+    signatures: datamodel.SortedVecSignature([...tx.signatures, signature])
   })
 }
 
@@ -142,18 +142,16 @@ function appendSignature(publicKeyHex, privateKeyHex, transaction) {
       }
     })
 
-    const txDecoded = datamodel.VersionedSignedTransaction.fromBuffer(
+    const txDecoded = datamodel.SignedTransaction.fromBuffer(
       hexToBytes(transaction)
     )
 
-    const txNew = datamodel.VersionedSignedTransaction(
+    const txNew = datamodel.SignedTransaction(
       'V1',
-      appendSignatureWithKeyPair(txDecoded.as('V1'), keyPair)
+      appendSignatureWithKeyPair(txDecoded.enum.as('V1'), keyPair)
     )
 
-    return bytesToHex(datamodel.VersionedSignedTransaction.toBuffer(txNew))
-
-    return bytesToHex(datamodel.VersionedSignedTransaction.toBuffer(txNew))
+    return bytesToHex(datamodel.SignedTransaction.toBuffer(txNew))
   })
 }
 
