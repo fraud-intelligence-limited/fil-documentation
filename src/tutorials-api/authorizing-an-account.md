@@ -30,7 +30,7 @@ POST /auth/api/v1/authentication-management/session
 
 For instructions on how to generate the `signature` string, see [Signing user email addresses](/tutorials-api/signing-user-email-addresses.md).
 
-The `authPublicKeyHex` string is taken from the user's **Authorization** key pair on the FIB Web App **Profile** screen. For details, see [Web App UI: 'Authorization' key pair](../../overview/web-interface.md#akp).
+The `authPublicKeyHex` string is taken from the user's **Authorization** key pair on the FIB Web App **Profile** screen. For details, see [Web App UI: 'Authorization' key pair](../overview/web-interface.md#akp).
 
 :::
 

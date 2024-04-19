@@ -135,4 +135,4 @@ To submit a contribution, perform the following steps:
 
 ### Expected result
 
-An assembled and signed contribution is submitted to the ledger, the peer’s list of contributions is updated and their [token balance](../../overview/tokenomics.md#token-balance) is increased based on the current reward rate active in the network (see [Current conversion rate](../overview/tokenomics.md)).
+An assembled and signed contribution is submitted to the ledger, the peer’s list of contributions is updated and their [token balance](../overview/tokenomics.md#token-balance) is increased based on the current reward rate active in the network (see [Current conversion rate](../overview/tokenomics.md)).
