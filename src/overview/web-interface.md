@@ -79,7 +79,7 @@ The public key—`authPublicKeyHex`—of this key pair is used for the following
 Also see the following related tutorials:
 
 - [Authorizing an account](../tutorials-api/authorizing-an-account.md)
-- [Signing user email addresses](../tutorials-api/signing-user-email-addreses.md)
+- [Signing user email addresses](../tutorials-api/signing-user-email-addresses.md)
 
 ### 'Blockchain' key pair {#bkp}
 
