@@ -15,13 +15,13 @@
 
 **Parameters**:
 
-| Field | Value Type     | Description                                                                                                            |
-| :---: | -------------- | ---------------------------------------------------------------------------------------------------------------------- |
-| `id`  | `string(path)` | Range of [`id` values](../../overview/contributions.md#retrieving-contributions) (Fraud Identifiers), or a single one. |
+| Field | Value Type | Description |
+| :-: | --- | --- |
+| `id` | `string(path)` | Range of [`id` values](../../overview/contributions.md#retrieving-contributions) (Fraud Identifiers), or a single one. |
 
 #### Input/request structure
 
-A `GET` request to the endpoint with the `{id}` parameter specified.
+A `GET` request to the endpoint with the `{id}` parameter and `Authorization` header specified.
 
 **Example**: `data/api/v1/subscription-management/subscription/192.168.1.1`
 
@@ -42,12 +42,12 @@ A `GET` request to the endpoint with the `{id}` parameter specified.
     {
         "assetDefinitionIds": "idRange#contribution",
         "contribution": {
-            "id": "idRange", //127.0.0.1 OR 127.0.0.1-127.0.0.2 OR +14155552671 OR +14155552671-+14155552672 OR 107615702016566
+            "id": "idRange",
             "fraudType": "string",
             "origination": "string",
             "destination": "string",
             "expiryDate": integer($int32),
-            "fraudStatus": "string(enum)", //'ACTIVE' OR 'EXPIRED' OR 'FLAGGED'
+            "fraudStatus": "string(enum)",
             "confidenceIndex": number($double),
             "isPrivileged": boolean,
             "peerId": "string",
@@ -62,27 +62,27 @@ A `GET` request to the endpoint with the `{id}` parameter specified.
 
 ```json5 [Example]
 {
-    "status": {
-        "code": 200,
-        "name": "Ok",
-        "message": "Contribution has been successfully retrieved by its ID"
-    },
-    "data": [
-        {
-            "assetDefinitionId": "130.130.130.1-130.130.130.1_1711570471#contribution",
-            "contribution": {
-                "id": "130.130.130.1-130.130.130.1",
-                "fraudType": "IPFraud",
-                "origination": "GB",
-                "destination": "US",
-                "expiryDate": 1719346471,
-                "fraudStatus": "Active",
-                "confidenceIndex": null,
-                "isPrivileged": false,
-                "peerId": "soramitsu",
-                "flagger": null,
-                "timestamp": 1711570471,
-                "flagTimestamp": null
+  status: {
+    code: 200,
+    name: 'Ok',
+    message: 'Contribution has been successfully retrieved by its ID'
+  },
+  data: [
+    {
+      assetDefinitionId: '130.130.130.1-130.130.130.1_1711570471#contribution',
+      contribution: {
+        id: '130.130.130.1-130.130.130.1',
+        fraudType: 'IPFraud',
+        origination: 'GB',
+        destination: 'US',
+        expiryDate: 1719346471,
+        fraudStatus: 'Active',
+        confidenceIndex: null,
+        isPrivileged: false,
+        peerId: 'soramitsu',
+        flagger: null,
+        timestamp: 1711570471,
+        flagTimestamp: null
       }
     }
   ]
@@ -91,12 +91,20 @@ A `GET` request to the endpoint with the `{id}` parameter specified.
 
 :::
 
+::: info
+
+For a detailed breakdown of every field and value in the body of a response, see [Contributions: Retrieving contributions](../../overview/contributions.md#retrieving-contributions).
+
+:::
+
 :::
 
 ### Responses
 
-| Response Code | Description                                                                   |
-| :-----------: | ----------------------------------------------------------------------------- |
-| `200`         | Contribution has been successfully retrieved by its ID.                       |
-| `400`         | Contribution ID is incorrect or the fraud type could not be resolved by code. |
-| `500`         | Internal server error.                                                        |
+| Response Code | Description |
+| :-: | --- |
+| `200` | Contribution has been successfully retrieved by its ID. |
+| `400` | Contribution ID is incorrect or the fraud type could not be resolved by code. |
+| `401` | `accessToken` is either expired or invalid. |
+| `404` | Requested contribution cannot be found. |
+| `500` | Internal server error. |

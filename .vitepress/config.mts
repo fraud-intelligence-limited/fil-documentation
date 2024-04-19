@@ -205,11 +205,11 @@ export default defineConfig({
                   link: '/api-specification/contribution-controller/retrieving-top-contributions.md',
                 },
                 {
-                  text: 'Retrieving pricing rate',
+                  text: 'Retrieving download pricing rate',
                   link: '/api-specification/contribution-controller/retrieving-pricing-rate.md',
                 },
                 {
-                  text: 'Retrieving rewards rate',
+                  text: 'Retrieving upload rewards rate',
                   link: '/api-specification/contribution-controller/retrieving-rewards-rate.md',
                 },
               ],

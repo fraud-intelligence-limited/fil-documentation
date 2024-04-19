@@ -53,8 +53,8 @@ These key pairs are generated automatically for every new user during registrati
 
 For details, see the following:
 
-  - [Web App UI: 'Authorization' key pair](web-interface.md#akp)
-  - [Web App UI: 'Blockchain' key pair](web-interface.md#bkp)
+- [Web App UI: 'Authorization' key pair](web-interface.md#akp)
+- [Web App UI: 'Blockchain' key pair](web-interface.md#bkp)
 
 :::
 

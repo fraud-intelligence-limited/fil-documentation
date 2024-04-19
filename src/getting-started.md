@@ -1,10 +1,10 @@
 # Getting started
 
-Since FIB allows its users to interact with the network both via API and the Web App, this section provides instructions for all necessary preliminary steps, be you a regular user or a developer aiming to integrate the FIB API into their application or system.
+Since FIB allows its users to interact with the network both via API and the Web App, this section provides instructions for all necessary preliminary steps, be you a Web App user or a developer aiming to integrate the FIB API into their application or system.
 
-Regular users should start with the [Registering an account](getting-started/registering-an-account.md) tutorial, and then move on to the [Tutorials: Web App](tutorials-web.md) section that explains how to interact with the FIB network via [FIB Web App](overview/web-interface.md).
+All users should start with the [Registering an account](getting-started/registering-an-account.md) tutorial, and then move on to the [Tutorials: Web App](tutorials-web.md) section that explains how to interact with the FIB network via [FIB Web App](overview/web-interface.md).
 
-For users willing to interact with the FIB network via FIB API, it is advised to read the following topics in the order that they are presented:
+For users willing to interact with the FIB network via FIB API, it is advised to read the following **Getting started** topics in the order that they are presented:
 
 1. [Registering an account](getting-started/registering-an-account.md)
 2. [Checking API availability](getting-started/checking-api-availability.md)

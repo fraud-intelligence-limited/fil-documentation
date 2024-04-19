@@ -96,7 +96,7 @@ next: false
 - When retrieving contributions, the API response now displays additional information.
 
   > Documented here:\
-  > [Overview > Contributions](../overview/contributions.md#api-requests-data-structure) — **API requests data structure** updated with `flagger`, `self`, `old`, `new` and `tokensSpent` fields.\
+  > [Overview > Contributions](../overview/contributions.md#api-requests-data-structure) — **API requests data structure** updated with `flagger`, `self`, `old`, `new` and `creditsSpent` fields.\
   > [API Specification > Retrieving contributions](../api-specification/contribution-controller/retrieving-contributions.md) — **Output/response structure** updated.
 
 - Contributions on the blockchain now have a `flagger` value that displays the ID of a peer that flagged the contribution if it has been flagged.

@@ -6,7 +6,7 @@
 
 **Encoding**: `JSON`
 
-**Endpoint**: `/data/api/v1/peer-management/account`
+**Endpoint**: `/auth/api/v1/peer-management/account`
 
 **Method**: `GET`
 
@@ -56,32 +56,32 @@ A `GET` request to the endpoint with the `Authorization` header specified.
 
 ```json5 [Example]
 {
-  "status": {
-      "code": 200,
-      "name": "Ok",
-      "message": "User details have been retrieved successfully"
+  status: {
+    code: 200,
+    name: 'Ok',
+    message: 'User details have been retrieved successfully'
   },
-  "data": {
-    "email": "alice@wonder.land",
-    "accountId": "alice@sora",
-    "authPublicKeyHex": "8a53d297bc406c63396967388ecc2ebc8abd701d195a43bbb4751ac5a86eac1b",
-    "irohaPublicKeyHex": "0b458f758eeca3d7a2a64de0648c9b7dccaee146202257cd8ebaeb4690aa48b464108111d8cf0e7f3b0ace1b51dcda89e76d372233514f324e00d64c6b899c0e",
-    "salt": "a2b4e1c8f0d3e9a7d5e6b0c8a7e4d2f9a2b4e1c8f0d3e9a7d5e6b0c8a7e4d2f9",
-    "role": "ROLE_PEER",
-    "status": "ACTIVE",
-    "phoneNumber": "+81123456789",
-    "firstName": "Alice",
-    "lastName": "Liddell",
-    "roleName": "Field Technician",
-    "peerCompanyName": "Sora",
-    "peerOperatingCountry": "Japan",
-    "peerType": "MEDIUM_TELCO",
-    "peerConnectionType": "Web",
-    "peerGroup": "Group1",
-    "isPrivileged": false,
-    "registrationDate": "2024-01-20T10:02:50.118297",
-    "subscriptionType": "FREEMIUM",
-    "subscriptionExpiryDate": "2024-12-03T10:15:30.118297"
+  data: {
+    email: 'alice@wonder.land',
+    accountId: 'alice@sora',
+    authPublicKeyHex: '8a53d297bc406c63396967388ecc2ebc8abd701d195a43bbb4751ac5a86eac1b',
+    irohaPublicKeyHex: '0b458f758eeca3d7a2a64de0648c9b7dccaee146202257cd8ebaeb4690aa48b464108111d8cf0e7f3b0ace1b51dcda89e76d372233514f324e00d64c6b899c0e',
+    salt: 'a2b4e1c8f0d3e9a7d5e6b0c8a7e4d2f9a2b4e1c8f0d3e9a7d5e6b0c8a7e4d2f9',
+    role: 'ROLE_PEER',
+    status: 'ACTIVE',
+    phoneNumber: '+81123456789',
+    firstName: 'Alice',
+    lastName: 'Liddell',
+    roleName: 'Field Technician',
+    peerCompanyName: 'Sora',
+    peerOperatingCountry: 'Japan',
+    peerType: 'MEDIUM_TELCO',
+    peerConnectionType: 'Web',
+    peerGroup: 'Group1',
+    isPrivileged: false,
+    registrationDate: '2024-01-20T10:02:50.118297',
+    subscriptionType: 'PAID',
+    subscriptionExpiryDate: '2024-12-03T10:15:30.118297'
   }
 }
 ```
@@ -94,6 +94,6 @@ A `GET` request to the endpoint with the `Authorization` header specified.
 
 | Response Code | Description                                    |
 | :-----------: | ---------------------------------------------- |
-| `200`         | User details have been retrieved successfully. |
-| `404`         | User/domain/account/asset not found.           |
-| `500`         | Internal server error.                         |
+|     `200`     | User details have been retrieved successfully. |
+|     `404`     | User/domain/account/asset not found.           |
+|     `500`     | Internal server error.                         |

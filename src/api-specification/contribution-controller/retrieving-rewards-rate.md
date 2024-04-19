@@ -1,6 +1,6 @@
-# Retrieving rewards rate
+# Retrieving upload rewards rate
 
-> Retrieves the current rewards rate established for [submitting contributions](submitting-a-contribution.md) of all fraud types for all registered company entities.
+> Retrieves the current rewards rate established for [submitting contributions](submitting-a-contribution.md) of all fraud types for all supported company types.
 
 **Protocol**: `HTTP`
 
@@ -112,9 +112,9 @@ A `GET` request to the endpoint with the `Authorization` header specified.
 
 ### Responses
 
-| Response Code | Description                                                                                 |
-| :-----------: | ------------------------------------------------------------------------------------------- |
-| `200`         | The table containing the user's current rewards statistics has been successfully retrieved. |
-| `401`         | User signature is incorrect or failed to be decoded.                                        |
-| `404`         | Either account or its metadata key has not found.                                           |
-| `500`         | Internal server error.                                                                      |
+| Response Code | Description |
+| :-: | --- |
+| `200` | The table containing the user's current rewards statistics has been successfully retrieved. |
+| `401` | User signature is incorrect or failed to be decoded. |
+| `404` | Either account or its metadata key has not found. |
+| `500` | Internal server error. |

@@ -1,6 +1,6 @@
 # Submitting a contribution flag
 
-> Submits [an assembled contribution flag](assembling-a-contribution-flag.md).
+> Submits [an assembled contribution flag](assembling-a-contribution-flag.md). For details, see [Contributions: Flagging contributions](../../overview/contributions.md#flagging-contributions).
 
 **Protocol**: `HTTP`
 
@@ -19,11 +19,11 @@
 ::: code-group Data structure
 
 ```json5 [Structure]
-"transactionHex(signed)"
+'transactionHex(signed)'
 ```
 
 ```json5 [Example]
-"2c658c96e40b2c919f779b3dac2bbb9a6e1e4419d653026038b315b42ef7bb77bd88328a49306f61bdc9db9bda871a166d4c0c9b36a4818116b916f426b2bd38129e31f377a68e0d9079d870ac455637e0fbbc679374629d2ab3e04130d93c6539f18c984dc484643eb73ffe101c9c7ffc3b2ccdb4b3dba1e35ec6f08d82aa5b"
+'2c658c96e40b2c919f779b3dac2bbb9a6e1e4419d653026038b315b42ef7bb77bd88328a49306f61bdc9db9bda871a166d4c0c9b36a4818116b916f426b2bd38129e31f377a68e0d9079d870ac455637e0fbbc679374629d2ab3e04130d93c6539f18c984dc484643eb73ffe101c9c7ffc3b2ccdb4b3dba1e35ec6f08d82aa5b'
 ```
 
 :::
@@ -57,13 +57,13 @@ The `transactionHex` string retrieved when [assembling a contribution flag](asse
 
 ```json5 [Example]
 {
-  "status": {
-    "code": 200,
-    "name": "OK",
-    "message": "Contribution has been flagged and its `transactionHex` string has been retrieved successfully"
+  status: {
+    code: 200,
+    name: 'OK',
+    message: 'Contribution has been flagged and its `transactionHex` string has been retrieved successfully'
   },
-  "data": {
-    "rewarded": 50
+  data: {
+    rewarded: 50
   }
 }
 ```
@@ -74,8 +74,10 @@ The `transactionHex` string retrieved when [assembling a contribution flag](asse
 
 ### Responses
 
-| Response Code | Description                                                                                    |
-| :-----------: | ---------------------------------------------------------------------------------------------- |
-| `200`         | Contribution has been flagged and its `transactionHex` string has been retrieved successfully. |
-| `400`         | Invalid transaction.                                                                           |
-| `500`         | Internal server error.                                                                         |
+| Response Code | Description |
+| :-: | --- |
+| `200` | Contribution has been flagged and its `transactionHex` string has been retrieved successfully. |
+| `400` | Invalid transaction. |
+| `401` | `accessToken` is either expired or invalid. |
+| `404` | Asset not found. |
+| `500` | Internal server error. |

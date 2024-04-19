@@ -1,4 +1,4 @@
-# Retrieving pricing rate
+# Retrieving download pricing rate
 
 > Retrieves the current prices established for [retrieving contributions](retrieving-contributions.md).
 
@@ -24,30 +24,30 @@ A `GET` request to the endpoint with the `Authorization` header specified.
 
 ```json5 [Structure]
 {
-  "status": {
-    "code": 0, //integer($int32)
-    "name": "string",
-    "message": "string"
+  status: {
+    code: 0, //integer($int32)
+    name: 'string',
+    message: 'string'
   },
-  "data": {
-    "price": 0, //integer($int32); the amount of tokens rewarded for submitting a contribution
-    "confidenceIndexPrice": 0 //integer($int32); the amount of tokens rewarded for submitting a contribution with the maximum confidence index
+  data: {
+    price: 0, //integer($int32); the amount of tokens rewarded for submitting a contribution
+    confidenceIndexPrice: 0 //integer($int32); the amount of tokens rewarded for submitting a contribution with the maximum confidence index
   }
 }
 ```
 
 ```json5 [Example]
 {
-    "status": {
-        "code": 2000,
-        "name": "OK",
-        "message": "The pricing rate has been successfully retrieved"
-    },
-    "data": {
-        "price": 1,
-        "confidenceIndexPrice": 2
-    }
-}      
+  status: {
+    code: 2000,
+    name: 'OK',
+    message: 'The pricing rate has been successfully retrieved'
+  },
+  data: {
+    price: 1,
+    confidenceIndexPrice: 2
+  }
+}
 ```
 
 :::
@@ -56,9 +56,9 @@ A `GET` request to the endpoint with the `Authorization` header specified.
 
 ### Responses
 
-| Response Code | Description                                          |
-| :-----------: | ---------------------------------------------------- |
-| `200`         | The pricing rate has been successfully retrieved.    |
-| `401`         | User signature is incorrect or failed to be decoded. |
-| `404`         | Either account or its metadata key has not found.    |
-| `500`         | Internal server error.                               |
+| Response Code | Description                                            |
+| :-----------: | ------------------------------------------------------ |
+|     `200`     | The pricing rate has been successfully retrieved.      |
+|     `401`     | User signature is incorrect or failed to be decoded.   |
+|     `404`     | Either account or its metadata key has not been found. |
+|     `500`     | Internal server error.                                 |

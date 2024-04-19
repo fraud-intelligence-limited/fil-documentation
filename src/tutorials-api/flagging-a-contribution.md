@@ -51,27 +51,27 @@ To flag a contribution, perform the following steps:
 
    ```json5 [Output example]
    {
-       "status": {
-           "code": 200,
-           "name": "Ok",
-           "message": "Contribution has been successfully retrieved by its ID"
-       },
-       "data": [
-         {
-           "assetDefinitionIds": "130.130.130.1-130.130.130.130_1711570471#contribution",
-           "contribution": {
-               "id": "130.130.130.1-130.130.130.130",
-               "fraudType": "IPFraud",
-               "origination": "GB",
-               "destination": "US",
-               "expiryDate": 1719346471,
-               "fraudStatus": "Active",
-               "confidenceIndex": null,
-               "isPrivileged": false,
-               "peerId": "soramitsu",
-               "flagger": null,
-               "timestamp": 1711570471,
-               "flagTimestamp": null
+     status: {
+       code: 200,
+       name: 'Ok',
+       message: 'Contribution has been successfully retrieved by its ID'
+     },
+     data: [
+       {
+         assetDefinitionIds: '130.130.130.1-130.130.130.130_1711570471#contribution',
+         contribution: {
+           id: '130.130.130.1-130.130.130.130',
+           fraudType: 'IPFraud',
+           origination: 'GB',
+           destination: 'US',
+           expiryDate: 1719346471,
+           fraudStatus: 'Active',
+           confidenceIndex: null,
+           isPrivileged: false,
+           peerId: 'soramitsu',
+           flagger: null,
+           timestamp: 1711570471,
+           flagTimestamp: null
          }
        }
      ]
@@ -96,10 +96,10 @@ To flag a contribution, perform the following steps:
 
    ```json5 [Input structure]
    {
-     "assetDefinitionIds": [
+     assetDefinitionIds: [
        {
-         "definitionId": "idRange#contribution", //Must be the same as `{assetDefinitionIds}` value specified in Step 1
-         "accountId": "accountName@accountDomain"
+         definitionId: 'idRange#contribution', //Must be the same as `{assetDefinitionIds}` value specified in Step 1
+         accountId: 'accountName@accountDomain'
        }
      ]
    }
@@ -107,10 +107,10 @@ To flag a contribution, perform the following steps:
 
    ```json5 [Input example]
    {
-     "assetDefinitionIds": [
+     assetDefinitionIds: [
        {
-         "definitionId": '127.0.0.1-127.0.0.2_1666194511450#contribution',
-         "accountId": 'alice@sora'
+         definitionId: '127.0.0.1-127.0.0.2_1666194511450#contribution',
+         accountId: 'alice@sora'
        }
      ]
    }
@@ -129,12 +129,12 @@ To flag a contribution, perform the following steps:
 
    ```json5 [Output example]
    {
-     "status": {
-       "code": 200,
-       "name": "OK",
-       "message": "Contribution flag has been assembled and its `transactionHex` string has been retrieved successfully"
+     status: {
+       code: 200,
+       name: 'OK',
+       message: 'Contribution flag has been assembled and its `transactionHex` string has been retrieved successfully'
      },
-     "data": "90275ddf11ae82c18aa9c74cee1513098e2199c270e3f24170eb1c2545753ba6985b037c4caef649afd1fa7f8252b42bb19d540afdfa85f4b1330da51bdce70a396d5d0bacea7416f24f513b8ae34fdcd889f709fa38c3c4e5c4e7170834b4bc4b46a2e8adc89ae58611d5f326fa0a1e476622ff42bd5ce2de16f5d5caf413aa"
+     data: '90275ddf11ae82c18aa9c74cee1513098e2199c270e3f24170eb1c2545753ba6985b037c4caef649afd1fa7f8252b42bb19d540afdfa85f4b1330da51bdce70a396d5d0bacea7416f24f513b8ae34fdcd889f709fa38c3c4e5c4e7170834b4bc4b46a2e8adc89ae58611d5f326fa0a1e476622ff42bd5ce2de16f5d5caf413aa'
    }
    ```
 
@@ -150,11 +150,11 @@ To flag a contribution, perform the following steps:
    ```
 
    ```json5 [Input structure]
-   "transactionHex(signed)"
+   'transactionHex(signed)'
    ```
 
    ```json5 [Input example]
-   "c11ed7ea555c4dd0fab11c43d0530c618c5bebd8a5123c4ac8d72223cbd80b4b0258cdf1b932084873e739b0c8cd6885600e0321868297442060bd353d8c45c89fcdd21934f378235639b08a29ca557b80b4e18002b97a4dc5b664d9863ed51713904415cafc222f47bece2d4fb18e2b0a0b95777dbdfbd14640ff5260e85362"
+   'c11ed7ea555c4dd0fab11c43d0530c618c5bebd8a5123c4ac8d72223cbd80b4b0258cdf1b932084873e739b0c8cd6885600e0321868297442060bd353d8c45c89fcdd21934f378235639b08a29ca557b80b4e18002b97a4dc5b664d9863ed51713904415cafc222f47bece2d4fb18e2b0a0b95777dbdfbd14640ff5260e85362'
    ```
 
    ```json5 [Output structure]
@@ -172,13 +172,13 @@ To flag a contribution, perform the following steps:
 
    ```json5 [Output example]
    {
-     "status": {
-       "code": 200,
-       "name": "OK",
-       "message": "Contribution has been flagged and its `transactionHex` string has been retrieved successfully"
+     status: {
+       code: 200,
+       name: 'OK',
+       message: 'Contribution has been flagged and its `transactionHex` string has been retrieved successfully'
      },
-     "data": {
-       "rewarded": 10
+     data: {
+       rewarded: 10
      }
    }
    ```

@@ -35,12 +35,12 @@ A `POST` request to the endpoint with the `Authorization` header specified.
 
 ```json5 [Example]
 {
-  "status": {
-    "code": 200,
-    "name": "OK",
-    "message": "User has been successfully logged out."
+  status: {
+    code: 200,
+    name: 'OK',
+    message: 'User has been successfully logged out.'
   },
-  "data": {}
+  data: {}
 }
 ```
 
@@ -48,10 +48,11 @@ A `POST` request to the endpoint with the `Authorization` header specified.
 
 ### Responses
 
-| Response Code | Description                                                                                                                                   |
-| :-----------: | --------------------------------------------------------------------------------------------------------------------------------------------- |
-| `200`         | User has been successfully logged out.                                                                                                        |
-| `401`         | Either user signature or `refreshToken` are not valid, or the `accessToken` bearer token could not be parsed from the `Authorization` header. |
-| `404`         | User has not been found.                                                                                                                      |
-| `422`         | User signature either could not be decoded or verified, or the `publicKey` string is not valid.                                               |
-| `500`         | Internal server error.                                                                                                                        |
+| Response Code | Description |
+| :-: | --- |
+| `200` | User has been successfully logged out. |
+| `400` | Bad request. |
+| `401` | Either user signature or `refreshToken` are not valid, or the `accessToken` bearer token could not be parsed from the `Authorization` header. |
+| `404` | User has not been found. |
+| `422` | User signature either could not be decoded or verified, or the `publicKey` string is not valid. |
+| `500` | Internal server error. |

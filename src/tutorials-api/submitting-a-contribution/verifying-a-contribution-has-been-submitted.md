@@ -37,7 +37,7 @@ To verify that a contribution has been successfully submitted and the contributo
          "self": integer($int32), //The number of contributions that have been submitted by the requesting user
          "old": integer($int32), //The number of contributions that have already been seen by the requesting user
          "new": integer($int32), //The number of contributions that have _not_ yet been seen by the requesting user
-         "tokensSpent": integer($int32), //The total amount of tokens spent on the retrieved contributions
+         "creditsSpent": integer($int32), //The total amount of tokens spent on the retrieved contributions
          "balanceLeft": integer($int32), //The remaining tokens balance after retrieving contributions
          "contributionsNotReturned": integer($int32) //The number of contributions not yet returned
        }
@@ -87,7 +87,7 @@ To verify that a contribution has been successfully submitted and the contributo
                "self": 6,
                "old": 19,
                "new": 123,
-               "tokensSpent": 190,
+               "creditsSpent": 190,
                "balanceLeft": 50,
                "contributionsNotReturned": 1
            }
@@ -126,17 +126,17 @@ To verify that a contribution has been successfully submitted and the contributo
 
    ```json5 [Output request]
    {
-     "status": {
-       "code": 200,
-       "name": "OK",
-       "message": "Token balance has been retrieved successfully"
+     status: {
+       code: 200,
+       name: 'OK',
+       message: 'Token balance has been retrieved successfully'
      },
-     "data": {
-       "tokenId": {
-         "definitionId": "token#admin",
-         "accountId": "alice@mail.com"
+     data: {
+       tokenId: {
+         definitionId: 'token#admin',
+         accountId: 'alice@mail.com'
        },
-       "balance": 510
+       balance: 510
      }
    }
    ```

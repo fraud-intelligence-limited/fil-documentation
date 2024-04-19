@@ -1,6 +1,6 @@
 # Submitting a contribution
 
-> Submits [an assembled contribution](assembling-a-contribution.md).
+> Submits [an assembled contribution](assembling-a-contribution.md). For details, see [Contributions: Submitting contributions](../../overview/contributions.md#submitting-contributions).
 
 **Protocol**: `HTTP`
 
@@ -19,11 +19,11 @@
 ::: code-group Data structure
 
 ```json5 [Structure]
-"transactionHex(signed)"
+'transactionHex(signed)'
 ```
 
 ```json5 [Example]
-"99581b01a18a5170de27760a48305cee353ce283edd747c346bc98553907ed7dd929441bdefa28a58dd34102471806ac7812e950b27ad27dc074cc1e93bc6b80e10fd6fbb63eee0784e728e2023342dbbb42bbae9fafbe68072e6bc44acf6e9b558285667ca3aec300251cbc2096fec857c493ef8c634a64319af88202bc3f12"
+'99581b01a18a5170de27760a48305cee353ce283edd747c346bc98553907ed7dd929441bdefa28a58dd34102471806ac7812e950b27ad27dc074cc1e93bc6b80e10fd6fbb63eee0784e728e2023342dbbb42bbae9fafbe68072e6bc44acf6e9b558285667ca3aec300251cbc2096fec857c493ef8c634a64319af88202bc3f12'
 ```
 
 :::
@@ -63,16 +63,16 @@ The `transactionHex` string retrieved when [assembling a contribution](assemblin
 
 ```json5 [Example]
 {
-  "status": {
-    "code": 200,
-    "name": "OK",
-    "message": "Contribution has been submitted and tokens have been rewarded successfully"
+  status: {
+    code: 200,
+    name: 'OK',
+    message: 'Contribution has been submitted and tokens have been rewarded successfully'
   },
   data: {
     tokenIds: [
       {
-        definitionId: "+79991234567_12345#contribution",
-        accountId: "cat_thecat@xome"
+        definitionId: '+79991234567_12345#contribution',
+        accountId: 'cat_thecat@xome'
       }
     ],
     rewarded: 100
@@ -86,8 +86,9 @@ The `transactionHex` string retrieved when [assembling a contribution](assemblin
 
 ### Responses
 
-| Response Code | Description                                                                  |
-| :-----------: | ---------------------------------------------------------------------------- |
-| 200           | Contribution has been submitted and tokens have been rewarded successfully. |
-| 400           | Invalid transaction.                                                         |
-| 500           | Internal server error.                                                       |
+| Response Code | Description |
+| :-: | --- |
+| `200` | Contribution has been submitted and tokens have been rewarded successfully. |
+| `400` | Invalid transaction. |
+| `401` | `accessToken` is either expired or invalid. |
+| `500` | Internal server error. |

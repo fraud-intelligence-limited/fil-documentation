@@ -41,17 +41,17 @@ A `GET` request to the endpoint with the `Authorization` header specified.
 
 ```json5 [Example]
 {
-  "status": {
-    "code": 200,
-    "name": "OK",
-    "message": "Token balance has been retrieved successfully"
+  status: {
+    code: 200,
+    name: 'OK',
+    message: 'Token balance has been retrieved successfully'
   },
-  "data": {
-    "tokenId": {
-      "definitionId": "credit#admin",
-      "accountId": "admin@admin"
+  data: {
+    tokenId: {
+      definitionId: 'credit#admin',
+      accountId: 'admin@admin'
     },
-    "balance": 500
+    balance: 500
   }
 }
 ```
@@ -62,8 +62,9 @@ A `GET` request to the endpoint with the `Authorization` header specified.
 
 ### Responses
 
-| Response Code | Description                                    |
-| :-----------: | ---------------------------------------------- |
-| `200`         | Token balance has been retrieved successfully. |
-| `401`         | ???                                            |
-| `500`         | Internal server error.                         |
+| Response Code | Description |
+| :-: | --- |
+| `200` | Token balance has been retrieved successfully. |
+| `401` | `accessToken` is either expired or invalid. |
+| `403` | Forbidden (in case a non-admin peer attempts to request the credit balance of another peer). |
+| `500` | Internal server error. |
