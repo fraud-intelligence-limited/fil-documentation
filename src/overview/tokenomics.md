@@ -44,6 +44,8 @@ See the following related tutorials:
 
 The number of digital credits that a user has on their account, and that can be used to pay for downloading of fraud event data.
 
+Users registered under the same peer share the same token balance.
+
 A user can check their current token balance in any of the following two ways:
 
 - By calling the [Retrieving token balance](../api-specification/wallet-controller/retrieving-token-balance.md) endpoint as an [authorized user](../api-specification/auth-controller/authorizing-a-user-in-the-system.md).

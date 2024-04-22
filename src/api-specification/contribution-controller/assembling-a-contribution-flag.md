@@ -1,6 +1,7 @@
 # Assembling a contribution flag
 
-> Assembles a contribution flag that must be later [submitted](submitting-a-contribution-flag.md) in order to flag a contribution as a False Positive. For details, see [Contributions: Flagging contributions](../../overview/contributions.md#flagging-contributions).
+> Assembles a contribution flag that must be later [submitted](submitting-a-contribution-flag.md) in order to flag a contribution as a False Positive.
+> For details, see [Contributions: Flagging contributions](../../overview/contributions.md#flagging-contributions).
 
 **Protocol**: `HTTP`
 
@@ -44,8 +45,7 @@
 {
   "status": {
     "code": integer($int32),
-    "name": "string",
-    "message": "string"
+    "name": "string"
   },
   "data": "transactionHex"
 }
@@ -55,8 +55,7 @@
 {
   status: {
     code: 200,
-    name: 'OK',
-    message: 'Contribution flag has been assembled and its `transactionHex` string has been retrieved successfully'
+    name: 'OK'
   },
   data: 'ecd5253b23902f3f1a9e6a62d092d9911ef8f663737f215188062679fd895bd0e07d2858a80ccf30e341c68c651dc50f87d4782f5e5f35a31649f0979eaf4c46141133e4ae298da96295da8299edc3467a2929603caf77abeb9e81175516c997fff943a63fece49f8613a983b7481faaeedf885babd5d0dc47cf1cd990c104fe'
 }

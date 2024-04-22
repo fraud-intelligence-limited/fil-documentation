@@ -40,7 +40,7 @@ export default defineConfig({
               link: '/overview/tokenomics.md',
             },
             {
-              text: 'Web UI',
+              text: 'Web App UI',
               link: '/overview/web-interface.md',
             },
           ],
@@ -69,7 +69,7 @@ export default defineConfig({
           ],
         },
         {
-          text: 'Tutorials: Web UI',
+          text: 'Tutorials: Web App',
           link: '/tutorials-web.md',
           collapsed: true,
           items: [
@@ -167,12 +167,12 @@ export default defineConfig({
               collapsed: true,
               items: [
                 {
-                  text: 'Retrieving peer details',
-                  link: '/api-specification/peer-controller/retrieving-peer-details.md',
+                  text: 'Retrieving user details',
+                  link: '/api-specification/peer-controller/retrieving-user-details.md',
                 },
                 {
-                  text: 'Retrieving peer limit status',
-                  link: '/api-specification/peer-controller/retrieving-peer-limit-status.md',
+                  text: 'Retrieving peer limit state',
+                  link: '/api-specification/peer-controller/retrieving-peer-limit-state.md',
                 },
               ],
             },
@@ -201,8 +201,8 @@ export default defineConfig({
                   link: '/api-specification/contribution-controller/retrieving-a-contribution-by-ID.md',
                 },
                 {
-                  text: 'Retrieving top contributions',
-                  link: '/api-specification/contribution-controller/retrieving-top-contributions.md',
+                  text: 'Retrieving contributions',
+                  link: '/api-specification/contribution-controller/retrieving-contributions.md',
                 },
                 {
                   text: 'Retrieving download pricing rate',

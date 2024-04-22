@@ -1,6 +1,6 @@
 # Retrieving token balance
 
-> Retrieves the token balance on the [authorized FIB user's](../auth-controller/authorizing-a-user-in-the-system.md) account at the time of the request.
+> Retrieves the token balance of the [authorized FIB user's](../auth-controller/authorizing-a-user-in-the-system.md) peer account at the time of the request.
 
 **Protocol**: `HTTP`
 
@@ -26,8 +26,7 @@ A `GET` request to the endpoint with the `Authorization` header specified.
 {
   "status": {
     "code": integer($int32),
-    "name": "string",
-    "message": "string"
+    "name": "string"
   },
   "data": {
     "tokenId": {
@@ -43,8 +42,7 @@ A `GET` request to the endpoint with the `Authorization` header specified.
 {
   status: {
     code: 200,
-    name: 'OK',
-    message: 'Token balance has been retrieved successfully'
+    name: 'OK'
   },
   data: {
     tokenId: {

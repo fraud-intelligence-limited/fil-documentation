@@ -1,6 +1,6 @@
 # Retrieving upload rewards rate
 
-> Retrieves the current rewards rate established for [submitting contributions](submitting-a-contribution.md) of all fraud types for all supported company types.
+> Retrieves the current rewards rate established for [submitting contribution flags](submitting-a-contribution-flag.md) and [submitting contributions](submitting-a-contribution.md) of all fraud types for all supported company types.
 
 **Protocol**: `HTTP`
 
@@ -25,9 +25,8 @@ A `GET` request to the endpoint with the `Authorization` header specified.
 ```json5 [Structure]
 {
     "status": {
-        "code": integer($int32)
+        "code": integer($int32),
         "name": 'string'
-        "message": 'string'
     },
     "data": {
         "rewardsTable": {
@@ -69,7 +68,6 @@ A `GET` request to the endpoint with the `Authorization` header specified.
     "status": {
         "code": 200,
         "name": 'OK'
-        "message": 'The table containing the user's current rewards statistics has been successfully retrieved.'
     },
     "data": {
         "rewardsTable": {
@@ -114,7 +112,7 @@ A `GET` request to the endpoint with the `Authorization` header specified.
 
 | Response Code | Description |
 | :-: | --- |
-| `200` | The table containing the user's current rewards statistics has been successfully retrieved. |
+| `200` | The currently active rewards rate for uploading and flagging contributions has been successfully retrieved. |
 | `401` | User signature is incorrect or failed to be decoded. |
 | `404` | Either account or its metadata key has not found. |
 | `500` | Internal server error. |

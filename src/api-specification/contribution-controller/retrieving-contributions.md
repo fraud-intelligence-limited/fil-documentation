@@ -41,8 +41,7 @@ A `GET` request to the endpoint with the `Authorization` header specified.
 {
   "status": {
     "code": integer($int32),
-    "name": "string",
-    "message": "string"
+    "name": "string"
   },
   "data": {
     "contributions": [
@@ -76,8 +75,7 @@ A `GET` request to the endpoint with the `Authorization` header specified.
 {
     "status": {
         "code": 200,
-        "name": "Ok",
-        "message": "Contributions have been successfully retrieved and filtered by the specified parameters"
+        "name": "Ok"
     },
     "data": {
         "contributions": [

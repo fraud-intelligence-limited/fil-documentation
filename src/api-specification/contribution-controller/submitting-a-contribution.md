@@ -1,6 +1,7 @@
 # Submitting a contribution
 
-> Submits [an assembled contribution](assembling-a-contribution.md). For details, see [Contributions: Submitting contributions](../../overview/contributions.md#submitting-contributions).
+> Submits [an assembled contribution](assembling-a-contribution.md).
+> For details, see [Contributions: Submitting contributions](../../overview/contributions.md#submitting-contributions).
 
 **Protocol**: `HTTP`
 
@@ -46,8 +47,7 @@ The `transactionHex` string retrieved when [assembling a contribution](assemblin
 {
   "status": {
     "code": integer($int32),
-    "name": "string",
-    "message": "string"
+    "name": "string"
   },
   "data": {
     "tokenIds": [
@@ -65,8 +65,7 @@ The `transactionHex` string retrieved when [assembling a contribution](assemblin
 {
   status: {
     code: 200,
-    name: 'OK',
-    message: 'Contribution has been submitted and tokens have been rewarded successfully'
+    name: 'OK'
   },
   data: {
     tokenIds: [

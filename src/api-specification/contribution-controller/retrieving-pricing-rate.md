@@ -25,13 +25,12 @@ A `GET` request to the endpoint with the `Authorization` header specified.
 ```json5 [Structure]
 {
   status: {
-    code: 0, //integer($int32)
-    name: 'string',
-    message: 'string'
+    code: integer($int32),
+    name: 'string'
   },
   data: {
-    price: 0, //integer($int32); the amount of tokens rewarded for submitting a contribution
-    confidenceIndexPrice: 0 //integer($int32); the amount of tokens rewarded for submitting a contribution with the maximum confidence index
+    price: integer($int32) //the amount of tokens rewarded for submitting a contribution
+    confidenceIndexPrice: integer($int32) //the amount of tokens rewarded for submitting a contribution with the maximum confidence index
   }
 }
 ```
@@ -39,9 +38,8 @@ A `GET` request to the endpoint with the `Authorization` header specified.
 ```json5 [Example]
 {
   status: {
-    code: 2000,
-    name: 'OK',
-    message: 'The pricing rate has been successfully retrieved'
+    code: 200,
+    name: 'OK'
   },
   data: {
     price: 1,

@@ -26,8 +26,7 @@ A `POST` request to the endpoint with the `Authorization` header specified.
 {
   "status": {
     "code": integer($int32),
-    "name": "string",
-    "message": "string"
+    "name": "string"
   },
   "data": {}
 }
@@ -37,8 +36,7 @@ A `POST` request to the endpoint with the `Authorization` header specified.
 {
   status: {
     code: 200,
-    name: 'OK',
-    message: 'User has been successfully logged out.'
+    name: 'OK'
   },
   data: {}
 }

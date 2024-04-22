@@ -1,6 +1,7 @@
 # Submitting a contribution flag
 
-> Submits [an assembled contribution flag](assembling-a-contribution-flag.md). For details, see [Contributions: Flagging contributions](../../overview/contributions.md#flagging-contributions).
+> Submits [an assembled contribution flag](assembling-a-contribution-flag.md).
+> For details, see [Contributions: Flagging contributions](../../overview/contributions.md#flagging-contributions).
 
 **Protocol**: `HTTP`
 
@@ -46,8 +47,7 @@ The `transactionHex` string retrieved when [assembling a contribution flag](asse
 {
   "status": {
     "code": integer($int32),
-    "name": "string",
-    "message": "string"
+    "name": "string"
   },
   "data": {
     "rewarded": integer($int32)
@@ -59,8 +59,7 @@ The `transactionHex` string retrieved when [assembling a contribution flag](asse
 {
   status: {
     code: 200,
-    name: 'OK',
-    message: 'Contribution has been flagged and its `transactionHex` string has been retrieved successfully'
+    name: 'OK'
   },
   data: {
     rewarded: 50

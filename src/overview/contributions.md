@@ -67,12 +67,5 @@ When [assembling a contribution](../api-specification/contribution-controller/as
 | `fraudType` | `string(enum)` | The type of the fraud event. <br> Can be one of the following: <ol><li>`Wangiri`</li><li>`IRSF`</li><li>`StolenDevice`</li><li>`IPFraud`</li><li>`SMSA2P`</li></ol> |
 | `origination` | `string` | The two-letter code of the country the fraud event originated from (Alpha-2, [ISO 3166](https://www.iso.org/iso-3166-country-codes.html)). |
 | `destination` | `string` | The two-letter code of the country the fraud event was identified as such (Alpha-2, [ISO 3166](https://www.iso.org/iso-3166-country-codes.html)). |
-| `expiryDate` | `integer($int32)` | The exact time and date until which the event is considered relevant (represented as [Unix Epoch time](https://www.epochconverter.com/clock) in seconds). |
-| `fraudStatus` | `string(enum)` | The status of the fraud event in relation to its `expiryDate`. <br> Can be one of the following: <ol><li>`ACTIVE`</li><li>`EXPIRED`</li><li>`FLAGGED`</li></ol> |
-| `confidenceIndex` | `number($double)` | The predicted fraud likelihood score in the range from `0` to `1`. <br> This field is _not_ mandatory. |
-| `isPrivileged` | `boolean` | The definition of whether a contribution is privileged. |
-| `peerId` | `string` | The unique Domain ID of the peer that contributed the data. |
-| `flagger` | `string` | The unique ID of the peer that flagged the data. <br> This field is _not_ mandatory. |
-| `timestamp` | `integer($int32)` | The exact date and time of when a contribution has been submitted (represented as [Unix Epoch time](https://www.epochconverter.com/clock) in seconds). |
 
 :::

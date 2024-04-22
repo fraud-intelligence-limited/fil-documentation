@@ -1,6 +1,7 @@
 # Assembling a contribution
 
-> Assembles a contribution that must be later [submitted](submitting-a-contribution.md) in order to store the fraud event records on the network. For details, see [Contributions: Submitting contributions](../../overview/contributions.md#submitting-contributions).
+> Assembles a contribution that must be later [submitted](submitting-a-contribution.md) in order to store the fraud event records on the network.
+> For details, see [Contributions: Submitting contributions](../../overview/contributions.md#submitting-contributions).
 
 **Protocol**: `HTTP`
 
@@ -25,13 +26,6 @@
     "fraudType": "string",
     "origination": "string",
     "destination": "string",
-    "expiryDate": integer($int32),
-    "fraudStatus": "string(enum)",
-    "confidenceIndex": number($double),
-    "isPrivileged": boolean,
-    "peerId": "string",
-    "flagger": "string",
-    "timestamp": integer($int32)
   }
 ]
 ```
@@ -43,13 +37,6 @@
     "fraudType": "IPFraud",
     "origination": "SE",
     "destination": "GB",
-    "expiryDate": 1719068894
-    "fraudStatus": "Active"
-    "confidenceIndex": 0.5,
-    "isPrivileged": true,
-    "peerId": "wonderland",
-    "flagger": "alice@wonderland",
-    "timestamp": 1711120097
   }
 ]
 ```
@@ -80,8 +67,7 @@ This endpoint accepts requests with up to `500` entries.
 {
   "status": {
     "code": integer($int32),
-    "name": "string",
-    "message": "string"
+    "name": "string"
   },
   "data": "transactionHex"
 }
@@ -91,8 +77,7 @@ This endpoint accepts requests with up to `500` entries.
 {
   status: {
     code: 200,
-    name: 'OK',
-    message: 'Contribution has been assembled and its transaction `transactionHex` string has been retrieved successfully'
+    name: 'OK'
   },
   data: '31fd14aecf7aa369a77035658556b2ff25c2b148d9516afbfa9b0edc709b1e1ae326b377b223e8e8486fee4d997ef03c29bcc6ead443daa68f0d397ceea2f78f7ede2df67d1f2f04bcbc51c40effce9f4f8d3b66394b0b2b0c094f8347117d08539a4a19f3bc8b75bc4dab24385fe3c5ef8faafc61d38095c594b30b33275613'
 }

@@ -54,8 +54,7 @@ The `authPublicKeyHex` string is taken from the user's **Authorization** key pai
 {
   "status": {
     "code": integer($int32),
-    "name": "string",
-    "message": "string"
+    "name": "string"
   },
   "data": {
     "accessToken": "string",
@@ -69,8 +68,7 @@ The `authPublicKeyHex` string is taken from the user's **Authorization** key pai
 {
   status: {
     code: 200,
-    name: 'OK',
-    message: 'User authorization has been successful.'
+    name: 'OK'
   },
   data: {
     accessToken: 'eyJ0eXAiOiJKV1QiLCJhbGciOiJFZERTQSJ9.eyJhY2MiOiJhbGljZUB3b25kZXJsYW5kIiwic3ViIjoiYWxpY2VAbWFpbC5jb20iLCJyb2xlIjoiUk9MRV9QRUVSIiwiZXhwIjoxNzAzMTg3NDEyLCJqdGkiOiIwNjgzM2FlZi03ZDljLTQ2MTUtYTU4YS02YjYxZWZkM2FhNjEifQ.HvrukWtcA7nz5rbxWiklJOjnv4X7jaAQ7piJaxqlW5rvUv52rClqYYHSn9F-P4u6pKNlJSpiiiH0GnynXsL7CQ',

@@ -18,22 +18,6 @@ A `GET` request to the endpoint with the `Authorization` header specified.
 
 #### Output/response structure
 
-```json5
-{
-  status: {
-    code: 0,
-    name: 'string',
-    message: 'string'
-  },
-  data: {
-    used: 0,
-    total: 0,
-    updatePeriod: 0,
-    nextUpdate: 0
-  }
-}
-```
-
 ::: details Show
 
 ::: code-group Data structure
@@ -42,8 +26,7 @@ A `GET` request to the endpoint with the `Authorization` header specified.
 {
   "status": {
     "code": integer($int32),
-    "name": "string",
-    "message": "string"
+    "name": "string"
   },
   "data": {
     "used": integer($int32),
@@ -58,8 +41,7 @@ A `GET` request to the endpoint with the `Authorization` header specified.
 {
   status: {
     code: 200,
-    name: 'Ok',
-    message: 'Peer limit status has been retrieved successfully'
+    name: 'Ok'
   },
   data: {
     used: 0, //The number of tokens spent by the requesting peer during their existence

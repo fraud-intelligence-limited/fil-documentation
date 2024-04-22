@@ -26,8 +26,7 @@ A `GET` request to the endpoint with the `Authorization` header specified.
 {
   "status": {
     "code": integer($int32),
-    "name": "string",
-    "message": "string"
+    "name": "string"
   },
   "data": {
     "email": "string",
@@ -58,8 +57,7 @@ A `GET` request to the endpoint with the `Authorization` header specified.
 {
   status: {
     code: 200,
-    name: 'Ok',
-    message: 'User details have been retrieved successfully'
+    name: 'Ok'
   },
   data: {
     email: 'alice@wonder.land',

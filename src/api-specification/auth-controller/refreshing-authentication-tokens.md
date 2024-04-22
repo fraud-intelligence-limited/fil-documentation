@@ -26,8 +26,7 @@ A `PATCH` request to the endpoint with the `Authorization` header specified.
 {
   "status": {
     "code": integer($int32),
-    "name": "string",
-    "message": "string"
+    "name": "string"
   },
   "data": {
     "accessToken": "string",
@@ -41,8 +40,7 @@ A `PATCH` request to the endpoint with the `Authorization` header specified.
 {
   status: {
     code: 200,
-    name: 'OK',
-    message: 'Authentication tokens have been refreshed successfully.'
+    name: 'OK'
   },
   data: {
     accessToken: 'eyJ0eXAiOiJKV1QiLCJhbGciOiJFZERTQSJ9.eyJhY2MiOiJib2JAYWRtaW4iLCJzdWIiOiJib2JAbWFpbC5jb20iLCJyb2xlIjoiUk9MRV9BRE1JTiIsImV4cCI6MTcwMzI2MTU3NCwianRpIjoiOGUxNzgzZDgtNGE1Yi00ZGQ0LWI3OGQtYjUwNTY1NDAwNTAzIn0.BUqeWAnkqtE6oKc-ztDwaQ36om9trZTNKR8vwelMqr4m67y3td-cVu9lOY7WTY09tTMoVQQ-rbuEFcmxCY17BA',

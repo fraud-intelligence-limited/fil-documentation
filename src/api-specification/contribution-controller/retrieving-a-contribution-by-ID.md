@@ -35,8 +35,7 @@ A `GET` request to the endpoint with the `{id}` parameter and `Authorization` he
 {
   "status": {
     "code": integer($int32),
-    "name": "string",
-    "message": "string"
+    "name": "string"
   },
   "data": [
     {
@@ -64,8 +63,7 @@ A `GET` request to the endpoint with the `{id}` parameter and `Authorization` he
 {
   status: {
     code: 200,
-    name: 'Ok',
-    message: 'Contribution has been successfully retrieved by its ID'
+    name: 'Ok'
   },
   data: [
     {
