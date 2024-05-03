@@ -59,7 +59,7 @@ This endpoint accepts requests with up to `500` entries.
 
 ::: details Show
 
-::: code-groups Data structure
+::: code-group Data structure
 
 ```json5 [Structure]
 {
