@@ -39,33 +39,33 @@ A `GET` request to the endpoint with the `Authorization` header specified.
 
 ```json5 [Structure]
 {
-  "status": {
-    "code": integer($int32),
-    "name": "string"
+  status: {
+    code: integer($int32),
+    name: 'string'
   },
-  "data": {
-    "contributions": [
+  data: {
+    contributions: [
         {
-          "id": "string",
-          "fraudType": "string",
-          "origination": "string",
-          "destination": "string",
-          "expiryDate": integer($int32),
-          "fraudStatus": "string(enum)",
-          "confidenceIndex": number($double),
-          "isPrivileged": boolean,
-          "peerId": "string",
-          "flagger": "string",
-          "timestamp": integer($int32)
+          id": 'string',
+          fraudType: 'string',
+          origination: 'string',
+          destination: 'string',
+          expiryDate: integer($int32),
+          fraudStatus: 'string(enum)',
+          confidenceIndex: number($double),
+          isPrivileged: boolean,
+          peerId: 'string',
+          flagger: 'string',
+          timestamp: integer($int32)
         }
     ],
-    "details": {
-      "self": integer($int32),
-      "old": integer($int32),
-      "new": integer($int32),
-      "creditsSpent": integer($int32),
-      "balanceLeft": integer($int32),
-      "contributionsNotReturned": integer($int32)
+    details: {
+      self: integer($int32),
+      old: integer($int32),
+      new: integer($int32),
+      creditsSpent: integer($int32),
+      balanceLeft: integer($int32),
+      contributionsNotReturned: integer($int32)
     }
   }
 }
@@ -73,48 +73,48 @@ A `GET` request to the endpoint with the `Authorization` header specified.
 
 ```json5 [Example]
 {
-    "status": {
-        "code": 200,
-        "name": "Ok"
+    status: {
+        code: 200,
+        name: 'Ok'
     },
-    "data": {
-        "contributions": [
+    data: {
+        contributions: [
             {
-                "id": "127.0.0.1-127.0.0.1",
-                "fraudType": "IPFraud",
-                "origination": "UA",
-                "destination": "GB",
-                "expiryDate": 1711373543,
-                "fraudStatus": "Active",
-                "confidenceIndex": null,
-                "isPrivileged": false,
-                "peerId": "test",
-                "flagger": null,
-                "timestamp": xxx,
-                "flagTimestamp": 1711891326
+                id: '127.0.0.1-127.0.0.1',
+                fraudType: 'IPFraud',
+                origination: 'UA',
+                destination: 'GB',
+                expiryDate: 1711373543,
+                fraudStatus: 'Active',
+                confidenceIndex: null,
+                isPrivileged: false,
+                peerId: 'test',
+                flagger: null,
+                timestamp: xxx,
+                flagTimestamp: 1711891326
             },
             {
-                "id": "127.0.0.1-127.0.0.1",
-                "fraudType": "IPFraud",
-                "origination": "GA",
-                "destination": "RU",
-                "expiryDate": 1711372367,
-                "fraudStatus": "Flagged",
-                "confidenceIndex": null,
-                "isPrivileged": false,
-                "peerId": "test",
-                "flagger": "admin@test",
-                "timestamp": xxx,
-                "flagTimestamp": 1711977724
+                id: '127.0.0.1-127.0.0.1',
+                fraudType: 'IPFraud',
+                origination: 'GA',
+                destination: 'RU',
+                expiryDate: 1711372367,
+                fraudStatus: 'Flagged',
+                confidenceIndex: null,
+                isPrivileged: false,
+                peerId: 'test',
+                flagger: 'admin@test',
+                timestamp: xxx,
+                flagTimestamp: 1711977724
             }
         ],
-        "details": {
-            "self": 6,
-            "old": 19,
-            "new": 123,
-            "creditsSpent": 190,
-            "balanceLeft": 50,
-            "contributionsNotReturned": 1
+        details: {
+            self: 6,
+            old: 19,
+            new: 123,
+            creditsSpent: 190,
+            balanceLeft: 50,
+            contributionsNotReturned: 1
         }
     }
 }
@@ -125,8 +125,6 @@ A `GET` request to the endpoint with the `Authorization` header specified.
 ::: info
 
 For a detailed breakdown of every field and value in the body of a response, see [Contributions: Retrieving contributions](../../overview/contributions.md#retrieving-contributions).
-
-:::
 
 :::
 

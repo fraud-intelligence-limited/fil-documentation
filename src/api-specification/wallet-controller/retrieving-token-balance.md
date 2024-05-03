@@ -24,16 +24,16 @@ A `GET` request to the endpoint with the `Authorization` header specified.
 
 ```json5 [Structure]
 {
-  "status": {
-    "code": integer($int32),
-    "name": "string"
+  status: {
+    code: integer($int32),
+    name: 'string'
   },
-  "data": {
-    "tokenId": {
-      "definitionId": "assetName#assetDomain",
-      "accountId": "accountName@accountDomain"
+  data: {
+    tokenId: {
+      definitionId: 'assetName#assetDomain',
+      accountId: 'accountName@accountDomain'
     },
-    "balance": integer($int64)
+    balance: integer($int64)
   }
 }
 ```
@@ -53,8 +53,6 @@ A `GET` request to the endpoint with the `Authorization` header specified.
   }
 }
 ```
-
-:::
 
 :::
 

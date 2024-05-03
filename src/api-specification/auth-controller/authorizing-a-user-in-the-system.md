@@ -42,8 +42,6 @@ The `authPublicKeyHex` string is taken from the user's **Authorization** key pai
 
 :::
 
-:::
-
 #### Output/response structure
 
 ::: details Show
@@ -52,14 +50,14 @@ The `authPublicKeyHex` string is taken from the user's **Authorization** key pai
 
 ```json5 [Structure]
 {
-  "status": {
-    "code": integer($int32),
-    "name": "string"
+  status: {
+    code: integer($int32),
+    name: 'string'
   },
-  "data": {
-    "accessToken": "string",
-    "refreshToken": "string",
-    "expirationTime": integer($int64)
+  data: {
+    accessToken: 'string',
+    refreshToken: 'string',
+    expirationTime: integer($int64)
   }
 }
 ```
@@ -77,8 +75,6 @@ The `authPublicKeyHex` string is taken from the user's **Authorization** key pai
   }
 }
 ```
-
-:::
 
 :::
 

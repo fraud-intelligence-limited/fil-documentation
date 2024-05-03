@@ -50,8 +50,6 @@ A `GET` request to the endpoint with the `Authorization` header specified.
 
 :::
 
-:::
-
 ### Responses
 
 | Response Code | Description                                            |

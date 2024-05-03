@@ -24,15 +24,15 @@ A `GET` request to the endpoint with the `Authorization` header specified.
 
 ```json5 [Structure]
 {
-  "status": {
-    "code": integer($int32),
-    "name": "string"
+  status: {
+    code: integer($int32),
+    name: 'string'
   },
-  "data": {
-    "used": integer($int32),
-    "total": integer($int32),
-    "updatePeriod": integer($int64),
-    "nextUpdate": integer($int64)
+  data: {
+    used: integer($int32),
+    total: integer($int32),
+    updatePeriod: integer($int64),
+    nextUpdate: integer($int64)
   }
 }
 ```
@@ -51,8 +51,6 @@ A `GET` request to the endpoint with the `Authorization` header specified.
   }
 }
 ```
-
-:::
 
 :::
 

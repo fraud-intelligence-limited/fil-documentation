@@ -1,6 +1,6 @@
 # Submitting a contribution
 
-> Submits [an assembled contribution](assembling-a-contribution.md).
+> Submits [an assembled contribution](assembling-a-contribution.md).\
 > For details, see [Contributions: Submitting contributions](../../overview/contributions.md#submitting-contributions).
 
 **Protocol**: `HTTP`
@@ -35,8 +35,6 @@ The `transactionHex` string retrieved when [assembling a contribution](assemblin
 
 :::
 
-:::
-
 #### Output/response structure
 
 ::: details Show
@@ -45,18 +43,18 @@ The `transactionHex` string retrieved when [assembling a contribution](assemblin
 
 ```json5 [Structure]
 {
-  "status": {
-    "code": integer($int32),
-    "name": "string"
+  status: {
+    code: integer($int32),
+    name: 'string'
   },
-  "data": {
-    "tokenIds": [
+  data: {
+    tokenIds: [
       {
-        "definitionId": "idRange#assetDomain",
-        "accountId": "accountName@accountDomain"
+        definitionId: 'idRange#assetDomain',
+        accountId: 'accountName@accountDomain'
       }
     ],
-    "rewarded": integer($int32)
+    rewarded: integer($int32)
   }
 }
 ```
@@ -78,8 +76,6 @@ The `transactionHex` string retrieved when [assembling a contribution](assemblin
   }
 }
 ```
-
-:::
 
 :::
 

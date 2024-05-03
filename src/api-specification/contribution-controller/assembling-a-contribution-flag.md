@@ -1,6 +1,6 @@
 # Assembling a contribution flag
 
-> Assembles a contribution flag that must be later [submitted](submitting-a-contribution-flag.md) in order to flag a contribution as a False Positive.
+> Assembles a contribution flag that must be later [submitted](submitting-a-contribution-flag.md) in order to flag a contribution as a False Positive.\
 > For details, see [Contributions: Flagging contributions](../../overview/contributions.md#flagging-contributions).
 
 **Protocol**: `HTTP`
@@ -33,8 +33,6 @@
 
 :::
 
-:::
-
 #### Output/response structure
 
 ::: details Show
@@ -43,11 +41,11 @@
 
 ```json5 [Structure]
 {
-  "status": {
-    "code": integer($int32),
-    "name": "string"
+  status: {
+    code: integer($int32),
+    name: 'string'
   },
-  "data": "transactionHex"
+  data: 'transactionHex'
 }
 ```
 
@@ -60,8 +58,6 @@
   data: 'ecd5253b23902f3f1a9e6a62d092d9911ef8f663737f215188062679fd895bd0e07d2858a80ccf30e341c68c651dc50f87d4782f5e5f35a31649f0979eaf4c46141133e4ae298da96295da8299edc3467a2929603caf77abeb9e81175516c997fff943a63fece49f8613a983b7481faaeedf885babd5d0dc47cf1cd990c104fe'
 }
 ```
-
-:::
 
 :::
 

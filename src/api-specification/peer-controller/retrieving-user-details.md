@@ -24,31 +24,31 @@ A `GET` request to the endpoint with the `Authorization` header specified.
 
 ```json5 [Structure]
 {
-  "status": {
-    "code": integer($int32),
-    "name": "string"
+  status: {
+    code: integer($int32),
+    name: 'string'
   },
-  "data": {
-    "email": "string",
-    "accountId": "string",
-    "authPubKeyHex": "string",
-    "irohaPubKeyHex": "string",
-    "salt": "string",
-    "role": "string(enum)", //'ROLE_ADMIN' OR 'ROLE_DOMAIN_ADMIN' OR 'ROLE_PEER'
-    "status": "string(enum)",
-    "phoneNumber": "string",
-    "firstName": "string",
-    "lastName": "string",
-    "roleName": "string",
-    "peerCompanyName": "string",
-    "peerOperatingCountry": "string",
-    "peerType": "string(enum)", //'LARGE_TELCO' OR 'MEDIUM_TELCO' OR 'SMALL_TELCO' OR 'VENDOR'
-    "peerConnectionType": "string(enum)",
-    "peerGroup": "string",
-    "peerIsPrivileged": boolean,
-    "registrationDate": "string", //ISO 8601
-    "subscriptionType": "string(enum)", //'TRIAL' OR 'FREEMIUM' OR 'PREMIUM'
-    "subscriptionExpiryDate": "string" //ISO 8601
+  data: {
+    email: 'string',
+    accountId: 'string',
+    authPubKeyHex: 'string',
+    irohaPubKeyHex: 'string',
+    salt: 'string',
+    role: 'string(enum)', //'ROLE_ADMIN' OR 'ROLE_DOMAIN_ADMIN' OR 'ROLE_PEER'
+    status: 'string(enum)',
+    phoneNumber: 'string',
+    firstName: 'string',
+    lastName: 'string',
+    roleName: 'string',
+    peerCompanyName: 'string',
+    peerOperatingCountry: 'string',
+    peerType: 'string(enum)', //'LARGE_TELCO' OR 'MEDIUM_TELCO' OR 'SMALL_TELCO' OR 'VENDOR'
+    peerConnectionType: 'string(enum)',
+    peerGroup: 'string',
+    peerIsPrivileged: boolean,
+    registrationDate: 'string', //ISO 8601
+    subscriptionType: 'string(enum)', //'TRIAL' OR 'FREEMIUM' OR 'PREMIUM'
+    subscriptionExpiryDate: 'string' //ISO 8601
   }
 }
 ```
@@ -83,8 +83,6 @@ A `GET` request to the endpoint with the `Authorization` header specified.
   }
 }
 ```
-
-:::
 
 :::
 

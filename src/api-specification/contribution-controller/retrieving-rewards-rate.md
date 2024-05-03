@@ -24,39 +24,39 @@ A `GET` request to the endpoint with the `Authorization` header specified.
 
 ```json5 [Structure]
 {
-    "status": {
-        "code": integer($int32),
-        "name": 'string'
+    status: {
+        code: integer($int32),
+        name: 'string'
     },
-    "data": {
-        "rewardsTable": {
-            "LARGE_TELCO": {
-                "Wangiri": integer($int64)
-                "SMSA2P": integer($int64)
-                "IRSF": integer($int64)
-                "StolenDevice": integer($int64)
-                "IPFraud": integer($int64)
+    data: {
+        rewardsTable: {
+            LARGE_TELCO: {
+                Wangiri: integer($int64)
+                SMSA2P: integer($int64)
+                IRSF: integer($int64)
+                StolenDevice: integer($int64)
+                IPFraud: integer($int64)
             },
-            "MEDIUM_TELCO": {
-                "Wangiri": integer($int64)
-                "SMSA2P": integer($int64)
-                "IRSF": integer($int64)
-                "StolenDevice": integer($int64)
-                "IPFraud": integer($int64)
+            MEDIUM_TELCO: {
+                Wangiri: integer($int64)
+                SMSA2P: integer($int64)
+                IRSF: integer($int64)
+                StolenDevice: integer($int64)
+                IPFraud" integer($int64)
             },
-            "SMALL_TELCO": {
-                "Wangiri": integer($int64)
-                "SMSA2P": integer($int64)
-                "IRSF": integer($int64)
-                "StolenDevice": integer($int64)
-                "IPFraud": integer($int64)
+            SMALL_TELCO: {
+                Wangiri: integer($int64)
+                SMSA2P: integer($int64)
+                IRSF: integer($int64)
+                StolenDevice: integer($int64)
+                IPFraud: integer($int64)
             },
-            "VENDOR": {
-                "Wangiri": integer($int64)
-                "SMSA2P": integer($int64)
-                "IRSF": integer($int64)
-                "StolenDevice": integer($int64)
-                "IPFraud": integer($int64)
+            VENDOR: {
+                Wangiri: integer($int64)
+                SMSA2P: integer($int64)
+                IRSF: integer($int64)
+                StolenDevice: integer($int64)
+                IPFraud: integer($int64)
             }
         }
     }
@@ -65,46 +65,44 @@ A `GET` request to the endpoint with the `Authorization` header specified.
 
 ```json5 [Example]
 {
-    "status": {
-        "code": 200,
-        "name": 'OK'
-    },
-    "data": {
-        "rewardsTable": {
-            "LARGE_TELCO": {
-                "Wangiri": 10,
-                "SMSA2P": 20,
-                "IRSF": 30,
-                "StolenDevice": 40,
-                "IPFraud": 50
-            },
-            "MEDIUM_TELCO": {
-                "Wangiri": 60,
-                "SMSA2P": 70,
-                "IRSF": 80,
-                "StolenDevice": 90,
-                "IPFraud": 100
-            },
-            "SMALL_TELCO": {
-                "Wangiri": 110,
-                "SMSA2P": 120,
-                "IRSF": 130,
-                "StolenDevice": 140,
-                "IPFraud": 150
-            },
-            "VENDOR": {
-                "Wangiri": 160,
-                "SMSA2P": 170,
-                "IRSF": 180,
-                "StolenDevice": 190,
-                "IPFraud": 200
-            }
-        }
+  status: {
+    code: 200,
+    name: 'OK'
+  },
+  data: {
+    rewardsTable: {
+      LARGE_TELCO: {
+        Wangiri: 10,
+        SMSA2P: 20,
+        IRSF: 30,
+        StolenDevice: 40,
+        IPFraud: 50
+      },
+      MEDIUM_TELCO: {
+        Wangiri: 60,
+        SMSA2P: 70,
+        IRSF: 80,
+        StolenDevice: 90,
+        IPFraud: 100
+      },
+      SMALL_TELCO: {
+        Wangiri: 110,
+        SMSA2P: 120,
+        IRSF: 130,
+        StolenDevice: 140,
+        IPFraud: 150
+      },
+      VENDOR: {
+        Wangiri: 160,
+        SMSA2P: 170,
+        IRSF: 180,
+        StolenDevice: 190,
+        IPFraud: 200
+      }
     }
+  }
 }
 ```
-
-:::
 
 :::
 

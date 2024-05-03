@@ -105,8 +105,8 @@ export default defineConfig({
               link: '/tutorials-api/authorizing-an-account.md',
             },
             {
-              text: 'Retrieving top contributions',
-              link: '/tutorials-api/retrieving-top-contributions.md',
+              text: 'Retrieving contributions',
+              link: '/tutorials-api/retrieving-contributions.md',
             },
             {
               text: 'Submitting a contribution',

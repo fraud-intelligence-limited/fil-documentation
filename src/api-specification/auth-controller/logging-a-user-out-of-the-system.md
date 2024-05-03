@@ -24,11 +24,11 @@ A `POST` request to the endpoint with the `Authorization` header specified.
 
 ```json5 [Structure]
 {
-  "status": {
-    "code": integer($int32),
-    "name": "string"
+  status: {
+    code: integer($int32),
+    name: 'string'
   },
-  "data": {}
+  data: {}
 }
 ```
 

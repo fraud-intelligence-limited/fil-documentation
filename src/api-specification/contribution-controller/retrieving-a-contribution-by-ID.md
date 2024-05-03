@@ -33,26 +33,26 @@ A `GET` request to the endpoint with the `{id}` parameter and `Authorization` he
 
 ```json5 [Structure]
 {
-  "status": {
-    "code": integer($int32),
-    "name": "string"
+  status: {
+    code: integer($int32),
+    name: 'string'
   },
-  "data": [
+  data: [
     {
-        "assetDefinitionIds": "idRange#contribution",
-        "contribution": {
-            "id": "idRange",
-            "fraudType": "string",
-            "origination": "string",
-            "destination": "string",
-            "expiryDate": integer($int32),
-            "fraudStatus": "string(enum)",
-            "confidenceIndex": number($double),
-            "isPrivileged": boolean,
-            "peerId": "string",
-            "flagger": "string",
-            "timestamp": integer($int32),
-            "flagTimestamp": integer($int32)
+        assetDefinitionIds: 'idRange#contribution',
+        contribution: {
+            id": 'idRange',
+            fraudType: 'string',
+            origination: 'string',
+            destination: string,
+            expiryDate: integer($int32),
+            fraudStatus: 'string(enum)',
+            confidenceIndex: number($double),
+            isPrivileged: boolean,
+            peerId: 'string',
+            flagger: 'string',
+            timestamp: integer($int32),
+            flagTimestamp: integer($int32)
       }
     }
   ]
@@ -92,8 +92,6 @@ A `GET` request to the endpoint with the `{id}` parameter and `Authorization` he
 ::: info
 
 For a detailed breakdown of every field and value in the body of a response, see [Contributions: Retrieving contributions](../../overview/contributions.md#retrieving-contributions).
-
-:::
 
 :::
 

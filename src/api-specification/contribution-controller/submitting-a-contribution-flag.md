@@ -1,6 +1,6 @@
 # Submitting a contribution flag
 
-> Submits [an assembled contribution flag](assembling-a-contribution-flag.md).
+> Submits [an assembled contribution flag](assembling-a-contribution-flag.md).\
 > For details, see [Contributions: Flagging contributions](../../overview/contributions.md#flagging-contributions).
 
 **Protocol**: `HTTP`
@@ -35,8 +35,6 @@ The `transactionHex` string retrieved when [assembling a contribution flag](asse
 
 :::
 
-:::
-
 #### Output/response structure
 
 ::: details Show
@@ -45,12 +43,12 @@ The `transactionHex` string retrieved when [assembling a contribution flag](asse
 
 ```json5 [Structure]
 {
-  "status": {
-    "code": integer($int32),
-    "name": "string"
+  status: {
+    code: integer($int32),
+    name: 'string'
   },
-  "data": {
-    "rewarded": integer($int32)
+  data: {
+    rewarded: integer($int32)
   }
 }
 ```
@@ -66,8 +64,6 @@ The `transactionHex` string retrieved when [assembling a contribution flag](asse
   }
 }
 ```
-
-:::
 
 :::
 
