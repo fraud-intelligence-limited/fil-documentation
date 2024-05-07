@@ -8,28 +8,40 @@ defineProps<{
   <div
     class="logos"
     :class="{
-      'flex items-center justify-center ': location === 'docs',
-      'space-y-4': location === 'aside',
+      'flex items-center justify-center space-x-4': location === 'docs',
+      'space-y-2 flex flex-col items-center max-w-max': location === 'aside',
     }"
     :data-location="location"
   >
-    <img
-      src="/orillion-logo.png"
-      alt="Orillion logo"
-      width="100"
-    >
-    <img
-      src="/soramitsu-logo-1.png"
-      alt="Soramitsu logo"
-      width="140"
-    >
+    <div class="orillion-crop">
+      <a
+        href="https://www.orillionsolutions.com/"
+        target="_blank"
+      >
+        <img
+          src="/orillion-logo.svg"
+          alt="Orillion logo"
+        >
+      </a>
+    </div>
+    <div class="soramitsu-crop">
+      <a
+        href="https://soramitsu.co.jp/"
+        target="_blank"
+      >
+        <img
+          src="/SORAMITSU-red-main-landscape.svg"
+          alt="Soramitsu logo"
+        >
+      </a>
+    </div>
   </div>
 </template>
 
 <style scoped>
 .logos {
   margin: 16px 0;
-  padding: 16px;
+  padding: 8px;
   background-color: var(--vp-c-white);
   border-radius: 8px;
   min-width: 0;
@@ -37,11 +49,34 @@ defineProps<{
 
 img {
   min-width: 0;
+  object-fit: cover;
 }
 
-.logos[data-location='docs'] img + img {
-  padding-left: 8px;
-  margin-left: 8px;
-  border-left: 1px solid var(--vp-c-divider);
+/* the following quirks needed to adjust the images,
+   because their source is not normalized */
+
+.soramitsu-crop {
+  width: 140px;
+  height: 40px;
+  overflow: hidden;
+}
+
+.soramitsu-crop img {
+  margin-left: -30px;
+  max-width: none;
+  width: 200px;
+  height: 40px;
+}
+
+.orillion-crop {
+  height: 40px;
+  overflow: hidden;
+}
+
+.orillion-crop img {
+  width: 100px;
+  height: 40px;
+  margin-top: -3px;
+  max-width: none;
 }
 </style>
