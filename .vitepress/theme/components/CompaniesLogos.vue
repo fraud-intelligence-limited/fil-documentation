@@ -7,32 +7,32 @@ defineProps<{
 <template>
   <div
     class="logos"
-    :class="{
-      'flex items-center justify-center space-x-4': location === 'docs',
-      'space-y-2 flex flex-col items-center max-w-max': location === 'aside',
-    }"
     :data-location="location"
   >
-    <div class="orillion-crop">
-      <a
-        href="https://www.orillionsolutions.com/"
-        target="_blank"
-      >
+    <a
+      href="https://www.orillionsolutions.com/"
+      target="_blank"
+      class="item"
+    >
+      <div class="orillion-crop">
         <img
           src="/orillion-logo.svg"
           alt="Orillion logo"
         >
-      </a>
-    </div>
-    <div class="soramitsu-crop">
+      </div>
+    </a>
+    <div>
       <a
+        class="item"
         href="https://soramitsu.co.jp/"
         target="_blank"
       >
-        <img
-          src="/SORAMITSU-red-main-landscape.svg"
-          alt="Soramitsu logo"
-        >
+        <div class="soramitsu-crop">
+          <img
+            src="/SORAMITSU-red-main-landscape.svg"
+            alt="Soramitsu logo"
+          >
+        </div>
       </a>
     </div>
   </div>
@@ -41,15 +41,48 @@ defineProps<{
 <style scoped>
 .logos {
   margin: 16px 0;
-  padding: 8px;
-  background-color: var(--vp-c-white);
-  border-radius: 8px;
-  min-width: 0;
+  gap: 8px;
+  display: flex;
+  justify-content: center;
+}
+
+.logos[data-location='aside'] {
+  flex-flow: column;
 }
 
 img {
   min-width: 0;
   object-fit: cover;
+  transition: filter 0.15s ease;
+}
+
+.item {
+  width: 160px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.15s ease;
+}
+
+.item {
+  background: #f9f9f9; /* TODO: use --vt-c-white-soft after VitePress update */
+}
+
+.dark .item {
+  background: #242424; /* TODO: use --vt-c-bg-soft after VitePress update */
+}
+
+.dark .item:hover {
+  background: #f1f1f1;
+}
+
+.dark img {
+  filter: grayscale(1) invert(1);
+}
+
+.item:hover img {
+  filter: none;
 }
 
 /* the following quirks needed to adjust the images,
