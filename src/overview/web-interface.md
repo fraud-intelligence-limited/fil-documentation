@@ -6,12 +6,12 @@ Registered FIB peers and users can log in to the [FIB Web App](https://app.fraud
 
 The main screen that appears once an FIB user logs in to their Web App account.
 
-!['Dashboard' screen](../img/s-dashboard.png)
+!['Dashboard' screen](../img/s-dashboard.png){data-zoomable}
 
 #### Navigation
 
 - Selecting the **Profile** button with the authorized user's first and last names takes them to the [Profile](#profile) screen.
-- Selecting the **Log out** button indicated by a door icon logs them out of the Web App.
+- Selecting the **Sign out** button indicated by a door icon logs them out of the Web App.
 
 On this screen, users can see the following tabs:
 
@@ -43,12 +43,12 @@ See the following related tutorials:
 
 The screen that displays the detailed information about the authorized account.
 
-!['Profile' screen](../img/s-profile.png)
+!['Profile' screen](../img/s-profile.png){data-zoomable}
 
 #### Navigation
 
 - Selecting the **Dashboard** button takes the user to the [Dashboard](#dashboard) screen.
-- Selecting the **Log out** button indicated by a door icon logs them out of the Web App.
+- Selecting the **Sign out** button indicated by a door icon logs them out of the Web App.
 
 On this screen, users can see the following information about their account:
 
