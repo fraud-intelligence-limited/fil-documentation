@@ -1,11 +1,13 @@
+import 'virtual:uno.css'
+import './index.css'
+
 import { h } from 'vue'
 import type { EnhanceAppContext } from 'vitepress'
 import DefaultTheme from 'vitepress/theme'
 import CompaniesLogos from './components/CompaniesLogos.vue'
-import 'virtual:uno.css'
 import { onMounted, watch, nextTick } from 'vue'
 import { useRoute } from 'vitepress'
-import mediumZoom from 'medium-zoom'
+import mediumZoom, { type Zoom } from 'medium-zoom'
 
 export default {
   ...DefaultTheme,
@@ -19,16 +21,17 @@ export default {
   },
   setup() {
     const route = useRoute()
+
+    let zoom: Zoom | undefined
     const initZoom = () => {
-      mediumZoom('[data-zoomable]', { background: 'var(--vp-c-bg)' })
-      // mediumZoom('.main img', { background: 'var(--vp-c-bg)' });
+      zoom?.detach()
+      zoom = mediumZoom('[data-zoomable]', { background: 'var(--vp-c-bg)' })
     }
-    onMounted(() => {
-      initZoom()
-    })
+
+    onMounted(initZoom)
     watch(
       () => route.path,
-      () => nextTick(() => initZoom()),
+      () => nextTick(initZoom),
     )
   },
 }
