@@ -27,16 +27,16 @@ To download fraud event data via FIB Web App, perform the following steps:
 
 3. If necessary, select the [**Confidence index**](../overview/tokenomics.md#confidence-index) checkbox.
 
-   <img src="../img/s-download-tn.png" data-zoom-src="../img/s-download.png" alt="Download fraud data" />
+   ![Download fraud data](../img/s-download.png)
 
 4. When ready, select **Confirm purchase**.
 5. On the **Purchase has completed** screen that appears, select **Download fraud data**.
 
-   <img src="../img/s-download-purchase-tn.png" data-zoom-src="../img/s-download-purchase.png" alt="Purchase has completed" />
+   ![Purchase has completed](../img/s-download-purchase.png)
 
 ### Expected result
 
-<img src="../img/s-download-success-tn.png" data-zoom-src="../img/s-download-success.png" alt="Fraud data successfully downloaded" />
+![Fraud data successfully downloaded](../img/s-download-success.png)
 
 The fraud events data, filtered according to your specified criteria, is downloaded to your device as a `.csv` file, which can be opened using any spreadsheet software available to you (e.g., Microsoft Excel, Google Sheets); and the [token balance](../overview/web-interface.md#balance) of the signed-in user is decreased based on the current conversion rate active in the network (see [Current conversion rate](../overview/tokenomics.md#current-conversion-rate)).
 
