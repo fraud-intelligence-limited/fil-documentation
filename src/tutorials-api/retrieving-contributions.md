@@ -80,9 +80,11 @@ The response to the `GET` request contains a list of the contributions, filtered
       "self": integer($int32), //The number of contributions that have been submitted by the requesting user
       "old": integer($int32), //The number of contributions that have already been seen by the requesting user
       "new": integer($int32), //The number of contributions that have _not_ yet been seen by the requesting user
+      "newWithConfidenceIndex": integer($int32), //The number of contributions retrieved `new` contributions that had their price affected by the confidence index
       "creditsSpent": integer($int32), //The total amount of tokens spent on the retrieved contributions
       "balanceLeft": integer($int32), //The remaining tokens balance after retrieving contributions
-      "contributionsNotReturned": integer($int32) //The number of contributions not yet returned
+      "contributionsNotReturned": integer($int32), //The number of contributions not yet returned
+      "contributionsNotReturnedCost": integer($int64) //The total cost of all the contributions that have not been returned
     }
   }
 }

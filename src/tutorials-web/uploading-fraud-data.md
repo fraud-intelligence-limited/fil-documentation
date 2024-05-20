@@ -23,6 +23,8 @@ To upload fraud event data via FIB Web App, perform the following steps:
 
    :::
 
+   <!-- TODO: Screenshot placeholder -->
+
 3. When ready, select **Upload to ledger**.
 
 ::: tip Note
@@ -34,6 +36,8 @@ A single fraud event data submission can contain up to `500` entries.
 :::
 
 ### Expected result
+
+<!-- TODO: Screenshot placeholder -->
 
 Your list of contributions is updated and the [token balance](../overview/web-interface.md#balance) is increased based on the current conversion rate active in the network (see [Current conversion rate](../overview/tokenomics.md#current-conversion-rate)).
 

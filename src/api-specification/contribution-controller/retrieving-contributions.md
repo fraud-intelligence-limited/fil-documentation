@@ -63,9 +63,11 @@ A `GET` request to the endpoint with the `Authorization` header specified.
       self: integer($int32),
       old: integer($int32),
       new: integer($int32),
+      newWithConfidenceIndex: integer($int32),
       creditsSpent: integer($int32),
       balanceLeft: integer($int32),
-      contributionsNotReturned: integer($int32)
+      contributionsNotReturned: integer($int32),
+      contributionsNotReturnedCost: integer($int64)
     }
   }
 }

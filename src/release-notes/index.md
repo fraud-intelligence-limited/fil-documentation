@@ -62,7 +62,7 @@ next: false
 - Updated the `contribution-controller`: **Retrieving contributions** operation so that its API responses contain new data.
 
   > Documented here:\
-  > [API Specification > Retrieving contributions](../api-specification/contribution-controller/retrieving-contributions.md) — `balanceLeft`, `contributionsNotReturned`, `timestamp`, `flagTimestamp` fields added to, and `premium` field removed from the **Output/response structure**
+  > [API Specification > Retrieving contributions](../api-specification/contribution-controller/retrieving-contributions.md) — `newWithConfidenceIndex`, `balanceLeft`, `contributionsNotReturned`, `contributionsNotReturnedCost`, `timestamp`, `flagTimestamp` fields added to, and `premium` field removed from the **Output/response structure**
 
 ### Other Improvements
 
