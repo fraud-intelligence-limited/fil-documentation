@@ -35,7 +35,7 @@ When [retrieving contributions](../api-specification/contribution-controller/ret
 | Field | Value Type | Description |
 | --- | --- | --- |
 | `id` | `string` | Unique identifier of a fraud event. |
-| `fraudType` | `string(enum)` | The type of the fraud event. <br> Can be one of the following: <ol><li>`Wangiri`</li><li>`IRSF`</li><li>`StolenDevice`</li><li>`IPFraud`</li><li>`SMSA2P`</li></ol> |
+| `fraudType` | `string(enum)` | The [type of the fraud event](fraud-events.md#types-of-fraud-events). <br> Can be one of the following: <ol><li>`Wangiri`</li><li>`IRSF`</li><li>`StolenDevice`</li><li>`IPFraud`</li><li>`SMSA2P`</li></ol> |
 | `origination` | `string` | The two-letter code of the country the fraud event originated from (Alpha-2, [ISO 3166](https://www.iso.org/iso-3166-country-codes.html)). |
 | `destination` | `string` | The two-letter code of the country the fraud event was identified as such (Alpha-2, [ISO 3166](https://www.iso.org/iso-3166-country-codes.html)). |
 | `expiryDate` | `integer($int64)` | The exact time and date until which the event is considered relevant (represented as [Unix Epoch time](https://www.epochconverter.com/clock) in seconds). |
@@ -66,7 +66,7 @@ When [assembling a contribution](../api-specification/contribution-controller/as
 | Field | Value Type | Description |
 | --- | --- | --- |
 | `id` | `string` | Unique identifier of a fraud event. Or a range of fraud identifiers. <br> Example: `127.0.0.1` OR `127.0.0.1-127.0.0.2` OR `+14155552671` OR `+14155552671-+14155552672` OR `107615702016566` |
-| `fraudType` | `string(enum)` | The type of the fraud event. <br> Can be one of the following: <ol><li>`Wangiri`</li><li>`IRSF`</li><li>`StolenDevice`</li><li>`IPFraud`</li><li>`SMSA2P`</li></ol> |
+| `fraudType` | `string(enum)` | The [type of the fraud event](fraud-events.md#types-of-fraud-events). <br> Can be one of the following: <ol><li>`Wangiri`</li><li>`IRSF`</li><li>`StolenDevice`</li><li>`IPFraud`</li><li>`SMSA2P`</li></ol> |
 | `origination` | `string` | The two-letter code of the country the fraud event originated from (Alpha-2, [ISO 3166](https://www.iso.org/iso-3166-country-codes.html)). |
 | `destination` | `string` | The two-letter code of the country the fraud event was identified as such (Alpha-2, [ISO 3166](https://www.iso.org/iso-3166-country-codes.html)). |
 

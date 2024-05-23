@@ -4,6 +4,16 @@
 
 FIB peers and users can submit data related to these fraud events—[contributions](contributions.md)—to help identify and prevent future fraudulent activities. By sharing information and collaborating with other participants in the network, contributors can help create a more secure and trustworthy ecosystem that is resistant to fraud and other types of malicious activities.
 
+## Types of fraud events
+
+Any given fraud event can be of one of the following types:
+
+- `Wangiri` — type of fraud that is mostly referred to as “missed call scam”; these are usually detected by FMS that uploads the details of a fraud event, e.g., MSISDN and country codes of the involved parties.
+- `IRSF` — type of fraud that generates revenue and traffic by inflating the volume of international traffic to a particular destination; these are usually detected from unusual call patterns.
+- `StolenDevice` — any fraud that involves a stolen device; these are usually reported either by customers or law enforcement.
+- `IPFraud` — any fraud that involves a specific IP address; these are usually detected by means of behavioral analysis, geolocation checks, and overall action velocity of any given IP address.
+- `SMSA2P` — type of fraud that utilizes the rerouting of SMS through SIM boxes, disguising them as legitimate messages; these are regularly spotted manually by operators monitoring traffic patterns, contents and sending rates of any given phone number.
+
 ## Fraud event data model
 
 Every fraud event that is submitted and stored on the blockchain adheres to the following model:
@@ -11,7 +21,7 @@ Every fraud event that is submitted and stored on the blockchain adheres to the 
 | Data | Description |
 | --- | --- |
 | Fraud Identifier | The main identifier of the fraud event. <br> Could be one of the following: <ol><li>A range of **phone numbers** (or a single one) compliant with the E.164 international standard and containing a valid National Destination Code.</li><li>A range of **IP addresses** (or a single one).</li><li>A unique **IMEI identifier** of a device. </li></ol> |
-| Fraud Type | The type of the fraud event. <br> Could be one of the following: <ol><li>`Wangiri`</li><li>`IRSF`</li><li>`StolenDevice`</li><li>`IPFraud`</li><li>`SMSA2P`</li></ol> |
+| Fraud Type | The [type of the fraud event](#types-of-fraud-events). <br> Could be one of the following: <ol><li>`Wangiri`</li><li>`IRSF`</li><li>`StolenDevice`</li><li>`IPFraud`</li><li>`SMSA2P`</li></ol> |
 | Event Origination | The two-letter code of the country the fraud event originated from (Alpha-2, ISO 3166). |
 | Event Destination | The two-letter code of the country the fraud event was identified as such (Alpha-2, ISO 3166). |
 | Event Status | The status of the event at the time of observing. <br> Could be one of the following: <ol><li>**Active** — the event is stored on the blockchain and has not yet expired.</li><li>**Expired** — the event is stored on the blockchain, but is no longer relevant.</li><li>**Flagged** — the event is stored on the blockchain and is flagged by one of the peers.</li></ol> |
