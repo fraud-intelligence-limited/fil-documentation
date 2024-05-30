@@ -48,15 +48,15 @@ If authorization is successful, a response with the following JSON web tokens is
 
 ```json5 [Output structure]
 {
-  "status": {
-    "code": integer($int32),
-    "name": "string",
-    "message": "string"
+  status: {
+    code: integer($int32),
+    name: 'string',
+    message: 'string'
   },
-  "data": {
-    "accessToken": "string",
-    "refreshToken": "string",
-    "expirationTime": integer($int64)
+  data: {
+    accessToken: 'string',
+    refreshToken: 'string',
+    expirationTime: integer($int64)
   }
 }
 ```

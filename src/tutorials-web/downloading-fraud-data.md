@@ -27,8 +27,7 @@ To download fraud event data via FIB Web App, perform the following steps:
 
 3. If necessary, select the [**Confidence index**](../overview/tokenomics.md#confidence-index) checkbox.
 
-   ![Download fraud data](../img/s-download.png){data-zoomable}
-   <img src="../img/s-download-tn.png" data-zoom-src="../img/s-download.png" alt="Download fraud data" />{data-zoomable}
+   ![Download fraud data](../img/s-download.png){data-zoomable} <img src="../img/s-download-tn.png" data-zoom-src="../img/s-download.png" alt="Download fraud data" />{data-zoomable}
 
 4. When ready, select **Confirm purchase**.
 5. On the **Purchase has completed** screen that appears, select **Download fraud data**.

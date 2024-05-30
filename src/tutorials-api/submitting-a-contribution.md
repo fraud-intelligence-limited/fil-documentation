@@ -19,17 +19,17 @@ To submit a contribution, perform the following steps:
    ```json5 [Input structure]
    [
      {
-       "id": "string", //127.0.0.1 OR 127.0.0.1-127.0.0.2 OR +14155552671 OR +14155552671-+14155552672 OR 107615702016566
-       "fraudType": "string",
-       "origination": "string",
-       "destination": "string",
-       "expiryDate": integer($int32),
-       "fraudStatus": "string(enum)", //'ACTIVE' OR 'EXPIRED' OR 'FLAGGED'
-       "confidenceIndex": number($double),
-       "isPrivileged": boolean,
-       "peerId": "string",
-       "flagger": "string",
-       "timestamp": integer($int32)
+       id: 'string', //127.0.0.1 OR 127.0.0.1-127.0.0.2 OR +14155552671 OR +14155552671-+14155552672 OR 107615702016566
+       fraudType: 'string',
+       origination: 'string',
+       destination: 'string',
+       expiryDate: integer($int32),
+       fraudStatus: "string(enum)", //'ACTIVE' OR 'EXPIRED' OR 'FLAGGED'
+       confidenceIndex: number($double),
+       isPrivileged: boolean,
+       peerId: 'string',
+       flagger: 'string',
+       timestamp: integer($int32)
      }
    ]
    ```
@@ -37,29 +37,29 @@ To submit a contribution, perform the following steps:
    ```json5 [Input example]
    [
      {
-       "id": "129.0.0.1",
-       "fraudType": "IPFraud",
-       "origination": "SE",
-       "destination": "GB",
-       "expiryDate": 1719068894
-       "fraudStatus": "Active"
-       "confidenceIndex": 100,
-       "isPrivileged": true,
-       "peerId": "wonderland",
-       "flagger": "alice@wonderland",
-       "timestamp": 1711120097
+       id: '129.0.0.1',
+       fraudType: 'IPFraud',
+       origination: 'SE',
+       destination: 'GB',
+       expiryDate: 1719068894,
+       fraudStatus: 'Active',
+       confidenceIndex: 100,
+       isPrivileged: true,
+       peerId: 'wonderland',
+       flagger: 'alice@wonderland',
+       timestamp: 1711120097
      }
    ]
    ```
 
    ```json5 [Output structure]
    {
-     "status": {
-       "code": integer($int32),
-       "name": "string",
-       "message": "string"
+     status: {
+       code: integer($int32),
+       name: 'string',
+       message: 'string'
      },
-     "data": "transactionHex"
+     data: 'transactionHex'
    }
    ```
 
@@ -95,19 +95,19 @@ To submit a contribution, perform the following steps:
 
    ```json5 [Output structure]
    {
-     "status": {
-       "code": integer($int32),
-       "name": "string",
-       "message": "string"
+     status: {
+       code: integer($int32),
+       name: 'string',
+       message: 'string'
      },
-     "data": {
-       "tokenIds": [
+     data: {
+       tokenIds: [
          {
-           "definitionId": "idRange#assetDomain",
-           "accountId": "accountName@accountDomain"
+           definitionId: 'idRange#assetDomain',
+           accountId: 'accountName@accountDomain'
          }
        ],
-       "rewarded": integer($int32)
+       rewarded: integer($int32)
      }
    }
    ```

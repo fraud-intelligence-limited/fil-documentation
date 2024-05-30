@@ -73,7 +73,7 @@ You can also familiarize yourself with the [Web App UI](../overview/web-interfac
 If you have forgotten the password on your account, you can reset it by performing the following steps:
 
 1. Go to the [Fraud Intelligence Blockchain website](https://app.fraudintelligencelimited.com) and select **Forgot password?**.
-2. On the **Remember password** screen that appears, enter the email address that you registered with in the **Your email** field, then select **Send link**.
+2. On the **Forgot password?** screen that appears, enter the email address that you registered with in the **Your email** field, then select **Send link**.
 3. Check your email inbox for a message from FIB with instructions on how to reset your password.
 4. Follow the instructions from the received email.
 

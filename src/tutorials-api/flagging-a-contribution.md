@@ -22,27 +22,27 @@ To flag a contribution, perform the following steps:
 
    ```json5 [Output structure]
    {
-     "status": {
-       "code": integer($int32),
-       "name": "string",
-       "message": "string"
+     status: {
+       code: integer($int32),
+       name: 'string',
+       message: 'string'
      },
-     "data": [
+     data: [
        {
-           "assetDefinitionIds": "idRange#contribution",
-           "contribution": {
-               "id": "idRange", //127.0.0.1 OR 127.0.0.1-127.0.0.2 OR +14155552671 OR +14155552671-+14155552672 OR 107615702016566
-               "fraudType": "string",
-               "origination": "string",
-               "destination": "string",
-               "expiryDate": integer($int32),
-               "fraudStatus": "string(enum)", //'ACTIVE' OR 'EXPIRED' OR 'FLAGGED'
-               "confidenceIndex": number($double),
-               "isPrivileged": boolean,
-               "peerId": "string",
-               "flagger": "string",
-               "timestamp": integer($int32),
-               "flagTimestamp": integer($int32)
+           assetDefinitionIds: 'idRange#contribution',
+           contribution: {
+               id: 'idRange', //127.0.0.1 OR 127.0.0.1-127.0.0.2 OR +14155552671 OR +14155552671-+14155552672 OR 107615702016566
+               fraudType: 'string',
+               origination: 'string',
+               destination: 'string',
+               expiryDate: integer($int32),
+               fraudStatus: 'string(enum)', //'ACTIVE' OR 'EXPIRED' OR 'FLAGGED'
+               confidenceIndex: number($double),
+               isPrivileged: boolean,
+               peerId: 'string',
+               flagger: 'string',
+               timestamp: integer($int32),
+               flagTimestamp: integer($int32)
          }
        }
      ]
@@ -118,12 +118,12 @@ To flag a contribution, perform the following steps:
 
    ```json5 [Output structure]
    {
-     "status": {
-       "code": integer($int32),
-       "name": "string",
-       "message": "string"
+     status: {
+       code: integer($int32),
+       name: 'string',
+       message: 'string'
      },
-     "data": "transactionHex"
+     data: 'transactionHex'
    }
    ```
 
@@ -159,13 +159,13 @@ To flag a contribution, perform the following steps:
 
    ```json5 [Output structure]
    {
-     "status": {
-       "code": integer($int32),
-       "name": "string",
-       "message": "string"
+     status: {
+       code: integer($int32),
+       name: 'string',
+       message: 'string'
      },
-     "data": {
-       "rewarded": integer($int32)
+     data: {
+       rewarded: integer($int32)
      }
    }
    ```

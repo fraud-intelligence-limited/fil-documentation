@@ -3,7 +3,8 @@
 To upload fraud event data via FIB Web App, perform the following steps:
 
 1. On the [Dashboard](../overview/web-interface.md#dashboard) screen, select **Upload fraud data** from the [Upload](../overview/web-interface.md#upload) tab.
-2. On the **Upload fraud data** screen that appears, enter information about the fraud event that you wish to upload in the following format:
+2. On the **Upload fraud data** screen that appears, select **Add data**.
+3. In the **Add data** window that appears, enter information about the fraud event that you wish to upload in the following format:
 
    ::: info Format
 
@@ -15,6 +16,10 @@ To upload fraud event data via FIB Web App, perform the following steps:
 
    > **Example**: IPFraud, +447000123456, +447000123461, GB, US
 
+   If you are uploading fraud identifiers via their dedicated tabs (e.g., `SMSA2P` or `IRSF`), omit the `Fraud type` string in the entries.
+
+   > **Example**: +447000123456, +447000123461, GB, US
+
    :::
 
    ::: tip Note
@@ -23,9 +28,9 @@ To upload fraud event data via FIB Web App, perform the following steps:
 
    :::
 
-   <!-- TODO: Screenshot placeholder -->
+   ![Upload fraud data](../img/s-upload.png){data-zoomable}
 
-3. When ready, select **Upload to ledger**.
+4. When ready, select **Upload**.
 
 ::: tip Note
 
@@ -37,7 +42,7 @@ A single fraud event data submission can contain up to `500` entries.
 
 ### Expected result
 
-<!-- TODO: Screenshot placeholder -->
+![Fraud data successfully uploaded](../img/s-upload-success.png){data-zoomable}
 
 Your list of contributions is updated and the [token balance](../overview/web-interface.md#balance) is increased based on the current conversion rate active in the network (see [Current conversion rate](../overview/tokenomics.md#current-conversion-rate)).
 
