@@ -24,11 +24,15 @@ Every fraud event that is submitted and stored on the blockchain adheres to the 
 | Fraud Type | The [type of the fraud event](#types-of-fraud-events). <br> Could be one of the following: <ol><li>`Wangiri`</li><li>`IRSF`</li><li>`StolenDevice`</li><li>`IPFraud`</li><li>`SMSA2P`</li></ol> |
 | Event Origination | The two-letter code of the country the fraud event originated from (Alpha-2, ISO 3166). |
 | Event Destination | The two-letter code of the country the fraud event was identified as such (Alpha-2, ISO 3166). |
+| Event Contributor | The unique Domain ID of the peer that contributed the data. |
 | Event Status | The status of the event at the time of observing. <br> Could be one of the following: <ol><li>**Active** — the event is stored on the blockchain and has not yet expired.</li><li>**Expired** — the event is stored on the blockchain, but is no longer relevant.</li><li>**Flagged** — the event is stored on the blockchain and is flagged by one of the peers.</li></ol> |
 | Event Expiry Date | The exact time and date until which the event is considered relevant. |
 | Event Timestamp | The exact time and date of when the event was submitted. |
+| Event Flag Timestamp | The exact time and date of when a contribution has been flagged. Only stored if a contribution has been flagged at the time of observing. |
+| Event Flagger | The unique ID of the peer that flagged the data. Only stored if a contribution has been flagged at the time of observing. |
 | Confidence Index | The predicted fraud likelihood score in the range from 1 to 100. |
 | Consortium Identity Key | The unique key of the peer that contributed the data. |
+| Privileged Status | The definition of whether a contribution is privileged. |
 
 ::: info
 
