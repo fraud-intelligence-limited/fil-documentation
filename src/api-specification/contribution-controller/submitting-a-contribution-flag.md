@@ -1,13 +1,13 @@
-# Assembling a contribution flag
+# Submitting a contribution flag
 
-> Assembles a contribution flag that must be later [submitted](submitting-a-contribution-flag.md) in order to flag a contribution as a False Positive.\
+> Submits [an assembled contribution flag](assembling-a-contribution-flag.md).\
 > For details, see [Contributions: Flagging contributions](../../overview/contributions.md#flagging-contributions).
 
 **Protocol**: `HTTP`
 
 **Encoding**: `JSON`
 
-**Endpoint**: `/data/api/v1/contribution-manager/contribution/flag/assemble`
+**Endpoint**: `/data/api/v1/contribution-management/contribution/flag`
 
 **Method**: `PATCH`
 
@@ -20,16 +20,18 @@
 ::: code-group Data structure
 
 ```json5 [Structure]
-{
-  assetDefinitionIds: ['string']
-}
+'transactionHex(signed)'
 ```
 
 ```json5 [Example]
-{
-  assetDefinitionIds: ['+79991234567_12345#contribution']
-}
+'2c658c96e40b2c919f779b3dac2bbb9a6e1e4419d653026038b315b42ef7bb77bd88328a49306f61bdc9db9bda871a166d4c0c9b36a4818116b916f426b2bd38129e31f377a68e0d9079d870ac455637e0fbbc679374629d2ab3e04130d93c6539f18c984dc484643eb73ffe101c9c7ffc3b2ccdb4b3dba1e35ec6f08d82aa5b'
 ```
+
+:::
+
+::: tip Note
+
+The `transactionHex` string retrieved when [assembling a contribution flag](assembling-a-contribution-flag.md) must first be [signed](../../tutorials-api/signing-transactions.md) before submitting this request.
 
 :::
 
@@ -45,7 +47,9 @@
     code: integer($int32),
     name: 'string'
   },
-  data: 'transactionHex'
+  data: {
+    rewarded: integer($int32)
+  }
 }
 ```
 
@@ -55,7 +59,9 @@
     code: 200,
     name: 'OK'
   },
-  data: 'ecd5253b23902f3f1a9e6a62d092d9911ef8f663737f215188062679fd895bd0e07d2858a80ccf30e341c68c651dc50f87d4782f5e5f35a31649f0979eaf4c46141133e4ae298da96295da8299edc3467a2929603caf77abeb9e81175516c997fff943a63fece49f8613a983b7481faaeedf885babd5d0dc47cf1cd990c104fe'
+  data: {
+    rewarded: 50
+  }
 }
 ```
 
@@ -65,8 +71,8 @@
 
 | Response Code | Description |
 | :-: | --- |
-| `200` | Contribution flag has been assembled and its `transactionHex` string has been retrieved successfully. |
-| `400` | The request body of the contribution flag is incorrect or premium contribution can't be changed. |
+| `200` | Contribution has been flagged and its `transactionHex` string has been retrieved successfully. |
+| `400` | Invalid transaction. |
 | `401` | `accessToken` is either expired or invalid. |
 | `404` | Asset not found. |
 | `500` | Internal server error. |

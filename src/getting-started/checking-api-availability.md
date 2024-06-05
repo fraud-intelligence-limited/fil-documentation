@@ -8,7 +8,7 @@ If the JSON token is retrieved successfully, then the FIB API is available and y
 
 Otherwise, a response with an error code is displayed indicating the issue that needs to be resolved before proceeding.
 
-For a list of possible responses, see [Authorizing a user in the system > Responses](../api-specification/auth-controller/authorizing-a-user-in-the-system.md#responses).
+For a list of possible responses, see [API Specification > Authorizing a user in the system: Responses](../api-specification/auth-controller/authorizing-a-user-in-the-system.md#responses).
 
 ::: tip Note
 

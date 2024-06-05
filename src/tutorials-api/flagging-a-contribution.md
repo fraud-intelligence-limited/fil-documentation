@@ -8,53 +8,70 @@ A peer account must be authorized for this operation to succeed. _See [Authorizi
 
 To flag a contribution, perform the following steps:
 
-1. Request to flag a contribution by sending the following request:
+1. Retrieve the contribution(s) that you would like to flag by sending the following request:
 
    ::: code-group Data structure
 
    ```http [Request]
-   POST /data/api/v1/contribution-management/contribution/{contributionID} //{contributionID} is a range of 'id' values (Fraud identifiers)
+   POST /data/api/v1/contribution-management/contribution/{id} //{id} is a range of 'id' values (Fraud identifiers)
+   ```
+
+   ```http [Request example]
+   POST /data/api/v1/contribution-management/contribution/130.130.130.1-130.130.130.130
    ```
 
    ```json5 [Output structure]
    {
      status: {
-       code: 0, //integer($int32)
+       code: integer($int32),
        name: 'string',
        message: 'string'
      },
      data: [
        {
-         assetIds: [
-           {
-             definitionId: 'MPtVi@4`V}YI~WtYc~BK(2!E_Z^pvG6ch{ycg^usDlMu>UAhwI_:C/>B:D#$=*]3{;-,\\,%t"vB5EK:3hGa+Y7p&mBS6xx2O>@?V_Pg\\B,{B!PC;`&N+>Z3{edxQkY!##*RDF!%/w-Z2]_:tO',
-             accountId: 'V)60Rw";qse6jLG|T+ij`0D.sy91[eWW=vO6mYF@jI<741{%FDj(<s"[gh_`XWz?jOu;(+kJ/(\'\\`b_him2G5N:@{T|db~)X@TJ6rYj>Q_?>,-9l\'M\\{;Pi'
-           }
-         ]
+           assetDefinitionIds: 'idRange#contribution',
+           contribution: {
+               id: 'idRange', //127.0.0.1 OR 127.0.0.1-127.0.0.2 OR +14155552671 OR +14155552671-+14155552672 OR 107615702016566
+               fraudType: 'string',
+               origination: 'string',
+               destination: 'string',
+               expiryDate: integer($int32),
+               fraudStatus: 'string(enum)', //'ACTIVE' OR 'EXPIRED' OR 'FLAGGED'
+               confidenceIndex: number($double),
+               isPrivileged: boolean,
+               peerId: 'string',
+               flagger: 'string',
+               timestamp: integer($int32),
+               flagTimestamp: integer($int32)
+         }
        }
      ]
    }
    ```
 
    ```json5 [Output example]
-   // 200 "OK"
-
    {
      status: {
-       code: 0,
-       name: 'Ok'
+       code: 200,
+       name: 'Ok',
+       message: 'Contribution has been successfully retrieved by its ID'
      },
      data: [
        {
-         assetDefinitionId: '127.0.0.1-127.0.0.2_1666194511450#contribution',
+         assetDefinitionIds: '130.130.130.1-130.130.130.130_1711570471#contribution',
          contribution: {
-           id: '127.0.0.1-127.0.0.2',
+           id: '130.130.130.1-130.130.130.130',
            fraudType: 'IPFraud',
-           origination: 'SE',
-           destination: 'SE',
-           expiryDate: 1694775553,
+           origination: 'GB',
+           destination: 'US',
+           expiryDate: 1719346471,
            fraudStatus: 'Active',
-           confidenceIndex: null
+           confidenceIndex: null,
+           isPrivileged: false,
+           peerId: 'soramitsu',
+           flagger: null,
+           timestamp: 1711570471,
+           flagTimestamp: null
          }
        }
      ]
@@ -65,11 +82,11 @@ To flag a contribution, perform the following steps:
 
    ::: tip Note
 
-   If the `{contributionID}` corresponds to a phone number or an IP address, it can be represented as a single value.
+   If the `{id}` corresponds to a phone number or an IP address, it can be represented as a single value.
 
    :::
 
-2. Assemble a contribution flag by sending the following request:
+2. Assemble a contribution flag by sending the following request (use the `assetDefinitionIds` value retrieved in Step 1 for this request):
 
    ::: code-group Data structure
 
@@ -79,10 +96,10 @@ To flag a contribution, perform the following steps:
 
    ```json5 [Input structure]
    {
-     assetIds: [
+     assetDefinitionIds: [
        {
-         definitionId: 'id_range_something#contribution', //<id_range> must be the same as `{contributionID}` value set in Step 1
-         accountId: 'user@peerId'
+         definitionId: 'idRange#contribution', //Must be the same as `{assetDefinitionIds}` value specified in Step 1
+         accountId: 'accountName@accountDomain'
        }
      ]
    }
@@ -90,10 +107,10 @@ To flag a contribution, perform the following steps:
 
    ```json5 [Input example]
    {
-     assetIds: [
+     assetDefinitionIds: [
        {
          definitionId: '127.0.0.1-127.0.0.2_1666194511450#contribution',
-         accountId: 'qa@qa'
+         accountId: 'alice@sora'
        }
      ]
    }
@@ -102,23 +119,22 @@ To flag a contribution, perform the following steps:
    ```json5 [Output structure]
    {
      status: {
-       code: 0, //integer($int32)
+       code: integer($int32),
        name: 'string',
        message: 'string'
      },
-     data: 'string'
+     data: 'transactionHex'
    }
    ```
 
    ```json5 [Output example]
-   // 200 "OK"
-
    {
      status: {
-       code: 0,
-       name: 'Ok'
+       code: 200,
+       name: 'OK',
+       message: 'Contribution flag has been assembled and its `transactionHex` string has been retrieved successfully'
      },
-     data: 'transactionHex'
+     data: '90275ddf11ae82c18aa9c74cee1513098e2199c270e3f24170eb1c2545753ba6985b037c4caef649afd1fa7f8252b42bb19d540afdfa85f4b1330da51bdce70a396d5d0bacea7416f24f513b8ae34fdcd889f709fa38c3c4e5c4e7170834b4bc4b46a2e8adc89ae58611d5f326fa0a1e476622ff42bd5ce2de16f5d5caf413aa'
    }
    ```
 
@@ -134,33 +150,36 @@ To flag a contribution, perform the following steps:
    ```
 
    ```json5 [Input structure]
-   'transactionHex'
+   'transactionHex(signed)'
    ```
 
    ```json5 [Input example]
-   '0114616c69636528776f6e6465726c616e640004000d09001468656c6c6f00002cde318c87010000a0860100000000000000041c65643235353139807233bfc89dcbd68c19fde6ce6158225298ec1131b6a130d1aeb454c1ab5183c00101bef276fc36ba638abd422e76fd0e6df319df1c3d336ab60d7276333b4010bb7d962d04b273d9caf91cb8509581c0b55e1cdee371c52863a8b4b62c67fbfc870f'
+   'c11ed7ea555c4dd0fab11c43d0530c618c5bebd8a5123c4ac8d72223cbd80b4b0258cdf1b932084873e739b0c8cd6885600e0321868297442060bd353d8c45c89fcdd21934f378235639b08a29ca557b80b4e18002b97a4dc5b664d9863ed51713904415cafc222f47bece2d4fb18e2b0a0b95777dbdfbd14640ff5260e85362'
    ```
 
    ```json5 [Output structure]
    {
      status: {
-       code: 0, //integer($int32)
+       code: integer($int32),
        name: 'string',
        message: 'string'
      },
-     data: {}
+     data: {
+       rewarded: integer($int32)
+     }
    }
    ```
 
    ```json5 [Output example]
-   // 200 "OK"
-
    {
      status: {
-       code: 0,
-       name: 'Ok'
+       code: 200,
+       name: 'OK',
+       message: 'Contribution has been flagged and its `transactionHex` string has been retrieved successfully'
      },
-     data: {}
+     data: {
+       rewarded: 10
+     }
    }
    ```
 
@@ -168,4 +187,15 @@ To flag a contribution, perform the following steps:
 
 ### Expected result
 
-The contribution’s `fraudStatus` value is set to `Flagged`.
+The contribution’s `fraudStatus` value is set to `Flagged`, and the submitting peer is rewarded with tokens.
+
+For details, see the following:
+
+- [Contributions: API data structures](../overview/contributions.md#api-data-structures)
+- [Fraud Events: Fraud event data model](../overview/fraud-events.md#fraud-event-data-model)
+
+::: tip Note
+
+Flagging a contribution uploaded by the same peer does not provide token rewards.
+
+:::

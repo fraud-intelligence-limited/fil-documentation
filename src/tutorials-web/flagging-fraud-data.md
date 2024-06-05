@@ -1,15 +1,22 @@
 # Flagging fraud data
 
-To flag fraud event data via FIB Web UI, perform the following steps:
+To flag fraud event data via FIB Web App, perform the following steps:
 
-1. From the top right menu, select **Upload**.
-2. On the **Upload Fraud Data** screen that appears, specify the following data:
-   - **Select Fraud Type** dropdown menu — select the fraud type of the fraud event that you are flagging.
-   - **Select Transaction Type** dropdown menu — select **Flag Fraud Data as False Positive**.
-   - **Search Value** box — input the `id` fraud identifier of the fraud event that you are flagging.
-3. Select **Find in Ledger** to update the list of retrieved transactions.
-4. Find the fraud event that you wish to flag and select **Flag Tx**.
+1. On the [Dashboard](../overview/web-interface.md#dashboard) screen, select **Flag fraud data as "False positive"** from the [Upload](../overview/web-interface.md#upload) tab.
+2. On the **Flag fraud data as False Positive** screen that appears, look up the fraud event(s) that you wish to flag by using the **Search** bar.
+3. From the list of results, select **Add to flagging list** next to every entry that you wish to flag.
+4. When ready, select **Flag fraud data**.
+
+![Flagging fraud data](../img/s-flag.png){data-zoomable}
 
 ### Expected result
 
-The fraud event status is set to `Flagged`.
+![Fraud data successfully flagged](../img/s-flag-success.png){data-zoomable}
+
+The status of the selected fraud event(s) is set to `Flagged`, and the submitting peer is rewarded with tokens.
+
+::: tip Note
+
+Flagging contributions uploaded by the same peer does not provide token rewards.
+
+:::

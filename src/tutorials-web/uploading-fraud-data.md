@@ -1,41 +1,53 @@
 # Uploading fraud data
 
-To upload fraud event data via FIB Web UI, perform the following steps:
+To upload fraud event data via FIB Web App, perform the following steps:
 
-1. From the top right menu, select **Upload**.
-2. On the **Upload Fraud Data** screen that appears, specify the following data:
+1. On the [Dashboard](../overview/web-interface.md#dashboard) screen, select **Upload fraud data** from the [Upload](../overview/web-interface.md#upload) tab.
+2. On the **Upload fraud data** screen that appears, select **Add data**.
+3. In the **Add data** window that appears, enter information about the fraud event that you wish to upload in the following format:
 
-   - **Select Fraud Type** dropdown menu — select the fraud type of the fraud event that you are uploading.
-   - **Select Transaction Type** dropdown menu — select **Add Fraud Data**.
-   - **Data Upload** box — input the following data about the fraud event, separated by comma:
-     - The `id` fraud identifier.
-     - The two-digit code of the country the fraud event originated from (Alpha-2, ISO 3166).
-     - The two-digit code of the country the fraud event was identified as such (Alpha-2, ISO 3166).
+   ::: info Format
 
-   > **Example**: +33000123456, FR, ZA
+   `Fraud type`, `Fraud Identifier` (Number or range of numbers), `Origination country two-letter code` ([ISO 3166](https://www.iso.org/iso-3166-country-codes.html), Alpha-2), `Destination country two-letter code` ([ISO 3166](https://www.iso.org/iso-3166-country-codes.html), Alpha-2)
 
-   ::: tip Note
+   > **Example**: StolenDevice, 298385762738475, GB, US
 
-   If you are uploading a range of fraud identifiers (i.e., a range of phone numbers or IP addresses), select **This is a Fraud data range**.
+   If you are uploading a range of fraud identifiers (i.e., a range of phone numbers or IP addresses), separate the starting and ending values for the range of fraud identifiers by comma.
 
-   In this case, the following data about the fraud event is input, separated by comma: The starting and ending values for the range of fraud identifiers, the origination country two-digit code, and the destination country two-digit code.
+   > **Example**: IPFraud, +447000123456, +447000123461, GB, US
 
-   **Example**: +447000123456, +447000123460, GB, US
+   If you are uploading fraud identifiers via their dedicated tabs (e.g., `SMSA2P` or `IRSF`), omit the `Fraud type` string in the entries.
+
+   > **Example**: +447000123456, +447000123461, GB, US
 
    :::
 
-3. Select **Upload to Ledger** to upload the fraud event data.
+   ::: tip Note
 
-For more information on fraud event data, including fraud identifiers, fraud types, and other relevant concepts, see [Fraud Events](../overview/fraud-events.md).
+   For the list of all Alpha-2 country codes, see [ISO.ORG: Online Browsing Platform](https://www.iso.org/obp/ui/#search/code/).
+
+   :::
+
+   ![Upload fraud data](../img/s-upload.png){data-zoomable}
+
+4. When ready, select **Upload**.
 
 ::: tip Note
 
 If you are uploading several individual fraud identifiers, each entry must start from a new line.
 
-A single fraud event data submission can contain up to 500 entries.
+A single fraud event data submission can contain up to `500` entries.
 
 :::
 
 ### Expected result
 
-Your list of contributions is updated and the credit balance is increased based on the current conversion rate active in the network (see [Current conversion rate](../overview/tokenomics.md#current-conversion-rate)).
+![Fraud data successfully uploaded](../img/s-upload-success.png){data-zoomable}
+
+Your list of contributions is updated and the [token balance](../overview/web-interface.md#balance) is increased based on the current conversion rate active in the network (see [Current conversion rate](../overview/tokenomics.md#current-conversion-rate)).
+
+::: info
+
+For more information on fraud event data, including fraud identifiers, fraud types, and other relevant concepts, see [Fraud events](../overview/fraud-events.md) and [Contributions](../overview/contributions.md).
+
+:::
