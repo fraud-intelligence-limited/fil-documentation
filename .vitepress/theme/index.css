@@ -5,3 +5,9 @@
 .medium-zoom-image {
   z-index: 31;
 }
+
+.mini[data-zoomable] {
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}

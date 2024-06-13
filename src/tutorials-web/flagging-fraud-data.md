@@ -7,11 +7,11 @@ To flag fraud event data via FIB Web App, perform the following steps:
 3. From the list of results, select **Add to flagging list** next to every entry that you wish to flag.
 4. When ready, select **Flag fraud data**.
 
-![Flagging fraud data](../img/s-flag.png){data-zoomable}
+![Flagging fraud data](../img/s-flag.png){data-zoomable .mini}
 
 ### Expected result
 
-![Fraud data successfully flagged](../img/s-flag-success.png){data-zoomable}
+![Fraud data successfully flagged](../img/s-flag-success.png){data-zoomable .mini}
 
 The status of the selected fraud event(s) is set to `Flagged`, and the submitting peer is rewarded with tokens.
 

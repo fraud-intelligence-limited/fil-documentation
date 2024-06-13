@@ -31,7 +31,6 @@ Every fraud event that is submitted and stored on the blockchain adheres to the 
 | Event Flag Timestamp | The exact time and date of when a contribution has been flagged. Only stored if a contribution has been flagged at the time of observing. |
 | Event Flagger | The unique ID of the peer that flagged the data. Only stored if a contribution has been flagged at the time of observing. |
 | Confidence Index | The predicted fraud likelihood score in the range from 1 to 100. |
-| Consortium Identity Key | The unique key of the peer that contributed the data. |
 | Privileged Status | The definition of whether a contribution is privileged. |
 
 ::: info
