@@ -28,7 +28,7 @@ To upload fraud event data via FIB Web App, perform the following steps:
 
    :::
 
-   ![Upload fraud data](../img/s-upload.png){data-zoomable}
+   ![Upload fraud data](../img/s-upload.png){data-zoomable .mini}
 
 4. When ready, select **Upload**.
 
@@ -42,7 +42,7 @@ A single fraud event data submission can contain up to `500` entries.
 
 ### Expected result
 
-![Fraud data successfully uploaded](../img/s-upload-success.png){data-zoomable}
+![Fraud data successfully uploaded](../img/s-upload-success.png){data-zoomable .mini}
 
 Your list of contributions is updated and the [token balance](../overview/web-interface.md#balance) is increased based on the current conversion rate active in the network (see [Current conversion rate](../overview/tokenomics.md#current-conversion-rate)).
 

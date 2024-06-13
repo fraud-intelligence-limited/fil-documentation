@@ -6,7 +6,7 @@ Registered FIB peers and users can log in to the [FIB Web App](https://app.fraud
 
 The main screen that appears once an FIB user logs in to their Web App account.
 
-!['Dashboard' screen](../img/s-dashboard.png){data-zoomable}
+!['Dashboard' screen](../img/s-dashboard.png){data-zoomable .mini}
 
 #### Navigation
 
@@ -43,7 +43,7 @@ See the following related tutorials:
 
 The screen that displays the detailed information about the authorized account.
 
-!['Profile' screen](../img/s-profile.png){data-zoomable}
+!['Profile' screen](../img/s-profile.png){data-zoomable .mini}
 
 #### Navigation
 

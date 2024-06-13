@@ -44,8 +44,8 @@ When [retrieving contributions](../api-specification/contribution-controller/ret
 | `isPrivileged` | `boolean` | The definition of whether a contribution is privileged. |
 | `peerId` | `string` | The unique Domain ID of the peer that contributed the data. |
 | `flagger` | `string` | The unique ID of the peer that flagged the data. If a contribution hasn't been flagged at the time of observing, the field returns `null`. |
-| `timestamp` | `integer($int32)` | The exact date and time of when a contribution has been submitted (represented as [Unix Epoch time](https://www.epochconverter.com/clock) in seconds). |
-| `flagTimestamp` | `integer($int32)` | The exact date and time of when a contribution has been flagged. If a contribution hasn't been flagged at the time of observing, the field returns `null`. |
+| `timestamp` | `integer($int32)` | The exact time and date of when a contribution has been submitted (represented as [Unix Epoch time](https://www.epochconverter.com/clock) in seconds). |
+| `flagTimestamp` | `integer($int32)` | The exact time and date of when a contribution has been flagged. If a contribution hasn't been flagged at the time of observing, the field returns `null`. |
 | `self` | `integer($int32)` | Out of all the retrieved contributions, the number of contributions that have been submitted by the requesting user. |
 | `old` | `integer($int32)` | Out of all the retrieved contributions, the number of contributions that have already been seen by the requesting user. |
 | `new` | `integer($int32)` | Out of all the retrieved contributions, the number of contributions that have _not_ yet been seen by the requesting user. |
