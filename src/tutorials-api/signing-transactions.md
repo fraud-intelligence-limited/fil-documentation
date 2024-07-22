@@ -118,7 +118,7 @@ function hexToBytes(hex) {
 function appendSignatureWithKeyPair(tx, keyPair) {
   const signer = new Signer(tx.payload.authority, keyPair)
   const signature = signTransaction(tx.payload, signer)
-  return datamodel.SignedTransaction({
+  return datamodel.SignedTransactionV1({
     payload: tx.payload,
     signatures: datamodel.SortedVecSignature([...tx.signatures, signature])
   })
