@@ -15,7 +15,7 @@ To flag fraud event data via FIB Web App, perform the following steps:
 
 The status of the selected fraud event(s) is set to `Flagged`, and the submitting peer is rewarded with tokens.
 
-::: tip Note
+::: tip NOTE
 
 Flagging contributions uploaded by the same peer does not provide token rewards.
 

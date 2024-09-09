@@ -6,7 +6,80 @@ next: false
 
 # Release Notes
 
-## Version 1.3 (2024-06-05)
+## Version 1.3.1 (YYYY-MM-DD)
+
+### Main Changes
+
+- Added the Two-Factor Authentication (2FA) support.
+
+  > Documented here:\
+  > <!-- TODO: add links to new tutorial and the dedicated 2FA subtopic -->
+
+- Added the ability to select the destination countries when downloading fraud data via FIB Web App.
+
+  > Documented here:\
+  > [Tutorials: Web App > Downloading fraud data](../tutorials-web/downloading-fraud-data.md)
+
+- Added the ability to split the reward for uploaded contributions between the contributor and the original source of the fraud event data.
+
+  > Documented here:\
+  > [Overview > Tokenomics](../overview/tokenomics.md#reward-split) — **Reward split** subtopic added.
+
+- The expiry time of any given contribution now depends on its fraud type.
+
+  > Documented here:\
+  > [Overview > Contributions > Retrieving contributions](../overview/tokenomics.md#reward-split) — `expiryDate` description updated with details.
+
+- Multiple updates to the FIB Web App UI, including:
+  - Added shortcuts for convenient timespans (e.g., one week, one month, etc.) when selecting a date or range of dates.
+  - Made the process of removing records selected for upload straightforward and convenient.
+  - Error messages are expanded with details and are more explicit now.
+  - When downloading fraud data, the result now contains exhaustive filter values.
+  - Various text improvements throughout the UI.  
+
+### API Changes
+
+- Added the `auth-controller`: **Toggling 2FA** operation.
+
+  > Documented here:\
+  > [API Specification > Logging a user out of the system](../api-specification/auth-controller/toggling-2fa.md) — new topic.
+
+- Added the `auth-controller`: **Confirming 2FA** operation.
+
+  > Documented here:\
+  > [API Specification > Logging a user out of the system](../api-specification/auth-controller/confirming-2fa.md) — new topic.  
+
+- Updated the `peer-controller`: **Retrieving contributions** operation: the `self-only` parameter removed, functionality moved to the `fetch-mode` parameter; added new `assetDefinitionId` and `sourcePeerId` fields.
+
+  > Documented here:\
+  > [API Specification > Retrieving contributions](../api-specification/contribution-controller/retrieving-contributions.md) — the `self-only` parameter removed, the `fetch-mode` parameter updated, `assetDefinitionId` and `sourcePeerId` fields added.
+  > [Overview > Contributions](../overview/contributions.md#api-data-structure) — [Retrieving contributions](../overview/contributions.md#rc2)
+
+- Expired contributions are no longer retrieved when [retrieving contributions by ID](api-specification\contribution-controller\retrieving-a-contribution-by-ID.md).
+
+### Other Improvements
+
+- Iroha 2 SDK updated to the latest version.
+
+- Improved the efficiency of the serialization and deserialization of the HTTP data.
+
+- Optimized the creation of transactions and the execution of smart contracts.
+
+- Expanded the backend logging capabilities for a streamlined approach to potential troubleshooting.
+
+- Unified all of the time and date values to adhere to the single format: `YYYY-MM-DDTHH:MM:SS`
+
+### Bug Fixes
+
+- Fixed a bug that allowed FIB Admin to set a subscription expiration time for [Premium](../overview/tokenomics.md#premium) users in the past.
+
+- Fixed a bug that allowed FIB Admin to set a token reward as a negative value, which resulted in the inability for users to upload any new data.
+
+- Fixed a bug where users that [restored access to their account](../getting-started/registering-an-account.md#restoring-access-to-an-account) experienced various data inconsistencies on their account.
+
+- Fixed a bug that allowed suspended user accounts to perform operations not permitted to them.
+
+## Version 1.3.0 (2024-06-05)
 
 ### Main Changes
 
@@ -84,7 +157,7 @@ next: false
 
 - Fixed a bug that allowed users to flag irrelevant or nonexistent contributions.
 
-## Version 1.2 (2023-12-14)
+## Version 1.2.0 (2023-12-14)
 
 ### Main Changes
 
@@ -102,7 +175,7 @@ next: false
 - Contributions on the blockchain now have a `flagger` value that displays the ID of a peer that flagged the contribution if it has been flagged.
 
   > Documented here:\
-  > [Overview > Contributions](../overview/contributions.md#api-requests-data-structure) — **Flagging contributions** and **API requests data structure** updated.
+  > [Overview > Contributions](../overview/contributions.md#api-data-structure) — **Flagging contributions** and **API requests data structure** updated.
 
 - Added functionality related to the confidence index, a value between 1 and 100 that represents how confident the system is that a contributed fraud event is legitimate.
 
@@ -126,10 +199,10 @@ next: false
 
 - Fixed a bug with call processing timeouts being inconsistent.
 
-## Version 1.1 (2023-04-27)
+## Version 1.1.0 (2023-04-27)
 
 Initial public version released with the functionality documented in our [Guide](../index.md).
 
-## Version 1.0 (2022-12-12)
+## Version 1.0.0 (2022-12-12)
 
 Internal version not released to public.

@@ -26,7 +26,7 @@ POST /auth/api/v1/authentication-management/session
 
 :::
 
-::: tip Note
+::: tip NOTE
 
 For instructions on how to generate the `signature` string, see [Signing user email addresses](/tutorials-api/signing-user-email-addresses.md).
 

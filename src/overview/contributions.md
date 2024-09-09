@@ -16,7 +16,7 @@ For complete instructions on how to submit a contribution, see [Submitting a con
 
 For information on the token balance and rewards, see [Tokenomics](./tokenomics.md).
 
-### Retrieving contributions
+### Retrieving contributions {#rc1}
 
 In order for peers to keep their own records updated with the latest fraud event data, they can [retrieve contributions in a number of ways](../tutorials-api/retrieving-contributions.md).
 
@@ -26,7 +26,7 @@ If a peer deems a certain contribution to no longer be relevant (e.g., it is a "
 
 ## API data structures
 
-### Retrieving contributions
+### Retrieving contributions {#rc2}
 
 When [retrieving contributions](../api-specification/contribution-controller/retrieving-contributions.md), the following data is returned in the body of the response:
 
@@ -34,16 +34,16 @@ When [retrieving contributions](../api-specification/contribution-controller/ret
 
 | Field | Value Type | Description |
 | --- | --- | --- |
-| `id` | `string` | Unique identifier of a fraud event. |
+| `id` | `string` | The unique identifier of a fraud event. |
 | `fraudType` | `string(enum)` | The [type of the fraud event](fraud-events.md#types-of-fraud-events). <br> Can be one of the following: <ol><li>`Wangiri`</li><li>`IRSF`</li><li>`StolenDevice`</li><li>`IPFraud`</li><li>`SMSA2P`</li></ol> |
 | `origination` | `string` | The two-letter code of the country the fraud event originated from (Alpha-2, [ISO 3166](https://www.iso.org/iso-3166-country-codes.html)). |
 | `destination` | `string` | The two-letter code of the country the fraud event was identified as such (Alpha-2, [ISO 3166](https://www.iso.org/iso-3166-country-codes.html)). |
-| `expiryDate` | `integer($int64)` | The exact time and date until which the event is considered relevant (represented as [Unix Epoch time](https://www.epochconverter.com/clock) in seconds). |
+| `expiryDate` | `integer($int64)` | The exact time and date until which the event is considered relevant (represented as [Unix Epoch time](https://www.epochconverter.com/clock) in seconds). <br> By default, the `expiryDate` is set 30 days away from the `timestamp` value for all fraud types, except for `IRSF`, which has it set 90 days away. |
 | `fraudStatus` | `string(enum)` | The status of the fraud event in relation to its `expiryDate`. <br> Can be one of the following: <ol><li>`ACTIVE`</li><li>`EXPIRED`</li><li>`FLAGGED`</li></ol> |
 | `confidenceIndex` | `number($double)` | The predicted fraud likelihood score in the range from 1 to 100. |
 | `isPrivileged` | `boolean` | The definition of whether a contribution is privileged. |
-| `peerId` | `string` | The unique Domain ID of the peer that contributed the data. |
-| `flagger` | `string` | The unique ID of the peer that flagged the data. If a contribution hasn't been flagged at the time of observing, the field returns `null`. |
+| `peerId` | `string` | The unique identifier of the peer that contributed the data. |
+| `flagger` | `string` | The unique identifier of the peer that flagged the data. If a contribution hasn't been flagged at the time of observing, the field returns `null`. |
 | `timestamp` | `integer($int32)` | The exact time and date of when a contribution has been submitted (represented as [Unix Epoch time](https://www.epochconverter.com/clock) in seconds). |
 | `flagTimestamp` | `integer($int32)` | The exact time and date of when a contribution has been flagged. If a contribution hasn't been flagged at the time of observing, the field returns `null`. |
 | `self` | `integer($int32)` | Out of all the retrieved contributions, the number of contributions that have been submitted by the requesting user. |
@@ -54,6 +54,8 @@ When [retrieving contributions](../api-specification/contribution-controller/ret
 | `balanceLeft` | `integer($int32)` | The remaining token balance after retrieving contributions. |
 | `contributionsNotReturned` | `integer($int32)` | The number of contributions that have not been returned. |
 | `contributionsNotReturnedCost` | `integer($int64)` | The total cost of all the contributions that have not been returned but met the filter requirements, i.e., the amount of tokens that were not available on the user's balance at the time of the retrieval. |
+| `assetDefinitionId` | `string` | The unique identifier of a contribution record on the blockchain network. |
+| `sourcePeerId` | `string` | The unique identifier of the original source that contributed the data. May be different from the `peerID`. <br> For details, see [Tokenomics: Reward split](./tokenomics.md#reward-split). |
 
 :::
 

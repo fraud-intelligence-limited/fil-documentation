@@ -1,6 +1,6 @@
 # Submitting a contribution
 
-::: tip Note
+::: tip NOTE
 
 A peer account must be authorized for this operation to succeed. _See [Authorizing an account](authorizing-an-account.md)_.
 

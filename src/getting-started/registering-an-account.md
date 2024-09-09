@@ -27,7 +27,7 @@ To register a new account, perform the following steps:
    - **Password** — a unique combination of symbols that will be used to log in to your account via the Web App.
    - **Repeat password** — same as **Password**; must be entered to ensure that no typos were entered the first time.
 
-   ::: tip Note
+   ::: tip NOTE
 
    Your password must adhere to the following rules:
 

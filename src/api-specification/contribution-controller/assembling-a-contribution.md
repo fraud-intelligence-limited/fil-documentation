@@ -26,6 +26,7 @@
     fraudType: 'string',
     origination: 'string',
     destination: 'string'
+    source: 'string'
   }
 ]
 ```
@@ -37,9 +38,16 @@
     fraudType: 'IPFraud',
     origination: 'SE',
     destination: 'GB'
+    source: 'mad_hatter'
   }
 ]
 ```
+
+::: info
+
+The `source` field is optional and is the same as the `sourcePeerId` value when [retrieving contributions](retrieving-contributions.md). 
+
+:::
 
 :::
 
@@ -49,7 +57,7 @@ For a detailed breakdown of every field and value in the body of a request, see 
 
 :::
 
-::: tip Note
+::: tip NOTE
 
 This endpoint accepts requests with up to `500` entries.
 
