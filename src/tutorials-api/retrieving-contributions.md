@@ -36,7 +36,7 @@ GET /api/v1/contribution-management/contribution?size=''&from=''&to=''&ft=''&org
 /api/v1/contribution-management/contribution?org=US
 
 // dst
-/api/v1/contribution-management/contribution?org=GA
+/api/v1/contribution-management/contribution?dst=GA
 
 // self-only
 /api/v1/contribution-management/contribution?self-only=true

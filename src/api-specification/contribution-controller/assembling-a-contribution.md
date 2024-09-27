@@ -45,7 +45,9 @@
 
 ::: info
 
-The `source` field is optional and is the same as the `sourcePeerId` value when [retrieving contributions](retrieving-contributions.md). 
+The `source` field is optional and is the same as the `sourcePeerId` value when [retrieving contributions](retrieving-contributions.md).
+
+The value must be a valid FIB user, otherwise an error is returned.
 
 :::
 

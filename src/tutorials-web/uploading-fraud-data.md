@@ -34,7 +34,7 @@ To upload fraud event data via FIB Web App, perform the following steps:
 
 ::: tip NOTE
 
-If you are uploading several individual fraud identifiers, each entry must start from a new line.
+If you upload several individual fraud identifiers, each entry must start on a new line.
 
 A single fraud event data submission can contain up to `500` entries.
 

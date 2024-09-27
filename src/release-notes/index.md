@@ -10,12 +10,12 @@ next: false
 
 ### Main Changes
 
-- Added the Two-Factor Authentication (2FA) support.
+- Added Two-Factor Authentication (2FA) support.
 
   > Documented here:\
   > <!-- TODO: add links to new tutorial and the dedicated 2FA subtopic -->
 
-- Added the ability to select the destination countries when downloading fraud data via FIB Web App.
+- Added the ability to select the destination countries when downloading fraud data via the FIB Web App.
 
   > Documented here:\
   > [Tutorials: Web App > Downloading fraud data](../tutorials-web/downloading-fraud-data.md)
@@ -61,13 +61,13 @@ next: false
 
 - Iroha 2 SDK updated to the latest version.
 
-- Improved the efficiency of the serialization and deserialization of the HTTP data.
+- Improved the efficiency of serialization and deserialization of the HTTP data.
 
 - Optimized the creation of transactions and the execution of smart contracts.
 
 - Expanded the backend logging capabilities for a streamlined approach to potential troubleshooting.
 
-- Unified all of the time and date values to adhere to the single format: `YYYY-MM-DDTHH:MM:SS`
+- Unified all of the time and date values to adhere to the single format: `YYYY-MM-DDTHH:MM:SSZ` (`Z` indicates the `UTC+0` time zone).
 
 ### Bug Fixes
 
