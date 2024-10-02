@@ -55,7 +55,7 @@ next: false
   > [API Specification > Retrieving contributions](../api-specification/contribution-controller/retrieving-contributions.md) — the `self-only` parameter removed, the `fetch-mode` parameter updated, `assetDefinitionId` and `sourcePeerId` fields added.\
   > [Overview > Contributions](../overview/contributions.md#api-data-structure) — the [Retrieving contributions](../overview/contributions.md#rc2) table is updated.
 
-- Expired contributions are no longer retrieved when [retrieving contributions by ID](api-specification/contribution-controller/retrieving-a-contribution-by-ID.md).
+- Expired contributions are no longer retrieved when [retrieving contributions by ID](../api-specification/contribution-controller/retrieving-a-contribution-by-ID.md).
 
 - Unified all of the time and date values to adhere to the single format (ISO 8601): `YYYY-MM-DDTHH:MM:SSZ` (`Z` indicates the `UTC+0` time zone).\
   The following operations are affected:
