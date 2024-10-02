@@ -42,7 +42,7 @@ A `PATCH` request to the endpoint with the `enable` parameter specified.
 {
   status: {
     code: 200,
-    name: 'string',
+    name: 'string'
   },
   data: {}
 }

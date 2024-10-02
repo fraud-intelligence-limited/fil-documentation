@@ -38,13 +38,13 @@ When [retrieving contributions](../api-specification/contribution-controller/ret
 | `fraudType` | `string(enum)` | The [type of the fraud event](fraud-events.md#types-of-fraud-events). <br> Can be one of the following: <ol><li>`Wangiri`</li><li>`IRSF`</li><li>`StolenDevice`</li><li>`IPFraud`</li><li>`SMSA2P`</li></ol> |
 | `origination` | `string` | The two-letter code of the country the fraud event originated from (Alpha-2, [ISO 3166](https://www.iso.org/iso-3166-country-codes.html)). |
 | `destination` | `string` | The two-letter code of the country the fraud event was identified as such (Alpha-2, [ISO 3166](https://www.iso.org/iso-3166-country-codes.html)). |
-| `expiryDate` | `integer($int64)` | The exact time and date until which the event is considered relevant (represented as [Unix Epoch time](https://www.epochconverter.com/clock) in seconds). <br> By default, the `expiryDate` is set 30 days away from the `timestamp` value for all fraud types, except for `IRSF`, which has it set 90 days away. |
+| `expiryDate` | `integer($int64)` | The exact time and date until which the event is considered relevant (ISO 8601: `YYYY-MM-DDTHH:MM:SSZ`). <br> By default, the `expiryDate` is set 30 days away from the `timestamp` value for all fraud types, except for `IRSF`, which has it set 90 days away. |
 | `fraudStatus` | `string(enum)` | The status of the fraud event in relation to its `expiryDate`. <br> Can be one of the following: <ol><li>`ACTIVE`</li><li>`EXPIRED`</li><li>`FLAGGED`</li></ol> |
 | `confidenceIndex` | `number($double)` | The predicted fraud likelihood score in the range from 1 to 100. |
 | `isPrivileged` | `boolean` | The definition of whether a contribution is privileged. |
 | `peerId` | `string` | The unique identifier of the peer that contributed the data. |
 | `flagger` | `string` | The unique identifier of the peer that flagged the data. If a contribution hasn't been flagged at the time of observing, the field returns `null`. |
-| `timestamp` | `integer($int32)` | The exact time and date of when a contribution has been submitted (represented as [Unix Epoch time](https://www.epochconverter.com/clock) in seconds). |
+| `timestamp` | `integer($int32)` | The exact time and date of when a contribution has been submitted (ISO 8601: `YYYY-MM-DDTHH:MM:SSZ`). |
 | `flagTimestamp` | `integer($int32)` | The exact time and date of when a contribution has been flagged. If a contribution hasn't been flagged at the time of observing, the field returns `null`. |
 | `self` | `integer($int32)` | Out of all the retrieved contributions, the number of contributions that have been submitted by the requesting user. |
 | `old` | `integer($int32)` | Out of all the retrieved contributions, the number of contributions that have already been seen by the requesting user. |

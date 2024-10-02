@@ -13,7 +13,7 @@ next: false
 - Added Two-Factor Authentication (2FA) support.
 
   > Documented here:\
-  > <!-- TODO: add links to new tutorial and the dedicated 2FA subtopic -->
+  > [Getting started > Registering an account > Setting 2FA](../getting-started/registering-an-account.md#setting-2fa)
 
 - Added the ability to select the destination countries when downloading fraud data via the FIB Web App.
 
@@ -23,7 +23,7 @@ next: false
 - Added the ability to split the reward for uploaded contributions between the contributor and the original source of the fraud event data.
 
   > Documented here:\
-  > [Overview > Tokenomics](../overview/tokenomics.md#reward-split) — **Reward split** subtopic added.
+  > [Overview > Tokenomics](../overview/tokenomics.md) — [Reward split](../overview/tokenomics.md#reward-split) subtopic added.
 
 - The expiry time of any given contribution now depends on its fraud type.
 
@@ -35,7 +35,7 @@ next: false
   - Made the process of removing records selected for upload straightforward and convenient.
   - Error messages are expanded with details and are more explicit now.
   - When downloading fraud data, the result now contains exhaustive filter values.
-  - Various text improvements throughout the UI.  
+  - Various text improvements throughout the UI.
 
 ### API Changes
 
@@ -47,15 +47,20 @@ next: false
 - Added the `auth-controller`: **Confirming 2FA** operation.
 
   > Documented here:\
-  > [API Specification > Logging a user out of the system](../api-specification/auth-controller/confirming-2fa.md) — new topic.  
+  > [API Specification > Logging a user out of the system](../api-specification/auth-controller/confirming-2fa.md) — new topic.
 
 - Updated the `peer-controller`: **Retrieving contributions** operation: the `self-only` parameter removed, functionality moved to the `fetch-mode` parameter; added new `assetDefinitionId` and `sourcePeerId` fields.
 
   > Documented here:\
-  > [API Specification > Retrieving contributions](../api-specification/contribution-controller/retrieving-contributions.md) — the `self-only` parameter removed, the `fetch-mode` parameter updated, `assetDefinitionId` and `sourcePeerId` fields added.
-  > [Overview > Contributions](../overview/contributions.md#api-data-structure) — [Retrieving contributions](../overview/contributions.md#rc2)
+  > [API Specification > Retrieving contributions](../api-specification/contribution-controller/retrieving-contributions.md) — the `self-only` parameter removed, the `fetch-mode` parameter updated, `assetDefinitionId` and `sourcePeerId` fields added.\
+  > [Overview > Contributions](../overview/contributions.md#api-data-structure) — the [Retrieving contributions](../overview/contributions.md#rc2) table is updated.
 
-- Expired contributions are no longer retrieved when [retrieving contributions by ID](api-specification\contribution-controller\retrieving-a-contribution-by-ID.md).
+- Expired contributions are no longer retrieved when [retrieving contributions by ID](api-specification/contribution-controller/retrieving-a-contribution-by-ID.md).
+
+- Unified all of the time and date values to adhere to the single format (ISO 8601): `YYYY-MM-DDTHH:MM:SSZ` (`Z` indicates the `UTC+0` time zone).\
+  The following operations are affected:
+  - [Retrieving peer limit state](../api-specification/peer-controller/retrieving-peer-limit-state.md)
+  - [Retrieving contributions](../api-specification/contribution-controller/retrieving-contributions.md)
 
 ### Other Improvements
 
@@ -66,8 +71,6 @@ next: false
 - Optimized the creation of transactions and the execution of smart contracts.
 
 - Expanded the backend logging capabilities for a streamlined approach to potential troubleshooting.
-
-- Unified all of the time and date values to adhere to the single format: `YYYY-MM-DDTHH:MM:SSZ` (`Z` indicates the `UTC+0` time zone).
 
 ### Bug Fixes
 

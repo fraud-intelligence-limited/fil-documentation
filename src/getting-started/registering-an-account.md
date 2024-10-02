@@ -71,6 +71,7 @@ You can also familiarize yourself with the [Web App UI](../overview/web-interfac
 ## Restoring access to an account
 
 If you have forgotten the password on your account, you can reset it by performing the following steps:
+
 1. Go to the [Fraud Intelligence Blockchain website](https://app.fraudintelligencelimited.com) and select **Forgot password?**.
 2. On the **Forgot password?** screen that appears, enter the email address that you registered with in the **Your email** field, then select **Send link**.
 3. Check your email inbox for a message from FIB with instructions on how to reset your password.
@@ -83,6 +84,7 @@ Once you have reset your password, you can log in to your FIB account using your
 ## Setting 2FA
 
 To enable Two-Factor Authentication (2FA) on your account, perform the following steps:
+
 1. Go to the [Fraud Intelligence Blockchain website](https://app.fraudintelligencelimited.com) and log in to your account.
 2. Go to the [Profile](../overview/web-interface.md#profile) screen.
 3. Turn on the **Two-Factor Authentication (email)** toggle switch.

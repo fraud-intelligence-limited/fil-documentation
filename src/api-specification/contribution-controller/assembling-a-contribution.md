@@ -26,7 +26,7 @@
     fraudType: 'string',
     origination: 'string',
     destination: 'string'
-    source: 'string'
+    sourcePeerId: 'string'
   }
 ]
 ```
@@ -38,14 +38,12 @@
     fraudType: 'IPFraud',
     origination: 'SE',
     destination: 'GB'
-    source: 'mad_hatter'
+    sourcePeerId: 'mad_hatter'
   }
 ]
 ```
 
 ::: info
-
-The `source` field is optional and is the same as the `sourcePeerId` value when [retrieving contributions](retrieving-contributions.md).
 
 The value must be a valid FIB user, otherwise an error is returned.
 

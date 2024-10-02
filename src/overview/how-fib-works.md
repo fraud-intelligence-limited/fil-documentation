@@ -69,9 +69,10 @@ For more information, see [Signing transactions](../tutorials-api/signing-transa
 To provide an additional layer of security, FIB supports Two-Factor Authentication (2FA), which can be enabled either via the Web App UI or via an API call.
 
 The following rules apply to 2FA:
+
 - A 2FA One-Time Password (OTP) is sent to the user's registered email address.
 - A 2FA OTP can be requested once per minute.
 - A 2FA OTP is valid for 15 minutes from the time of the request.
 - Only the most recently generated 2FA OTP is valid for sign-in; any previously generated OTPs will be invalid.
 
-For more information, see <!-- TODO: add link -->
+For more information, see [Registering an account > Setting 2FA](../getting-started/registering-an-account.md#setting-2fa)
