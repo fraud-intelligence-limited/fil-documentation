@@ -20,7 +20,7 @@ The following parameters can be specified with the request to filter the retriev
 | Field | Value Type | Description |
 | :-: | --- | --- |
 | `size` | `integer($int32)` | The number of entries, starting with the latest, shown in the response. <br> Set to `50` by default. |
-| `from` and `to` | `string` | The timeframe that the response entries are filtered by (set as [Unix Epoch time](https://www.epochconverter.com/clock) in seconds). <br> The `from` parameter is set to `0` by default. |
+| `from` and `to` | `string` | The timeframe that the response entries are filtered by. Both are set as an exact time and date (ISO 8601: `YYYY-MM-DDTHH:MM:SSZ`). <br> If the `from` parameter is left unspecified, the results will be fetched since the establishment of the FIB network. |
 | `ft` | `array[string]` | The [type of the fraud event](../../overview/fraud-events.md#types-of-fraud-events). <br> Can be one of the following: <ol><li>`Wangiri`</li><li>`IRSF`</li><li>`StolenDevice`</li><li>`IPFraud`</li><li>`SMSA2P`</li></ol> |
 | `org` | `array[string]` | The country of origination of the fraud event. Set as a two-letter country code (Alpha-2, ISO 3166; e.g., US, GA). |
 | `dst` | `array[string]` | The country of destination of the fraud event. Set as a two-letter country code (Alpha-2, ISO 3166; e.g., US, GA). |
@@ -59,7 +59,7 @@ A `GET` request to the endpoint with the `Authorization` header specified.
           timestamp: integer($int32),
           flagTimestamp: integer($int32),
           assetDefinitionId: 'assetName#assetDomain',
-          sourcePeerId: 'string'
+          sourcePeerId: 'accountDomain'
         }
     ],
     details: {
@@ -98,7 +98,7 @@ A `GET` request to the endpoint with the `Authorization` header specified.
                 timestamp: xxx,
                 flagTimestamp: 1711891326
                 assetDefinitionId: 'assetName#assetDomain',
-                sourcePeerId: 'alice'
+                sourcePeerId: 'wonderland'
             },
             {
                 id: '127.0.0.1-127.0.0.1',
@@ -114,7 +114,7 @@ A `GET` request to the endpoint with the `Authorization` header specified.
                 timestamp: xxx,
                 flagTimestamp: 1711977724
                 assetDefinitionId: 'assetName#assetDomain',
-                sourcePeerId: 'alice'
+                sourcePeerId: 'wonderland'
             }
         ],
         details: {

@@ -150,14 +150,6 @@ export default defineConfig({
                   text: 'Logging a user out of the system',
                   link: '/api-specification/auth-controller/logging-a-user-out-of-the-system.md',
                 },
-                {
-                  text: 'Toggling 2FA',
-                  link: '/api-specification/auth-controller/toggling-2fa.md',
-                },
-                {
-                  text: 'Confirming 2FA',
-                  link: '/api-specification/auth-controller/confirming-2fa.md',
-                },
               ],
             },
             {

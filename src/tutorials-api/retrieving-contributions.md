@@ -78,7 +78,7 @@ The response to the `GET` request contains a list of the contributions, filtered
           flagger: 'string',
           timestamp: integer($int32),
           assetDefinitionId: 'assetName#assetDomain',
-          sourcePeerId: 'string'
+          sourcePeerId: 'accountDomain'
         }
     ],
     details: {
@@ -118,7 +118,7 @@ The response to the `GET` request contains a list of the contributions, filtered
         timestamp: 1700854291,
         flagTimestamp: 1711891326,
         assetDefinitionId: 'assetName#assetDomain',
-        sourcePeerId: 'alice'
+        sourcePeerId: 'wonderland'
       },
       {
         id: '127.0.0.1-127.0.0.1',
@@ -134,7 +134,7 @@ The response to the `GET` request contains a list of the contributions, filtered
         timestamp: 1700267392,
         flagTimestamp: 1711977724,
         assetDefinitionId: 'assetName#assetDomain',
-        sourcePeerId: 'alice'
+        sourcePeerId: 'wonderland'
       }
     ],
     details: {

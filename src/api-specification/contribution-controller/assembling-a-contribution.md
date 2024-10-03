@@ -26,7 +26,7 @@
     fraudType: 'string',
     origination: 'string',
     destination: 'string'
-    sourcePeerId: 'string'
+    sourcePeerId: 'accountDomain'
   }
 ]
 ```
@@ -38,14 +38,14 @@
     fraudType: 'IPFraud',
     origination: 'SE',
     destination: 'GB'
-    sourcePeerId: 'mad_hatter'
+    sourcePeerId: 'wonderland'
   }
 ]
 ```
 
 ::: info
 
-The value must be a valid FIB user, otherwise an error is returned.
+The `sourcePeerId` value must be a registered peer identifier (`accountDomain`), otherwise an error is returned.
 
 :::
 

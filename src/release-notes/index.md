@@ -82,6 +82,8 @@ next: false
 
 - Fixed a bug that allowed suspended user accounts to perform operations not permitted to them.
 
+- Fixed a bug that prevented the **Purchase has completed** screen from displaying data according to the filters specified by the user when downloading contributions via FIB Web App.
+
 ## Version 1.3.0 (2024-06-05)
 
 ### Main Changes
