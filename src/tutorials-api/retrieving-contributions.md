@@ -115,8 +115,8 @@ The response to the `GET` request contains a list of the contributions, filtered
         isPrivileged: false,
         peerId: 'test',
         flagger: 'admin@test',
-        timestamp: 1700854291,
-        flagTimestamp: 1711891326,
+        timestamp: 2024-08-31T11:35:41Z,
+        flagTimestamp: 2024-09-15T10:05:24Z,
         assetDefinitionId: 'assetName#assetDomain',
         sourcePeerId: 'wonderland'
       },
@@ -131,8 +131,8 @@ The response to the `GET` request contains a list of the contributions, filtered
         isPrivileged: false,
         peerId: 'test',
         flagger: 'admin@test',
-        timestamp: 1700267392,
-        flagTimestamp: 1711977724,
+        timestamp: 2024-08-30T17:07:33Z,
+        flagTimestamp: 2024-09-15T10:05:24Z,
         assetDefinitionId: 'assetName#assetDomain',
         sourcePeerId: 'wonderland'
       }

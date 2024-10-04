@@ -95,8 +95,8 @@ A `GET` request to the endpoint with the `Authorization` header specified.
                 isPrivileged: false,
                 peerId: 'test',
                 flagger: null,
-                timestamp: xxx,
-                flagTimestamp: 1711891326
+                timestamp: 2024-08-31T11:35:41Z,
+                flagTimestamp: 2024-09-15T10:05:24Z,
                 assetDefinitionId: 'assetName#assetDomain',
                 sourcePeerId: 'wonderland'
             },
@@ -111,8 +111,8 @@ A `GET` request to the endpoint with the `Authorization` header specified.
                 isPrivileged: false,
                 peerId: 'test',
                 flagger: 'admin@test',
-                timestamp: xxx,
-                flagTimestamp: 1711977724
+                timestamp: 2024-08-30T17:07:33Z,
+                flagTimestamp: 2024-09-15T10:05:24Z,
                 assetDefinitionId: 'assetName#assetDomain',
                 sourcePeerId: 'wonderland'
             }

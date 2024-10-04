@@ -47,7 +47,7 @@ To submit a contribution, perform the following steps:
        isPrivileged: true,
        peerId: 'wonderland',
        flagger: 'alice@wonderland',
-       timestamp: 1711120097
+       timestamp: 2024-08-30T17:07:33Z
      }
    ]
    ```

@@ -70,7 +70,7 @@ To flag a contribution, perform the following steps:
            isPrivileged: false,
            peerId: 'soramitsu',
            flagger: null,
-           timestamp: 1711570471,
+           timestamp: 2024-08-31T11:35:41Z,
            flagTimestamp: null
          }
        }
