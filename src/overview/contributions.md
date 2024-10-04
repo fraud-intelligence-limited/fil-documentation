@@ -12,7 +12,7 @@ A peer or its user that has contributed at least a single fraud event is conside
 
 Once a contribution has been submitted, the peer’s list of contributions is updated, and their [token balance](tokenomics.md#token-balance) is increased by an amount equal to the number of contributions submitted based on the current reward rate active in the network.
 
-When preparing a contribution for upload, the contributor must specify, whether they are the original source of the fraud event data. To do so, they must leave the `sourcePeerId` value empty. However, in cases when the original source differs from the uploader, the `sourcePeerId` value must be the `peerId` of that specific user on the network.
+When preparing a contribution for upload, the contributor must specify, whether they are the original source of the fraud event data. To do so, they must leave the `sourcePeerId` value empty. However, if the original source differs from the uploader, the `sourcePeerId` value must be the `peerId` of that specific user on the network. In such cases, the reward is split between the contributor and the original source according the [reward split](./tokenomics.md#reward-split) rules.
 
 ::: tip NOTE
 
