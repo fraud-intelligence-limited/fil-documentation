@@ -58,8 +58,8 @@ A `GET` request to the endpoint with the `Authorization` header specified.
           flagger: 'string',
           timestamp: integer($int32),
           flagTimestamp: integer($int32),
-          assetDefinitionId: 'assetName#assetDomain',
-          sourcePeerId: 'accountDomain'
+          assetDefinitionId: 'string', // assetName#assetDomain
+          sourcePeerId: 'string' // accountDomain
         }
     ],
     details: {
