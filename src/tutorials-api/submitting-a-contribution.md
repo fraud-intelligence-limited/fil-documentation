@@ -1,6 +1,6 @@
 # Submitting a contribution
 
-::: tip Note
+::: tip NOTE
 
 A peer account must be authorized for this operation to succeed. _See [Authorizing an account](authorizing-an-account.md)_.
 
@@ -47,7 +47,7 @@ To submit a contribution, perform the following steps:
        isPrivileged: true,
        peerId: 'wonderland',
        flagger: 'alice@wonderland',
-       timestamp: 1711120097
+       timestamp: 2024-08-30T17:07:33Z
      }
    ]
    ```

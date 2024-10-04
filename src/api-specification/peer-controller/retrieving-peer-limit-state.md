@@ -47,7 +47,7 @@ A `GET` request to the endpoint with the `Authorization` header specified.
     used: 0, //The number of tokens spent by the requesting peer during their existence
     total: 100, //The total token limit allocated to the requesting peer
     updatePeriod: 10, //The time period of how often the requesting peer's token balance is updated
-    nextUpdate: 1704442062 //The exact time (set as [Unix Epoch time](https://www.epochconverter.com/clock) in seconds) of when the next token balance update is scheduled for
+    nextUpdate: 1704442062 //The exact time (ISO 8601: `YYYY-MM-DDTHH:MM:SSZ`) of when the next token balance update is scheduled for
   }
 }
 ```

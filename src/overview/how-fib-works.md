@@ -4,7 +4,7 @@ FIB is a decentralized network that enables the secure sharing and analysis of d
 
 Our system allows the telco companies and vendors to register as **peers**. In turn, employees of these companies can register as **users** under their company's domain.
 
-::: tip Note
+::: tip NOTE
 
 Peers are also considered to be users.
 
@@ -26,7 +26,7 @@ The contributions on the network can also be downloaded by peers to update their
 
 For more information, see [Uploading contributions](./tokenomics.md#uploading-fraud-events) and [Downloading contributions](./tokenomics.md#downloading-fraud-events).
 
-::: tip Note
+::: tip NOTE
 
 To streamline the process of sharing fraud data, registered companies can implement their already existing system with FIB via API.
 
@@ -63,3 +63,16 @@ When a user creates a transaction on the FIB network, they sign it with their pr
 Additionally, signing transactions with key pairs can enhance the privacy and confidentiality of the user's information on the network. Overall, the use of key pairs and digital signatures is a crucial aspect of the FIB network's security infrastructure.
 
 For more information, see [Signing transactions](../tutorials-api/signing-transactions.md) and [Signing user email addresses](../tutorials-api/signing-user-email-addresses.md).
+
+### Two-Factor Authentication
+
+To provide an additional layer of security, FIB supports Two-Factor Authentication (2FA), which can be enabled either via the Web App UI or via an API call.
+
+The following rules apply to 2FA:
+
+- A 2FA One-Time Password (OTP) is sent to the user's registered email address.
+- A 2FA OTP can be requested once per minute.
+- A 2FA OTP is valid for 15 minutes from the time of the request.
+- Only the most recently generated 2FA OTP is valid for sign-in; any previously generated OTPs will be invalid.
+
+For more information, see [Registering an account > Setting 2FA](../getting-started/registering-an-account.md#setting-2fa)

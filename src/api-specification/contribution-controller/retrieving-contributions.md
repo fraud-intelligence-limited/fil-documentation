@@ -20,11 +20,11 @@ The following parameters can be specified with the request to filter the retriev
 | Field | Value Type | Description |
 | :-: | --- | --- |
 | `size` | `integer($int32)` | The number of entries, starting with the latest, shown in the response. <br> Set to `50` by default. |
-| `from` and `to` | `string` | The timeframe that the response entries are filtered by (set as [Unix Epoch time](https://www.epochconverter.com/clock) in seconds). <br> The `from` parameter is set to `0` by default. |
+| `from` and `to` | `string` | The timeframe that the response entries are filtered by. Both are set as an exact time and date (ISO 8601: `YYYY-MM-DDTHH:MM:SSZ`). <br> If the `from` parameter is left unspecified, the results will be fetched since the establishment of the FIB network. <br> If the `to` parameter is left unspecified, the results will be fetched until the latest uploaded contribution. |
 | `ft` | `array[string]` | The [type of the fraud event](../../overview/fraud-events.md#types-of-fraud-events). <br> Can be one of the following: <ol><li>`Wangiri`</li><li>`IRSF`</li><li>`StolenDevice`</li><li>`IPFraud`</li><li>`SMSA2P`</li></ol> |
 | `org` | `array[string]` | The country of origination of the fraud event. Set as a two-letter country code (Alpha-2, ISO 3166; e.g., US, GA). |
-| `self-only` | `boolean` | A boolean that defines whether the response should only contain contributions submitted by the requesting peer. <br> The `self-only` parameter is set to `false` by default. |
-| `fetch-mode` | `string` | The parameter that filters the response entries based on whether the requesting user has already seen them. <br> Can be one of the following: <ol><li>`NEW` — includes only the unseen by the requesting user entries.</li><li>`OLD` — includes only the already seen by the requesting user entries.</li><li>`DEFAULT` — includes all of the entries.</li></ol> <br> The `fetch-mode` parameter is set to `DEFAULT` by default. |
+| `dst` | `array[string]` | The country of destination of the fraud event. Set as a two-letter country code (Alpha-2, ISO 3166; e.g., US, GA). |
+| `fetch-mode` | `string` | The parameter that filters the response entries based on whether the requesting user has already seen them. <br> Can be one of the following: <ol><li>`NEW` — includes only the unseen by the requesting user entries.</li><li>`OLD` — includes only the already seen by the requesting user entries.</li><li>`SELF` — includes only the uploaded by the requesting user entries.</li><li>`DEFAULT` — includes all of the entries.</li></ol> <br> The `fetch-mode` parameter is set to `DEFAULT` by default. |
 | `confidence-score` | `boolean` | A boolean that defines whether the price of the retrieved contributions is affected by the [confidence index](../../overview/tokenomics.md#confidence-index). If set to `true`, the price of any given contribution might rise above the [default conversion rate](../../overview/tokenomics.md#current-conversion-rate). To retrieve the currently established prices, try [retrieving download pricing rate](retrieving-pricing-rate.md). <br> The `confidence-score` parameter is set to `false` by default. |
 
 #### Input/request structure
@@ -56,7 +56,10 @@ A `GET` request to the endpoint with the `Authorization` header specified.
           isPrivileged: boolean,
           peerId: 'string',
           flagger: 'string',
-          timestamp: integer($int32)
+          timestamp: integer($int32),
+          flagTimestamp: integer($int32),
+          assetDefinitionId: 'string', // assetName#assetDomain
+          sourcePeerId: 'string' // accountDomain
         }
     ],
     details: {
@@ -92,8 +95,10 @@ A `GET` request to the endpoint with the `Authorization` header specified.
                 isPrivileged: false,
                 peerId: 'test',
                 flagger: null,
-                timestamp: xxx,
-                flagTimestamp: 1711891326
+                timestamp: 2024-08-31T11:35:41Z,
+                flagTimestamp: 2024-09-15T10:05:24Z,
+                assetDefinitionId: 'assetName#assetDomain',
+                sourcePeerId: 'wonderland'
             },
             {
                 id: '127.0.0.1-127.0.0.1',
@@ -106,8 +111,10 @@ A `GET` request to the endpoint with the `Authorization` header specified.
                 isPrivileged: false,
                 peerId: 'test',
                 flagger: 'admin@test',
-                timestamp: xxx,
-                flagTimestamp: 1711977724
+                timestamp: 2024-08-30T17:07:33Z,
+                flagTimestamp: 2024-09-15T10:05:24Z,
+                assetDefinitionId: 'assetName#assetDomain',
+                sourcePeerId: 'wonderland'
             }
         ],
         details: {
