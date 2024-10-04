@@ -5,7 +5,7 @@ To use all of the features that FIB has to offer through either API endpoints or
 To register a new account, perform the following steps:
 
 1. Go to the [Fraud Intelligence Blockchain website](https://app.fraudintelligencelimited.com) and select **Sign up**.
-2. On the **Account details** screen that appears, select the following:
+2. On the **Account details** screen that appears, specify the following:
    - **Company details**:
      - **Company name** — full legal name of the business that the account is associated with.
      - **Operating country** — the country of operation of the business that the account is associated with.\

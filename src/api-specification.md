@@ -6,8 +6,6 @@ The following FIB API endpoints are available for implementation into the code o
    - [Authorizing a user in the system](./api-specification/auth-controller/authorizing-a-user-in-the-system.md)
    - [Refreshing authentication tokens](./api-specification/auth-controller/refreshing-authentication-tokens.md)
    - [Logging a user out of the system](./api-specification/auth-controller/logging-a-user-out-of-the-system.md)
-   - [Toggling 2FA](./api-specification/auth-controller/toggling-2fa.md)
-   - [Confirming 2FA](./api-specification/auth-controller/confirming-2fa.md)
 2. `wallet-controller`
    - [Retrieving tokens balance](./api-specification/wallet-controller/retrieving-token-balance.md)
 3. `peer-controller`

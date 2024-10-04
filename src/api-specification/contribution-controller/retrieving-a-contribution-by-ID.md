@@ -97,7 +97,7 @@ For a detailed breakdown of every field and value in the body of a response, see
 
 ::: warning
 
-Starting with FIB 1.3.1, expired contributions are no longer retrieved by ID.
+Starting with version 1.3.1, expired contributions are no longer retrieved by ID.
 
 :::
 

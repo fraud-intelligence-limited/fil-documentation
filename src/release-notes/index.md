@@ -32,22 +32,12 @@ next: false
 
 - Multiple updates to the FIB Web App UI, including:
   - Added shortcuts for convenient timespans (e.g., one week, one month, etc.) when selecting a date or range of dates.
-  - Made the process of removing records selected for upload straightforward and convenient.
   - Error messages are expanded with details and are more explicit now.
+  - When uploading fraud data, it is now possible to easily remove entries from the upload list.
   - When downloading fraud data, the result now contains exhaustive filter values.
   - Various text improvements throughout the UI.
 
 ### API Changes
-
-- Added the `auth-controller`: **Toggling 2FA** operation.
-
-  > Documented here:\
-  > [API Specification > Logging a user out of the system](../api-specification/auth-controller/toggling-2fa.md) — new topic.
-
-- Added the `auth-controller`: **Confirming 2FA** operation.
-
-  > Documented here:\
-  > [API Specification > Logging a user out of the system](../api-specification/auth-controller/confirming-2fa.md) — new topic.
 
 - Updated the `peer-controller`: **Retrieving contributions** operation: the `self-only` parameter removed, functionality moved to the `fetch-mode` parameter; added new `assetDefinitionId` and `sourcePeerId` fields.
 
