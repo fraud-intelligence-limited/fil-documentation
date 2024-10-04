@@ -12,6 +12,14 @@ A peer or its user that has contributed at least a single fraud event is conside
 
 Once a contribution has been submitted, the peer’s list of contributions is updated, and their [token balance](tokenomics.md#token-balance) is increased by an amount equal to the number of contributions submitted based on the current reward rate active in the network.
 
+When preparing a contribution for upload, the contributor must specify, whether they are the original source of the fraud event data. To do so, they must leave the `sourcePeerId` value empty. However, in cases when the original source differs from the uploader, the `sourcePeerId` value must be the `peerId` of that specific user on the network.
+
+::: tip NOTE
+
+The original source of the fraud event data must be specified in accordance with intercompany agreements between the telco and vendor companies registered on the network.
+
+:::
+
 For complete instructions on how to submit a contribution, see [Submitting a contribution](../tutorials-api/submitting-a-contribution.md).
 
 For information on the token balance and rewards, see [Tokenomics](./tokenomics.md).
@@ -71,5 +79,7 @@ When [assembling a contribution](../api-specification/contribution-controller/as
 | `fraudType` | `string(enum)` | The [type of the fraud event](fraud-events.md#types-of-fraud-events). <br> Can be one of the following: <ol><li>`Wangiri`</li><li>`IRSF`</li><li>`StolenDevice`</li><li>`IPFraud`</li><li>`SMSA2P`</li></ol> |
 | `origination` | `string` | The two-letter code of the country the fraud event originated from (Alpha-2, [ISO 3166](https://www.iso.org/iso-3166-country-codes.html)). |
 | `destination` | `string` | The two-letter code of the country the fraud event was identified as such (Alpha-2, [ISO 3166](https://www.iso.org/iso-3166-country-codes.html)). |
+| `assetDefinitionId` | `string` | The unique identifier of a contribution record on the blockchain network. |
+| `sourcePeerId` | `string` | The unique identifier of the original source that contributed the data. May be different from the `peerID`. <br> For details, see [Tokenomics: Reward split](./tokenomics.md#reward-split). |
 
 :::

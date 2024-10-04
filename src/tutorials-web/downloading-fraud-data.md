@@ -5,18 +5,18 @@ To download fraud event data via FIB Web App, perform the following steps:
 1. On the [Dashboard](../overview/web-interface.md#dashboard) screen, select **Download fraud data** from the [Download](../overview/web-interface.md#download) tab.
 2. On the **Download fraud data** screen that appears, specify the following information about the fraud event:
 
-   - **Select fraud data** — select the fraud [type of the fraud events](../overview/fraud-events.md#types-of-fraud-events) that you wish to download.\
+   - **Fraud data** — select the fraud [type of the fraud events](../overview/fraud-events.md#types-of-fraud-events) that you wish to download.\
      Multiple fraud types can be selected.
-   - **Select origination countries** — select the countries where the fraud events originated from.\
+   - **Origination countries** — select the countries where the fraud events originated from.\
      Either all or specific countries can be selected.
-   - **Select destination countries** — select the countries where the fraud event was identified as such.\
+   - **Destination countries** — select the countries where the fraud event was identified as such.\
      Either all or specific countries can be selected.
    - **Scope of data novelty** — select the kind of fraud events in terms of how they relate to your account.\
      Can be one of the following:
      - **Any** — all fraud events.
      - **Only old** — fraud events that either have already been downloaded or have been uploaded by your account.
      - **Only new** — fraud events that have not been downloaded previously.
-   - **Select the date range** — if necessary, specify the timeframe that the requested fraud events are filtered by either as a predetermined time period (e.g., last week, last month) or a custom one.
+   - **Date range** — if necessary, specify the timeframe that the requested fraud events are filtered by either as a predetermined time period (e.g., last week, last month) or a custom one.
 
      ::: info
 
