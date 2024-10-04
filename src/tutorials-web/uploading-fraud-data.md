@@ -8,7 +8,7 @@ To upload fraud event data via FIB Web App, perform the following steps:
 
    ::: info FORMAT
 
-   `Fraud type`, `Fraud Identifier` (Number or range of numbers), `Origination country two-letter code` ([ISO 3166](https://www.iso.org/iso-3166-country-codes.html), Alpha-2), `Destination country two-letter code` ([ISO 3166](https://www.iso.org/iso-3166-country-codes.html), Alpha-2), `Original source of the data` (`accountId` of the peer)
+   `Fraud type`, `Fraud Identifier` (Number or range of numbers), `Origination country two-letter code` ([ISO 3166](https://www.iso.org/iso-3166-country-codes.html), Alpha-2), `Destination country two-letter code` ([ISO 3166](https://www.iso.org/iso-3166-country-codes.html), Alpha-2), `Original source of the data` (`peerId` of the peer)
 
    > **Example**: StolenDevice, 298385762738475, GB, US
 

@@ -26,7 +26,7 @@
     fraudType: 'string',
     origination: 'string',
     destination: 'string'
-    sourcePeerId: 'accountDomain'
+    sourcePeerId: 'string'
   }
 ]
 ```
