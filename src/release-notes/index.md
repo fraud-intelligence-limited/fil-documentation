@@ -6,7 +6,7 @@ next: false
 
 # Release Notes
 
-test еуые test
+test еуые test test
 
 ## Version 1.3.1 (YYYY-MM-DD)
 
