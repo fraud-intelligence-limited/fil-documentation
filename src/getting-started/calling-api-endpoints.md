@@ -14,7 +14,7 @@ The provided FIB [API endpoints](../api-specification.md) allow users to access 
 
 For examples of scenarios where FIB API endpoints are being called, check out the topics in the [Tutorials: API](../tutorials-api.md) section.
 
-::: tip Note
+::: tip NOTE
 
 Certain API requests require the use of either your [**Authorization** key pair](../overview/web-interface.md#authorization-key-pair) or [**Blockchain** key pair](../overview/web-interface.md#blockchain-key-pair).
 

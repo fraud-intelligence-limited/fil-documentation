@@ -79,7 +79,7 @@ A `GET` request to the endpoint with the `{id}` parameter and `Authorization` he
         isPrivileged: false,
         peerId: 'soramitsu',
         flagger: null,
-        timestamp: 1711570471,
+        timestamp: 2024-08-31T11:35:41Z,
         flagTimestamp: null
       }
     }
@@ -92,6 +92,12 @@ A `GET` request to the endpoint with the `{id}` parameter and `Authorization` he
 ::: info
 
 For a detailed breakdown of every field and value in the body of a response, see [Contributions: Retrieving contributions](../../overview/contributions.md#retrieving-contributions).
+
+:::
+
+::: warning
+
+Starting with version 1.3.1, expired contributions are no longer retrieved by ID.
 
 :::
 

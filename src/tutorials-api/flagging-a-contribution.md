@@ -1,6 +1,6 @@
 # Flagging a contribution
 
-::: tip Note
+::: tip NOTE
 
 A peer account must be authorized for this operation to succeed. _See [Authorizing an account](authorizing-an-account.md)_.
 
@@ -70,7 +70,7 @@ To flag a contribution, perform the following steps:
            isPrivileged: false,
            peerId: 'soramitsu',
            flagger: null,
-           timestamp: 1711570471,
+           timestamp: 2024-08-31T11:35:41Z,
            flagTimestamp: null
          }
        }
@@ -80,7 +80,7 @@ To flag a contribution, perform the following steps:
 
    :::
 
-   ::: tip Note
+   ::: tip NOTE
 
    If the `{id}` corresponds to a phone number or an IP address, it can be represented as a single value.
 
@@ -194,7 +194,7 @@ For details, see the following:
 - [Contributions: API data structures](../overview/contributions.md#api-data-structures)
 - [Fraud Events: Fraud event data model](../overview/fraud-events.md#fraud-event-data-model)
 
-::: tip Note
+::: tip NOTE
 
 Flagging a contribution uploaded by the same peer does not provide token rewards.
 

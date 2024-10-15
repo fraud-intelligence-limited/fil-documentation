@@ -29,7 +29,7 @@
 
 :::
 
-::: tip Note
+::: tip NOTE
 
 The `transactionHex` string retrieved when [assembling a contribution](assembling-a-contribution.md) must first be [signed](../../tutorials-api/signing-transactions.md) before submitting this request.
 

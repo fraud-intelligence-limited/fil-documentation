@@ -6,9 +6,9 @@ To upload fraud event data via FIB Web App, perform the following steps:
 2. On the **Upload fraud data** screen that appears, select **Add data**.
 3. In the **Add data** window that appears, enter information about the fraud event that you wish to upload in the following format:
 
-   ::: info Format
+   ::: info FORMAT
 
-   `Fraud type`, `Fraud Identifier` (Number or range of numbers), `Origination country two-letter code` ([ISO 3166](https://www.iso.org/iso-3166-country-codes.html), Alpha-2), `Destination country two-letter code` ([ISO 3166](https://www.iso.org/iso-3166-country-codes.html), Alpha-2)
+   `Fraud type`, `Fraud Identifier` (Number or range of numbers), `Origination country two-letter code` ([ISO 3166](https://www.iso.org/iso-3166-country-codes.html), Alpha-2), `Destination country two-letter code` ([ISO 3166](https://www.iso.org/iso-3166-country-codes.html), Alpha-2), `Original source of the data` (`peerId` of the peer)
 
    > **Example**: StolenDevice, 298385762738475, GB, US
 
@@ -22,7 +22,7 @@ To upload fraud event data via FIB Web App, perform the following steps:
 
    :::
 
-   ::: tip Note
+   ::: tip NOTE
 
    For the list of all Alpha-2 country codes, see [ISO.ORG: Online Browsing Platform](https://www.iso.org/obp/ui/#search/code/).
 
@@ -30,11 +30,13 @@ To upload fraud event data via FIB Web App, perform the following steps:
 
    ![Upload fraud data](../img/s-upload.png){data-zoomable .mini}
 
-4. When ready, select **Upload**.
+4. When ready, select **Add data**.
+5. On the **Upload fraud data** screen that you are returned to, review the fraud data you added for any mistakes and/or typos.
+6. When ready, select **Upload**.
 
-::: tip Note
+::: tip NOTE
 
-If you are uploading several individual fraud identifiers, each entry must start from a new line.
+If you upload several individual fraud identifiers, each entry must start on a new line.
 
 A single fraud event data submission can contain up to `500` entries.
 
