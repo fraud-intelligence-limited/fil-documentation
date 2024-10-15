@@ -5,7 +5,7 @@ To use all of the features that FIB has to offer through either API endpoints or
 To register a new account, perform the following steps:
 
 1. Go to the [Fraud Intelligence Blockchain website](https://app.fraudintelligencelimited.com) and select **Sign up**.
-2. On the **Account details** screen that appears, select the following:
+2. On the **Account details** screen that appears, specify the following:
    - **Company details**:
      - **Company name** — full legal name of the business that the account is associated with.
      - **Operating country** — the country of operation of the business that the account is associated with.\
@@ -27,7 +27,7 @@ To register a new account, perform the following steps:
    - **Password** — a unique combination of symbols that will be used to log in to your account via the Web App.
    - **Repeat password** — same as **Password**; must be entered to ensure that no typos were entered the first time.
 
-   ::: tip Note
+   ::: tip NOTE
 
    Your password must adhere to the following rules:
 
@@ -58,7 +58,7 @@ Upon completing the steps, the **Account successfully created** notification app
 
 As soon as your application is approved, you receive an email notifying you that you have become a peer in the FIB network and, depending on the chosen access method, you can access the FIB functionality via Web App and/or API endpoints.
 
-::: tip What's next?
+::: tip WHAT'S NEXT?
 
 For Web App tutorials, see [Tutorials: Web interface](../tutorials-web.md).
 
@@ -75,8 +75,22 @@ If you have forgotten the password on your account, you can reset it by performi
 1. Go to the [Fraud Intelligence Blockchain website](https://app.fraudintelligencelimited.com) and select **Forgot password?**.
 2. On the **Forgot password?** screen that appears, enter the email address that you registered with in the **Your email** field, then select **Send link**.
 3. Check your email inbox for a message from FIB with instructions on how to reset your password.
-4. Follow the instructions from the received email.
+4. Follow instructions from the received email.
 
 ### Expected Result
 
 Once you have reset your password, you can log in to your FIB account using your new password.
+
+## Setting 2FA
+
+To enable Two-Factor Authentication (2FA) on your account, perform the following steps:
+
+1. Go to the [Fraud Intelligence Blockchain website](https://app.fraudintelligencelimited.com) and log in to your account.
+2. Go to the [Profile](../overview/web-interface.md#profile) screen.
+3. Turn on the **Two-Factor Authentication (email)** toggle switch.
+4. Check your email inbox for a message from FIB with a link that enables 2FA.
+5. Open the link from the email, then follow the on-screen prompts on the webpage that appears.
+
+### Expected Result
+
+2FA is now enabled on your account. From now on, during account authentication you must enter a one-time password (OTP) that is sent to your registered email address. This OTP is valid for a single login session and will expire after a short period of time.

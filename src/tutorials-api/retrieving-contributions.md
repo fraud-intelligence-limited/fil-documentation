@@ -1,6 +1,6 @@
 # Retrieving contributions
 
-::: tip Note
+::: tip NOTE
 
 A peer account must be authorized for this operation to succeed. _See [Authorizing an account](authorizing-an-account.md)_.
 
@@ -34,6 +34,9 @@ GET /api/v1/contribution-management/contribution?size=''&from=''&to=''&ft=''&org
 
 // org
 /api/v1/contribution-management/contribution?org=US
+
+// dst
+/api/v1/contribution-management/contribution?dst=GA
 
 // self-only
 /api/v1/contribution-management/contribution?self-only=true
@@ -73,7 +76,9 @@ The response to the `GET` request contains a list of the contributions, filtered
           isPrivileged: boolean,
           peerId: 'string',
           flagger: 'string',
-          timestamp: integer($int32)
+          timestamp: integer($int32),
+          assetDefinitionId: 'assetName#assetDomain',
+          sourcePeerId: 'accountDomain'
         }
     ],
     details: {
@@ -110,8 +115,10 @@ The response to the `GET` request contains a list of the contributions, filtered
         isPrivileged: false,
         peerId: 'test',
         flagger: 'admin@test',
-        timestamp: 1700854291,
-        flagTimestamp: 1711891326
+        timestamp: 2024-08-31T11:35:41Z,
+        flagTimestamp: 2024-09-15T10:05:24Z,
+        assetDefinitionId: 'assetName#assetDomain',
+        sourcePeerId: 'wonderland'
       },
       {
         id: '127.0.0.1-127.0.0.1',
@@ -124,8 +131,10 @@ The response to the `GET` request contains a list of the contributions, filtered
         isPrivileged: false,
         peerId: 'test',
         flagger: 'admin@test',
-        timestamp: 1700267392,
-        flagTimestamp: 1711977724
+        timestamp: 2024-08-30T17:07:33Z,
+        flagTimestamp: 2024-09-15T10:05:24Z,
+        assetDefinitionId: 'assetName#assetDomain',
+        sourcePeerId: 'wonderland'
       }
     ],
     details: {

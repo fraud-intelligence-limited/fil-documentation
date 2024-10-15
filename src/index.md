@@ -31,6 +31,8 @@ Finally, the [API Specification](./api-specification.md) section provides techni
 
 Check out the [Iroha 2 Documentation](https://docs.iroha.tech/) as it provides an introduction to Iroha 2 as well as language-specific guides for [Bash](https://docs.iroha.tech/guide/get-started/bash.html), [Python](https://docs.iroha.tech/guide/get-started/python.html), [Rust](https://docs.iroha.tech/guide/get-started/rust.html), [Kotlin/Java](https://docs.iroha.tech/guide/get-started/kotlin-java.html), and [Javascript/TypeScript](https://docs.iroha.tech/guide/get-started/javascript.html).
 
+<!-- TODO: Update links once the Iroha 2 docs are updated to the MVP version-->
+
 ## Getting help
 
 If you experience any issues at any point, please submit them at [Fraud Intelligence Blockchain Freshdesk](https://fraudintelligenceblockchain.freshdesk.com). Upon review, a member of our team will contact you to resolve the issue.
