@@ -6,6 +6,8 @@ next: false
 
 # Release Notes
 
+test
+
 ## Version 1.3.1 (YYYY-MM-DD)
 
 ### Main Changes
