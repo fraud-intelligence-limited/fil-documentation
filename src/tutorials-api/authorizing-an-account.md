@@ -26,7 +26,7 @@ POST /auth/api/v1/authentication-management/session
 
 :::
 
-::: tip Note
+::: tip NOTE
 
 For instructions on how to generate the `signature` string, see [Signing user email addresses](/tutorials-api/signing-user-email-addresses.md).
 
@@ -42,7 +42,7 @@ If authorization is successful, a response with the following JSON web tokens is
 | --- | --- | --- |
 | `accessToken` | `string` | The access token, which is later used in headers of other requests as a bearer token. |
 | `refreshToken` | `string` | The refresh token. |
-| `expirationTime` | `integer($int64)` | The exact time until which the event is considered relevant (represented as [Unix Epoch time](https://www.epochconverter.com/clock) in seconds). |
+| `expirationTime` | `integer($int64)` | The exact time until which the event is considered relevant (ISO 8601: `YYYY-MM-DDTHH:MM:SSZ`) in seconds). |
 
 ::: code-group Data structure
 

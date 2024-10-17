@@ -26,6 +26,7 @@
     fraudType: 'string',
     origination: 'string',
     destination: 'string'
+    sourcePeerId: 'string'
   }
 ]
 ```
@@ -37,9 +38,16 @@
     fraudType: 'IPFraud',
     origination: 'SE',
     destination: 'GB'
+    sourcePeerId: 'wonderland'
   }
 ]
 ```
+
+::: info
+
+The `sourcePeerId` value must be a registered peer identifier (`accountDomain`), otherwise an error is returned.
+
+:::
 
 :::
 
@@ -49,7 +57,7 @@ For a detailed breakdown of every field and value in the body of a request, see 
 
 :::
 
-::: tip Note
+::: tip NOTE
 
 This endpoint accepts requests with up to `500` entries.
 

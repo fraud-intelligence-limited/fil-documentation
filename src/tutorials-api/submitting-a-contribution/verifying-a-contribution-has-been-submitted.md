@@ -67,8 +67,8 @@ To verify that a contribution has been successfully submitted and the contributo
            isPrivileged: false,
            peerId: 'test',
            flagger: null,
-           timestamp: 1710045191,
-           flagTimestamp: 1711891326
+           timestamp: 2024-08-31T11:35:41Z,
+           flagTimestamp: 2024-09-15T10:05:24Z
          },
          {
            id: '127.0.0.1-127.0.0.1',
@@ -81,8 +81,8 @@ To verify that a contribution has been successfully submitted and the contributo
            isPrivileged: false,
            peerId: 'test',
            flagger: 'alice@mail.com',
-           timestamp: 1710009124,
-           flagTimestamp: 1711977724
+           timestamp: 2024-08-30T17:07:33Z,
+           flagTimestamp: 2024-09-15T10:05:24Z
          }
        ],
        details: {
