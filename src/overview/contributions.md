@@ -73,7 +73,6 @@ When [assembling a contribution](../api-specification/contribution-controller/as
 | `fraudType` | `string(enum)` | The [type of the fraud event](fraud-events.md#types-of-fraud-events). <br> Can be one of the following: <ol><li>`Wangiri`</li><li>`IRSF`</li><li>`StolenDevice`</li><li>`IPFraud`</li><li>`SMSA2P`</li></ol> |
 | `origination` | `string` | The two-letter code of the country the fraud event originated from (Alpha-2, [ISO 3166](https://www.iso.org/iso-3166-country-codes.html)). |
 | `destination` | `string` | The two-letter code of the country the fraud event was identified as such (Alpha-2, [ISO 3166](https://www.iso.org/iso-3166-country-codes.html)). |
-| `assetDefinitionId` | `string` | The unique identifier of a contribution record on the blockchain network. |
-| `sourcePeerId` | `string` | The unique identifier of the original source that contributed the data. May be different from the `peerID`. <br> For details, see [Tokenomics: Reward split](./tokenomics.md#reward-split). |
+| `sourcePeerId` | `string` | The unique identifier of the original source that contributed the data. May be different from the `peerID` and is an optional field. <br> For details, see [Tokenomics: Reward split](./tokenomics.md#reward-split). |
 
 :::
