@@ -7,6 +7,8 @@ All users should start with the [Registering an account](getting-started/registe
 For users willing to interact with the FIB network via FIB API, it is advised to read the following **Getting started** topics in the order that they are presented:
 
 1. [Registering an account](getting-started/registering-an-account.md)
+   - [Restoring access to an account](getting-started/registering-an-account.md#restoring-access-to-an-account)
+   - [Setting 2FA](getting-started/registering-an-account.md#setting-2fa)
 2. [Checking API availability](getting-started/checking-api-availability.md)
 3. [Calling API endpoints](getting-started/calling-api-endpoints.md)
 4. [Public test environment](getting-started/public-test-environment.md)

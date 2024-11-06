@@ -85,10 +85,22 @@ When assigning a contribution with a confidence index value, FIB considers many 
 
 The confidence index value inherently affects the price of downloading the fraud event data. By default, users download fraud event data in accordance with the [current conversion rate](#current-conversion-rate). However, when [retrieving contributions](../api-specification/contribution-controller/retrieving-contributions.md) (see the `confidence-score` parameter) a user can specify whether they want the price of the retrieved contributions to be calculated in accordance with the confidence index. If enabled, the price of any given contribution might rise above the [current conversion rate](#current-conversion-rate).
 
-::: tip Note
+::: tip NOTE
 
 As new fraud event data is uploaded to the blockchain, the confidence index value for any given contribution is constantly updated.
 
 Contributions with a set confidence index value can be downloaded repeatedly with no extra charge to the user's token balance, even if the value has changed since the first retrieval.
+
+:::
+
+## Reward split
+
+Token rewards for uploading contributions can be split between the original source of the fraud data and the actual uploader of that data. This allows for a more equitable distribution of rewards, acknowledging the value of both the original data source and the uploader's efforts.
+
+Contribution records include the optional `sourcePeerId` field, and upon contribution upload, the system now checks if a `sourcePeerId` value is specified. If it is, the reward is split in a `1:9` ratio if favor of the source. If it is not, the reward is allocated to the single uploader in full.
+
+::: tip NOTE
+
+Any contribution that has its reward split between the uploader and the original source is considered to be owned by both parties, i.e., they have unrestricted access to the data upon upload.
 
 :::

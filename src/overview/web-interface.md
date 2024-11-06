@@ -62,6 +62,14 @@ This area displays the following information about the authorized account:
 - Phone number;
 - Email address.
 
+### Two-Factor Authentication (email)
+
+This toggle switch allows you to enable/disable the Two-Factor Authentication (2FA) on the authorized account.
+
+See the following related tutorial:
+
+- [Setting 2FA](../getting-started/registering-an-account.md#setting-2fa)
+
 ### Balance
 
 This area displays the current token balance on the authorized account, the current status of the [monthly reward limit](tokenomics.md#monthly-reward-limit), as well as the timer until the next limit reset.

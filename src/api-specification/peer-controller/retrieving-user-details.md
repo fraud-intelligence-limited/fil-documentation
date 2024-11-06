@@ -46,9 +46,9 @@ A `GET` request to the endpoint with the `Authorization` header specified.
     peerConnectionType: 'string(enum)',
     peerGroup: 'string',
     peerIsPrivileged: boolean,
-    registrationDate: 'string', //ISO 8601
+    registrationDate: 'string', //ISO 8601: YYYY-MM-DDTHH:MM:SSZ
     subscriptionType: 'string(enum)', //'TRIAL' OR 'FREEMIUM' OR 'PREMIUM'
-    subscriptionExpiryDate: 'string' //ISO 8601
+    subscriptionExpiryDate: 'string' //ISO 8601: YYYY-MM-DDTHH:MM:SSZ
   }
 }
 ```
