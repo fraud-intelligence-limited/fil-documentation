@@ -4,13 +4,13 @@ This topic provides a summary of the key financial concepts that are operational
 
 ## Subscription types
 
-FIB provides its users with the following two types of subscription:
+FIB provides its users with the following two types of subscriptions:
 
 #### Freemium
 
 Pay-per-use model that allows its users to earn and spend internal digital credits, called **tokens**.
 
-Tokens can be earned by [uploading fraud events](#uploading-fraud-events) and spent on [downloading fraud events](#downloading-fraud-events).
+Tokens can be earned by [uploading fraud events](#uploading-fraud-events) and [flagging fraud events](#flagging-fraud-events) and spent on [downloading fraud events](#downloading-fraud-events).
 
 Freemium subscription is available for all registered FIB users and applies all of the rules described in this documentation.
 
@@ -30,6 +30,15 @@ See the following related tutorials:
 
 - [Tutorials: Web App > Uploading fraud data](../tutorials-web/uploading-fraud-data.md)
 - [Tutorials: API > Submitting a contribution](../tutorials-api/submitting-a-contribution.md)
+
+## Flagging fraud events
+
+If a peer concludes that a specific contribution is irrelevant, such as being identified as a "false positive," they can flag it. Credits are added to the peer's balance when a contribution is flagged.
+
+See the following related tutorials:
+
+- [Tutorials: Web App > Flagging fraud data](../tutorials-web/flagging-fraud-data.md)
+- [Tutorials: API > Flagging a contribution](../tutorials-api/flagging-a-contribution.md)
 
 ## Downloading fraud events
 
@@ -53,8 +62,11 @@ A user can check their current token balance in any of the following two ways:
 
 ## Current conversion rate
 
-- **Uploading fraud events**: `10` tokens per `id` fraud identifier.
-- **Downloading fraud events**: `1` token per `id` fraud identifier.
+| **Activity**              | **Reward**                     | **Cost**                     |
+|---------------------------|---------------------------------|------------------------------|
+| **Uploading fraud events** | `10` tokens per `id` fraud identifier. | -                            |
+| **Flagging fraud events**  | `10` tokens per `id` fraud identifier. | -                            |
+| **Downloading fraud events** | -                            | `1` token per `id` fraud identifier. |
 
 ## Welcome bonus
 
