@@ -4,7 +4,7 @@ This topic provides a summary of the key financial concepts that are operational
 
 ## Subscription types
 
-FIB provides its users with the following two types of subscriptions:
+FIB provides its users with the following two types of subscription:
 
 #### Freemium
 
@@ -62,11 +62,11 @@ A user can check their current token balance in any of the following two ways:
 
 ## Current conversion rate
 
-| **Activity**              | **Reward**                     | **Cost**                     |
-|---------------------------|---------------------------------|------------------------------|
-| **Uploading fraud events** | `10` tokens per `id` fraud identifier. | -                            |
-| **Flagging fraud events**  | `10` tokens per `id` fraud identifier. | -                            |
-| **Downloading fraud events** | -                            | `1` token per `id` fraud identifier. |
+| **Activity**                | **Reward**                             | **Cost**                             |
+|-----------------------------|----------------------------------------|--------------------------------------|
+| **Uploading fraud events**  | `10` tokens per `id` fraud identifier. | -                                    |
+| **Flagging fraud events**   | `10` tokens per `id` fraud identifier. | -                                    |
+| **Downloading fraud events**| -                                      | `1` token per `id` fraud identifier. |
 
 ## Welcome bonus
 
