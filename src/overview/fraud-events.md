@@ -13,6 +13,8 @@ Any given fraud event can be of one of the following types:
 - `StolenDevice` — any fraud that involves a stolen device; these are usually reported either by customers or law enforcement.
 - `IPFraud` — any fraud that involves a specific IP address; these are usually detected by means of behavioral analysis, geolocation checks, and overall action velocity of any given IP address.
 - `SMSA2P` — type of fraud that utilizes the rerouting of SMS through SIM boxes, disguising them as legitimate messages; these are regularly spotted manually by operators monitoring traffic patterns, contents and sending rates of any given phone number.
+- `Flash Calling` — a type of fraud that exploits missed call notifications from unknown numbers to verify users or trigger callbacks, often bypassing traditional verification methods and monitoring through traffic analysis and call patterns.
+- `Scam` — a type of fraud that deceives users through social engineering tactics, such as phishing calls, messages, or emails, often using phone numbers, email addresses, or URLs to steal sensitive information or money, typically identified by analyzing unusual transaction patterns and user reports.
 
 ## Fraud event data model
 
