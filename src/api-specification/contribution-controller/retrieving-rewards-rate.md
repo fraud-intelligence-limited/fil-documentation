@@ -36,6 +36,8 @@ A `GET` request to the endpoint with the `Authorization` header specified.
                 IRSF: integer($int64)
                 StolenDevice: integer($int64)
                 IPFraud: integer($int64)
+                FlashCall: integer($int64)
+                Scam: integer($int64)
             },
             MEDIUM_TELCO: {
                 Wangiri: integer($int64)
@@ -43,6 +45,8 @@ A `GET` request to the endpoint with the `Authorization` header specified.
                 IRSF: integer($int64)
                 StolenDevice: integer($int64)
                 IPFraud" integer($int64)
+                FlashCall: integer($int64)
+                Scam: integer($int64)
             },
             SMALL_TELCO: {
                 Wangiri: integer($int64)
@@ -50,6 +54,8 @@ A `GET` request to the endpoint with the `Authorization` header specified.
                 IRSF: integer($int64)
                 StolenDevice: integer($int64)
                 IPFraud: integer($int64)
+                FlashCall: integer($int64)
+                Scam: integer($int64)
             },
             VENDOR: {
                 Wangiri: integer($int64)
@@ -57,6 +63,8 @@ A `GET` request to the endpoint with the `Authorization` header specified.
                 IRSF: integer($int64)
                 StolenDevice: integer($int64)
                 IPFraud: integer($int64)
+                FlashCall: integer($int64)
+                Scam: integer($int64)
             }
         }
     }
@@ -77,27 +85,35 @@ A `GET` request to the endpoint with the `Authorization` header specified.
         IRSF: 30,
         StolenDevice: 40,
         IPFraud: 50
+        FlashCall: 60,
+        Scam: 70,
       },
       MEDIUM_TELCO: {
-        Wangiri: 60,
-        SMSA2P: 70,
-        IRSF: 80,
-        StolenDevice: 90,
-        IPFraud: 100
+        Wangiri: 80,
+        SMSA2P: 90,
+        IRSF: 100,
+        StolenDevice: 110,
+        IPFraud: 120
+        FlashCall: 130,
+        Scam: 140,
       },
       SMALL_TELCO: {
-        Wangiri: 110,
-        SMSA2P: 120,
-        IRSF: 130,
-        StolenDevice: 140,
-        IPFraud: 150
+        Wangiri: 150,
+        SMSA2P: 160,
+        IRSF: 170,
+        StolenDevice: 180,
+        IPFraud: 190
+        FlashCall: 200,
+        Scam: 210,
       },
       VENDOR: {
-        Wangiri: 160,
-        SMSA2P: 170,
-        IRSF: 180,
-        StolenDevice: 190,
-        IPFraud: 200
+        Wangiri: 220,
+        SMSA2P: 230,
+        IRSF: 240,
+        StolenDevice: 250,
+        IPFraud: 260
+        FlashCall: 270,
+        Scam: 280,
       }
     }
   }
