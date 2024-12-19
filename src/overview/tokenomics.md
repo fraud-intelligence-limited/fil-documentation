@@ -12,7 +12,7 @@ Pay-per-use model that allows its users to earn and spend internal digital credi
 
 Tokens can be earned by [uploading fraud events](#uploading-fraud-events) and [flagging fraud events](#flagging-fraud-events) and spent on [downloading fraud events](#downloading-fraud-events).
 
-Freemium subscription is available for all registered FIB users and applies all of the rules described in this documentation.
+Freemium subscription is available for all registered FIB users and applies all of the rules described in this documentation. Bla-bla
 
 #### Premium
 
