@@ -72,6 +72,7 @@ A user can check their current token balance in any of the following two ways:
 
 Every new user that has successfully registered with FIB, automatically receives a `1,000` tokens bonus.
 
+
 ## Monthly reward limit
 
 The monthly reward limit is currently `1,000,000,000` tokens per peer.
