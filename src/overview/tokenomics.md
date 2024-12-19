@@ -12,7 +12,7 @@ Pay-per-use model that allows its users to earn and spend internal digital credi
 
 Tokens can be earned by [uploading fraud events](#uploading-fraud-events) and [flagging fraud events](#flagging-fraud-events) and spent on [downloading fraud events](#downloading-fraud-events).
 
-Freemium subscription is available for all registered FIB users and applies all of the rules described in this documentation. Bla-bla
+Freemium subscription is available for all registered FIB users and applies all of the rules described in this documentation.
 
 #### Premium
 
@@ -71,7 +71,6 @@ A user can check their current token balance in any of the following two ways:
 ## Welcome bonus
 
 Every new user that has successfully registered with FIB, automatically receives a `1,000` tokens bonus.
-
 
 ## Monthly reward limit
 
