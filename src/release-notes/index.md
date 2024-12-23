@@ -6,14 +6,14 @@ next: false
 
 # Release Notes
 
-## Version 1.3.2 
+## Version 1.3.2 (2025-01-15)
 
 ### Main Changes
 
 - Added the ability to split rewards for uploaded and flagged contributions based on fraud event data and company type.
-  
+
 - Two new fraud types, FlashCall and Scam, were added.
-  
+
   > Documented here:\
   > [Overview > Fraud events](../overview/fraud-events.md) — [Types of fraud events](../overview/fraud-events.md#types-of-fraud-events).
 

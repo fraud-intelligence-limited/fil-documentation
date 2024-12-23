@@ -62,11 +62,11 @@ A user can check their current token balance in any of the following two ways:
 
 ## Current conversion rate
 
-| **Activity**                | **Reward**                             | **Cost**                             |
-|-----------------------------|----------------------------------------|--------------------------------------|
-| **Uploading fraud events**  | `10` tokens per `id` fraud identifier. | -                                    |
-| **Flagging fraud events**   | `10` tokens per `id` fraud identifier. | -                                    |
-| **Downloading fraud events**| -                                      | `1` token per `id` fraud identifier. |
+|         **Activity**         |              **Reward**               |              **Cost**               |
+|:----------------------------:|:-------------------------------------:|:-----------------------------------:|
+|  **Uploading fraud events**  | `10` tokens per `id` fraud identifier |                  -                  |
+|  **Flagging fraud events**   | `10` tokens per `id` fraud identifier |                  -                  |
+| **Downloading fraud events** |                   -                   | `1` token per `id` fraud identifier |
 
 ## Welcome bonus
 
