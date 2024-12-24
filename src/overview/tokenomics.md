@@ -62,6 +62,7 @@ A user can check their current token balance in any of the following two ways:
 
 ## Current conversion rate
 
+<!-- prettier-ignore -->
 |         **Activity**         |              **Reward**               |              **Cost**               |
 |:----------------------------:|:-------------------------------------:|:-----------------------------------:|
 |  **Uploading fraud events**  | `10` tokens per `id` fraud identifier |                  -                  |
