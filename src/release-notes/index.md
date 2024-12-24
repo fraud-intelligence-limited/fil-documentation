@@ -10,14 +10,14 @@ next: false
 
 ### Main Changes
 
-- Added the ability to split rewards for uploaded and flagged contributions based on fraud event data and company type.
+- Rewards for uploading and flagging contributions based on the fraud event data and the peer company type are now being managed separately.
 
 - Two new fraud types, FlashCall and Scam, were added.
 
   > Documented here:\
   > [Overview > Fraud events](../overview/fraud-events.md) — [Types of fraud events](../overview/fraud-events.md#types-of-fraud-events).
 
-- Added Maintenance Mode feature that enables tracking of system downtime and temporarily restricts user access to the system to perform technical work, updates, or troubleshooting.
+- Added Maintenance Mode for the entire application that enables convenient tracking of the system downtime and temporarily restricts user access to the system in case of either a planned technical maintenance or a critical error occurrence.
 
 ## Version 1.3.1 (2024-11-06)
 
