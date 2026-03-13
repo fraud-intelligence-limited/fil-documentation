@@ -19,17 +19,11 @@ To submit a contribution, perform the following steps:
    ```json5 [Input structure]
    [
      {
-       id: 'string', //127.0.0.1 OR 127.0.0.1-127.0.0.2 OR +14155552671 OR +14155552671-+14155552672 OR 107615702016566
+       id: 'string', //127.0.0.1 OR 127.0.0.1-127.0.0.2 OR +14155552671 OR +14155552671-+14155552672 OR 107615702016566 OR address@mail.com OR https://www.address.com/
        fraudType: 'string',
        origination: 'string',
        destination: 'string',
-       expiryDate: integer($int32),
-       fraudStatus: "string(enum)", //'ACTIVE' OR 'EXPIRED' OR 'FLAGGED'
-       confidenceIndex: number($double),
-       isPrivileged: boolean,
-       peerId: 'string',
-       flagger: 'string',
-       timestamp: integer($int32)
+       sourcePeerId: 'string' // optional — registered peer identifier
      }
    ]
    ```
@@ -40,14 +34,7 @@ To submit a contribution, perform the following steps:
        id: '129.0.0.1',
        fraudType: 'IPFraud',
        origination: 'SE',
-       destination: 'GB',
-       expiryDate: 1719068894,
-       fraudStatus: 'Active',
-       confidenceIndex: 100,
-       isPrivileged: true,
-       peerId: 'wonderland',
-       flagger: 'alice@wonderland',
-       timestamp: 2024-08-30T17:07:33Z
+       destination: 'GB'
      }
    ]
    ```

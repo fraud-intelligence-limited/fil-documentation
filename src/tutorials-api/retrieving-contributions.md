@@ -19,7 +19,7 @@ To retrieve contributions, send the following request:
 ::: code-group Data structure
 
 ```http [Input structure]
-GET /api/v1/contribution-management/contribution?size=''&from=''&to=''&ft=''&org=''&self-only=''
+GET /api/v1/contribution-management/contribution?size=''&from=''&to=''&ft=''&org=''&dst=''&fetch-mode=''&confidence-score=''
 ```
 
 ```http [Input examples]
@@ -38,14 +38,14 @@ GET /api/v1/contribution-management/contribution?size=''&from=''&to=''&ft=''&org
 // dst
 /api/v1/contribution-management/contribution?dst=GA
 
-// self-only
-/api/v1/contribution-management/contribution?self-only=true
-
 // fetch-mode
-/api/v1/contribution-management/contribution?fetch-mode=new
+/api/v1/contribution-management/contribution?fetch-mode=NEW
+
+// confidence-score
+/api/v1/contribution-management/contribution?confidence-score=true
 
 // combination
-/api/v1/contribution-management/contribution?size=2&ft=StolenDevice&org=US&self-only=true&fetch-mode=new
+/api/v1/contribution-management/contribution?size=2&ft=StolenDevice&org=US&fetch-mode=NEW&confidence-score=true
 ```
 
 :::
@@ -66,7 +66,7 @@ The response to the `GET` request contains a list of the contributions, filtered
   data: {
     contributions: [
         {
-          id: 'string', //127.0.0.1 OR 127.0.0.1-127.0.0.2 OR +14155552671 OR +14155552671-+14155552672 OR 107615702016566
+          id: 'string', //127.0.0.1 OR 127.0.0.1-127.0.0.2 OR +14155552671 OR +14155552671-+14155552672 OR 107615702016566 OR address@mail.com OR https://www.address.com/
           fraudType: 'string',
           origination: 'string',
           destination: 'string',

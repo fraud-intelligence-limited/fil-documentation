@@ -59,7 +59,7 @@ For a detailed breakdown of every field and value in the body of a request, see 
 
 ::: tip NOTE
 
-This endpoint accepts requests with up to `500` entries.
+This endpoint accepts requests with up to `5000` entries.
 
 :::
 
