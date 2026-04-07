@@ -6,6 +6,48 @@ next: false
 
 # Release Notes
 
+## Version 1.5.2 (2026-04-07)
+
+### Main Changes
+
+- Increased the batch contribution limit from 500 to 5,000 entries per request, enabling significantly faster bulk uploads.
+
+  > Documented here:\
+  > [API Specification > Assembling a contribution](../api-specification/contribution-controller/assembling-a-contribution.md)
+
+- Email addresses and URLs are now supported as fraud event identifiers, in addition to phone numbers, IP addresses, and IMEI numbers.
+
+  > Documented here:\
+  > [Overview > Fraud events](../overview/fraud-events.md)
+
+- Added Kosovo (XK) country code support for contribution origination and destination fields.
+
+### API Changes
+
+- The `size` parameter for retrieving contributions no longer defaults to a fixed limit. If not specified, all available contributions are returned.
+
+  > Documented here:\
+  > [API Specification > Retrieving contributions](../api-specification/contribution-controller/retrieving-contributions.md) — `size` parameter description updated.
+
+- The `self-only` parameter has been removed. Use the `fetch-mode` parameter instead, which supports `DEFAULT`, `OLD`, `NEW`, `SELF`, and `DOWNLOAD` modes.
+
+  > Documented here:\
+  > [API Specification > Retrieving contributions](../api-specification/contribution-controller/retrieving-contributions.md) — `fetch-mode` parameter added.\
+  > [Tutorials: API > Retrieving contributions](../tutorials-api/retrieving-contributions.md) — examples updated.
+
+- Added the `confidence-score` parameter to the contribution retrieval endpoint.
+
+- The input structure for assembling contributions has been corrected: response-only fields (`expiryDate`, `fraudStatus`, `confidenceIndex`, `isPrivileged`, `peerId`, `flagger`, `timestamp`) are no longer part of the request body.
+
+  > Documented here:\
+  > [Tutorials: API > Submitting a contribution](../tutorials-api/submitting-a-contribution.md) — input structure and examples updated.
+
+### Other Improvements
+
+- Significant performance improvements to the upload process, resulting in noticeably faster contribution submissions.
+
+- Optimized the contribution retrieval and download operations for large datasets.
+
 ## Version 1.3.2 (2025-01-22)
 
 ### Main Changes
