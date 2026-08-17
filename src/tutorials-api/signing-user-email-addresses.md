@@ -2,129 +2,131 @@
 
 Every API request to [authorize a user in the system](../api-specification/auth-controller/authorizing-a-user-in-the-system.md) requires a signature of the user's email address.
 
-The exact implementation to your system may vary depending on the specific SDK or programming language being used. However, the overall sequence of events to sign a user email address should be the following:
+The signature is a standard Ed25519 signature over the BLAKE2b-256 hash of the email address, encoded as a Hex string:
 
-1. Create a `keyPair` object from the public and private keys of the user's [**Authorization** key pair](../overview/web-interface.md#authorization-key-pair).
-2. Obtain a `signature` of the user's email address.
-3. Encode the `signature` as a Hex string.
-
-The resulting encoded `signature` Hex string can be used as a part of the body for requests to the following endpoint:
-
-> [Authorizing a user in the system](../api-specification/auth-controller/authorizing-a-user-in-the-system.md)
-
-```http
-POST /auth/api/v1/authentication-management/session
+```
+signature = Hex( Ed25519-Sign( authPrivateKey, BLAKE2b-256( UTF-8(email) ) ) )
 ```
 
-## Iroha SDK references
+Any cryptographic library that provides Ed25519 and BLAKE2b-256 can produce it, in any programming language. No blockchain SDK is required.
 
-You can use [any Iroha SDK available](../index.md#what-is-iroha-2) to sign a user's email address. Below are references on how to sign a transaction using the following Iroha SDKs:
+::: warning KEYS TO USE
 
-::: code-group Iroha SDK references
+Sign with the **Authorization** key pair, not with the **Blockchain** one. Both key pairs are shown on the FIB Web App **Profile** screen. For details, see [Web App UI: 'Authorization' key pair](../overview/web-interface.md#akp).
 
-```kotlin [Iroha Java/Kotlin SDK]
-// Your package value
-package something
+If the private key on that screen is 128 characters long, it is the private key followed by the public key. Use its first 64 characters as the private key.
 
+A signature made with the wrong key pair is rejected with a `422` response.
+
+:::
+
+## Examples
+
+The examples below sign the address `alice@wonderland.space` with the [test key pair](#test-vector).
+
+::: code-group
+
+```python [Python]
+# pip install cryptography
+import hashlib
+
+from cryptography.hazmat.primitives.asymmetric.ed25519 import Ed25519PrivateKey
+
+
+def sign_email(email: str, auth_private_key_hex: str) -> str:
+    # A 128-character key is the private key followed by the public key.
+    key = Ed25519PrivateKey.from_private_bytes(bytes.fromhex(auth_private_key_hex[:64]))
+    digest = hashlib.blake2b(email.encode("utf-8"), digest_size=32).digest()
+    return key.sign(digest).hex()
+
+
+print(sign_email(
+    "alice@wonderland.space",
+    "413b285d1819a6166b0daa762bb6bef2d082cffb9a13ce041cb0fda5e2f06dc3",
+))
+# => 57e7115dfb9faa9add2d2ceb321c20db8c1e7f468d2ffc122793fa61e8ed61581580faaeae83a07fe857894bb33defd61c4ba099b981020146fe8d2be00e630a
+```
+
+```js [Node.js]
+// npm install @noble/hashes
+import { createPrivateKey, sign } from 'node:crypto'
+import { blake2b } from '@noble/hashes/blake2b'
+
+// DER header that turns 32 raw key bytes into a PKCS#8 Ed25519 key
+const PKCS8_ED25519_PREFIX = '302e020100300506032b657004220420'
+
+/**
+ * @param {string} email
+ * @param {string} authPrivateKeyHex - a 128-character key is the private key
+ *                                     followed by the public key
+ * @returns {string} - email signature hex
+ */
+function signEmail(email, authPrivateKeyHex) {
+  const key = createPrivateKey({
+    key: Buffer.from(
+      PKCS8_ED25519_PREFIX + authPrivateKeyHex.slice(0, 64),
+      'hex'
+    ),
+    format: 'der',
+    type: 'pkcs8'
+  })
+
+  const digest = Buffer.from(
+    blake2b(new TextEncoder().encode(email), { dkLen: 32 })
+  )
+
+  return sign(null, digest, key).toString('hex')
+}
+
+console.log(
+  signEmail(
+    'alice@wonderland.space',
+    '413b285d1819a6166b0daa762bb6bef2d082cffb9a13ce041cb0fda5e2f06dc3'
+  )
+)
+// => 57e7115dfb9faa9add2d2ceb321c20db8c1e7f468d2ffc122793fa61e8ed61581580faaeae83a07fe857894bb33defd61c4ba099b981020146fe8d2be00e630a
+```
+
+```kotlin [Kotlin/Java]
 // Import dependencies
 import jp.co.soramitsu.iroha2.keyPairFromHex
 import jp.co.soramitsu.iroha2.sign
 import jp.co.soramitsu.iroha2.toHex
 
-class SimpleSigner {
+// The SDK applies the BLAKE2b-256 hash inside `sign`,
+// so the email address is passed to it as raw bytes.
+fun signEmail(
+    email: String,
+    authPublicKeyHex: String,
+    authPrivateKeyHex: String,
+): String {
+    val keyPair = keyPairFromHex(authPublicKeyHex, authPrivateKeyHex)
 
-    fun main(args: Array<String>) {
-        if (args.size != 3) {
-            println("Specify public_key, private_key and text to sign")
-            return
-        }
-
-        // The public key of the user's 'Authorization' key pair
-        val publicKey = args[0]
-
-        // The private key of the user's 'Authorization' key pair
-        val privateKey = args[1]
-
-        // The user's email address
-        val toSign = args[2]
-
-        // Create a `keyPair` object from the Hex string of the public and private keys of the user's 'Authorization' key pair
-        val keyPair = keyPairFromHex(publicKey, privateKey)
-
-        // Obtain a `signature` of the user's email address
-        val signature = keyPair.private.sign(toSign.toByteArray(Charsets.UTF_8)).toHex()
-
-        // Encode the `signature` as a Hex string
-        println("Signed message (Hex): $signature")
-    }
+    return keyPair.private.sign(email.toByteArray(Charsets.UTF_8)).toHex()
 }
-```
-
-```js [Iroha JavaScript SDK]
-// @ts-check
-
-import { crypto } from '@iroha2/crypto-target-node' // version: 1.1.1
-import { freeScope } from '@iroha2/crypto-core' // version: 1.1.1
-
-/**
- * @param {string} publicKeyHex - ed25519 pub key hex
- * @param {string} privateKeyHex - ed25519 private key hex
- * @param {string} email
- * @returns {string} - email signature hex
- */
-function createEmailSignature(publicKeyHex, privateKeyHex, email) {
-  return freeScope(() => {
-    const keyPair = crypto.KeyPair.fromJSON({
-      public_key: 'ed0120' + publicKeyHex,
-      private_key: {
-        digest_function: 'ed25519',
-        payload: privateKeyHex
-      }
-    })
-
-    const hashedEmail = crypto.Hash.hash(
-      'array',
-      new TextEncoder().encode(email)
-    ).bytes()
-
-    return keyPair.sign('array', hashedEmail).payload('hex')
-  })
-}
-
-// example signature
-const signature = createEmailSignature(
-  '7fbedb314a9b0c00caef967ac5cabb982ec45da828a0c58a9aafc854f32422ac',
-  '413b285d1819a6166b0daa762bb6bef2d082cffb9a13ce041cb0fda5e2f06dc37fbedb314a9b0c00caef967ac5cabb982ec45da828a0c58a9aafc854f32422ac',
-  'alice@wonderland.space'
-)
-
-console.log(signature)
-// => 9729e8fbcd425bfe48809cc996c9e6d3cecddf0848a51d8758582b3c84bb2caca8e41a8290018aa7064f0b9ec61d2b1a155d5e4c772bc992d918528cf6cb6308
-```
-
-```python [Iroha Python SDK]
-# Import dependency
-import iroha
-
-# Example ed25519 key pair
-key_pair = iroha.KeyPair.from_json("""
-{
-  "public_key": "ed01207233BFC89DCBD68C19FDE6CE6158225298EC1131B6A130D1AEB454C1AB5183C0",
-  "private_key": {
-    "digest_function": "ed25519",
-    "payload": "9ac47abf59b356e0bd7dcbbbb4dec080e302156a48ca907e47cb6aea1d32719e7233bfc89dcbd68c19fde6ce6158225298ec1131b6a130d1aeb454c1ab5183c0"
-  }
-}
-""")
-
-# Hash the user's email address:
-hashed_email = iroha.hash(b"email@address")
-
-# Sign the user's email address:
-signature = key_pair.sign(bytes(hashed_email))
-
-# Retrieve the encoded Hex string of the user's `signature`
-print(f"Encoded signature:\n{bytes(signature).hex()}")
 ```
 
 :::
+
+## Test vector {#test-vector}
+
+Before you call the API, check your implementation against these values. All of them are public example data, not credentials of a real account:
+
+| Field | Value |
+| --- | --- |
+| Email address | `alice@wonderland.space` |
+| Authorization private key | `413b285d1819a6166b0daa762bb6bef2d082cffb9a13ce041cb0fda5e2f06dc3` |
+| Authorization public key | `7fbedb314a9b0c00caef967ac5cabb982ec45da828a0c58a9aafc854f32422ac` |
+| Signature | `57e7115dfb9faa9add2d2ceb321c20db8c1e7f468d2ffc122793fa61e8ed61581580faaeae83a07fe857894bb33defd61c4ba099b981020146fe8d2be00e630a` |
+
+Ed25519 signatures are deterministic, so a correct implementation returns exactly this signature.
+
+## Using the signature
+
+Send the resulting Hex string as the `signature` field of the authorization request:
+
+```http
+POST /auth/api/v1/authentication-management/session
+```
+
+For the full request and the tokens it returns, see [Authorizing an account](./authorizing-an-account.md).

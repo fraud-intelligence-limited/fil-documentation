@@ -32,6 +32,8 @@ For instructions on how to generate the `signature` string, see [Signing user em
 
 The `authPublicKeyHex` string is taken from the user's **Authorization** key pair on the FIB Web App **Profile** screen. For details, see [Web App UI: 'Authorization' key pair](../overview/web-interface.md#akp).
 
+The `signature` string must be produced with the private key of that same **Authorization** key pair. A request signed with the **Blockchain** key pair is rejected with a `422` response.
+
 :::
 
 ### Expected result

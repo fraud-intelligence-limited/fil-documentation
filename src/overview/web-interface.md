@@ -93,6 +93,12 @@ Also see the following related tutorials:
 - [Authorizing an account](../tutorials-api/authorizing-an-account.md)
 - [Signing user email addresses](../tutorials-api/signing-user-email-addresses.md)
 
+::: tip NOTE
+
+If the private key is displayed as a 128-character string, it is the private key followed by the public key. Whenever an API tutorial asks for a private key, use its first 64 characters.
+
+:::
+
 ### 'Blockchain' key pair {#bkp}
 
 Displays public and private keys of the **Blockchain** key pair. These keys are unique for every user on the FIB network and are generated automatically at the time of account registration.
