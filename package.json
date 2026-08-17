@@ -1,6 +1,9 @@
 {
   "private": true,
   "packageManager": "pnpm@8.7.6",
+  "engines": {
+    "node": "22.x"
+  },
   "scripts": {
     "format": "prettier-eslint --include-dot-files \"**/*.{js,ts,mts,vue,json,md}\"",
     "format:check": "pnpm format --list-different",
