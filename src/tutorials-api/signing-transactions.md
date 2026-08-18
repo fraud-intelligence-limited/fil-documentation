@@ -9,7 +9,7 @@ For reference, see any of the following tutorials:
 
 The exact implementation to your system may vary depending on the specific SDK or programming language being used. However, the overall sequence of events to sign a transaction should be the following:
 
-1. Create a `keyPair` object from the public and private keys of the user's [**Blockchain** key pair](../overview/web-interface.md#blockchain-key-pair).
+1. Create a `keyPair` object from the public and private keys of the user's [**Blockchain** key pair](../overview/web-interface.md#bkp).
 2. Retrieve the Hex string of the required transaction.
 3. Decode the retrieved transaction Hex string.
 4. Sign the decoded transaction.
@@ -47,7 +47,8 @@ fun decodeSignEncode(transactionHex: String): String {
     val publicKey = "7fbedb314a9b0c00caef967ac5cabb982ec45da828a0c58a9aafc854f32422ac"
 
     // Example ed25519 private key:
-    // Note: In Kotlin/Java SDK the truncated representation is more common, although you can refer to full ones represented as concatenation of private and public ones in other SDKs
+    // Note: the Kotlin/Java SDK takes the 64-character private key, while the JavaScript and
+    // Python examples below take the 128-character Iroha SDK format, which appends the public key.
     val privateKey = "413b285d1819a6166b0daa762bb6bef2d082cffb9a13ce041cb0fda5e2f06dc3"
 
     // Obtain 'keyPair' from the public and private keys of the 'Blockchain' key pair:

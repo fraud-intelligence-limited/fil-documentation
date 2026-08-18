@@ -22,6 +22,6 @@ For examples of scenarios where FIB API endpoints are being called, check out th
 
 ::: tip NOTE
 
-Certain API requests require the use of either your [**Authorization** key pair](../overview/web-interface.md#authorization-key-pair) or [**Blockchain** key pair](../overview/web-interface.md#blockchain-key-pair).
+Certain API requests require the use of either your [**Authorization** key pair](../overview/web-interface.md#akp) or [**Blockchain** key pair](../overview/web-interface.md#bkp).
 
 :::
