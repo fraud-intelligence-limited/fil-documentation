@@ -95,7 +95,7 @@ Also see the following related tutorials:
 
 ::: tip NOTE
 
-If the private key is displayed as a 128-character string, it is the private key followed by the public key. Whenever an API tutorial asks for a private key, use its first 64 characters.
+A private key is 64 characters long. In **Iroha SDK format** the public key is appended to it, making a 128-character string: the Iroha SDKs expect that longer form, every other library expects the 64-character key. If the key you copied is 128 characters, its first 64 characters are the private key.
 
 :::
 

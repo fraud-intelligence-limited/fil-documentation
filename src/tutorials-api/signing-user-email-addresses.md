@@ -14,7 +14,7 @@ Any cryptographic library that provides Ed25519 and BLAKE2b-256 can produce it, 
 
 Sign with the **Authorization** key pair, not with the **Blockchain** one. Both key pairs are shown on the FIB Web App **Profile** screen. For details, see [Web App UI: 'Authorization' key pair](../overview/web-interface.md#akp).
 
-If the private key on that screen is 128 characters long, it is the private key followed by the public key. Use its first 64 characters as the private key.
+A private key is 64 characters long. In **Iroha SDK format** the public key is appended to it, making a 128-character string: the Iroha SDKs expect that longer form, every other library expects the 64-character key. If the key you copied is 128 characters, its first 64 characters are the private key.
 
 A signature made with the wrong key pair is rejected with a `422` response.
 
@@ -34,7 +34,7 @@ from cryptography.hazmat.primitives.asymmetric.ed25519 import Ed25519PrivateKey
 
 
 def sign_email(email: str, auth_private_key_hex: str) -> str:
-    # A 128-character key is the private key followed by the public key.
+    # In Iroha SDK format the key is 128 characters: private key then public key.
     key = Ed25519PrivateKey.from_private_bytes(bytes.fromhex(auth_private_key_hex[:64]))
     digest = hashlib.blake2b(email.encode("utf-8"), digest_size=32).digest()
     return key.sign(digest).hex()
@@ -57,8 +57,8 @@ const PKCS8_ED25519_PREFIX = '302e020100300506032b657004220420'
 
 /**
  * @param {string} email
- * @param {string} authPrivateKeyHex - a 128-character key is the private key
- *                                     followed by the public key
+ * @param {string} authPrivateKeyHex - in Iroha SDK format the key is 128
+ *                                     characters: private key then public key
  * @returns {string} - email signature hex
  */
 function signEmail(email, authPrivateKeyHex) {
