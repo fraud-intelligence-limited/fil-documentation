@@ -10,6 +10,16 @@ The API is intended for automated integrations. To upload, flag or download frau
 
 Using these credentials, you can implement calls to the FIB API endpoints into the code of your own application or system.
 
+## Base URL
+
+Send every API request to:
+
+```
+https://backend.fraudintelligencelimited.com
+```
+
+Endpoint paths throughout this documentation are relative to that host. For example, [Authorizing an account](../tutorials-api/authorizing-an-account.md) gives the path `POST /auth/api/v1/authentication-management/session`, so the full URL is `https://backend.fraudintelligencelimited.com/auth/api/v1/authentication-management/session`.
+
 Following the basic API architecture, your application or system—the _API client_ in this relationship—connects to the FIB _API server_.
 
 To integrate your API client with the FIB API server, you can use different programming languages and frameworks, including Python, Java, Node.js, RUST, depending on the requirements of your own application or system.
