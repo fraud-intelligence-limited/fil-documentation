@@ -1,5 +1,11 @@
 # Public test environment
 
+::: warning NOTE
+
+The public test environment is currently unavailable and the hostnames below do not resolve. Until it is restored, integrate against the production host given in [Calling API endpoints](./calling-api-endpoints.md#base-url).
+
+:::
+
 The test environment is a safe and controlled environment where you can try out and experiment with the FIB API without affecting the production system. Here, you can make mistakes, test different scenarios, and learn how to use the API.
 
 To access the test environment, you need to follow the same steps as for the production environment. The only difference is that you will be provided with test credentials instead of production credentials (see [Connection details](#connection-details) below).
