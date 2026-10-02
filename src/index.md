@@ -38,7 +38,3 @@ Check out the [Iroha 2 Documentation](https://docs.iroha.tech/) as it provides
 If you experience any issues at any point, please submit them at [Fraud Intelligence Blockchain Freshdesk](https://fraudintelligenceblockchain.freshdesk.com). Upon review, a member of our team will contact you to resolve the issue.
 
 Alternatively, you may contact Fraud Intelligence Limited via email at **[support@fraudintelligencelimited.com](mailto:support@fraudintelligencelimited.com)**
-
----
-
-<CompaniesLogos location="docs" />
