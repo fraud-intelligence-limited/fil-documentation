@@ -39,6 +39,3 @@ If you experience any issues at any point, please submit them at [Fraud Intellig
 
 Alternatively, you may contact Fraud Intelligence Limited via email at **[support@fraudintelligencelimited.com](mailto:support@fraudintelligencelimited.com)**
 
----
-
-<CompaniesLogos location="docs" />
